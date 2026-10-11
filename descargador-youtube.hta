@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Descargador YouTube</title>
+<HTA:APPLICATION
+  ID="app"
+  APPLICATIONNAME="Descargador YouTube"
+  BORDER="thick"
+  MAXIMIZEBUTTON="yes"
+  SCROLL="yes"
+  SINGLEINSTANCE="yes"
+  WINDOWSTATE="normal" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #f4f5f7; color: #1d1f23;
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 14px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 18px 16px 30px; }
+  h1 { font-size: 22px; margin: 0 0 14px; color: #c4302b; }
+  .card {
+    background: #fff; border: 1px solid #d9dce1; border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 12px;
+  }
+  .card h2 { font-size: 15px; margin: 0 0 10px; }
+  label.t { display: block; font-weight: bold; margin: 10px 0 4px; }
+  label.t.first { margin-top: 0; }
+  input.txt, textarea, select {
+    width: 100%; padding: 7px 9px; border: 1px solid #c4c8ce; border-radius: 6px;
+    font-family: inherit; font-size: 14px; background: #fff;
+  }
+  textarea { height: 64px; }
+  .line { width: 100%; }
+  .line input.txt { width: 78%; }
+  .line button { width: 20%; margin-left: 1%; }
+  .col { display: inline-block; width: 48%; vertical-align: top; }
+  .col + .col { margin-left: 3%; }
+  .opt { display: block; margin: 6px 0; }
+  .modes label { margin-right: 18px; font-weight: bold; }
+  .hidden { display: none; }
+  button {
+    font-family: inherit; font-size: 14px; font-weight: bold; cursor: pointer;
+    padding: 9px 14px; border-radius: 6px; border: 1px solid #c4c8ce; background: #f4f5f7; color: #1d1f23;
+  }
+  button.big {
+    background: #e5322d; color: #fff; border-color: #e5322d;
+    font-size: 17px; padding: 12px 26px;
+  }
+  button[disabled] { opacity: .5; cursor: default; }
+  .actions button { margin: 0 6px 6px 0; }
+  .bar { height: 18px; background: #e6e8eb; border-radius: 9px; overflow: hidden; margin: 10px 0 6px; }
+  .fill { height: 18px; width: 0; background: #e5322d; }
+  #status { font-weight: bold; min-height: 20px; }
+  #status.ok { color: #1e8e3e; }
+  #status.err { color: #c5221f; }
+  pre#log {
+    background: #15171a; color: #e8eaed; padding: 10px; border-radius: 6px;
+    height: 220px; overflow: auto; white-space: pre-wrap; word-wrap: break-word;
+    font-family: Consolas, monospace; font-size: 12px; margin: 8px 0 0;
+  }
+  .hint { color: #5f6672; font-size: 12px; }
+  .warn { color: #b06000; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>&#9654; Descargador de YouTube</h1>
+
+  <div class="card">
+    <label class="t first" for="urls">URL del vídeo <span class="hint">(una por línea si son varias)</span></label>
+    <textarea id="urls"></textarea>
+    <label class="opt"><input type="checkbox" id="noPlaylist" checked> Si la URL es de una lista, bajar solo ese vídeo</label>
+  </div>
+
+  <div class="card">
+    <h2>Qué descargar</h2>
+    <div class="modes">
+      <label><input type="radio" name="mode" id="modeVideo" checked onclick="refresh()"> Vídeo</label>
+      <label><input type="radio" name="mode" id="modeAudio" onclick="refresh()"> Solo audio</label>
+    </div>
+
+    <div id="videoOpts">
+      <div class="col">
+        <label class="t">Calidad máxima</label>
+        <select id="quality">
+          <option value="best">La mejor disponible</option>
+          <option value="2160">4K (2160p)</option>
+          <option value="1440">2K (1440p)</option>
+          <option value="1080" selected>Full HD (1080p)</option>
+          <option value="720">HD (720p)</option>
+          <option value="480">480p</option>
+          <option value="360">360p</option>
+        </select>
+      </div><div class="col">
+        <label class="t">Formato</label>
+        <select id="vformat">
+          <option value="mp4" selected>MP4 (recomendado)</option>
+          <option value="mkv">MKV</option>
+          <option value="webm">WEBM (convierte, lento)</option>
+          <option value="avi">AVI (convierte, lento)</option>
+          <option value="mov">MOV (convierte, lento)</option>
+        </select>
+      </div>
+      <label class="opt"><input type="checkbox" id="compat" checked> Máxima compatibilidad (H.264 + AAC, se reproduce en cualquier sitio)</label>
+      <label class="opt"><input type="checkbox" id="subs"> Incluir subtítulos en español</label>
+    </div>
+
+    <div id="audioOpts" class="hidden">
+      <div class="col">
+        <label class="t">Formato de audio</label>
+        <select id="aformat">
+          <option value="mp3" selected>MP3</option>
+          <option value="m4a">M4A</option>
+          <option value="wav">WAV (sin pérdida, pesado)</option>
+          <option value="flac">FLAC (sin pérdida)</option>
+          <option value="opus">OPUS</option>
+        </select>
+      </div><div class="col">
+        <label class="t">Calidad</label>
+        <select id="aquality">
+          <option value="0" selected>Máxima</option>
+          <option value="5">Media</option>
+          <option value="9">Baja (archivo pequeño)</option>
+        </select>
+      </div>
+    </div>
+
+    <label class="opt"><input type="checkbox" id="thumb"> Incrustar miniatura (portada)</label>
+    <label class="opt"><input type="checkbox" id="qualityInName" checked> Poner la calidad en el nombre del archivo</label>
+  </div>
+
+  <div class="card">
+    <h2>Carpetas</h2>
+    <label class="t first" for="dest">Guardar en</label>
+    <div class="line"><input class="txt" type="text" id="dest"><button onclick="pickFolder()">Elegir...</button></div>
+    <label class="t" for="exe">Ubicación de yt-dlp.exe</label>
+    <input class="txt" type="text" id="exe">
+    <div class="hint" id="ffmpegInfo"></div>
+  </div>
+
+  <div class="card">
+    <div class="actions">
+      <button class="big" id="btnDownload" onclick="startDownload()">&#11015; Descargar</button>
+      <button id="btnFormats" onclick="listFormats()">Ver calidades disponibles</button>
+      <button id="btnCancel" onclick="cancel()" disabled>Cancelar</button>
+      <button onclick="openFolder()">Abrir carpeta</button>
+    </div>
+    <div class="bar"><div class="fill" id="fill"></div></div>
+    <div id="status">Listo.</div>
+    <pre id="log"></pre>
+  </div>
+</div>
+
+<script>
+  var sh = new ActiveXObject("WScript.Shell");
+  var fso = new ActiveXObject("Scripting.FileSystemObject");
+  var LOG = sh.ExpandEnvironmentStrings("%TEMP%") + "\\descargador-youtube-log.txt";
+  var timer = null;
+  var running = false;
+
+  function $(id) { return document.getElementById(id); }
+  function q(s) { return '"' + String(s).replace(/"/g, "") + '"'; }
+  function expand(p) { return sh.ExpandEnvironmentStrings(p.replace(/^\s+|\s+$/g, "")); }
+
+  function htaFolder() {
+    var p = decodeURIComponent(location.pathname).replace(/^\//, "").replace(/\//g, "\\");
+    return fso.GetParentFolderName(p);
+  }
+
+  function init() {
+    window.resizeTo(840, 940);
+    // yt-dlp.exe junto a este archivo, o en Descargas
+    var here = htaFolder() + "\\yt-dlp.exe";
+    $("exe").value = fso.FileExists(here) ? here : expand("%USERPROFILE%\\Downloads\\yt-dlp.exe");
+    $("dest").value = expand("%USERPROFILE%\\Videos\\YouTube");
+    var hasFfmpeg = sh.Run('cmd /c where ffmpeg >nul 2>&1', 0, true) === 0;
+    $("ffmpegInfo").innerHTML = hasFfmpeg
+      ? "ffmpeg: encontrado &#10004;"
+      : '<span class="warn">ffmpeg no encontrado: sin él no se pueden unir vídeo+audio ni convertir a MP3. ' +
+        'Instálalo abriendo una terminal y ejecutando: winget install ffmpeg (luego reinicia esta ventana).</span>';
+    refresh();
+  }
+
+  function isVideo() { return $("modeVideo").checked; }
+
+  function refresh() {
+    $("videoOpts").className = isVideo() ? "" : "hidden";
+    $("audioOpts").className = isVideo() ? "hidden" : "";
+  }
+
+  function urls() {
+    var parts = $("urls").value.split(/\s+/), out = [];
+    for (var i = 0; i < parts.length; i++) if (parts[i]) out.push(parts[i]);
+    return out;
+  }
+
+  function buildArgs() {
+    var a = [];
+    a.push("-P", q(expand($("dest").value) || "."));
+    if ($("noPlaylist").checked) a.push("--no-playlist");
+    var name = "%(title)s";
+    if (isVideo()) {
+      var h = $("quality").value;
+      var lim = h === "best" ? "" : "[height<=" + h + "]";
+      a.push("-f", q("bv*" + lim + "+ba/b" + lim));
+      if ($("compat").checked) a.push("-S", q("vcodec:h264,acodec:aac"));
+      var f = $("vformat").value;
+      if (f === "mp4" || f === "mkv") a.push("--merge-output-format", f);
+      else a.push("--recode-video", f);
+      if ($("subs").checked) a.push("--write-subs", "--sub-langs", q("es.*"), "--embed-subs");
+      if ($("qualityInName").checked) name += " [%(height)sp]";
+    } else {
+      a.push("-x", "--audio-format", $("aformat").value, "--audio-quality", $("aquality").value);
+      if ($("qualityInName").checked) name += " [%(abr)skbps]";
+    }
+    if ($("thumb").checked) a.push("--embed-thumbnail");
+    a.push("-o", q(name + ".%(ext)s"));
+    a.push("--newline", "--progress-template",
+      q("download:PROGRESO %(progress._percent_str)s|%(progress._speed_str)s|%(progress._eta_str)s"));
+    return a;
+  }
+
+  function checkReady() {
+    if (running) return false;
+    if (!urls().length) { alert("Primero pega la URL del vídeo."); $("urls").focus(); return false; }
+    if (!fso.FileExists(expand($("exe").value))) {
+      alert("No encuentro yt-dlp.exe en:\n" + expand($("exe").value) + "\n\nCorrige la ruta en «Ubicación de yt-dlp.exe».");
+      return false;
+    }
+    return true;
+  }
+
+  function run(args, label) {
+    try { if (fso.FileExists(LOG)) fso.DeleteFile(LOG, true); } catch (e) {}
+    var cmd = "set PYTHONIOENCODING=utf-8&& " + q(expand($("exe").value)) + " " + args.join(" ") +
+      " > " + q(LOG) + " 2>&1 && echo __FIN_OK__>>" + q(LOG) + " || echo __FIN_ERROR__>>" + q(LOG);
+    sh.Run('cmd /s /c "' + cmd + '"', 0, false);
+    setRunning(true);
+    setStatus(label, "");
+    $("fill").style.width = "0";
+    $("log").innerText = "";
+    timer = setInterval(poll, 500);
+  }
+
+  function startDownload() {
+    if (!checkReady()) return;
+    var u = urls(), list = [];
+    for (var i = 0; i < u.length; i++) list.push(q(u[i]));
+    run(buildArgs().concat(list), "Descargando...");
+  }
+
+  function listFormats() {
+    if (!checkReady()) return;
+    run(["-F", "--no-playlist", q(urls()[0])], "Buscando calidades disponibles...");
+  }
+
+  function cancel() {
+    sh.Run("taskkill /f /t /im yt-dlp.exe", 0, true);
+  }
+
+  function readLog() {
+    if (!fso.FileExists(LOG)) return "";
+    try {
+      var st = new ActiveXObject("ADODB.Stream");
+      st.Type = 2; st.Charset = "utf-8"; st.Open(); st.LoadFromFile(LOG);
+      var t = st.ReadText(); st.Close();
+      return t;
+    } catch (e) {
+      try { var f = fso.OpenTextFile(LOG, 1); var s = f.AtEndOfStream ? "" : f.ReadAll(); f.Close(); return s; }
+      catch (e2) { return null; }
+    }
+  }
+
+  function poll() {
+    var text = readLog();
+    if (text === null) return;
+    var lines = text.split(/\r?\n/), shown = [], last = null;
+    for (var i = 0; i < lines.length; i++) {
+      var l = lines[i];
+      if (l.indexOf("PROGRESO ") === 0) { last = l.substr(9); continue; }
+      if (l.indexOf("__FIN_") === 0) continue;
+      shown.push(l);
+    }
+    if (last) {
+      var p = last.split("|"), pct = parseFloat(p[0]);
+      if (!isNaN(pct)) $("fill").style.width = Math.min(pct, 100) + "%";
+      setStatus("Descargando " + p[0].replace(/^\s+/, "") + "   ·   velocidad " + (p[1] || "") + "   ·   quedan " + (p[2] || ""), "");
+    }
+    var logEl = $("log");
+    var atBottom = logEl.scrollTop + logEl.clientHeight >= logEl.scrollHeight - 20;
+    logEl.innerText = shown.join("\n");
+    if (atBottom) logEl.scrollTop = logEl.scrollHeight;
+
+    if (text.indexOf("__FIN_OK__") >= 0) finish(true);
+    else if (text.indexOf("__FIN_ERROR__") >= 0) finish(false);
+  }
+
+  function finish(ok) {
+    clearInterval(timer);
+    setRunning(false);
+    if (ok) {
+      $("fill").style.width = "100%";
+      setStatus("¡Terminado! Pulsa «Abrir carpeta» para ver el archivo.", "ok");
+    } else {
+      setStatus("Error o cancelado. Revisa el mensaje de abajo.", "err");
+    }
+  }
+
+  function setRunning(r) {
+    running = r;
+    $("btnDownload").disabled = r;
+    $("btnFormats").disabled = r;
+    $("btnCancel").disabled = !r;
+  }
+
+  function setStatus(t, cls) { $("status").innerText = t; $("status").className = cls; }
+
+  function pickFolder() {
+    var f = new ActiveXObject("Shell.Application").BrowseForFolder(0, "Elige la carpeta de destino", 0x51);
+    if (f) $("dest").value = f.Self.Path;
+  }
+
+  function openFolder() {
+    var d = expand($("dest").value);
+    if (!fso.FolderExists(d)) { alert("La carpeta todavía no existe. Se creará con la primera descarga."); return; }
+    sh.Run("explorer " + q(d), 1, false);
+  }
+
+  window.onload = init;
+</script>
+</body>
+</html>
