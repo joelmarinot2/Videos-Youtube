@@ -1,16 +1,16 @@
-# EXPEDIENTE 1 — El lago de los esqueletos
-## Guion solo para el narrador
+# ARCHIVO IMPOSIBLE
+## Expediente Archivo 001 · El lago de los esqueletos · Guion solo para el narrador
 
 Este guion trae solamente lo que se lee en voz alta.
 - **Negrita:** dale más fuerza con la voz.
 - *(pausa)*: quédate callado un segundo.
-- Cada línea en blanco es un respiro.
+- **Pronunciación:** lo que va entre paréntesis después de un nombre, como Roopkund (RUP-kund), es cómo se dice. **No se lee.** La sílaba en MAYÚSCULAS es la que suena más fuerte.
 
 ---
 
 ### GANCHO
 
-**En un lago del Himalaya hay cientos de muertos.**
+**En un lago del Himalaya (i-ma-LÁ-ya) hay cientos de muertos.**
 
 Algunos llevan ahí más de **mil años**.
 
@@ -28,19 +28,27 @@ Y cuando la ciencia por fin hizo las pruebas de ADN… **el misterio se puso peo
 
 *(pausa)*
 
-Expediente uno: el lago de los esqueletos.
+---
+
+### INTRO
+
+Bienvenidos. Mi nombre es **Joel Marino**… y esto es **Archivo Imposible**.
+
+*(pausa)*
+
+Expediente: **Archivo cero cero uno**. El lago de los esqueletos.
 
 ---
 
 ### PARTE 1 — LA INCÓGNITA
 
-Bienvenido al primer expediente. En esta serie te traigo casos reales, con pruebas, con fechas y con científicos de por medio… que **todavía no tienen explicación**.
+En esta serie te traigo casos reales, con pruebas, con fechas y con científicos de por medio… que **todavía no tienen explicación**.
 
 Y te voy a hacer una promesa: aquí no inventamos nada. Lo que es dato, te lo digo como dato. Lo que es teoría, te lo digo como teoría.
 
 Hoy no te voy a empezar contando la historia. Te voy a empezar contando **lo que no encaja**.
 
-El lugar se llama **Roopkund**. Es un lago pequeño en el norte de la India, a unos cinco mil metros de altura. Casi tan alto como el Nevado del Ruiz. Pasa congelado buena parte del año.
+El lugar se llama **Roopkund (RUP-kund)**. Es un lago pequeño en el norte de la India (ÍN-dia), a unos cinco mil metros de altura. Casi tan alto como el Nevado del Ruiz. Pasa congelado buena parte del año.
 
 Y cuando el hielo se derrite… aparecen los huesos.
 
@@ -52,7 +60,7 @@ Y aquí empiezan los problemas. Mira.
 
 **Dos:** no murieron el mismo día. Ni el mismo año. Ni siquiera el mismo siglo.
 
-**Tres:** algunos de esos muertos no eran de la India. Venían de muy, muy lejos.
+**Tres:** algunos de esos muertos no eran de la India (ÍN-dia). Venían de muy, muy lejos.
 
 *(pausa)*
 
@@ -79,7 +87,7 @@ Año 1942. El mundo está en plena **Segunda Guerra Mundial**.
 
 Un guardabosques que recorre la zona llega a la orilla del lago… y se encuentra con un cementerio al aire libre.
 
-¿Qué fue lo primero que pensaron? Lo obvio en ese momento: **soldados japoneses**. Que se habían metido por las montañas para invadir la India y se habían muerto congelados.
+¿Qué fue lo primero que pensaron? Lo obvio en ese momento: **soldados japoneses**. Que se habían metido por las montañas para invadir la India (ÍN-dia) y se habían muerto congelados.
 
 *(pausa)*
 
@@ -91,7 +99,7 @@ Primera opción, descartada. Si en los comentarios pusiste "A, una guerra"… lo
 
 Pero la gente de la región ya tenía su propia explicación, desde hace mucho tiempo.
 
-Muy cerca del lago pasa una ruta de peregrinación de una diosa muy importante en esa zona: **Nanda Devi**.
+Muy cerca del lago pasa una ruta de peregrinación de una diosa muy importante en esa zona: **Nanda Devi (NÁN-da DÉ-vi)**.
 
 Y la leyenda dice que un rey subió a la montaña con su esposa y muchos seguidores… y que no respetaron ese lugar sagrado.
 
@@ -107,7 +115,7 @@ Pero unos sesenta años después… unos científicos subieron a revisar los cr�
 
 **Pista tres.**
 
-A comienzos de los años 2000, varios equipos de científicos llegaron al lago. Uno de ellos estuvo relacionado con un documental de National Geographic.
+A comienzos de los años 2000, varios equipos de científicos llegaron al lago. Uno de ellos estuvo relacionado con un documental de National Geographic (NÁ-sho-nal yio-GRÁ-fik).
 
 Revisaron los cráneos. Y encontraron algo que les puso la piel de gallina.
 
@@ -131,7 +139,7 @@ Caso cerrado, ¿cierto?
 
 **Pista cuatro.**
 
-En agosto de 2019, un equipo internacional de científicos publicó un estudio en una de las revistas científicas más serias del mundo: *Nature Communications*.
+En agosto de 2019, un equipo internacional de científicos publicó un estudio en una de las revistas científicas más serias del mundo: *Nature Communications* (NÉI-cher co-miu-ni-KÉI-shons).
 
 Analizaron el ADN antiguo de **treinta y ocho** de esos esqueletos.
 
@@ -143,15 +151,15 @@ Pero no fue así.
 
 *(pausa)*
 
-Primer grupo: **veintitrés personas** de la región de la India. Murieron hacia el año 800. Y ojo con esto: **no todas al mismo tiempo**. En más de un momento.
+Primer grupo: **veintitrés personas** de la región de la India (ÍN-dia). Murieron hacia el año 800. Y ojo con esto: **no todas al mismo tiempo**. En más de un momento.
 
 Hasta ahí, todo normal. Gente de la región.
 
 Pero entonces apareció el segundo grupo.
 
-**Catorce personas** con un ADN típico del **Mediterráneo oriental**. Gente parecida a la que vive hoy en lugares como **Grecia** o la isla de **Creta**.
+**Catorce personas** con un ADN típico del **Mediterráneo (me-di-te-RRÁ-ne-o) oriental**. Gente parecida a la que vive hoy en lugares como **Grecia (GRÉ-sia)** o la isla de **Creta (CRÉ-ta)**.
 
-A miles de kilómetros del Himalaya.
+A miles de kilómetros del Himalaya (i-ma-LÁ-ya).
 
 Y murieron hacia el año **1800**.
 
@@ -159,7 +167,7 @@ Y murieron hacia el año **1800**.
 
 **Mil años después** que el primer grupo. En el mismo lago. Al lado de los mismos huesos.
 
-Y como si fuera poco… una persona más, con ascendencia del este de Asia.
+Y como si fuera poco… una persona más, con ascendencia del este de Asia (Á-sia).
 
 *(pausa)*
 
@@ -171,9 +179,9 @@ Y los científicos no encontraron rastros de ninguna bacteria que explicara una 
 
 Si pusiste "B, una enfermedad"… tampoco hay pruebas de eso.
 
-Uno de los autores, el genetista **Niraj Rai**, reconoció que no pudieron determinar por qué gente del Mediterráneo estaba viajando a ese lago… ni qué hacía allí.
+Uno de los autores, el genetista **Niraj Rai (NÍ-rach RÁI)**, reconoció que no pudieron determinar por qué gente del Mediterráneo estaba viajando a ese lago… ni qué hacía allí.
 
-Y National Geographic lo resumió en un titular: *"El estudio de ADN hace más profundo el misterio."*
+Y National Geographic (NÁ-sho-nal yio-GRÁ-fik) lo resumió en un titular: *"El estudio de ADN hace más profundo el misterio."*
 
 ---
 
@@ -195,7 +203,7 @@ Y eso es lo que más me inquieta de este caso.
 
 Esto es **lo que no sabemos**:
 
-No sabemos qué hacían catorce personas del Mediterráneo, hacia el año 1800, en un lago perdido en el Himalaya.
+No sabemos qué hacían catorce personas del Mediterráneo (me-di-te-RRÁ-ne-o), hacia el año 1800, en un lago perdido en el Himalaya (i-ma-LÁ-ya).
 
 No sabemos por qué nadie dejó escrito ese viaje. Un grupo de extranjeros cruzando medio mundo… y ni un solo registro claro.
 
@@ -223,7 +231,7 @@ Y después de esto, te lo aseguro… **no vas a volver a ver una montaña nevada
 
 ### CIERRE
 
-Si quieres que abramos el siguiente expediente, suscríbete y activa la campanita. Esto apenas empieza.
+Si quieres que abramos el siguiente expediente, suscríbete a **Archivo Imposible** y activa la campanita. Esto apenas empieza.
 
 *(pausa)*
 
@@ -231,7 +239,7 @@ Porque en el próximo caso… la pista no son unos huesos.
 
 Es **una sola palabra**.
 
-En 1947, un avión le mandó un mensaje en código Morse a la torre de control de Santiago de Chile. El operador no lo entendió. Pidió que lo repitieran.
+En 1947, un avión le mandó un mensaje en código Morse (MÓR-se) a la torre de control de Santiago de Chile (CHÍ-le). El operador no lo entendió. Pidió que lo repitieran.
 
 Y el avión repitió esa palabra.
 
@@ -241,4 +249,4 @@ Después… silencio.
 
 Casi ochenta años después, nadie sabe qué significa.
 
-Nos vemos en el expediente número dos.
+Soy **Joel Marino**, y nos vemos en el **Archivo cero cero dos**.

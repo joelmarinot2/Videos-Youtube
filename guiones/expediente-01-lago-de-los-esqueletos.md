@@ -1,4 +1,4 @@
-# EXPEDIENTE 1 — El lago de los esqueletos
+# ARCHIVO IMPOSIBLE — Expediente Archivo 001: El lago de los esqueletos
 
 **Formato:** video horizontal de YouTube (16:9, 1920 × 1080)
 **Duración aproximada:** 8 a 9 minutos
@@ -57,7 +57,19 @@ Nadie sabe cómo murieron.
 
 Y cuando la ciencia por fin hizo las pruebas de ADN… **el misterio se puso peor.**
 
-[Golpe fuerte. Logo + texto grande: **EXPEDIENTE 1: EL LAGO DE LOS ESQUELETOS**.]
+[Golpe fuerte. Logo del canal **ARCHIVO IMPOSIBLE**.]
+
+---
+
+## INTRO (0:40 – 0:55)
+
+[Presentador a cámara.]
+
+Bienvenidos. Mi nombre es **Joel Marino**… y esto es **Archivo Imposible**.
+
+[Pausa. Texto grande con sonido de sello: **EXPEDIENTE: ARCHIVO 001 — EL LAGO DE LOS ESQUELETOS**.]
+
+Expediente: **Archivo cero cero uno**. El lago de los esqueletos.
 
 ---
 
@@ -67,7 +79,7 @@ Y cuando la ciencia por fin hizo las pruebas de ADN… **el misterio se puso peo
 
 [Presentador a cámara.]
 
-Bienvenido al primer expediente. En esta serie te traigo casos reales, con pruebas, con fechas y con científicos de por medio… que **todavía no tienen explicación**.
+En esta serie te traigo casos reales, con pruebas, con fechas y con científicos de por medio… que **todavía no tienen explicación**.
 
 Y te voy a hacer una promesa: aquí no inventamos nada. Lo que es dato, te lo digo como dato. Lo que es teoría, te lo digo como teoría.
 
@@ -326,7 +338,7 @@ Y después de esto, te lo aseguro… **no vas a volver a ver una montaña nevada
 
 [Botón de suscribirse y campanita, rápido.]
 
-Si quieres que abramos el siguiente expediente, suscríbete y activa la campanita. Esto apenas empieza.
+Si quieres que abramos el siguiente expediente, suscríbete a **Archivo Imposible** y activa la campanita. Esto apenas empieza.
 
 [La pantalla se va a negro. Sonido de código Morse lento: bip… bip-bip…]
 
@@ -342,11 +354,11 @@ Y el avión repitió esa palabra.
 
 Después… silencio.
 
-[Texto: **EXPEDIENTE 2: STENDEC — MUY PRONTO**.]
+[Texto: **ARCHIVO 002: STENDEC — MUY PRONTO**.]
 
 Casi ochenta años después, nadie sabe qué significa.
 
-Nos vemos en el expediente número dos.
+Soy **Joel Marino**, y nos vemos en el **Archivo cero cero dos**.
 
 [Pantalla final de YouTube con video recomendado y botón de suscripción (últimos 20 segundos).]
 
@@ -357,14 +369,14 @@ Nos vemos en el expediente número dos.
 - **Fondo:** el lago congelado, oscuro y azul.
 - **Elemento principal:** un cráneo en primer plano, a la derecha.
 - **Texto grande a la izquierda (máximo 4 palabras):** **"1.000 AÑOS DE DIFERENCIA"** o **"EL ADN LO EMPEORÓ"**.
-- **Detalle:** una etiqueta tipo carpeta que diga **EXPEDIENTE 1**, para que se reconozca la serie.
+- **Detalle:** una etiqueta tipo carpeta que diga **ARCHIVO 001**, para que se reconozca la serie.
 
 ## Títulos sugeridos
 
-1. Murieron en el mismo lago… con 1.000 años de diferencia | Expediente 1
+1. Murieron en el mismo lago… con 1.000 años de diferencia | Archivo Imposible 001
 2. El lago de los esqueletos: el ADN hizo el misterio MÁS grande
 3. ¿Qué hacían europeos muertos a 5.000 metros en el Himalaya?
-4. Cientos de esqueletos en un lago y nadie sabe por qué | Expediente 1
+4. Cientos de esqueletos en un lago y nadie sabe por qué | Archivo Imposible 001
 
 ## Comentario fijado (para poner apenas se publique)
 
