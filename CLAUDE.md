@@ -26,6 +26,12 @@ español sencillo, sin jerga técnica.
   libro abierto (accesorio), `v2a_7` con microscopio, `v2b_4` caminando con linterna, `v2b_6` mesa con
   trípode, `v2b_7` con lupa y tela, `v2b_8` entregando una caja de evidencia.
   PENDIENTE: que el dueño diga cuál avatar es el principal (el de gabardina o el de gafas).
+- **Versiones mejoradas (alta calidad, 3x):** `avatar/recortes-hd/` y `avatar/v2/recortes-hd/` (~2000×3000 px).
+  USAR ESTAS en los videos. Se hacen con `avatar/hdlib.py`: agranda 3x y retraza las líneas como vectores con
+  potrace en 3 tonos (tinta, gris medio, gris claro), así no se ven borrosas ni con cuadros de JPG.
+  Recetas: `avatar/recorte_v1_hd.py` y `avatar/v2/recorte_v2_hd.py` (leen los originales de la carpeta de
+  subidas de la sesión; cambiar la ruta `UP` a `avatar/original` o `avatar/v2/original`).
+  Requiere `apt-get install potrace librsvg2-bin`.
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.
