@@ -1,0 +1,387 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bebas;src:url(fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:Play;src:url(fonts/PlayfairDisplaywght.ttf)}
+@font-face{font-family:PlayI;src:url(fonts/PlayfairDisplay-Italicwght.ttf);font-style:italic}
+@font-face{font-family:Typer;src:url(fonts/CourierPrime-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c}
+#stage{position:absolute;inset:0;overflow:hidden;background:#07040c}
+#mesh{position:absolute;inset:-60px}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}
+.abs{position:absolute;left:0;top:0;transform-origin:center center}
+.plate{position:absolute;left:-140px;top:-80px;width:2200px}
+.pc{filter:drop-shadow(2px 3px 0 rgba(10,4,18,.55)) drop-shadow(14px 22px 26px rgba(4,0,10,.75))}
+.typer{font-family:Typer;color:#140a20;font-size:44px;letter-spacing:3px;white-space:pre}
+.cap{font-family:Typer;font-size:15px;color:rgba(233,225,204,.45);letter-spacing:1.5px}
+.big{font-family:Bebas;color:#ece5d2;line-height:1}
+.ph{font-family:Play;color:#ece5d2;font-weight:400}
+.phi{font-family:PlayI;font-style:italic;color:#5cf29a;font-weight:500;text-shadow:0 0 22px rgba(92,242,154,.55),0 0 60px rgba(92,242,154,.25)}
+.mask{overflow:hidden;display:inline-block;vertical-align:bottom;padding:0 18px 10px 0}
+.mask>span{display:inline-block}
+.col{position:absolute;top:0;width:150px;text-align:center}
+#parts,#fx{position:absolute;inset:0;pointer-events:none}
+#leak{position:absolute;inset:-100px;pointer-events:none;mix-blend-mode:screen}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 50%,rgba(6,0,14,.5) 82%,rgba(3,0,8,.88) 100%)}
+#flash{position:absolute;inset:0;background:#efe6ff;pointer-events:none;opacity:0;mix-blend-mode:screen}
+#black{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="ca" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+    <feOffset id="caR" in="r" dx="0" result="r2"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb"/>
+    <feOffset id="caB" in="gb" dx="0" result="gb2"/>
+    <feBlend in="r2" in2="gb2" mode="screen"/>
+  </filter>
+</svg>
+<div id="stage">
+ <div id="world" class="abs" style="width:1920px;height:1080px">
+  <div id="mesh"></div>
+
+  <!-- 1 · AÑO 1942 -->
+  <div class="scene" id="s1">
+    <img class="plate" id="s1plate" src="assets2/plate_periodico.jpg" style="opacity:.32">
+    <div class="abs" id="s1c" style="width:1920px;height:1080px">
+      <div class="abs typer" id="s1ano" style="left:0;top:262px;width:1920px;text-align:center;color:#ece5d2;font-size:38px;letter-spacing:18px"></div>
+      <div class="abs" id="s1odo" style="left:660px;top:330px;width:600px;height:300px;overflow:hidden;-webkit-mask-image:linear-gradient(transparent 0,#000 22%,#000 78%,transparent 100%)">
+        <div class="col big" id="d0" style="left:0;font-size:330px">1</div>
+        <div class="col big" id="d1" style="left:150px;font-size:330px">9</div>
+        <div class="col big" id="d2" style="left:300px;font-size:330px"></div>
+        <div class="col big" id="d3" style="left:450px;font-size:330px"></div>
+      </div>
+      <svg class="abs" width="1920" height="1080" style="overflow:visible">
+        <line id="s1line" x1="380" y1="690" x2="380" y2="690" stroke="#5cf29a" stroke-width="4" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.8))"/>
+        <circle id="s1dot" cx="380" cy="690" r="0" fill="#5cf29a" style="filter:drop-shadow(0 0 10px #5cf29a)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- 2 · NORTE DE LA INDIA -->
+  <div class="scene" id="s2" style="perspective:1900px">
+    <img class="plate" id="s2plate" src="assets2/plate_mapa.jpg" style="opacity:.55">
+    <div class="abs" id="s2cam" style="width:1920px;height:1080px;transform-style:preserve-3d">
+      <img class="abs pc" id="s2map" src="assets2/mapa.png">
+      <img class="abs pc" id="s2foto" src="assets2/foto_trisul.png">
+      <svg class="abs" width="1920" height="1080" style="overflow:visible">
+        <path id="s2str" fill="none" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 6px rgba(92,242,154,.9))"/>
+        <circle id="s2tack" r="0" fill="#5cf29a" style="filter:drop-shadow(0 0 8px #5cf29a)"/>
+        <g id="s2pin">
+          <circle r="30" fill="rgba(92,242,154,.12)" stroke="#5cf29a" stroke-width="4" style="filter:drop-shadow(0 0 10px #5cf29a)"/>
+          <circle id="s2pulse" r="30" fill="none" stroke="#5cf29a" stroke-width="2"/>
+          <circle r="7" fill="#5cf29a"/>
+        </g>
+      </svg>
+    </div>
+    <div class="abs pc" id="s2tag"><img src="assets2/tira.png" style="display:block"><div class="abs typer" id="s2txt" style="left:56px;top:58px"></div></div>
+    <div class="abs cap" style="left:60px;top:1035px">MAPA: IMPERIAL GAZETTEER OF INDIA, 1909 · FOTO: TRISUL, WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 3 · EL MUNDO ESTÁ EN GUERRA -->
+  <div class="scene" id="s3">
+    <img class="plate" id="s3plate" src="assets2/plate_periodico.jpg" style="opacity:.6">
+    <div class="abs" id="s3cam" style="width:1920px;height:1080px">
+      <img class="abs pc" id="r0" src="assets2/recorte_0.png">
+      <img class="abs pc" id="r1" src="assets2/recorte_2.png">
+      <img class="abs pc" id="r2" src="assets2/recorte_1.png">
+      <div class="abs pc" id="s3head"><img src="assets2/titular.png" style="display:block">
+        <div class="abs big" style="left:0;top:66px;width:100%;text-align:center;white-space:nowrap;font-size:158px;color:#5cf29a;opacity:.9;transform:translate(7px,5px)">EL MUNDO ESTÁ EN GUERRA</div>
+        <div class="abs big" style="left:0;top:66px;width:100%;text-align:center;white-space:nowrap;font-size:158px;color:#180a28">EL MUNDO ESTÁ EN GUERRA</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 · HIMALAYA -->
+  <div class="scene" id="s4">
+    <img class="abs" id="s4bg" src="assets2/montana_fondo.jpg" style="width:2600px">
+    <img class="abs" id="s4rays" src="assets2/rayos.png" style="width:1920px;height:1080px;mix-blend-mode:screen">
+    <div class="abs" id="s4fog1" style="width:3400px;height:560px;top:420px;background:radial-gradient(ellipse at 25% 50%,rgba(160,130,210,.4),transparent 60%),radial-gradient(ellipse at 60% 55%,rgba(130,110,190,.33),transparent 55%),radial-gradient(ellipse at 90% 45%,rgba(160,130,210,.3),transparent 55%)"></div>
+    <img class="abs" id="s4fr" src="assets2/montana_frente.png" style="width:3000px">
+    <div class="abs" id="s4fog2" style="width:3600px;height:460px;top:760px;background:radial-gradient(ellipse at 20% 50%,rgba(30,14,52,.85),transparent 60%),radial-gradient(ellipse at 60% 40%,rgba(40,20,70,.75),transparent 60%),radial-gradient(ellipse at 92% 50%,rgba(30,14,52,.8),transparent 60%)"></div>
+    <svg class="abs" width="1920" height="1080">
+      <line id="s4alt" x1="1720" y1="960" x2="1720" y2="960" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 6px #5cf29a)"/>
+      <g id="s4ticks"></g>
+      <g id="s4ring" opacity="0"><circle r="40" fill="none" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 8px #5cf29a)"/></g>
+    </svg>
+    <div class="abs big" id="s4num" style="left:960px;top:270px;width:700px;text-align:right;font-size:250px;text-shadow:0 0 30px rgba(10,4,20,.6)"></div>
+    <div class="abs typer" id="s4m" style="left:960px;top:530px;width:700px;text-align:right;color:#5cf29a;font-size:36px;letter-spacing:14px"></div>
+    <div class="abs pc" id="s4tag"><img src="assets2/tira_corta.png" style="display:block"><div class="abs typer" id="s4txt" style="left:56px;top:58px"></div></div>
+  </div>
+
+  <!-- 5 · Y EN EL FONDO HAY ALGO -->
+  <div class="scene" id="s5">
+    <img class="plate" id="s5plate" src="assets2/plate_lago.jpg" style="opacity:.42">
+    <div class="abs" id="s5iris" style="width:1920px;height:1080px">
+      <img class="abs" id="s5img" src="assets2/lago_full.jpg" style="width:2200px">
+    </div>
+    <svg class="abs" width="1920" height="1080">
+      <g id="s5ring" transform="translate(1250 560)">
+        <circle id="s5c" r="0" fill="none" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 10px #5cf29a)"/>
+        <g id="s5tk" style="filter:drop-shadow(0 0 4px #5cf29a)"></g>
+        <line x1="-340" y1="0" x2="-300" y2="0" stroke="#5cf29a" stroke-width="2"/><line x1="300" y1="0" x2="340" y2="0" stroke="#5cf29a" stroke-width="2"/>
+        <line x1="0" y1="-340" x2="0" y2="-300" stroke="#5cf29a" stroke-width="2"/><line x1="0" y1="300" x2="0" y2="340" stroke="#5cf29a" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="abs" style="left:110px;top:360px">
+      <div class="ph" style="font-size:94px"><span class="mask"><span id="s5a">Y en el fondo</span></span></div>
+      <div class="phi" style="font-size:156px;margin-top:-22px"><span class="mask"><span id="s5b">hay algo.</span></span></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1035px">FOTO: LAGO ROOPKUND · WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 6 · SON HUESOS -->
+  <div class="scene" id="s6">
+    <img class="plate" id="s6plate" src="assets2/plate_huesos.jpg" style="opacity:.55">
+    <div class="abs" id="s6glow" style="width:1920px;height:1080px;background:radial-gradient(circle at 690px 560px,rgba(92,242,154,.28),rgba(112,70,178,.18) 300px,transparent 640px);mix-blend-mode:screen"></div>
+    <img class="abs pc" id="s6foto" src="assets2/foto_huesos.png">
+    <img class="abs pc" id="s6skull" src="assets2/craneo.png">
+    <div class="abs" style="left:1150px;top:380px">
+      <div class="ph" style="font-size:112px"><span class="mask"><span id="s6a">Son</span></span></div>
+      <div class="phi" style="font-size:196px;margin-top:-40px"><span class="mask"><span id="s6b">huesos.</span></span></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1035px">GRABADO: W. MILLER (DOMINIO PÚBLICO) · FOTO: WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 7 · LOGO -->
+  <div class="scene" id="s7">
+    <img class="plate" id="s7plate" src="assets2/plate_mapa.jpg" style="opacity:.22">
+    <svg class="abs" width="1920" height="1080">
+      <circle id="s7ring" cx="960" cy="500" r="330" fill="none" stroke="#5cf29a" stroke-width="5" stroke-dasharray="2074" stroke-dashoffset="2074" transform="rotate(-90 960 500)" style="filter:drop-shadow(0 0 12px rgba(92,242,154,.9))"/>
+      <circle id="s7ring2" cx="960" cy="500" r="352" fill="none" stroke="rgba(92,242,154,.45)" stroke-width="1.5" stroke-dasharray="4 12"/>
+      <circle id="s7ring3" cx="960" cy="500" r="308" fill="none" stroke="rgba(176,140,255,.35)" stroke-width="1"/>
+    </svg>
+    <div class="abs big" id="s7logo" style="left:0;top:430px;width:1920px;text-align:center;font-size:156px;letter-spacing:4px;white-space:nowrap"></div>
+    <div class="abs" id="s7shine" style="left:0;top:420px;width:300px;height:180px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);mix-blend-mode:overlay;filter:blur(6px)"></div>
+    <div class="abs pc" id="s7tag"><img src="assets2/tira_corta.png" style="display:block"><div class="abs typer" style="left:0;top:56px;width:100%;text-align:center">ARCHIVO <span style="font-family:TyperB;color:#1d7a4a">001</span></div></div>
+  </div>
+ </div>
+ <canvas id="parts" width="1920" height="1080"></canvas>
+ <div id="leak"></div>
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div id="vig"></div>
+ <div id="flash"></div>
+ <div id="black"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lerp=(a,b,t)=>a+(b-a)*t, p=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eExpo=x=>x>=1?1:1-Math.pow(2,-10*x), eIn=x=>x*x*x, eInExpo=x=>x<=0?0:Math.pow(2,10*x-10);
+const eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eBack=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const spring=(x,f=4.5,d=5)=>x<=0?0:1-Math.exp(-d*x)*Math.cos(f*Math.PI*x);
+const twos=t=>Math.floor(t*12)/12;
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function tf(el,x,y,s=1,r=0,o=1,extra=''){el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s}) ${extra}`;el.style.opacity=o}
+function typed(el,text,t,a,b){el.textContent=text.slice(0,Math.floor(clamp((t-a)/(b-a))*text.length))}
+function shake(t,t0,amp,dur){if(t<t0||t>t0+dur)return[0,0,0];const k=Math.pow(1-(t-t0)/dur,2);return[Math.sin((t-t0)*88)*amp*k,Math.cos((t-t0)*67)*amp*.7*k,Math.sin((t-t0)*53)*amp*.04*k]}
+function reveal(el,t,a,dur=.55){const k=eExpo(p(t,a,a+dur));el.style.transform=`translateY(${(1-k)*110}%)`;el.style.filter=`blur(${(1-k)*14}px)`}
+// golpe: aberración de color + destello
+const HITS=[[1.85,1],[8.25,1.1],[18.40,1.4],[22.30,.8]];
+function hitK(t){let k=0;for(const[h,a]of HITS){if(t>=h&&t<h+.45)k=Math.max(k,a*Math.pow(1-(t-h)/.45,2))}return k}
+// trozo que cae "a bofetada": copia grande arriba 2 dibujos, luego baja con un rebote
+function slap(el,t,a,x,y,r,s=1){const tt=twos(t);if(tt<a){el.style.opacity=0;return}
+  const k=tt-a; let sc,yy,rr; if(k<2/12){sc=s*1.22;yy=y-60;rr=r-6}else{const b=spring(p(t,a+2/12,a+.6),3.2,7);sc=lerp(s*1.22,s,b);yy=lerp(y-60,y,b);rr=lerp(r-6,r,b)}
+  tf(el,x,yy,sc,rr,1)}
+
+const S=[[0,3.4],[3.4,7.2],[7.2,10.4],[10.4,14.8],[14.8,18.4],[18.4,21.4],[21.4,24.5]];
+const DUR=24.5;
+
+// odómetro: columnas de dígitos
+function strip(el,n){let h='';for(let i=0;i<n;i++)h+=`<div style="height:330px">${i%10}</div>`;el.innerHTML=h}
+strip($('d2'),5);strip($('d3'),33);
+(function(){let g=$('s4ticks'),h='';for(let i=0;i<=12;i++){const y=960-i*55;h+=`<line x1="1720" y1="${y}" x2="${i%4?1736:1752}" y2="${y}" stroke="#5cf29a" stroke-width="2" class="tk" data-i="${i}" opacity="0"/>`}g.innerHTML=h;
+ let k=$('s5tk'),q='';for(let i=0;i<120;i++){const a=i*3*Math.PI/180,r1=i%10?286:270,r2=298;q+=`<line x1="${(Math.cos(a)*r1).toFixed(1)}" y1="${(Math.sin(a)*r1).toFixed(1)}" x2="${(Math.cos(a)*r2).toFixed(1)}" y2="${(Math.sin(a)*r2).toFixed(1)}" stroke="#5cf29a" stroke-width="${i%10?1.2:2.6}"/>`}k.innerHTML=q;
+ const L='ARCHIVOS INEXPLICABLES';$('s7logo').innerHTML=[...L].map(c=>`<span style="display:inline-block">${c===' '?'&nbsp;':c}</span>`).join('')})();
+
+function mesh(t,scene){
+  const a=t*.25, pal={1:['#3c1872','#0e3a2b'],2:['#2c1356','#0d3326'],3:['#3a1466','#123d2c'],4:['#2a1352','#0b2f24'],5:['#1d0d3a','#0e3d2c'],6:['#30115a','#0f4a33'],7:['#3a1770','#0e3a2b']}[scene];
+  $('mesh').style.background=`radial-gradient(circle at ${50+30*Math.sin(a)}% ${40+25*Math.cos(a*1.3)}%,${pal[0]} 0,transparent 55%),radial-gradient(circle at ${60+30*Math.cos(a*.8)}% ${70+20*Math.sin(a*1.1)}%,${pal[1]} 0,transparent 50%),radial-gradient(circle at ${20+15*Math.sin(a*1.7)}% ${80+10*Math.cos(a)}%,#1a0a2e 0,transparent 60%),#0a0512`;
+}
+
+function render(t){
+  let sc=0;S.forEach((r,i)=>{const on=t>=r[0]&&t<r[1];$('s'+(i+1)).style.display=on?'block':'none';if(on)sc=i+1});
+  mesh(t,sc);
+  let wx=0,wy=0,wr=0,ws=1;
+  $('black').style.opacity=0;$('flash').style.opacity=0;
+
+  // ---------- 1 · AÑO 1942 ----------
+  if(sc===1){
+    tf($('s1plate'),lerp(0,-60,t/3.4),0,lerp(1.05,1.12,t/3.4));
+    const l=eExpo(p(t,.15,1.0));['x2'].forEach(a=>$('s1line').setAttribute(a,lerp(380,1540,l)));$('s1dot').setAttribute('cx',lerp(380,1540,l));$('s1dot').setAttribute('r',l>0?8:0);
+    typed($('s1ano'),'AÑO',t,.3,.6);
+    const k=eExpo(p(t,.45,1.85))*0+ (1-Math.pow(1-p(t,.45,1.85),4));
+    $('d2').style.transform=`translateY(${-lerp(0,4,k)*330}px)`;
+    $('d3').style.transform=`translateY(${-lerp(0,32,k)*330}px)`;
+    const land=t>1.85?1+.07*Math.exp(-(t-1.85)*10):1;
+    $('s1odo').style.transform=`scale(${land})`;
+    $('s1odo').style.textShadow='none';
+    const o=t>1.85?0:1;['d0','d1','d2','d3'].forEach(d=>$(d).style.color=t>1.85?'#f3ecd8':'#cfc6b3');
+    const ex=eInExpo(p(t,3.22,3.4));
+    tf($('s1c'),-ex*900,0,lerp(1,1.04,t/3.4)+ex*.15,0,1);
+    $('s1odo').style.filter=t>1.85?`drop-shadow(0 0 ${lerp(40,12,p(t,1.85,2.6))}px rgba(92,242,154,.45))`:'none';
+    $('black').style.opacity=1-p(t,0,.35);
+  }
+
+  // ---------- 2 · Mapa ----------
+  else if(sc===2){
+    const t2=t-S[1][0];
+    tf($('s2plate'),lerp(-40,-160,t2/3.8),lerp(0,-40,t2/3.8),lerp(1.05,1.18,t2/3.8));
+    const enter=eExpo(p(t2,0,.3)), exit=eInExpo(p(t2,3.62,3.8));
+    const z=eInOut(p(t2,.35,3.6));
+    // mapa
+    const mk=spring(p(twos(t2),0,.7),2.4,6.5);
+    const MX=520,MY=-70,MS=.82;
+    tf($('s2map'),lerp(1400,MX,mk),MY,MS,lerp(9,-3,mk),1);
+    const pinX=MX+(394-526)*MS+526, pinY=MY+(286-615)*MS+615;  // centro aprox. de la imagen como origen
+    // foto Trisul
+    const fk=spring(p(twos(t2),1.5,2.1),2.2,6);
+    const FX=756,FY=194,FS=.5;
+    tf($('s2foto'),FX,lerp(-700,FY,fk),FS,lerp(-14,5,fk),fk>0?1:0);
+    // pin
+    const pk=eBack(p(t2,1.15,1.5));
+    $('s2pin').setAttribute('transform',`translate(${pinX} ${pinY}) scale(${pk})`);
+    const pu=((t2-1.15)%1.0)/1.0;$('s2pulse').setAttribute('r',30+pu*55);$('s2pulse').setAttribute('opacity',t2>1.15?(1-pu):0);
+    // hilo del pin a la foto
+    const tx=FX+604-604*FS+34, ty=FY+286-286*FS+30;  // esquina de la foto (aprox)
+    const sk=eOut(p(t2,1.95,2.5));
+    const ex2=lerp(pinX,tx,sk), ey2=lerp(pinY,ty,sk), sag=60*(1-.4*sk);
+    $('s2str').setAttribute('d',`M${pinX} ${pinY} Q${(pinX+ex2)/2} ${(pinY+ey2)/2+sag} ${ex2} ${ey2}`);
+    $('s2str').setAttribute('opacity',t2>1.95?1:0);
+    $('s2tack').setAttribute('cx',tx);$('s2tack').setAttribute('cy',ty);$('s2tack').setAttribute('r',sk>=1?9:0);
+    // cámara 3D: se acerca al pin
+    const s=lerp(1,1.45,z);
+    const cx=lerp(0,960-pinX,z), cy=lerp(0,520-pinY,z);
+    $('s2cam').style.transformOrigin=`${pinX}px ${pinY}px`;
+    $('s2cam').style.transform=`translate(${cx+lerp(900,0,enter)-exit*1300}px,${cy}px) rotateX(${lerp(14,4,z)}deg) rotateY(${lerp(-12,-2,z)}deg) rotateZ(${lerp(-2,1,z)}deg) scale(${s})`;
+    const tg=spring(p(twos(t2),2.1,2.6),2.4,6.5);
+    tf($('s2tag'),lerp(-900,90,tg)-exit*1300,800,1,lerp(-8,-2,tg),tg>0?1:0);
+    typed($('s2txt'),'NORTE DE LA INDIA',t2,2.35,3.15);
+  }
+
+  // ---------- 3 · Periódicos ----------
+  else if(sc===3){
+    const t3=t-S[2][0];
+    tf($('s3plate'),lerp(-20,-120,t3/3.2),-30,lerp(1.08,1.16,t3/3.2),lerp(-1,1,t3/3.2));
+    const enter=eExpo(p(t3,0,.28));
+    slap($('r0'),t3,.05,40,40,-7,.95);
+    slap($('r1'),t3,.25,1060,60,6,.95);
+    slap($('r2'),t3,.45,380,470,-3,.9);
+    const hk=p(t3,1.0,1.08);
+    tf($('s3head'),270,360,hk<1?lerp(1.65,1,eOut(hk)):1+.004*Math.sin(t3*3),-2.5,hk>0?1:0);
+    [wx,wy,wr]=shake(t3,1.05,26,.5);
+    $('s3cam').style.transform=`translate(${lerp(1000,0,enter)}px,0) scale(${lerp(1,1.07,t3/3.2)}) rotate(${lerp(-.6,.8,t3/3.2)}deg)`;
+    $('flash').style.opacity=eIn(p(t3,2.9,3.2))*.95;
+  }
+
+  // ---------- 4 · Himalaya ----------
+  else if(sc===4){
+    const t4=t-S[3][0], u=t4/4.4;
+    $('flash').style.opacity=.95*(1-eOut(p(t4,0,.5)));
+    tf($('s4bg'),lerp(-200,-520,u),-30,lerp(1.02,1.1,u));
+    tf($('s4rays'),lerp(-60,60,u),0,1.1,lerp(-3,3,u),.55+.15*Math.sin(t4*1.7));
+    tf($('s4fog1'),lerp(-500,-1300,u),0,1);
+    tf($('s4fr'),lerp(-250,-1050,u),-170,1.04);
+    tf($('s4fog2'),lerp(-300,-1700,u),0,1);
+    const a=1-Math.pow(1-p(t4,.9,2.6),3);
+    $('s4alt').setAttribute('y2',960-a*660);
+    document.querySelectorAll('#s4ticks .tk').forEach(e=>e.setAttribute('opacity',a*12>=+e.dataset.i?1:0));
+    $('s4num').textContent=Math.round(a*5000).toLocaleString('es-CO');
+    $('s4num').style.transform=`scale(${t4>2.6?1+.06*Math.exp(-(t4-2.6)*9):1})`;
+    $('s4num').style.filter=t4>2.6?`drop-shadow(0 0 ${lerp(30,8,p(t4,2.6,3.4))}px rgba(92,242,154,.5))`:'none';
+    typed($('s4m'),'METROS',t4,2.6,3.0);
+    const tg=spring(p(twos(t4),.35,.85),2.4,6.5);
+    tf($('s4tag'),lerp(-700,90,tg),820,1,lerp(-6,-1.5,tg),tg>0?1:0);
+    typed($('s4txt'),'HIMALAYA',t4,.6,1.2);
+    // anillo verde que anuncia el círculo del lago
+    const rk=eBack(p(t4,3.75,4.05)), rs=lerp(1,.6,eInExpo(p(t4,4.15,4.4)));
+    $('s4ring').setAttribute('transform',`translate(1250 560) scale(${rk*rs})`);$('s4ring').setAttribute('opacity',t4>3.75?1:0);
+    ws=1+.25*eInExpo(p(t4,4.0,4.4));
+  }
+
+  // ---------- 5 · Lago en el círculo ----------
+  else if(sc===5){
+    const t5=t-S[4][0];
+    tf($('s5plate'),lerp(-60,-120,t5/3.6),-60,lerp(1.1,1.16,t5/3.6));
+    const open=eExpo(p(t5,0,.75)), close=eInExpo(p(t5,3.15,3.35));
+    const r=lerp(24,300,open)*(1-close)+t5*6*(1-close);
+    $('s5iris').style.clipPath=`circle(${Math.max(0,r)}px at 1250px 560px)`;
+    $('s5img').style.transformOrigin='1250px 760px';
+    tf($('s5img'),lerp(-150,-210,t5/3.6),lerp(-330,-380,t5/3.6),lerp(1.15,1.32,t5/3.6));
+    $('s5c').setAttribute('r',Math.max(0,r+6));
+    $('s5ring').setAttribute('transform',`translate(1250 560) rotate(${t5*14}) scale(${Math.max(0,(r+6)/286)})`);
+    $('s5ring').setAttribute('opacity',r>2?1:0);
+    reveal($('s5a'),t5,1.0);reveal($('s5b'),t5,1.7,.65);
+    ws=1+.03*t5/3.6;
+    $('black').style.opacity=t5>3.35?1:0;
+  }
+
+  // ---------- 6 · Cráneo ----------
+  else if(sc===6){
+    const t6=t-S[5][0];
+    tf($('s6plate'),lerp(-40,-110,t6/3),-60,lerp(1.12,1.2,t6/3));
+    const k=p(t6,0,.09), s=k<1?lerp(1.45,1,eOut(k)):1+.012*Math.sin(t6*2.4);
+    tf($('s6skull'),210,40,s*.72,-4+.6*Math.sin(t6*1.7),1);
+    const b=spring(p(twos(t6),.2,.75),2.2,6);
+    tf($('s6foto'),lerp(-900,-40,b),lerp(420,500,b),.5,lerp(-22,-9,b),b>0?1:0);
+    reveal($('s6a'),t6,.7);reveal($('s6b'),t6,1.1,.5);
+    [wx,wy,wr]=shake(t6,0,34,.55);let[x2,y2]=shake(t6,1.1,10,.3);wx+=x2;wy+=y2;
+    ws=1+.025*t6/3;
+    $('s6glow').style.opacity=.75+.25*Math.sin(t6*3.1);
+  }
+
+  // ---------- 7 · Logo ----------
+  else if(sc===7){
+    const t7=t-S[6][0];
+    tf($('s7plate'),-60,-40,1.1+.03*t7);
+    $('s7ring').setAttribute('stroke-dashoffset',2074*(1-eInOut(p(t7,.05,.7))));
+    $('s7ring2').setAttribute('transform',`rotate(${t7*-12} 960 500)`);
+    $('s7ring3').setAttribute('opacity',p(t7,.3,.8));
+    [...$('s7logo').children].forEach((sp,i)=>{const a=.5+i*.022,k=eExpo(p(t7,a,a+.45));
+      sp.style.transform=`translateY(${(1-k)*60}px) scale(${lerp(1.6,1,k)})`;sp.style.opacity=k;sp.style.filter=`blur(${(1-k)*12}px)`});
+    const st=t7>.9?1+.05*Math.exp(-(t7-.9)*9):1;$('s7logo').style.transform=`scale(${st})`;
+    $('s7logo').style.textShadow=(t7>.9?`0 0 ${lerp(50,14,p(t7,.9,1.8))}px rgba(92,242,154,.45),`:'')+'0 0 28px #07040c,0 0 50px #07040c';
+    const sh=eInOut(p(t7,1.35,2.05));tf($('s7shine'),lerp(180,1520,sh),0,1,0,sh>0&&sh<1?1:0,'skewX(-18deg)');
+    const g=spring(p(twos(t7),1.55,2.05),2.4,6.5);
+    tf($('s7tag'),701,lerp(1200,640,g),1,lerp(10,2,g),g>0?1:0);
+    [wx,wy,wr]=shake(t7,.9,16,.35);
+    ws=1+.012*t7;
+    $('black').style.opacity=p(t,24.0,24.5);
+  }
+
+  // cámara global, golpes y aberración de color
+  $('world').style.transform=`translate(${wx}px,${wy}px) rotate(${wr}deg) scale(${ws})`;
+  const hk=hitK(t);
+  if(hk>.02){$('caR').setAttribute('dx',(14*hk).toFixed(1));$('caB').setAttribute('dx',(-14*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';
+  $('flash').style.opacity=Math.max(+$('flash').style.opacity,hk*.55);
+  leaks(t,sc,hk);particles(t,sc);filmFX(t);
+}
+
+function leaks(t,sc,hk){
+  const a=t*.35, g=.18+.12*Math.sin(t*.9)+hk*.4, pu=.22+.1*Math.cos(t*.7)+hk*.3;
+  $('leak').style.background=`radial-gradient(ellipse 700px 900px at ${-5+12*Math.sin(a)}% ${30+20*Math.cos(a*.8)}%,rgba(92,242,154,${g}),transparent 65%),radial-gradient(ellipse 800px 700px at ${100-10*Math.cos(a*1.2)}% ${70+15*Math.sin(a)}%,rgba(176,107,255,${pu}),transparent 65%)`;
+  $('leak').style.opacity=sc===5?.6:1;
+}
+
+// polvo flotante (todas las escenas) y nieve con viento (Himalaya)
+const DUST=Array.from({length:90},(_,i)=>{const R=rnd(i*977+5);return{x:R()*1920,y:R()*1080,z:.3+R()*1.4,vx:(R()-.5)*14,vy:-4-R()*10,ph:R()*6.28}});
+const SNOW=Array.from({length:260},(_,i)=>{const R=rnd(i*331+9);return{x:R()*2400,y:R()*1200,z:.4+R()*1.6,ph:R()*6.28}});
+function particles(t,sc){
+  const c=$('parts').getContext('2d');c.clearRect(0,0,1920,1080);
+  for(const d of DUST){let x=((d.x+d.vx*t*d.z+12*Math.sin(t*.6+d.ph))%1920+1920)%1920,y=((d.y+d.vy*t*d.z)%1080+1080)%1080;
+    const r=d.z*1.8, al=(.25+.25*Math.sin(t*1.3+d.ph))*(d.z>1.2?.5:1);
+    const g=c.createRadialGradient(x,y,0,x,y,r*(d.z>1.2?5:2.2));g.addColorStop(0,`rgba(225,215,255,${al})`);g.addColorStop(1,'rgba(225,215,255,0)');c.fillStyle=g;c.beginPath();c.arc(x,y,r*(d.z>1.2?5:2.2),0,7);c.fill()}
+  if(sc===4){const t4=t-10.4;for(const s of SNOW){const sp=420*s.z;let x=((s.x-sp*t4*1.1)%2400+2400)%2400-240,y=((s.y+sp*t4*.45+30*Math.sin(t4*2+s.ph))%1200+1200)%1200-60;
+    c.strokeStyle=`rgba(235,230,255,${.25+.35*(s.z/2)})`;c.lineWidth=s.z*1.6;c.lineCap='round';c.beginPath();c.moveTo(x,y);c.lineTo(x+sp*.022,y-sp*.009);c.stroke()}}
+}
+function filmFX(t){
+  const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*7919+13);c.clearRect(0,0,1920,1080);
+  if(R()<.35){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.05+R()*.1})`;c.lineWidth=R()+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*4-2,1080);c.stroke()}
+  for(let i=0;i<6;i++){const x=R()*1920,y=R()*1080,r=R()*1.8+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  const fl=.03*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080);
+}
+window.render=render;window.DUR=DUR;
+</script>
+</body></html>
