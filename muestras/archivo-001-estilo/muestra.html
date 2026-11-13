@@ -1,0 +1,321 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bebas;src:url(fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:Play;src:url(fonts/PlayfairDisplaywght.ttf)}
+@font-face{font-family:PlayI;src:url(fonts/PlayfairDisplay-Italicwght.ttf);font-style:italic}
+@font-face{font-family:Typer;src:url(fonts/CourierPrime-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(fonts/CourierPrime-Bold.ttf)}
+:root{--ink:#0b0612;--pd:#2a1240;--p:#7046b2;--cream:#e9e1cc;--green:#5cf29a;--news:#d6ceba}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:var(--ink)}
+#stage{position:absolute;inset:0;overflow:hidden;background:var(--ink)}
+.scene{position:absolute;inset:0;display:none;overflow:hidden}
+.abs{position:absolute;left:0;top:0;transform-origin:center center;will-change:transform}
+.piece{filter:drop-shadow(3px 4px 0 rgba(0,0,0,.55)) drop-shadow(10px 16px 18px rgba(0,0,0,.6))}
+.mesa{position:absolute;inset:0;background:url(assets/mesa.jpg) center/cover}
+.typer{font-family:Typer;color:var(--ink);font-size:46px;letter-spacing:2px;white-space:pre}
+.cap{font-family:Typer;font-size:15px;color:rgba(233,225,204,.55);letter-spacing:1px}
+.big{font-family:Bebas;color:var(--cream);line-height:.9}
+.ph{font-family:Play;color:var(--cream);font-weight:400}
+.phi{font-family:PlayI;font-style:italic;color:var(--green);font-weight:500}
+.mask{overflow:hidden;display:inline-block;vertical-align:bottom}
+.mask>span{display:inline-block}
+#fx{position:absolute;inset:0;pointer-events:none}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 45%,rgba(5,0,12,.55) 80%,rgba(3,0,8,.9) 100%)}
+#tint{position:absolute;inset:0;pointer-events:none;mix-blend-mode:soft-light;background:linear-gradient(180deg,rgba(112,70,178,.25),rgba(30,90,60,.18))}
+#flash{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
+</style></head>
+<body>
+<div id="stage">
+  <div id="world" class="abs" style="width:1920px;height:1080px">
+
+  <!-- 1 · AÑO 1942 -->
+  <div class="scene" id="s1">
+    <div class="mesa" style="filter:brightness(.6)"></div>
+    <svg class="abs" id="s1ring" width="1920" height="1080" viewBox="0 0 1920 1080">
+      <g id="s1rg" transform="translate(960 520)">
+        <circle r="330" fill="none" stroke="rgba(233,225,204,.12)" stroke-width="2"/>
+        <circle r="250" fill="none" stroke="rgba(233,225,204,.08)" stroke-width="1"/>
+        <line x1="-420" y1="0" x2="420" y2="0" stroke="rgba(233,225,204,.08)"/>
+        <line x1="0" y1="-420" x2="0" y2="420" stroke="rgba(233,225,204,.08)"/>
+        <path id="s1sweep" fill="rgba(112,70,178,.18)"/>
+      </g>
+    </svg>
+    <svg class="abs" width="1920" height="1080"><line id="s1line" x1="160" y1="700" x2="160" y2="700" stroke="#5cf29a" stroke-width="4"/><circle id="s1dot" cx="160" cy="700" r="0" fill="#5cf29a"/></svg>
+    <div class="abs typer" id="s1ano" style="left:0;width:1920px;text-align:center;top:330px;color:var(--cream);font-size:40px;letter-spacing:10px"></div>
+    <div class="abs big" id="s1num" style="left:0;top:385px;width:1920px;text-align:center;font-size:340px">1900</div>
+  </div>
+
+  <!-- 2 · NORTE DE LA INDIA -->
+  <div class="scene" id="s2">
+    <div class="mesa"></div>
+    <div class="abs" id="s2cam" style="width:1920px;height:1080px">
+      <div class="abs piece" id="s2map" style="width:1008px;height:1187px">
+        <img src="assets/mapa.png" style="width:1008px;height:1187px;display:block">
+        <svg class="abs" width="1008" height="1187" style="overflow:visible">
+          <g id="s2pin" transform="translate(372 264)">
+            <circle r="34" fill="none" stroke="#5cf29a" stroke-width="5"/>
+            <circle id="s2pulse" r="34" fill="none" stroke="#5cf29a" stroke-width="2"/>
+            <circle r="7" fill="#5cf29a"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="abs piece" id="s2tag" style="width:802px;height:144px">
+      <img src="assets/tira.png" style="width:802px;height:144px">
+      <div class="abs typer" id="s2txt" style="left:50px;top:46px"></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1030px">MAPA: IMPERIAL GAZETTEER OF INDIA, 1909</div>
+  </div>
+
+  <!-- 3 · EL MUNDO ESTÁ EN GUERRA -->
+  <div class="scene" id="s3">
+    <div class="mesa"></div>
+    <div class="abs" id="s3cam" style="width:1920px;height:1080px">
+      <img class="abs piece" id="s3p0" src="assets/periodico_0.png">
+      <img class="abs piece" id="s3p1" src="assets/periodico_1.png">
+      <img class="abs piece" id="s3p2" src="assets/periodico_2.png">
+      <div class="abs piece" id="s3head" style="width:1282px;height:272px">
+        <img src="assets/papel_titular.png" style="width:1282px;height:272px">
+        <div class="abs big" style="left:0;top:62px;width:1282px;text-align:center;white-space:nowrap;font-size:150px;color:#5cf29a;opacity:.85;transform:translate(7px,6px)">EL MUNDO ESTÁ EN GUERRA</div>
+        <div class="abs big" style="left:0;top:62px;width:1282px;text-align:center;white-space:nowrap;font-size:150px;color:#1d0b30">EL MUNDO ESTÁ EN GUERRA</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 · HIMALAYA, 5.000 METROS -->
+  <div class="scene" id="s4">
+    <img class="abs" id="s4bg" src="assets/montana_fondo.jpg" style="width:2600px;height:1097px">
+    <div class="abs" id="s4fog1" style="width:3000px;height:500px;top:430px;background:radial-gradient(ellipse at 30% 50%,rgba(150,120,200,.35),transparent 60%),radial-gradient(ellipse at 75% 60%,rgba(150,120,200,.28),transparent 55%);filter:blur(30px)"></div>
+    <img class="abs" id="s4fr" src="assets/montana_frente.png" style="width:3000px;height:1266px">
+    <div class="abs" id="s4fog2" style="width:3200px;height:420px;top:760px;background:radial-gradient(ellipse at 20% 50%,rgba(40,20,70,.7),transparent 60%),radial-gradient(ellipse at 65% 40%,rgba(60,30,90,.6),transparent 60%);filter:blur(24px)"></div>
+    <svg class="abs" width="1920" height="1080">
+      <line id="s4alt" x1="1700" y1="980" x2="1700" y2="980" stroke="#5cf29a" stroke-width="3"/>
+      <g id="s4ticks"></g>
+    </svg>
+    <div class="abs big" id="s4num" style="left:1000px;top:300px;width:660px;text-align:right;font-size:230px"></div>
+    <div class="abs typer" id="s4m" style="left:1000px;top:520px;width:660px;text-align:right;color:var(--cream);font-size:38px;letter-spacing:12px"></div>
+    <div class="abs piece" id="s4tag" style="width:582px;height:144px">
+      <img src="assets/tira_corta.png" style="width:582px;height:144px">
+      <div class="abs typer" id="s4txt" style="left:50px;top:46px"></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1030px">FOTO: TRISUL, HIMALAYA · WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 5 · Y EN EL FONDO HAY ALGO -->
+  <div class="scene" id="s5">
+    <div class="abs" id="s5iris" style="width:1920px;height:1080px">
+      <img class="abs" id="s5img" src="assets/lago_duo.jpg" style="width:1920px;height:1285px">
+      <div class="abs" style="width:1920px;height:1080px;background:radial-gradient(circle at 1240px 560px,rgba(92,242,154,.0) 0,rgba(92,242,154,.16) 180px,rgba(0,0,0,0) 420px);mix-blend-mode:screen"></div>
+    </div>
+    <svg class="abs" width="1920" height="1080">
+      <g id="s5ring" transform="translate(1240 560)">
+        <circle id="s5c" r="0" fill="none" stroke="#5cf29a" stroke-width="3"/>
+        <g id="s5tk"></g>
+      </g>
+    </svg>
+    <div class="abs" style="left:120px;top:380px">
+      <div class="ph" style="font-size:92px"><span class="mask"><span id="s5a">Y en el fondo</span></span></div>
+      <div class="phi" style="font-size:150px;margin-top:-10px"><span class="mask"><span id="s5b">hay algo.</span></span></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1030px">FOTO: LAGO ROOPKUND · WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 6 · SON HUESOS -->
+  <div class="scene" id="s6">
+    <div class="mesa" style="filter:brightness(.55)"></div>
+    <div class="abs" style="width:1920px;height:1080px;background:radial-gradient(circle at 640px 540px,rgba(92,242,154,.16),rgba(112,70,178,.12) 320px,transparent 620px)"></div>
+    <img class="abs piece" id="s6bones" src="assets/huesos_trama.png" style="width:760px">
+    <img class="abs piece" id="s6skull" src="assets/craneo.png" style="height:760px">
+    <div class="abs" style="left:1130px;top:400px">
+      <div class="ph" style="font-size:110px"><span class="mask"><span id="s6a">Son</span></span></div>
+      <div class="phi" style="font-size:190px;margin-top:-30px"><span class="mask"><span id="s6b">huesos.</span></span></div>
+    </div>
+    <div class="abs cap" style="left:60px;top:1030px">GRABADO: W. MILLER (DOMINIO PÚBLICO) · FOTO: WIKIMEDIA COMMONS (CC BY-SA)</div>
+  </div>
+
+  <!-- 7 · LOGO -->
+  <div class="scene" id="s7">
+    <div class="mesa" style="filter:brightness(.7)"></div>
+    <svg class="abs" width="1920" height="1080">
+      <circle id="s7ring" cx="960" cy="500" r="300" fill="none" stroke="#5cf29a" stroke-width="5" stroke-dasharray="1885" stroke-dashoffset="1885" transform="rotate(-90 960 500)"/>
+      <circle id="s7ring2" cx="960" cy="500" r="318" fill="none" stroke="rgba(92,242,154,.35)" stroke-width="1.5" stroke-dasharray="6 10"/>
+    </svg>
+    <svg class="abs" id="s7logo" width="1920" height="1080" style="overflow:visible">
+      <defs><filter id="gr" x="-5%" y="-20%" width="110%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="4" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.1 1.55" result="m"/>
+        <feComposite in="SourceGraphic" in2="m" operator="in"/></filter></defs>
+      <text x="960" y="545" text-anchor="middle" font-family="Bebas" font-size="150" fill="#e9e1cc" filter="url(#gr)">ARCHIVOS INEXPLICABLES</text>
+    </svg>
+    <div class="abs piece" id="s7tag" style="width:582px;height:144px">
+      <img src="assets/tira_corta.png" style="width:582px;height:144px">
+      <div class="abs typer" style="left:0;top:44px;width:582px;text-align:center">ARCHIVO <span style="font-family:TyperB;color:#1d7a4a">001</span></div>
+    </div>
+  </div>
+
+  </div>
+  <canvas id="fx" width="1920" height="1080"></canvas>
+  <div id="tint"></div>
+  <div id="vig"></div>
+  <div id="flash"></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const lerp=(a,b,t)=>a+(b-a)*t;
+const p=(t,a,b)=>clamp((t-a)/(b-a));                    // progreso 0..1 entre a y b
+const eOut=x=>1-Math.pow(1-x,3);
+const eExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
+const eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const twos=t=>Math.floor(t*12)/12;                       // movimiento de recorte "a saltos" (12 cuadros/s)
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function tf(el,x,y,s=1,r=0,o=1){el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s})`;el.style.opacity=o}
+function typed(el,text,t,a,b){const n=Math.floor(clamp((t-a)/(b-a))*text.length);el.textContent=text.slice(0,n)}
+function shake(t,t0,amp=18,dur=.35){if(t<t0||t>t0+dur)return[0,0];const k=1-(t-t0)/dur;return[Math.sin((t-t0)*95)*amp*k,Math.cos((t-t0)*70)*amp*.6*k]}
+function reveal(el,t,a,dur=.45){const k=eExpo(p(t,a,a+dur));el.style.transform=`translateY(${(1-k)*105}%)`}
+
+// Tiempos de cada escena (segundos)
+const S=[[0,3.6],[3.6,7.4],[7.4,10.8],[10.8,15.4],[15.4,18.8],[18.8,21.6],[21.6,24.5]];
+const DUR=24.5;
+
+// marcas del altímetro y del anillo del lago
+(function(){
+  let g=$('s4ticks'),h='';for(let i=0;i<=10;i++){const y=980-i*62;h+=`<line x1="1700" y1="${y}" x2="${i%5?1716:1730}" y2="${y}" stroke="#5cf29a" stroke-width="2" class="tk" data-i="${i}" opacity="0"/>`}g.innerHTML=h;
+  let k=$('s5tk'),q='';for(let i=0;i<72;i++){const a=i*5*Math.PI/180,r1=i%6?262:250,r2=272;q+=`<line x1="${Math.cos(a)*r1}" y1="${Math.sin(a)*r1}" x2="${Math.cos(a)*r2}" y2="${Math.sin(a)*r2}" stroke="#5cf29a" stroke-width="${i%6?1.5:3}"/>`}k.innerHTML=q;
+})();
+
+function render(t){
+  // escena visible
+  S.forEach((r,i)=>{$('s'+(i+1)).style.display=(t>=r[0]&&t<r[1])?'block':'none'});
+  let [sx,sy]=[0,0];
+
+  // 1 · AÑO 1942: línea que se dibuja, contador de años, anillo de película
+  if(t<S[0][1]){
+    const l=eExpo(p(t,.25,1.1));$('s1line').setAttribute('x2',lerp(160,1760,l));
+    $('s1dot').setAttribute('cx',lerp(160,1760,l));$('s1dot').setAttribute('r',l>0&&l<1?9:(l>=1?9:0));
+    typed($('s1ano'),'AÑO',t,.35,.75);
+    const c=eOut(p(t,.7,2.0));$('s1num').textContent=Math.round(lerp(1900,1942,c));
+    const punch=t>2.0?1+.06*Math.exp(-(t-2.0)*9):1;
+    tf($('s1num'),0,0,punch*(1+.02*t));
+    $('s1num').style.color=t>2.0?'#e9e1cc':'rgba(233,225,204,.85)';
+    const ang=(t*140)%360,a=ang*Math.PI/180;
+    $('s1sweep').setAttribute('d',`M0 0 L330 0 A330 330 0 ${ang>180?1:0} 1 ${330*Math.cos(a)} ${330*Math.sin(a)} Z`);
+    $('s1rg').setAttribute('transform',`translate(960 520) scale(${1+.03*t})`);
+    $('world').style.transform=`scale(${1+.015*t})`;
+  }
+
+  // 2 · Mapa que entra, la cámara se acerca al norte y aparece el pin de Roopkund
+  else if(t<S[1][1]){
+    const t2=t-S[1][0], tt=twos(t2);
+    const k=eBack(p(tt,0,.75));
+    const mx=lerp(2100,456,k), my=lerp(-80,-60,k), rot=lerp(-12,-2.5,k);
+    tf($('s2map'),mx,my,.88,rot);
+    // cámara: acercamiento al pin
+    const z=eInOut(p(t2,1.0,3.8)), s=lerp(1,1.9,z);
+    // pin en coordenadas de la escena (aprox.): mapa en (456,-60) escala .88
+    const px=456+504+(372-504)*.88, py=-60+593+(264-593)*.88;
+    $('s2cam').style.transformOrigin=`${px}px ${py}px`;
+    $('s2cam').style.transform=`translate(${lerp(0,960-px,z)}px,${lerp(0,470-py,z)}px) scale(${s})`;
+    const pk=eBack(p(t2,1.6,2.0));
+    $('s2pin').setAttribute('transform',`translate(372 264) scale(${pk})`);
+    const pu=((t2-1.6)%1.1)/1.1;$('s2pulse').setAttribute('r',34+pu*50);$('s2pulse').setAttribute('opacity',t2>1.6?1-pu:0);
+    const tg=eBack(p(twos(t2),1.8,2.3));
+    tf($('s2tag'),lerp(-900,110,tg),790,1,lerp(-8,2,tg));
+    typed($('s2txt'),'NORTE DE LA INDIA',t2,2.2,3.0);
+  }
+
+  // 3 · Recortes de periódico que caen y titular que golpea
+  else if(t<S[2][1]){
+    const t3=t-S[2][0];
+    const drop=(el,a,x,y,r,w)=>{const k=eBack(p(twos(t3),a,a+.35));el.style.width=w+'px';
+      tf(el,x,lerp(y-700,y,k),lerp(1.15,1,k),lerp(r-14,r,k),k>0?1:0)};
+    drop($('s3p0'),0.05,150,70,-6,640);
+    drop($('s3p1'),0.30,1120,120,5,650);
+    drop($('s3p2'),0.55,560,560,-2,780);
+    const hk=p(t3,1.2,1.42), hs=hk<1?lerp(1.7,1,eOut(hk)):1;
+    tf($('s3head'),319,370,hs,-2,hk>0?1:0);
+    [sx,sy]=shake(t3,1.42,22,.4);
+    $('s3cam').style.transform=`scale(${1+.018*t3}) translate(${-6*t3}px,0)`;
+    $('world').style.transform=`translate(${sx}px,${sy}px)`;
+  }
+
+  // 4 · Himalaya con capas (paralaje) y altímetro que sube hasta 5.000 m
+  else if(t<S[3][1]){
+    const t4=t-S[3][0];
+    tf($('s4bg'),lerp(-120,-420,t4/4.6),-10,1);
+    tf($('s4fog1'),lerp(-400,-900,t4/4.6),0,1);
+    tf($('s4fr'),lerp(-150,-900,t4/4.6),-180,1);
+    tf($('s4fog2'),lerp(-200,-1300,t4/4.6),0,1);
+    const a=eOut(p(t4,.9,2.7));
+    $('s4alt').setAttribute('y2',980-a*620);
+    document.querySelectorAll('#s4ticks .tk').forEach(e=>e.setAttribute('opacity',a*10>=+e.dataset.i?1:0));
+    $('s4num').textContent=Math.round(a*5000).toLocaleString('es-CO');
+    tf($('s4num'),0,0,t4>2.7?1+.05*Math.exp(-(t4-2.7)*9):1);
+    typed($('s4m'),'METROS',t4,2.7,3.1);
+    const tg=eBack(p(twos(t4),.3,.75));
+    tf($('s4tag'),lerp(-700,110,tg),820,1,lerp(-6,-1.5,tg));
+    typed($('s4txt'),'HIMALAYA',t4,.7,1.3);
+    $('world').style.transform='none';
+  }
+
+  // 5 · El lago en un círculo (la forma que se repite) y la frase
+  else if(t<S[4][1]){
+    const t5=t-S[4][0];
+    const r=lerp(0,300,eExpo(p(t5,.05,.9)))+t5*8;
+    $('s5iris').style.clipPath=`circle(${r}px at 1240px 560px)`;
+    tf($('s5img'),lerp(-120,-200,t5/3.4),lerp(-330,-380,t5/3.4),lerp(1.05,1.18,t5/3.4));
+    $('s5img').style.transformOrigin='1240px 760px';
+    $('s5c').setAttribute('r',r+6);
+    $('s5ring').setAttribute('transform',`translate(1240 560) rotate(${t5*12}) scale(${(r+6)/262})`);
+    $('s5tk').setAttribute('opacity',p(t5,.6,1.0));
+    reveal($('s5a'),t,S[4][0]+1.1);reveal($('s5b'),t,S[4][0]+1.9,.55);
+    $('flash').style.opacity=t5>3.2?1:0;   // corte a negro (silencio) antes del golpe
+  }
+
+  // 6 · Golpe: el cráneo y "Son huesos."
+  else if(t<S[5][1]){
+    const t6=t-S[5][0];
+    $('flash').style.opacity=0;
+    const k=p(t6,0,.16), s=k<1?lerp(1.5,1,eOut(k)):1;
+    tf($('s6skull'),330,150,s*(1+.012*t6),-4,k>0?1:0);
+    const b=eBack(p(twos(t6),.2,.55));
+    tf($('s6bones'),lerp(-400,60,b),lerp(80,120,b),1,lerp(-20,-9,b),b>0?1:0);
+    reveal($('s6a'),t,S[5][0]+.75);reveal($('s6b'),t,S[5][0]+1.15,.4);
+    let [a1,a2]=shake(t6,0,26,.35),[b1,b2]=shake(t6,1.15,12,.3);
+    $('world').style.transform=`translate(${a1+b1}px,${a2+b2}px)`;
+  }
+
+  // 7 · Logo con anillo que se dibuja y sello
+  else{
+    const t7=t-S[6][0];
+    $('s7ring').setAttribute('stroke-dashoffset',1885*(1-eInOut(p(t7,.05,.75))));
+    $('s7ring2').setAttribute('transform',`rotate(${t7*-10} 960 500)`);
+    const k=p(t7,.55,.72), s=k<1?lerp(1.45,1,eOut(k)):1;
+    $('s7logo').style.transformOrigin='960px 500px';tf($('s7logo'),0,0,s,-2,k>0?1:0);
+    const g=eBack(p(twos(t7),1.2,1.55));
+    tf($('s7tag'),669,lerp(1200,640,g),1,lerp(10,2,g),g>0?1:0);
+    let [a1,a2]=shake(t7,.72,16,.3);
+    $('world').style.transform=`translate(${a1}px,${a2}px) scale(${1+.01*t7})`;
+    $('flash').style.opacity=p(t,24.0,24.5);
+  }
+
+  filmFX(t);
+}
+
+// Rayas, polvo y parpadeo de película vieja (se dibuja cada cuadro con semilla fija)
+function filmFX(t){
+  const c=$('fx').getContext('2d'),f=Math.floor(t*30),R=rnd(f*7919+13);
+  c.clearRect(0,0,1920,1080);
+  const n=R()<.5?1:(R()<.6?2:0);
+  for(let i=0;i<n;i++){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.08+R()*.18})`;c.lineWidth=R()*1.6+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*6-3,1080);c.stroke()}
+  for(let i=0;i<14;i++){const x=R()*1920,y=R()*1080,r=R()*2.4+.4;c.fillStyle=R()<.7?`rgba(0,0,0,${.35+R()*.4})`:`rgba(233,225,204,${.25+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  if(R()<.12){const x=R()*1920,y=R()*1080;c.strokeStyle='rgba(0,0,0,.5)';c.lineWidth=1.2;c.beginPath();c.moveTo(x,y);c.bezierCurveTo(x+R()*40,y+R()*30,x-R()*30,y+R()*60,x+R()*20,y+R()*90);c.stroke()}
+  const fl=.035*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,220,${fl})`:`rgba(0,0,0,${-fl*1.5})`;c.fillRect(0,0,1920,1080);
+  const wx=(R()-.5)*2.2,wy=(R()-.5)*2.2;$('stage').style.transform=`translate(${wx}px,${wy}px)`;
+}
+window.render=render;window.DUR=DUR;
+</script>
+</body></html>

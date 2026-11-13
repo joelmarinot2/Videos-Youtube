@@ -127,6 +127,16 @@ TikToks de técnicas (ya analizados, transcritos):
 - No existían skills de edición de video guardadas (se revisó el 2026-11-13). Cuando la identidad
   quede definida, guardarla como skill para que no se pierda.
 
+## Muestra de estilo (2026-11-13)
+
+`muestras/muestra-archivo-001.mp4` (24,5 s, sin voz): inicio del bloque 1 con el estilo propuesto.
+Cómo se hizo (en `muestras/archivo-001-estilo/`): `hornear.py` prepara los recortes (duotono morado/crema,
+trama de puntos, borde de papel rasgado) desde fotos de Wikimedia; `muestra.html` anima cada escena en
+función del tiempo; `capturar.js` saca los cuadros con Playwright; `sonido.py` genera el sonido (viento,
+proyector, papel, máquina de escribir, golpes, silencio antes del golpe). Colores: fondo #0b0612,
+morado #7046b2 / #2a1240, crema #e9e1cc, verde #5cf29a. Letras: Bebas Neue, Playfair Display (cursiva para
+la palabra clave, en verde), Courier Prime. Pendiente: la opinión del dueño.
+
 ## Estado
 
 - [ ] Audio del video 1 (pendiente que el dueño lo envíe)
