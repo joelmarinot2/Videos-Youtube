@@ -135,7 +135,20 @@ trama de puntos, borde de papel rasgado) desde fotos de Wikimedia; `muestra.html
 función del tiempo; `capturar.js` saca los cuadros con Playwright; `sonido.py` genera el sonido (viento,
 proyector, papel, máquina de escribir, golpes, silencio antes del golpe). Colores: fondo #0b0612,
 morado #7046b2 / #2a1240, crema #e9e1cc, verde #5cf29a. Letras: Bebas Neue, Playfair Display (cursiva para
-la palabra clave, en verde), Courier Prime. Pendiente: la opinión del dueño.
+la palabra clave, en verde), Courier Prime.
+
+**Opinión del dueño sobre la v1:** NO le gustaron (1) los efectos de sonido generados por computador,
+(2) se veía "muy soso", (3) los recortes no se veían pulidos. Lecciones:
+- Sonido: usar efectos REALES grabados, nunca sintetizados. Fuente que funciona desde aquí: Mixkit
+  (assets.mixkit.co/active_storage/sfx/ID/ID-preview.mp3; licencia libre para videos). Freesound bloquea
+  la descarga (403). Earshot no se pudo instalar (el sistema bloqueó ejecutar código externo).
+- Nada de fondos planos u oscuros vacíos: cada escena lleva capas (fondo de color que se mueve, foto
+  desenfocada de fondo, piezas, partículas, destellos de luz, viñeta y grano).
+- Bordes de recortes con campo de distancia (sin dientes), fotos como impresión con borde blanco limpio.
+- Golpes con aberración de color, destello y temblor; desenfoque de movimiento (render a 60 cuadros/s y
+  mezclar de a 2); cámara 3D sobre el mapa; hilo verde que une pistas; transiciones con barrido.
+
+v2: `muestras/muestra-archivo-001-v2.mp4`, hecha con `hornear2.py`, `muestra2.html`, `sonido2.py`.
 
 ## Estado
 
