@@ -1,0 +1,132 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bebas;src:url(fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:Typer;src:url(fonts/CourierPrime-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c}
+#stage{position:absolute;inset:0;overflow:hidden}
+#mesh{position:absolute;inset:-60px}
+.abs{position:absolute;left:0;top:0;transform-origin:center center}
+.pc{filter:drop-shadow(2px 3px 0 rgba(10,4,18,.55)) drop-shadow(14px 22px 26px rgba(4,0,10,.75))}
+.av{filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(16px 24px 30px rgba(4,0,10,.8));transform-origin:50% 100%}
+.typer{font-family:Typer;color:#140a20;font-size:44px;letter-spacing:3px;white-space:pre}
+.big{font-family:Bebas;color:#ece5d2;line-height:1}
+#parts,#fx{position:absolute;inset:0;pointer-events:none}
+#leak{position:absolute;inset:-100px;pointer-events:none;mix-blend-mode:screen}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 50%,rgba(6,0,14,.5) 82%,rgba(3,0,8,.88) 100%)}
+#flash{position:absolute;inset:0;background:#efe6ff;pointer-events:none;opacity:0;mix-blend-mode:screen}
+#black{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="ca" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+    <feOffset id="caR" in="r" dx="0" result="r2"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb"/>
+    <feOffset id="caB" in="gb" dx="0" result="gb2"/>
+    <feBlend in="r2" in2="gb2" mode="screen"/>
+  </filter>
+</svg>
+<div id="stage">
+ <div id="world" class="abs" style="width:1920px;height:1080px">
+  <div id="mesh"></div>
+  <img class="abs" id="plate" src="assets2/plate_mapa.jpg" style="left:-140px;top:-80px;width:2200px;opacity:.3">
+  <div class="abs" id="glow" style="width:1920px;height:1080px;background:radial-gradient(circle at 560px 640px,rgba(92,242,154,.22),rgba(112,70,178,.14) 330px,transparent 640px);mix-blend-mode:screen"></div>
+  <!-- logo a la derecha -->
+  <svg class="abs" width="1920" height="1080">
+    <circle id="ring" cx="1300" cy="470" r="300" fill="none" stroke="#5cf29a" stroke-width="5" stroke-dasharray="1885" stroke-dashoffset="1885" transform="rotate(-90 1300 470)" style="filter:drop-shadow(0 0 12px rgba(92,242,154,.9))"/>
+    <circle id="ring2" cx="1300" cy="470" r="322" fill="none" stroke="rgba(92,242,154,.45)" stroke-width="1.5" stroke-dasharray="4 12" opacity="0"/>
+  </svg>
+  <div class="abs big" id="logo1" style="left:900px;top:330px;width:800px;text-align:center;font-size:150px;white-space:nowrap"></div>
+  <div class="abs big" id="logo2" style="left:900px;top:470px;width:800px;text-align:center;font-size:150px;white-space:nowrap;color:#5cf29a"></div>
+  <div class="abs pc" id="tag001"><img src="assets2/tira_corta.png" style="display:block"><div class="abs typer" style="left:0;top:56px;width:100%;text-align:center">ARCHIVO <span style="font-family:TyperB;color:#1d7a4a">001</span></div></div>
+  <!-- avatar: varias poses, se cambia una por otra -->
+  <img class="abs av" id="a1" src="avatar/retrato_1.png">
+  <img class="abs av" id="a2" src="avatar/pose_6.png">
+  <img class="abs av" id="a3" src="avatar/pose_3.png">
+  <div class="abs pc" id="nombre"><img src="assets2/tira.png" style="display:block;width:620px;height:136px"><div class="abs typer" id="nombretxt" style="left:52px;top:46px"></div></div>
+ </div>
+ <canvas id="parts" width="1920" height="1080"></canvas>
+ <div id="leak"></div>
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div id="vig"></div>
+ <div id="flash"></div>
+ <div id="black"></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lerp=(a,b,t)=>a+(b-a)*t, p=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eExpo=x=>x>=1?1:1-Math.pow(2,-10*x), eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const spring=(x,f=4.5,d=5)=>x<=0?0:1-Math.exp(-d*x)*Math.cos(f*Math.PI*x);
+const twos=t=>Math.floor(t*12)/12;
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function tf(el,x,y,s=1,r=0,o=1,extra=''){el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s}) ${extra}`;el.style.opacity=o}
+function typed(el,text,t,a,b){el.textContent=text.slice(0,Math.floor(clamp((t-a)/(b-a))*text.length))}
+function shake(t,t0,amp,dur){if(t<t0||t>t0+dur)return[0,0];const k=Math.pow(1-(t-t0)/dur,2);return[Math.sin((t-t0)*88)*amp*k,Math.cos((t-t0)*67)*amp*.7*k]}
+const DUR=6.5, HITS=[[3.0,1],[4.25,.7]];
+function hitK(t){let k=0;for(const[h,a]of HITS){if(t>=h&&t<h+.45)k=Math.max(k,a*Math.pow(1-(t-h)/.45,2))}return k}
+const L1='ARCHIVOS', L2='INEXPLICABLES';
+$('logo1').innerHTML=[...L1].map(c=>`<span style="display:inline-block">${c}</span>`).join('');
+$('logo2').innerHTML=[...L2].map(c=>`<span style="display:inline-block">${c}</span>`).join('');
+
+// tamaño de cada pose (se ajusta al cargar)
+const AV={a1:{h:1020,x:120},a2:{h:820,x:-10},a3:{h:860,x:120}};
+// qué pose se ve en cada momento (cambio seco, como recorte de papel)
+function poseAt(t){return t<2.15?'a1':(t<3.95?'a2':'a3')}
+
+function render(t){
+  const a=t*.25;
+  $('mesh').style.background=`radial-gradient(circle at ${50+30*Math.sin(a)}% ${40+25*Math.cos(a*1.3)}%,#3c1872 0,transparent 55%),radial-gradient(circle at ${60+30*Math.cos(a*.8)}% ${70+20*Math.sin(a*1.1)}%,#0e3a2b 0,transparent 50%),#0a0512`;
+  tf($('plate'),lerp(-40,-110,t/6.5),-40,lerp(1.08,1.14,t/6.5));
+  $('glow').style.opacity=.8+.2*Math.sin(t*2.7);
+  // avatar
+  const cur=poseAt(t);
+  for(const id of ['a1','a2','a3']){
+    const el=$(id), cfg=AV[id];
+    if(id!==cur){el.style.opacity=0;continue}
+    const w=el.naturalWidth*cfg.h/el.naturalHeight;
+    el.style.width=w+'px';el.style.height=cfg.h+'px';
+    const since=t-({a1:.25,a2:2.15,a3:3.95})[id];
+    let y=1080-cfg.h+80, sc=1, r=0;
+    if(id==='a1'){const k=spring(p(twos(t),.25,.95),2.3,6.5);y=lerp(1180,y,k);r=lerp(-8,0,k)}
+    else{const k=p(since,0,.12);sc=k<1?lerp(1.05,1,eOut(k)):1}
+    const breathe=1+.006*Math.sin(t*2.2), sway=.7*Math.sin(t*1.3);
+    tf(el,cfg.x,y,sc*breathe,r+sway,t<.25?0:1);
+  }
+  // nombre: "Soy Joel Marino"
+  const nk=spring(p(twos(t),.75,1.2),2.4,6.5);
+  tf($('nombre'),lerp(-800,700,nk),lerp(880,860,nk),1,lerp(-6,-2,nk),nk>0&&t<2.15?1:(t>=2.15?Math.max(0,1-p(t,2.15,2.3)*1):0),
+     t>=2.15?`translateX(${-eExpo(p(t,2.15,2.4))*900}px)`:'');
+  typed($('nombretxt'),'JOEL MARINO',t,1.0,1.6);
+  // logo
+  $('ring').setAttribute('stroke-dashoffset',1885*(1-eInOut(p(t,2.25,2.95))));
+  $('ring2').setAttribute('opacity',p(t,2.6,3.0));$('ring2').setAttribute('transform',`rotate(${t*-12} 1300 470)`);
+  [...$('logo1').children,...$('logo2').children].forEach((sp,i)=>{const s0=2.3+i*.03,k=eExpo(p(t,s0,s0+.45));
+    sp.style.transform=`translateY(${(1-k)*60}px) scale(${lerp(1.6,1,k)})`;sp.style.opacity=k;sp.style.filter=`blur(${(1-k)*12}px)`});
+  const st=t>3.0?1+.05*Math.exp(-(t-3.0)*9):1;
+  for(const id of ['logo1','logo2']){$(id).style.transform=`scale(${st})`;$(id).style.textShadow=(t>3?`0 0 ${lerp(50,14,p(t,3,3.8))}px rgba(92,242,154,.45),`:'')+'0 0 28px #07040c,0 0 50px #07040c'}
+  const g=spring(p(twos(t),4.05,4.5),2.4,6.5);
+  tf($('tag001'),1040,lerp(1200,640,g),1,lerp(10,2,g),g>0?1:0);
+  // cámara, golpes
+  let [wx,wy]=shake(t,3.0,16,.35),[x2,y2]=shake(t,4.25,10,.3);
+  $('world').style.transform=`translate(${wx+x2}px,${wy+y2}px) scale(${1+.012*t})`;
+  const hk=hitK(t);
+  if(hk>.02){$('caR').setAttribute('dx',(14*hk).toFixed(1));$('caB').setAttribute('dx',(-14*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';
+  $('flash').style.opacity=hk*.5;
+  $('black').style.opacity=Math.max(1-p(t,0,.3),p(t,6.0,6.5));
+  leaks(t,hk);particles(t);filmFX(t);
+}
+function leaks(t,hk){const a=t*.35,g=.18+.12*Math.sin(t*.9)+hk*.4,pu=.22+.1*Math.cos(t*.7)+hk*.3;
+  $('leak').style.background=`radial-gradient(ellipse 700px 900px at ${-5+12*Math.sin(a)}% ${30+20*Math.cos(a*.8)}%,rgba(92,242,154,${g}),transparent 65%),radial-gradient(ellipse 800px 700px at ${100-10*Math.cos(a*1.2)}% ${70+15*Math.sin(a)}%,rgba(176,107,255,${pu}),transparent 65%)`}
+const DUST=Array.from({length:90},(_,i)=>{const R=rnd(i*977+5);return{x:R()*1920,y:R()*1080,z:.3+R()*1.4,vx:(R()-.5)*14,vy:-4-R()*10,ph:R()*6.28}});
+function particles(t){const c=$('parts').getContext('2d');c.clearRect(0,0,1920,1080);
+  for(const d of DUST){let x=((d.x+d.vx*t*d.z+12*Math.sin(t*.6+d.ph))%1920+1920)%1920,y=((d.y+d.vy*t*d.z)%1080+1080)%1080;
+    const r=d.z*1.8,al=(.25+.25*Math.sin(t*1.3+d.ph))*(d.z>1.2?.5:1),rr=r*(d.z>1.2?5:2.2);
+    const g=c.createRadialGradient(x,y,0,x,y,rr);g.addColorStop(0,`rgba(225,215,255,${al})`);g.addColorStop(1,'rgba(225,215,255,0)');c.fillStyle=g;c.beginPath();c.arc(x,y,rr,0,7);c.fill()}}
+function filmFX(t){const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*7919+13);c.clearRect(0,0,1920,1080);
+  if(R()<.35){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.05+R()*.1})`;c.lineWidth=R()+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*4-2,1080);c.stroke()}
+  for(let i=0;i<6;i++){const x=R()*1920,y=R()*1080,r=R()*1.8+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  const fl=.03*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080)}
+window.render=render;window.DUR=DUR;
+</script></body></html>

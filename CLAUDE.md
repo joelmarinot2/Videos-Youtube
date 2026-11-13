@@ -8,7 +8,15 @@ español sencillo, sin jerga técnica.
 
 - Nombre: **Archivos Inexplicables** (confirmado por el dueño el 2026-11-13; el guion viejo dice
   "Archivo Imposible" y hay que cambiarlo). Canal nuevo, empieza desde cero.
-- El dueño **no sale en cámara**. Quiere un **avatar** (personaje) que haga de presentador.
+- El dueño **no sale en cámara**. Su presentador es un **avatar dibujado** (aprobado 2026-11-13): detective
+  de pelo crespo, barba y gabardina, con lupa y libreta, en línea negra estilo cómic. Originales en
+  `avatar/original/` (traen el fondo de cuadros PINTADO, no es transparente). `avatar/avatar.py` lo recorta,
+  tapa la base abierta de los bustos, limpia los cuadros de la lupa y lo pasa a la paleta (tinta morada,
+  relleno crema, borde de calcomanía). Recortes listos en `avatar/recortes/`: `retrato_1` (busto de frente),
+  `pose_1` (lupa y libreta), `pose_2` (cuerpo entero caminando), `pose_3` (guiño con lupa), `pose_4`
+  (asombrado inclinado), `pose_5` (busto serio con lupa), `pose_6` (señalando), `pose_7` (pensando, mano en
+  la barbilla). Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco
+  con cada frase. Clip de prueba: `muestras/muestra-avatar.mp4`.
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.
@@ -149,6 +157,7 @@ la palabra clave, en verde), Courier Prime.
   mezclar de a 2); cámara 3D sobre el mapa; hilo verde que une pistas; transiciones con barrido.
 
 v2: `muestras/muestra-archivo-001-v2.mp4`, hecha con `hornear2.py`, `muestra2.html`, `sonido2.py`.
+**Al dueño le gustó la dirección de la v2** ("así me gusta como va"). Seguir por ahí.
 
 ## Estado
 
