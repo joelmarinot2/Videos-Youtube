@@ -60,7 +60,40 @@ El guion trae estas reglas de ritmo:
 
 Canales de estilo (YouTube): Detrás del Enigma (@detrasdelenimga) y LEMMiNO (@LEMMiNO).
 Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este es mi TOP 10"
-(Benjamín Cordero, youtube.com/watch?v=n1gtF-TAv0s). No se pudo ver (ver Herramientas).
+(Benjamín Cordero, youtube.com/watch?v=n1gtF-TAv0s). El dueño pegó la transcripción.
+
+### Análisis de los canales (2026-11-13, videos que el dueño subió a Drive)
+
+**Detrás del Enigma** ("Ruja Ignatova", 28 min):
+- Cambio de plano cada ~5 s (mediana) y animaciones dentro de cada plano.
+- Paleta negro + rojo intenso. Imágenes hechas con IA, muy cinematográficas.
+- Tablero de investigación con hilo rojo que une fotos. Siluetas rojas sobre fondo oscuro.
+- Textos grandes en mayúscula, blancos y rojos, algunos con brillo de neón, que entran palabra por palabra.
+- Recortes de revistas y periódicos (portadas de Forbes en collage), calendarios, mapas con banderas,
+  monedas con contadores de cifras, íconos simples, lluvia de números binarios.
+
+**LEMMiNO** ("The Dyatlov Pass Case", 17 min):
+- Ritmo lento y elegante: la imagen cambia cada 5–10 s, casi siempre con fundido suave, nunca corte seco.
+- Fotos de archivo reales en blanco y negro, con grano, rayas y manchas de película vieja.
+- Movimiento lento constante sobre cada foto (Ken Burns).
+- Mapa 3D del terreno con la ruta en línea punteada que se dibuja sola.
+- Tipografía limpia y mínima: cifras grandes (-30 °C), citas en cursiva sobre fondo desenfocado,
+  títulos de capítulo con letra de sello.
+- Colores apagados y fríos (gris, azul); el único color fuerte es un rosa/rojo para marcar.
+
+### Repositorios útiles encontrados (2026-11-13)
+
+- **lemomo-ai/lemo-opuscar** (MIT): 99 estilos de video hechos con código, y permite crear un estilo
+  propio. Estilos que encajan con el canal: `vintage-collage` (collage de revista antigua: grabados,
+  fotos viejas y recortes con borde de papel, que se mueven como recortes animados), `halftone-dossier`
+  (expediente impreso retro con sellos), `visual-investigation` (mesa de investigación con evidencias),
+  `dark-documentary`, `scratch-film`, `newsreel`, `double-exposure`, `briefing-board`.
+  Necesita Node 20+, ffmpeg 7+ y Python 3.11+.
+- **JuneYaooo/rea-video**: desarma un video plano a plano (cámara, ritmo, transición) y dice cómo rehacerlo.
+- **Leonxlnx/earshot**: "oídos" para Claude: escucha el video, pone efectos de sonido calzados con los
+  cortes y trae una librería gratis de efectos.
+- Otros mencionados: mromidev/claude-animated-shorts, alchaincyf/huashu-motion,
+  Vincentwei1021/video-shotcraft.
 
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
@@ -87,7 +120,7 @@ TikToks de técnicas (ya analizados, transcritos):
 
 - [ ] Audio del video 1 (pendiente que el dueño lo envíe)
 - [ ] Excel de cortes y escenas (pendiente que el dueño lo vuelva a enviar)
-- [ ] Canales de referencia para el estilo de edición (pendiente)
+- [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [ ] Clips e imágenes del video 1 (pendiente)
 
 ## Herramientas en el entorno
