@@ -20,7 +20,18 @@ español sencillo, sin jerga técnica.
 - Video 2: STENDEC (así lo anuncia el cierre del guion del video 1).
 - Los otros 8: pendiente de que el dueño los confirme.
 
-### Guion del video 1 (ya existe)
+### Guion del video 1 — VERSIÓN NUEVA (la que vale, recibida 2026-11-13)
+
+`guiones/ARCHIVO 001 - El lago de los esqueletos - Guion nuevo.docx` y su copia en texto
+`guiones/archivo-001-guion-nuevo.md` (en la rama de trabajo). Es el último guion según el dueño.
+- 7 bloques, ~1.300 palabras, 10–11 min. Narrado en presente, frases cortas.
+- Lo presenta "Soy Joel Marino, y esto es Archivos Inexplicables. Archivo cero cero uno."
+- Al final trae: fuentes de cada dato, reglas de edición ("expediente frío", 10 tipos de escena,
+  ritmo y sonido por bloque, sin música, 7 de cada 10 cambios son cortes secos, el círculo como forma
+  que se repite) y la lista de clips a generar en Adobe Firefly (50 clips de 5 s + 4 imágenes).
+- El video 2 es el de la palabra en clave morse enviada desde un avión en los Andes (STENDEC).
+
+### Guion del video 1 — versión vieja
 
 Está en la rama `claude/zen-mendel-940d1o` de GitHub, carpeta `guiones/`:
 - `expediente-01-lago-de-los-esqueletos.md`: guion completo con las indicaciones de edición entre [corchetes].
