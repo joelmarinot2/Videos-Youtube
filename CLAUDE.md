@@ -6,7 +6,9 @@ español sencillo, sin jerga técnica.
 
 ## El canal
 
-- Nombre: **Archivos Inexplicables**. Canal nuevo, empieza desde cero.
+- Nombre: **Archivos Inexplicables** (confirmado por el dueño el 2026-11-13; el guion viejo dice
+  "Archivo Imposible" y hay que cambiarlo). Canal nuevo, empieza desde cero.
+- El dueño **no sale en cámara**. Quiere un **avatar** (personaje) que haga de presentador.
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.
@@ -25,8 +27,7 @@ Está en la rama `claude/zen-mendel-940d1o` de GitHub, carpeta `guiones/`:
 - `expediente-01-narrador.md` y `Archivo Imposible 001 - Narrador.docx`: solo lo que se lee en voz alta.
 - En `investigacion/` (misma rama) están las notas de investigación de casos para la serie.
 
-Ojo: en ese guion el canal se llama **Archivo Imposible**, y ahora el dueño dice **Archivo(s)
-Inexplicable(s)**. Pendiente confirmar el nombre final.
+Ojo: en ese guion el canal se llama **Archivo Imposible**; el nombre correcto es **Archivos Inexplicables**.
 
 El guion trae estas reglas de ritmo:
 - Cambiar de imagen cada 3 a 5 segundos (aunque sea un zoom o un movimiento sobre la misma foto).
@@ -35,7 +36,7 @@ El guion trae estas reglas de ritmo:
 - Música grave y tensa; se corta en seco antes de cada revelación.
 - Contador o línea de tiempo en pantalla cada vez que aparece una fecha.
 - Toda imagen hecha con IA lleva la palabra "RECREACIÓN" en una esquina.
-- El guion tiene partes de "presentador a cámara". Pendiente confirmar si el dueño sale en cámara.
+- Las partes de "presentador a cámara" del guion las hace el avatar.
 
 ## Cómo se hace cada video (reparto del trabajo)
 
@@ -54,7 +55,31 @@ El guion trae estas reglas de ritmo:
 - Colores principales: **morado y verde**.
 - **Recortes de películas** y **recortes de revistas**, con aire **antiguo / vintage** (collage).
 - **Motion graphics** y movimientos de cámara sobre las imágenes.
-- Pendiente: analizar los canales de referencia que va a mandar el dueño.
+
+### Referencias que mandó el dueño (2026-11-13)
+
+Canales de estilo (YouTube): Detrás del Enigma (@detrasdelenimga) y LEMMiNO (@LEMMiNO).
+Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este es mi TOP 10"
+(Benjamín Cordero, youtube.com/watch?v=n1gtF-TAv0s). No se pudo ver (ver Herramientas).
+
+Repositorios para hacer el video con código:
+- github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
+  reglas de movimiento, gradación de color, grano de película, Ken Burns, subtítulos y sonido.
+- github.com/heygen-com/hyperframes: video a partir de HTML. La base es gratis; las skills que copian
+  el estilo de un video (reverse-any-video, style-sampling) son de pago (Pro).
+
+TikToks de técnicas (ya analizados, transcritos):
+- romel.media (5 efectos): texto que aparece desde una máscara; movimientos encadenados (un
+  elemento empuja al siguiente); la cámara sigue lo importante; un objeto se transforma en la
+  siguiente escena; las entradas van sincronizadas con la narración (si dice una cifra, aparece la cifra).
+- romel.media (sonido): librería de efectos clasificada (woosh, golpe, click), nunca repetir el mismo
+  sonido seguido, cada sonido justo en su cuadro, bajar efectos cuando habla la voz, revisar el audio
+  completo antes de entregar.
+- sanmunoz.ia (5 instrucciones): curvas suaves con un pequeño rebote; elementos que entran
+  escalonados; paralaje (fondo, medio y frente a distinta velocidad); micro-movimiento constante
+  para que nunca quede quieto.
+- elbecariodemurphy.ia: reels hechos con código; algo pasa en pantalla cada ~0,3 s; personaje
+  ilustrado como presentador (buena idea para el avatar); medir el ritmo y arreglar partes flojas.
 - No existían skills de edición de video guardadas (se revisó el 2026-11-13). Cuando la identidad
   quede definida, guardarla como skill para que no se pierda.
 
@@ -68,5 +93,9 @@ El guion trae estas reglas de ritmo:
 ## Herramientas en el entorno
 
 - `ffmpeg` está instalado: sirve para cortar el audio y armar el video.
-- YouTube y Google Drive están bloqueados desde aquí: no se pueden ver ni descargar videos de
-  referencia directamente.
+- Red del entorno: acceso completo a internet (aprobado por el dueño el 2026-11-13).
+- TikTok: se descarga bien con `yt-dlp`.
+- YouTube: se puede listar videos de un canal, pero la descarga la bloquea YouTube ("confirma que no
+  eres un bot"). No intentar saltarse ese bloqueo. Para analizar un video de YouTube, el dueño lo
+  descarga en su computador y lo sube a Google Drive con enlace compartido.
+- `faster-whisper` (convertir voz a texto) se instala con pip.
