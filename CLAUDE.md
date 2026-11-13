@@ -17,6 +17,15 @@ español sencillo, sin jerga técnica.
   (asombrado inclinado), `pose_5` (busto serio con lupa), `pose_6` (señalando), `pose_7` (pensando, mano en
   la barbilla). Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco
   con cada frase. Clip de prueba: `muestras/muestra-avatar.mp4`.
+- **Avatar versión 2 (2026-11-13):** el dueño mandó otro personaje: pelo crespo, **gafas**, barba y
+  **camisa negra estampada** (a veces con gabardina), en poses de investigación. Originales con fondo blanco
+  en `avatar/v2/original/`; recortes en `avatar/v2/recortes/` (hecho con `avatar/v2/avatar_v2.py`, que además
+  quita la etiqueta "trace evidence" y separa dos poses que venían pegadas). Poses: `v2a_1`/`v2b_1` escribiendo
+  huellas en libreta, `v2a_2`/`v2b_2` retrato sonriendo, `v2a_3`/`v2b_3` leyendo un mapa con gabardina,
+  `v2a_4` frente a tablero de huellas con tarjeta, `v2a_5`/`v2b_5` agachado con brocha y cámara, `v2a_6`
+  libro abierto (accesorio), `v2a_7` con microscopio, `v2b_4` caminando con linterna, `v2b_6` mesa con
+  trípode, `v2b_7` con lupa y tela, `v2b_8` entregando una caja de evidencia.
+  PENDIENTE: que el dueño diga cuál avatar es el principal (el de gabardina o el de gafas).
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.
