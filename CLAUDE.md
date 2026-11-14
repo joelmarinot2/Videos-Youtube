@@ -31,7 +31,7 @@ español sencillo, sin jerga técnica.
 - **CAMBIO DE CONCEPTO (2026-11-14):** el dueño quiso cambiar el avatar a "Detective Psyduck" (Pokémon). Se le
   advirtió el riesgo (personaje de Nintendo + dibujos con firma de otro artista "WTPD") y **eligió crear un
   personaje propio** con la misma idea (detective torpe y chistoso, sombrero viejo, gabardina rota, lupa,
-  libreta). Recomendado: búho morado de ojos verdes (alternativas: cuervo, pato morado). Instrucciones para
+  libreta). El dueño eligió un **pato** (morado, ojos verdes, pico gris oscuro, bufanda verde, sin los tres pelos de Psyduck). Instrucciones para
   generarlo en `avatar/v3/instrucciones-personaje.md`. PENDIENTE: que el dueño mande las imágenes del nuevo
   personaje; entonces recortarlas, mejorarlas (hdlib, conservando sus colores) y rehacer el clip de presentación.
   No usar Psyduck ni ningún personaje con dueño.
