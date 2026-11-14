@@ -5,8 +5,10 @@ personaje de Pokémon (Nintendo) y los dibujos traían la firma de otro artista 
 pérdida de ganancias y advertencias en el canal. El dueño eligió un **personaje propio**: un **pato**
 detective torpe y chistoso con sombrero viejo, gabardina rota, lupa y libreta.
 
-Para que no se confunda con Psyduck: plumas MORADAS (no amarillas), ojos verdes, pico gris oscuro,
-cuello un poco largo, bufanda verde y SIN los tres pelos en la cabeza.
+Versión elegida (2026-11-14): pato **amarillo y gordito**. Como amarillo + gordito + gabardina se parece
+otra vez a Psyduck, se le pusieron rasgos propios: pico NARANJA (Psyduck lo tiene crema), ojos VERDES con
+cejas (Psyduck los tiene vacíos), cuello visible con la cabeza separada del cuerpo, SIN los tres pelos en la
+cabeza, sombrero tipo Sherlock Holmes de cuadros con orejeras, gabardina MORADA y bufanda verde.
 
 Copiar cada instrucción tal cual en la inteligencia artificial de imágenes (Firefly, Flow, ChatGPT...).
 
@@ -14,10 +16,11 @@ Copiar cada instrucción tal cual en la inteligencia artificial de imágenes (Fi
 
 ```
 Hoja de personaje de un detective pato, personaje original que no se parezca a ningún personaje existente.
-El pato tiene plumas moradas oscuras, cuello un poco largo, grandes ojos verdes brillantes y un pico gris oscuro.
+El pato es gordito y redondo, de plumas amarillas, con el cuello visible y la cabeza separada del cuerpo.
+Tiene pico naranja de pato normal, grandes ojos verdes con cejas marcadas y una pequeña cola.
 No tiene pelos ni plumas paradas en la cabeza.
-Lleva una bufanda verde, un sombrero de detective viejo y gastado color café con una cinta,
-y una gabardina café rota y remendada en los bordes.
+Lleva un sombrero de detective tipo Sherlock Holmes, de cuadros y con orejeras a los lados,
+una gabardina morada vieja y remendada, y una bufanda verde.
 Carga una lupa y una libreta pequeña. Es torpe y chistoso, pero curioso.
 Estilo de ilustración de cómic con línea negra marcada y colores suaves tipo acuarela, aspecto antiguo.
 Mostrar 8 poses separadas, cada una de cuerpo completo y sin tocarse entre sí:
@@ -35,8 +38,9 @@ Fondo blanco liso. Sin texto, sin letras, sin firmas, sin marcas de agua.
 ## Instrucción 2: las caras del pato
 
 ```
-Hoja de expresiones de la cara del mismo detective pato: plumas moradas oscuras, grandes ojos verdes,
-pico gris oscuro, bufanda verde y sombrero de detective café viejo. Solo la cabeza con el sombrero.
+Hoja de expresiones de la cara del mismo detective pato: gordito, plumas amarillas, pico naranja,
+grandes ojos verdes con cejas, bufanda verde y sombrero de detective tipo Sherlock Holmes de cuadros.
+Solo la cabeza con el sombrero y la bufanda.
 Mostrar 6 caras separadas, sin tocarse entre sí:
 tranquilo, sorprendido con el pico abierto, pensativo con los ojos entrecerrados,
 asustado, confundido con los ojos en espiral, y feliz porque descubrió algo.
@@ -48,6 +52,7 @@ Fondo blanco liso. Sin texto, sin letras, sin firmas, sin marcas de agua.
 
 - Hacer primero la instrucción 1. Con la imagen que guste, adjuntarla al hacer la instrucción 2 y empezar
   con: "Usa esta imagen como referencia del personaje", para que salga el mismo pato.
-- Si sale amarillo o parecido a Psyduck, repetir agregando "de plumas moradas, no amarillo".
+- Si sale parecido a Psyduck (pico crema, ojos vacíos, pelos en la cabeza), repetir agregando
+  "pico naranja, ojos verdes con cejas, sin pelos en la cabeza".
 - Si sale con letras o firma, agregar "sin texto y sin firma".
 - Fondo blanco liso, nunca "fondo transparente" (sale con cuadros pintados).
