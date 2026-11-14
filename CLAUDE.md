@@ -3,8 +3,10 @@
 Este archivo lo lee Claude al empezar cada sesión. Aquí se guarda lo que el dueño del canal ya explicó,
 para no tener que repetirlo. El dueño es electricista, no programa y es de Colombia.
 
-**REGLA FIJA: hablarle SIEMPRE en español** (el dueño lo pidió expresamente el 2026-11-14), en español
-sencillo, sin jerga técnica y sin palabras en inglés (traducirlas o explicarlas).
+**REGLA FIJA: hablarle SIEMPRE en español** (el dueño lo pidió expresamente el 2026-11-14, y lo repitió varias
+veces), en español sencillo, sin jerga técnica y sin palabras en inglés (traducirlas o explicarlas).
+**Esto incluye TODO lo que el dueño ve**: la respuesta final Y los mensajes cortos que se escriben mientras se
+trabaja (antes de cada paso, "ahora reviso...", "ya descargué..."). Ninguna frase en inglés, nunca.
 
 ## El canal
 
@@ -189,7 +191,7 @@ vez el 2026-11-14 al descartar el personaje): serio, oscuro, de investigación, 
 - [ ] Excel de cortes y escenas (pendiente que el dueño lo vuelva a enviar)
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [ ] Clips e imágenes del video 1 (pendiente)
-- [ ] Video que el dueño va a mandar para analizar si ese modelo sirve para crear los videos (pendiente)
+- [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
 ## Herramientas en el entorno
