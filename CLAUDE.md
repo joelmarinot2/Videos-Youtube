@@ -79,6 +79,27 @@ El guion trae estas reglas de ritmo:
    - arma el video final juntando el audio con los clips e imágenes, en el orden del Excel;
    - sigue el estilo de edición de los canales de referencia que pase el dueño.
 
+## NUEVA DIRECCIÓN VISUAL (2026-11-14): estilo "calcomanía de caricatura", pero oscuro
+
+El dueño mandó referencias de calcomanías y logos (un pato escribiendo en un escritorio, un computador viejo
+"LOADING", un televisor retro, los logos "MELON STUART" y "Juiced") y dijo: **no le gusta el logo anterior**
+(el de letra Bebas dentro del círculo) y **quiere el video "más o menos en este estilo pero dark"**.
+- Todo como **calcomanía**: borde blanco grueso recortado, contorno negro, sombra.
+- **Letras gordas con sombra 3D** (extrusión sólida hacia abajo-derecha y contorno negro grueso), inclinadas.
+  Letra: Luckiest Guy (Google Fonts, carpeta `apache/luckiestguy`); también descargadas Titan One, Bungee,
+  Lilita One, Bowlby One.
+- Garabatos alrededor: chispas de 4 puntas (verde/crema), rayitas curvas moradas, líneas de movimiento,
+  estallidos (estrellas de picos) detrás de lo importante.
+- Fondo oscuro: rayos concéntricos morados, brillo verde/morado al centro, trama de puntos en los bordes.
+- Se mantienen los colores: fondo #0f0818 / #140a20, morado #7046b2 / #2c1352, verde #5cf29a, crema #f3eee2.
+- El pato detective encaja con este estilo (es de caricatura).
+- Logo nuevo, dos versiones en `logo/` (hechas con `logo/logo.html`, que usa las rutas de la carpeta de trabajo
+  `fonts/`, `pato/`, `assets2/`): **A** letras gordas 3D "ARCHIVOS / INEXPLICABLES" sobre estallido negro con
+  la cara del pato asomada; **B** insignia redonda con el pato y la lupa y el nombre en arco. Hay versiones con
+  fondo transparente. PENDIENTE: que el dueño escoja.
+- Escena de ejemplo en el estilo nuevo: `muestras/escena-estilo-calcomania.png` ("¡SON HUESOS!" con cráneo,
+  foto, estallido verde y el pato asustado). PENDIENTE: aprobación y rehacer la muestra animada así.
+
 ## Identidad de la edición (lo que pidió el dueño)
 
 - Edición **dinámica**, con movimiento constante.

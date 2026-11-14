@@ -1,0 +1,138 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Lucky;src:url(fonts/LuckiestGuy-Regular.ttf)}
+@font-face{font-family:Titan;src:url(fonts/TitanOne-Regular.ttf)}
+@font-face{font-family:Bungee;src:url(fonts/Bungee-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden}
+body.fondo{background:#0f0818}
+#bg{position:absolute;inset:0}
+body:not(.fondo) #bg{display:none}
+.v{position:absolute;inset:0;display:none}
+svg{position:absolute;left:0;top:0;overflow:visible}
+</style></head>
+<body class="fondo">
+<!-- fondo oscuro: rayos concéntricos y trama de puntos -->
+<div id="bg">
+  <div style="position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(112,70,178,.16) 0 7.5deg,transparent 7.5deg 15deg)"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(92,242,154,.18),rgba(60,24,114,.35) 35%,rgba(8,4,14,.95) 75%)"></div>
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(176,140,255,.18) 2px,transparent 2.5px);background-size:22px 22px;mask-image:radial-gradient(circle at 50% 50%,transparent 30%,#000 80%)"></div>
+</div>
+
+<svg width="0" height="0">
+  <defs>
+    <!-- borde de calcomanía: blanco grueso con sombra -->
+    <filter id="sticker" x="-20%" y="-20%" width="140%" height="140%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="16" result="d"/>
+      <feFlood flood-color="#f3eee2"/><feComposite in2="d" operator="in" result="blanco"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="19" result="d2"/>
+      <feFlood flood-color="#120a1c"/><feComposite in2="d2" operator="in" result="borde"/>
+      <feGaussianBlur in="d2" stdDeviation="14" result="sb"/><feOffset in="sb" dx="10" dy="16" result="so"/>
+      <feFlood flood-color="#000" flood-opacity=".65"/><feComposite in2="so" operator="in" result="sombra"/>
+      <feMerge><feMergeNode in="sombra"/><feMergeNode in="borde"/><feMergeNode in="blanco"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <symbol id="chispa" viewBox="-50 -50 100 100"><path d="M0 -50 C6 -10 10 -6 50 0 C10 6 6 10 0 50 C-6 10 -10 6 -50 0 C-10 -6 -6 -10 0 -50Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- VERSIÓN A: letras gordas en 3D con el pato asomado -->
+<div class="v" id="A">
+  <svg width="1920" height="1080">
+    <g filter="url(#sticker)" transform="translate(960 560) rotate(-6)">
+      <!-- estallido negro detrás -->
+      <path id="burst" fill="#140a20" stroke="#140a20" stroke-width="10"/>
+      <g id="txtA"></g>
+      <image href="pato/cara_3.png" x="330" y="-500" width="300" height="390" transform="rotate(12 480 -305)"/>
+    </g>
+    <!-- garabatos -->
+    <g fill="#5cf29a"><use href="#chispa" x="300" y="250" width="70" height="70"/><use href="#chispa" x="1520" y="760" width="56" height="56"/></g>
+    <g fill="#f3eee2"><use href="#chispa" x="1590" y="300" width="40" height="40"/><use href="#chispa" x="380" y="820" width="34" height="34"/></g>
+    <g fill="none" stroke="#b08cff" stroke-width="7" stroke-linecap="round">
+      <path d="M250 520 q20 -30 0 -60 q-20 -30 0 -60"/><path d="M1660 520 q30 10 40 40 q10 30 40 40"/>
+      <path d="M1560 600 l40 -10 M1570 640 l45 15 M1550 680 l30 35"/>
+    </g>
+  </svg>
+</div>
+
+<!-- VERSIÓN B: insignia redonda con el pato y la lupa -->
+<div class="v" id="B">
+  <svg width="1920" height="1080">
+    <defs>
+      <path id="arcoArriba" d="M -330 0 A 330 330 0 0 1 330 0"/>
+      <path id="arcoAbajo" d="M -382 0 A 382 382 0 0 0 382 0"/>
+      <clipPath id="circ"><circle r="300"/></clipPath>
+    </defs>
+    <g filter="url(#sticker)" transform="translate(960 540)">
+      <circle r="440" fill="#140a20"/>
+      <circle r="420" fill="#5cf29a"/>
+      <circle r="404" fill="#140a20"/>
+      <circle r="300" fill="#2c1352" stroke="#140a20" stroke-width="12"/>
+      <g clip-path="url(#circ)">
+        <g fill="rgba(176,140,255,.14)"><path id="rayosB"/></g>
+        <circle cy="40" r="210" fill="rgba(92,242,154,.18)"/>
+        <image href="pato/pose_2.png" x="-245" y="-250" width="470" height="560"/>
+      </g>
+      <circle r="300" fill="none" stroke="#140a20" stroke-width="12"/>
+      <g id="arcos"></g>
+      <g fill="#5cf29a"><use href="#chispa" x="-380" y="-40" width="44" height="44"/><use href="#chispa" x="336" y="-40" width="44" height="44"/></g>
+    </g>
+  </svg>
+</div>
+
+
+<!-- VERSIÓN C: escena de ejemplo "Son huesos" -->
+<div class="v" id="C">
+  <svg width="1920" height="1080">
+    <g transform="translate(560 560)"><path id="burstC" fill="#5cf29a" stroke="#140a20" stroke-width="12"/></g>
+    <image href="assets2/foto_huesos.png" x="90" y="560" width="560" height="360" filter="url(#sticker)" transform="rotate(-8 370 740)"/>
+    <image href="assets2/craneo.png" x="300" y="170" width="520" height="640" filter="url(#sticker)" transform="rotate(-5 560 490)"/>
+    <g transform="translate(1260 330) rotate(-5)" filter="url(#sticker)"><g id="txtC"></g></g>
+    <image href="pato/pose_5.png" x="1300" y="560" width="400" height="510" filter="url(#sticker)" transform="rotate(4 1500 815)"/>
+    <g fill="#5cf29a"><use href="#chispa" x="880" y="150" width="70" height="70"/><use href="#chispa" x="1760" y="500" width="50" height="50"/></g>
+    <g fill="#f3eee2"><use href="#chispa" x="140" y="200" width="44" height="44"/><use href="#chispa" x="1180" y="620" width="36" height="36"/></g>
+    <g fill="none" stroke="#b08cff" stroke-width="8" stroke-linecap="round">
+      <path d="M1250 560 l-40 -30 M1270 600 l-50 0 M1260 650 l-40 30"/>
+      <path d="M90 420 q25 -30 0 -60 q-25 -30 0 -60"/><path d="M1640 140 q30 10 40 40 q10 30 40 40"/>
+    </g>
+    <g transform="translate(1090 1010)"><rect x="-150" y="-26" width="300" height="52" rx="8" fill="#f3eee2" stroke="#140a20" stroke-width="5"/>
+      <text text-anchor="middle" y="11" font-family="TyperB" font-size="28" fill="#140a20" letter-spacing="3">ARCHIVO 001</text></g>
+  </svg>
+</div>
+<script>
+const NS='http://www.w3.org/2000/svg';
+// Texto gordo: capas de extrusión (sombra 3D), contorno negro y cara de color
+function texto3D(g,txt,{x=0,y=0,size=150,font='Lucky',cara='#f3eee2',lado='#2c1352',prof=16,borde=14,esp=4}){
+  const mk=(dx,dy,fill,stroke,sw)=>{const t=document.createElementNS(NS,'text');
+    Object.entries({x:x+dx,y:y+dy,'font-family':font,'font-size':size,'text-anchor':'middle',fill,stroke,'stroke-width':sw,
+      'stroke-linejoin':'round','paint-order':'stroke','letter-spacing':esp}).forEach(([k,v])=>t.setAttribute(k,v));t.textContent=txt;g.appendChild(t)};
+  for(let i=prof;i>=1;i--) mk(i*.7,i,'#140a20','#140a20',borde);   // sombra sólida
+  for(let i=prof;i>=1;i--) mk(i*.7,i,lado,'none',0);                 // cara lateral
+  mk(0,0,cara,'#140a20',borde);                                     // cara frontal
+  const brillo=document.createElementNS(NS,'text');                  // brillo fino arriba
+  Object.entries({x:x-2,y:y-3,'font-family':font,'font-size':size,'text-anchor':'middle',fill:'none',stroke:'rgba(255,255,255,.55)','stroke-width':2,'letter-spacing':esp,'clip-path':''}).forEach(([k,v])=>brillo.setAttribute(k,v));
+  brillo.textContent=txt;g.appendChild(brillo);
+}
+// estallido
+(function(){let d='';const n=18;for(let i=0;i<=n*2;i++){const a=i*Math.PI/n,r=i%2?330:430;d+=(i?'L':'M')+(Math.cos(a)*r*1.55).toFixed(1)+' '+(Math.sin(a)*r*.62).toFixed(1)}document.getElementById('burst').setAttribute('d',d+'Z')})();
+texto3D(document.getElementById('txtA'),'ARCHIVOS',{y:-40,size:150,cara:'#f3eee2',lado:'#7046b2',prof:14});
+texto3D(document.getElementById('txtA'),'INEXPLICABLES',{y:150,size:190,cara:'#5cf29a',lado:'#1d6b44',prof:18,borde:16});
+// rayos de la insignia
+(function(){let d='';for(let i=0;i<24;i++){const a1=i*2*Math.PI/24,a2=a1+Math.PI/24;d+=`M0 0 L${Math.cos(a1)*420} ${Math.sin(a1)*420} L${Math.cos(a2)*420} ${Math.sin(a2)*420}Z`}document.getElementById('rayosB').setAttribute('d',d)})();
+// textos en arco de la insignia
+(function(){const g=document.getElementById('arcos');
+  const arco=(href,txt,size,cara,dy)=>{
+    for(const [fill,stroke,sw,off] of [['#140a20','#140a20',16,7],[cara,'#140a20',14,0]]){
+      const t=document.createElementNS(NS,'text');Object.entries({'font-family':'Lucky','font-size':size,fill,stroke,'stroke-width':sw,'stroke-linejoin':'round','paint-order':'stroke','letter-spacing':5,transform:`translate(${off*.6} ${off+dy})`}).forEach(([k,v])=>t.setAttribute(k,v));
+      const tp=document.createElementNS(NS,'textPath');tp.setAttribute('href',href);tp.setAttribute('startOffset','50%');tp.setAttribute('text-anchor','middle');tp.textContent=txt;t.appendChild(tp);g.appendChild(t)}};
+  arco('#arcoArriba','ARCHIVOS',96,'#f3eee2',-12);
+  arco('#arcoAbajo','INEXPLICABLES',80,'#5cf29a',0);
+})();
+(function(){let d='';const n=14;for(let i=0;i<=n*2;i++){const a=i*Math.PI/n,r=i%2?300:400;d+=(i?'L':'M')+(Math.cos(a)*r).toFixed(1)+' '+(Math.sin(a)*r).toFixed(1)}document.getElementById('burstC').setAttribute('d',d+'Z')})();
+texto3D(document.getElementById('txtC'),'¡SON',{x:0,y:0,size:150,cara:'#f3eee2',lado:'#7046b2',prof:14});
+texto3D(document.getElementById('txtC'),'HUESOS!',{x:20,y:170,size:200,cara:'#5cf29a',lado:'#1d6b44',prof:18,borde:16});
+const v=(location.hash||'#A').slice(1).split('-');
+document.getElementById(v[0]).style.display='block';
+if(v[1]==='transparente')document.body.classList.remove('fondo');
+</script>
+</body></html>
