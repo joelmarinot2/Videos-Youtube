@@ -8,40 +8,27 @@ español sencillo, sin jerga técnica.
 
 - Nombre: **Archivos Inexplicables** (confirmado por el dueño el 2026-11-13; el guion viejo dice
   "Archivo Imposible" y hay que cambiarlo). Canal nuevo, empieza desde cero.
-- El dueño **no sale en cámara**. Su presentador es un **avatar dibujado** (aprobado 2026-11-13): detective
-  de pelo crespo, barba y gabardina, con lupa y libreta, en línea negra estilo cómic. Originales en
-  `avatar/original/` (traen el fondo de cuadros PINTADO, no es transparente). `avatar/avatar.py` lo recorta,
-  tapa la base abierta de los bustos, limpia los cuadros de la lupa y lo pasa a la paleta (tinta morada,
-  relleno crema, borde de calcomanía). Recortes listos en `avatar/recortes/`: `retrato_1` (busto de frente),
-  `pose_1` (lupa y libreta), `pose_2` (cuerpo entero caminando), `pose_3` (guiño con lupa), `pose_4`
-  (asombrado inclinado), `pose_5` (busto serio con lupa), `pose_6` (señalando), `pose_7` (pensando, mano en
-  la barbilla). Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco
-  con cada frase. Clip de prueba con el avatar de gafas: `muestras/muestra-avatar-gafas.mp4`
-  ("Soy Joel Marino" = `v2a_2`, "y esto es Archivos Inexplicables" = `v2b_8`, "Archivo cero cero uno" = `v2a_3`).
-- **Avatar versión 2 (2026-11-13):** el dueño mandó otro personaje: pelo crespo, **gafas**, barba y
-  **camisa negra estampada** (a veces con gabardina), en poses de investigación. Originales con fondo blanco
-  en `avatar/v2/original/`; recortes en `avatar/v2/recortes/` (hecho con `avatar/v2/avatar_v2.py`, que además
-  quita la etiqueta "trace evidence" y separa dos poses que venían pegadas). Poses: `v2a_1`/`v2b_1` escribiendo
-  huellas en libreta, `v2a_2`/`v2b_2` retrato sonriendo, `v2a_3`/`v2b_3` leyendo un mapa con gabardina,
-  `v2a_4` frente a tablero de huellas con tarjeta, `v2a_5`/`v2b_5` agachado con brocha y cámara, `v2a_6`
-  libro abierto (accesorio), `v2a_7` con microscopio, `v2b_4` caminando con linterna, `v2b_6` mesa con
-  trípode, `v2b_7` con lupa y tela, `v2b_8` entregando una caja de evidencia.
-  **DECIDIDO (2026-11-13): es el mismo personaje y se usan las ÚLTIMAS imágenes, las de gafas (v2).** Las de
-  gabardina sin gafas (v1) quedan como versión vieja; no usarlas.
-- **CAMBIO DE CONCEPTO (2026-11-14):** el dueño quiso cambiar el avatar a "Detective Psyduck" (Pokémon). Se le
-  advirtió el riesgo (personaje de Nintendo + dibujos con firma de otro artista "WTPD") y **eligió crear un
-  personaje propio** con la misma idea (detective torpe y chistoso, sombrero viejo, gabardina rota, lupa,
-  libreta). El dueño eligió un **pato amarillo y gordito**; para que no sea Psyduck lleva pico naranja, ojos verdes con
-  cejas, cuello visible, sin los tres pelos, sombrero tipo Sherlock de cuadros, gabardina morada y bufanda verde. Instrucciones para
-  generarlo en `avatar/v3/instrucciones-personaje.md`. PENDIENTE: que el dueño mande las imágenes del nuevo
-  personaje; entonces recortarlas, mejorarlas (hdlib, conservando sus colores) y rehacer el clip de presentación.
-  No usar Psyduck ni ningún personaje con dueño.
-- **Versiones mejoradas (alta calidad, 3x):** `avatar/recortes-hd/` y `avatar/v2/recortes-hd/` (~2000×3000 px).
-  USAR ESTAS en los videos. Se hacen con `avatar/hdlib.py`: agranda 3x y retraza las líneas como vectores con
-  potrace en 3 tonos (tinta, gris medio, gris claro), así no se ven borrosas ni con cuadros de JPG.
-  Recetas: `avatar/recorte_v1_hd.py` y `avatar/v2/recorte_v2_hd.py` (leen los originales de la carpeta de
-  subidas de la sesión; cambiar la ruta `UP` a `avatar/original` o `avatar/v2/original`).
-  Requiere `apt-get install potrace librsvg2-bin`.
+- El dueño **no sale en cámara**. **Su presentador es el PATO DETECTIVE** (personaje propio, aprobado 2026-11-14):
+  pato amarillo y gordito, pico naranja, ojos verdes con cejas, sombrero tipo Sherlock de cuadros café,
+  gabardina morada remendada y bufanda verde; lleva lupa y libreta. Se usa CON SUS COLORES (no pasarlo a la
+  paleta morada/crema como los avatares viejos).
+  - Originales (fondo blanco): `avatar/v3/original/`. Instrucciones con que se generó (para pedir más poses):
+    `avatar/v3/instrucciones-personaje.md` (adjuntar una imagen del pato como referencia para que salga igual).
+  - Recortes en alta calidad (3x, ~2000×2500 px, borde de calcomanía): `avatar/v3/recortes-hd/`, hechos con
+    `avatar/v3/pato.py` (agranda, limpia el ruido JPG, retraza las líneas negras con potrace, quita el fondo
+    atrapado entre los pies). Requiere `apt-get install potrace librsvg2-bin`.
+    Poses: `pose_1` saludando, `pose_2` mirando con la lupa, `pose_3` señalando a un lado, `pose_4` pensando,
+    `pose_5` sorprendido, `pose_6` asustado temblando, `pose_7` escribiendo en la libreta, `pose_8` caminando
+    de lado. Caras: `cara_1` tranquilo, `cara_2` sorprendido, `cara_3` pensativo/sospecha, `cara_4` asustado,
+    `cara_5` confundido (ojos en espiral), `cara_6` feliz porque descubrió algo.
+  - Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco con cada frase.
+    Clip de presentación: `muestras/muestra-avatar-pato.mp4` ("Soy Joel Marino" = `pose_1`, "y esto es
+    Archivos Inexplicables" = `pose_3` señalando el logo, "Archivo cero cero uno" = `pose_2`).
+  - **No usar Psyduck ni ningún personaje con dueño** (el dueño lo pidió el 2026-11-14; se le explicó el
+    riesgo de reclamos y advertencias y eligió un personaje propio).
+  - Historial: antes hubo dos avatares humanos dibujados (detective de gabardina en `avatar/original`,
+    `avatar/recortes*`, y versión con gafas en `avatar/v2/`). YA NO SE USAN. `avatar/hdlib.py` es la mejora de
+    calidad que se usó con ellos (pasa a tinta morada/crema).
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.

@@ -42,9 +42,9 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c
   <div class="abs big" id="logo2" style="left:900px;top:470px;width:800px;text-align:center;font-size:150px;white-space:nowrap;color:#5cf29a"></div>
   <div class="abs pc" id="tag001"><img src="assets2/tira_corta.png" style="display:block"><div class="abs typer" style="left:0;top:56px;width:100%;text-align:center">ARCHIVO <span style="font-family:TyperB;color:#1d7a4a">001</span></div></div>
   <!-- avatar: varias poses, se cambia una por otra -->
-  <img class="abs av" id="a1" src="avatar_v2_hd/v2a_2.png">
-  <img class="abs av" id="a2" src="avatar_v2_hd/v2b_8.png">
-  <img class="abs av" id="a3" src="avatar_v2_hd/v2a_3.png">
+  <img class="abs av" id="a1" src="pato/pose_1.png">
+  <img class="abs av" id="a2" src="pato/pose_3.png">
+  <img class="abs av" id="a3" src="pato/pose_2.png">
   <div class="abs pc" id="nombre"><img src="assets2/tira.png" style="display:block;width:620px;height:136px"><div class="abs typer" id="nombretxt" style="left:52px;top:46px"></div></div>
  </div>
  <canvas id="parts" width="1920" height="1080"></canvas>
@@ -71,7 +71,7 @@ $('logo1').innerHTML=[...L1].map(c=>`<span style="display:inline-block">${c}</sp
 $('logo2').innerHTML=[...L2].map(c=>`<span style="display:inline-block">${c}</span>`).join('');
 
 // tamaño de cada pose (se ajusta al cargar)
-const AV={a1:{h:980,x:90,dy:90},a2:{h:930,x:30,dy:90},a3:{h:1000,x:150,dy:-30}};
+const AV={a1:{h:860,x:110,dy:-50},a2:{h:860,x:60,dy:-50},a3:{h:860,x:110,dy:-50}};
 // qué pose se ve en cada momento (cambio seco, como recorte de papel)
 function poseAt(t){return t<2.15?'a1':(t<3.95?'a2':'a3')}
 
