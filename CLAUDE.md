@@ -10,35 +10,16 @@ sencillo, sin jerga técnica y sin palabras en inglés (traducirlas o explicarla
 
 - Nombre: **Archivos Inexplicables** (confirmado por el dueño el 2026-11-13; el guion viejo dice
   "Archivo Imposible" y hay que cambiarlo). Canal nuevo, empieza desde cero.
-- El dueño **no sale en cámara**. **Su presentador es el PATO DETECTIVE** (personaje propio, aprobado 2026-11-14):
-  pato amarillo y gordito, pico naranja, ojos verdes con cejas, sombrero tipo Sherlock de cuadros café,
-  gabardina morada remendada y bufanda verde; lleva lupa y libreta. Se usa CON SUS COLORES (no pasarlo a la
-  paleta morada/crema como los avatares viejos).
-  - Originales (fondo blanco): `avatar/v3/original/`. Instrucciones con que se generó (para pedir más poses):
-    `avatar/v3/instrucciones-personaje.md` (adjuntar una imagen del pato como referencia para que salga igual).
-  - Recortes en alta calidad (3x, ~2000×2500 px, borde de calcomanía): `avatar/v3/recortes-hd/`, hechos con
-    `avatar/v3/pato.py` (agranda, limpia el ruido JPG, retraza las líneas negras con potrace, quita el fondo
-    atrapado entre los pies). Requiere `apt-get install potrace librsvg2-bin`.
-    Poses: `pose_1` saludando, `pose_2` mirando con la lupa, `pose_3` señalando a un lado, `pose_4` pensando,
-    `pose_5` sorprendido, `pose_6` asustado temblando, `pose_7` escribiendo en la libreta, `pose_8` caminando
-    de lado. Caras: `cara_1` tranquilo, `cara_2` sorprendido, `cara_3` pensativo/sospecha, `cara_4` asustado,
-    `cara_5` confundido (ojos en espiral), `cara_6` feliz porque descubrió algo.
-  - Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco con cada frase.
-    Clip de presentación: `muestras/muestra-avatar-pato.mp4` ("Soy Joel Marino" = `pose_1`, "y esto es
-    Archivos Inexplicables" = `pose_3` señalando el logo, "Archivo cero cero uno" = `pose_2`).
-  - **El dueño quiere que el pato TENGA ANIMACIÓN (2026-11-14).** Muestra: `muestras/pato-animado.mp4`
-    (hecha con `muestras/archivo-001-estilo/pato_anim.html` y `sonido_pato.py`): entra caminando a saltitos
-    (se aplasta al tocar el piso y se estira en el aire, sombra en el piso que cambia con la altura), frena,
-    da la vuelta y saluda, señala el logo que entra de golpe, salta de sorpresa y termina acercándose con la
-    lupa. Sonidos de caricatura de Mixkit: golpecito 2151, desliza 2888, pato_goma 1014, pop_duro 2364,
-    boing 2894, pops 2359, salto 2043, chillido_panico 1010, pop_largo 2358.
-    Para que mueva el pico al hablar y parpadee se le pidieron al dueño imágenes extra (misma pose con pico
-    cerrado / medio abierto / abierto y con ojos cerrados).
-  - **No usar Psyduck ni ningún personaje con dueño** (el dueño lo pidió el 2026-11-14; se le explicó el
-    riesgo de reclamos y advertencias y eligió un personaje propio).
-  - Historial: antes hubo dos avatares humanos dibujados (detective de gabardina en `avatar/original`,
-    `avatar/recortes*`, y versión con gafas en `avatar/v2/`). YA NO SE USAN. `avatar/hdlib.py` es la mejora de
-    calidad que se usó con ellos (pasa a tinta morada/crema).
+- **SIN PERSONAJE (decidido 2026-11-14):** el dueño no sale en cámara y **ya no habrá avatar ni presentador**.
+  El video es **solo la voz narrada del dueño + imágenes/clips**, con estilo **serio, oscuro y de investigación**
+  (la dirección de la muestra v2, que al dueño le gustó). Las partes del guion que decían "presentador a cámara"
+  se resuelven con imágenes, textos o gráficos.
+  - Historial (NO USAR): se probaron avatares dibujados (detective de gabardina y con gafas en `avatar/`), un
+    pato detective propio (`avatar/v3/`, `muestras/pato-animado.mp4`) y un estilo de "calcomanía de
+    caricatura" con logos en `logo/` (A y B). Todo eso se descartó. Psyduck también se descartó (es de
+    Pokémon). Los archivos quedan solo como historial.
+  - PENDIENTE: un logo nuevo que sea serio (al dueño no le gustó el de letra Bebas dentro del círculo, y los
+    de calcomanía eran del estilo descartado).
 - Tema: misterio. Casos reales que nunca se resolvieron o que no tienen explicación.
 - Regla: no se inventa ningún dato. Nombres, fechas, lugares y cifras salen del dueño o de fuentes
   que él revisó.
@@ -77,7 +58,7 @@ El guion trae estas reglas de ritmo:
 - Música grave y tensa; se corta en seco antes de cada revelación.
 - Contador o línea de tiempo en pantalla cada vez que aparece una fecha.
 - Toda imagen hecha con IA lleva la palabra "RECREACIÓN" en una esquina.
-- Las partes de "presentador a cámara" del guion las hace el avatar.
+- Las partes de "presentador a cámara" del guion ya no tienen presentador: se hacen con imágenes y textos.
 
 ## Cómo se hace cada video (reparto del trabajo)
 
@@ -89,26 +70,11 @@ El guion trae estas reglas de ritmo:
    - arma el video final juntando el audio con los clips e imágenes, en el orden del Excel;
    - sigue el estilo de edición de los canales de referencia que pase el dueño.
 
-## NUEVA DIRECCIÓN VISUAL (2026-11-14): estilo "calcomanía de caricatura", pero oscuro
+## Estilo "calcomanía de caricatura" (2026-11-14) — DESCARTADO
 
-El dueño mandó referencias de calcomanías y logos (un pato escribiendo en un escritorio, un computador viejo
-"LOADING", un televisor retro, los logos "MELON STUART" y "Juiced") y dijo: **no le gusta el logo anterior**
-(el de letra Bebas dentro del círculo) y **quiere el video "más o menos en este estilo pero dark"**.
-- Todo como **calcomanía**: borde blanco grueso recortado, contorno negro, sombra.
-- **Letras gordas con sombra 3D** (extrusión sólida hacia abajo-derecha y contorno negro grueso), inclinadas.
-  Letra: Luckiest Guy (Google Fonts, carpeta `apache/luckiestguy`); también descargadas Titan One, Bungee,
-  Lilita One, Bowlby One.
-- Garabatos alrededor: chispas de 4 puntas (verde/crema), rayitas curvas moradas, líneas de movimiento,
-  estallidos (estrellas de picos) detrás de lo importante.
-- Fondo oscuro: rayos concéntricos morados, brillo verde/morado al centro, trama de puntos en los bordes.
-- Se mantienen los colores: fondo #0f0818 / #140a20, morado #7046b2 / #2c1352, verde #5cf29a, crema #f3eee2.
-- El pato detective encaja con este estilo (es de caricatura).
-- Logo nuevo, dos versiones en `logo/` (hechas con `logo/logo.html`, que usa las rutas de la carpeta de trabajo
-  `fonts/`, `pato/`, `assets2/`): **A** letras gordas 3D "ARCHIVOS / INEXPLICABLES" sobre estallido negro con
-  la cara del pato asomada; **B** insignia redonda con el pato y la lupa y el nombre en arco. Hay versiones con
-  fondo transparente. PENDIENTE: que el dueño escoja.
-- Escena de ejemplo en el estilo nuevo: `muestras/escena-estilo-calcomania.png` ("¡SON HUESOS!" con cráneo,
-  foto, estallido verde y el pato asustado). PENDIENTE: aprobación y rehacer la muestra animada así.
+Se probó por pedido del dueño (letras gordas 3D, bordes de calcomanía, garabatos, pato). El mismo día el dueño
+decidió volver al estilo serio de investigación. No usarlo. Archivos de historial: `logo/`,
+`muestras/escena-estilo-calcomania.png`.
 
 ## Identidad de la edición (lo que pidió el dueño)
 
@@ -200,7 +166,8 @@ la palabra clave, en verde), Courier Prime.
   mezclar de a 2); cámara 3D sobre el mapa; hilo verde que une pistas; transiciones con barrido.
 
 v2: `muestras/muestra-archivo-001-v2.mp4`, hecha con `hornear2.py`, `muestra2.html`, `sonido2.py`.
-**Al dueño le gustó la dirección de la v2** ("así me gusta como va"). Seguir por ahí.
+**Al dueño le gustó la dirección de la v2** ("así me gusta como va"). **ES LA DIRECCIÓN VIGENTE** (confirmado otra
+vez el 2026-11-14 al descartar el personaje): serio, oscuro, de investigación, morado y verde, collage antiguo.
 
 ## Estado
 
@@ -208,6 +175,8 @@ v2: `muestras/muestra-archivo-001-v2.mp4`, hecha con `hornear2.py`, `muestra2.ht
 - [ ] Excel de cortes y escenas (pendiente que el dueño lo vuelva a enviar)
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [ ] Clips e imágenes del video 1 (pendiente)
+- [ ] Video que el dueño va a mandar para analizar si ese modelo sirve para crear los videos (pendiente)
+- [ ] Logo serio nuevo (pendiente)
 
 ## Herramientas en el entorno
 
