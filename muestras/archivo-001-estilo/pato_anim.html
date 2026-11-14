@@ -1,0 +1,160 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Lucky;src:url(fonts/LuckiestGuy-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#0f0818}
+#stage{position:absolute;inset:0;overflow:hidden}
+.abs{position:absolute;left:0;top:0}
+#rayos{position:absolute;left:-600px;top:-1000px;width:3120px;height:3080px;background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(112,70,178,.17) 0 7.5deg,transparent 7.5deg 15deg)}
+#brillo{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(92,242,154,.16),rgba(60,24,114,.35) 38%,rgba(8,4,14,.95) 78%)}
+#puntos{position:absolute;inset:0;background-image:radial-gradient(rgba(176,140,255,.18) 2px,transparent 2.5px);background-size:22px 22px;-webkit-mask-image:radial-gradient(circle at 50% 50%,transparent 30%,#000 80%)}
+.pato{position:absolute;transform-origin:50% 100%;filter:drop-shadow(10px 16px 18px rgba(0,0,0,.55))}
+#sombra{position:absolute;width:300px;height:44px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,0,0,.6),transparent 70%)}
+#fx{position:absolute;inset:0;pointer-events:none}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 55%,rgba(6,0,14,.55) 85%,rgba(3,0,8,.9) 100%)}
+#flash{position:absolute;inset:0;background:#f3eee2;opacity:0;mix-blend-mode:screen;pointer-events:none}
+#black{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+svg{overflow:visible}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="sticker" x="-20%" y="-20%" width="140%" height="140%">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="12" result="d"/>
+      <feFlood flood-color="#f3eee2"/><feComposite in2="d" operator="in" result="blanco"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius="15" result="d2"/>
+      <feFlood flood-color="#120a1c"/><feComposite in2="d2" operator="in" result="borde"/>
+      <feGaussianBlur in="d2" stdDeviation="10" result="sb"/><feOffset in="sb" dx="8" dy="12" result="so"/>
+      <feFlood flood-color="#000" flood-opacity=".6"/><feComposite in2="so" operator="in" result="sombra"/>
+      <feMerge><feMergeNode in="sombra"/><feMergeNode in="borde"/><feMergeNode in="blanco"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="ca" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+      <feOffset id="caR" in="r" dx="0" result="r2"/>
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb"/>
+      <feOffset id="caB" in="gb" dx="0" result="gb2"/>
+      <feBlend in="r2" in2="gb2" mode="screen"/>
+    </filter>
+    <symbol id="chispa" viewBox="-50 -50 100 100"><path d="M0 -50 C6 -10 10 -6 50 0 C10 6 6 10 0 50 C-6 10 -10 6 -50 0 C-10 -6 -6 -10 0 -50Z"/></symbol>
+  </defs>
+</svg>
+<div id="stage">
+ <div id="world" class="abs" style="width:1920px;height:1080px">
+  <div id="rayos"></div><div id="brillo"></div><div id="puntos"></div>
+  <img id="logo" class="abs" src="logo/logo-A-transparente.png" style="width:1920px;height:1080px;transform-origin:960px 560px">
+  <svg id="chispas" class="abs" width="1920" height="1080"></svg>
+  <div id="sombra"></div>
+  <img class="pato" id="p8" src="pato/pose_8.png">
+  <img class="pato" id="p1" src="pato/pose_1.png">
+  <img class="pato" id="p3" src="pato/pose_3.png">
+  <img class="pato" id="p5" src="pato/pose_5.png">
+  <img class="pato" id="p2" src="pato/pose_2.png">
+  <svg class="abs" width="1920" height="1080"><g id="nombre" filter="url(#sticker)"><g id="nombreTxt"></g></g>
+    <g id="tag001" filter="url(#sticker)"><rect x="-170" y="-34" width="340" height="68" rx="10" fill="#f3eee2" stroke="#140a20" stroke-width="6"/>
+      <text text-anchor="middle" y="13" font-family="TyperB" font-size="36" fill="#140a20" letter-spacing="4">ARCHIVO <tspan fill="#1d7a4a">001</tspan></text></g></svg>
+ </div>
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div id="vig"></div><div id="flash"></div><div id="black"></div>
+</div>
+<script>
+const NS='http://www.w3.org/2000/svg', $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lerp=(a,b,t)=>a+(b-a)*t, p=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eIn=x=>x*x*x, eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const spring=(x,f=3,d=6)=>x<=0?0:1-Math.exp(-d*x)*Math.cos(f*Math.PI*x);
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function shake(t,t0,amp,dur){if(t<t0||t>t0+dur)return[0,0];const k=Math.pow(1-(t-t0)/dur,2);return[Math.sin((t-t0)*88)*amp*k,Math.cos((t-t0)*67)*amp*.7*k]}
+function texto3D(g,txt,{x=0,y=0,size=100,cara='#f3eee2',lado='#7046b2',prof=10,borde=10}){
+  const mk=(dx,dy,fill,stroke,sw)=>{const t=document.createElementNS(NS,'text');
+    Object.entries({x:x+dx,y:y+dy,'font-family':'Lucky','font-size':size,'text-anchor':'middle',fill,stroke,'stroke-width':sw,'stroke-linejoin':'round','paint-order':'stroke','letter-spacing':3}).forEach(([k,v])=>t.setAttribute(k,v));t.textContent=txt;g.appendChild(t)};
+  for(let i=prof;i>=1;i--) mk(i*.7,i,'#140a20','#140a20',borde);
+  for(let i=prof;i>=1;i--) mk(i*.7,i,lado,'none',0);
+  mk(0,0,cara,'#140a20',borde);
+}
+texto3D($('nombreTxt'),'JOEL MARINO',{size:92,cara:'#f3eee2',lado:'#7046b2',prof:10});
+// chispas que saltan cuando entra el logo
+const CH=Array.from({length:10},(_,i)=>{const R=rnd(i*131+7),a=R()*6.28,d=380+R()*260;return{x:1290+Math.cos(a)*d,y:470+Math.sin(a)*d*.6,s:30+R()*40,c:R()<.6?'#5cf29a':'#f3eee2',dl:R()*.25}});
+$('chispas').innerHTML=CH.map((c,i)=>`<use id="ch${i}" href="#chispa" width="${c.s}" height="${c.s}" x="${-c.s/2}" y="${-c.s/2}" fill="${c.c}"/>`).join('');
+
+const DUR=7.6, HITS=[[3.30,1.1],[4.85,.7]];
+const ALTO=640, PIES=1000;          // tamaño del pato y línea del piso
+function pone(id,cx,{sy=1,sx=1,rot=0,dy=0,o=1,h=ALTO}={}){
+  const el=$(id), w=el.naturalWidth*h/el.naturalHeight;
+  el.style.width=w+'px';el.style.height=h+'px';el.style.opacity=o;
+  el.style.transform=`translate(${cx-w/2}px,${PIES-h+dy}px) rotate(${rot}deg) scale(${sx},${sy})`;
+}
+
+function render(t){
+  ['p8','p1','p3','p5','p2'].forEach(id=>$(id).style.opacity=0);
+  $('rayos').style.transform=`rotate(${t*4}deg)`;
+  let cx=480, alto=0;   // posición del pato y altura del salto (para la sombra)
+
+  // 1 · entra caminando a saltitos desde la derecha (mira hacia la izquierda)
+  if(t<1.75){
+    const k=eOut(p(t,.2,1.65)); cx=lerp(2150,480,k);
+    const P=.36, ph=((t-.2)/P)%1, hop=Math.sin(Math.PI*ph);
+    alto=t>.2?hop*55*(1-p(t,1.4,1.65)):0;
+    const contacto=Math.max(0,1-hop*3);                   // aplastado al tocar el piso
+    const sy=1-.1*contacto+.05*hop, sx=1+.08*contacto-.03*hop;
+    pone('p8',cx,{sy,sx,rot:-5*Math.sin(2*Math.PI*ph),dy:-alto});
+  }
+  // 2 · frena (se aplasta) y da la vuelta: saluda
+  else if(t<3.1){
+    const k=t-1.75;
+    const pop=k<.06?.85:1+.14*Math.exp(-(k-.06)*9)*Math.cos((k-.06)*28);
+    const saludo=3.5*Math.sin(2*Math.PI*2.2*k)*Math.exp(-k*.4);
+    pone('p1',cx,{sy:k<.06?.85:pop,sx:k<.06?1.1:2-pop,rot:saludo,dy:0});
+  }
+  // 3 · señala el logo (se inclina hacia adelante)
+  else if(t<4.6){
+    const k=t-3.1, lean=8*Math.exp(-k*5)*Math.cos(k*14);
+    const pop=1+.12*Math.exp(-k*10)*Math.cos(k*30);
+    pone('p3',cx+30,{sy:pop,sx:2-pop,rot:lean+1.2*Math.sin(t*2.4),dy:0});
+  }
+  // 4 · salto de sorpresa: se estira al subir, se aplasta al caer
+  else if(t<5.7){
+    const k=t-4.6, up=p(k,.05,.3), dn=p(k,.3,.5);
+    alto=k<.05?0:(k<.3?eOut(up)*170:(k<.5?170*(1-eIn(dn)):0));
+    let sy=1,sx=1;
+    if(k<.05){sy=.82;sx=1.12}else if(k<.3){sy=1.12-.1*up;sx=.92+.06*up}else if(k<.5){sy=1.05;sx=.96}
+    else{const q=k-.5;sy=1-.16*Math.exp(-q*9)*Math.cos(q*24);sx=2-sy}
+    pone('p5',cx,{sy,sx,rot:k<.5?-4*Math.sin(k*20):0,dy:-alto});
+  }
+  // 5 · mira con la lupa y se acerca a la cámara
+  else{
+    const k=t-5.7, ac=eInOut(p(k,.2,1.6));
+    const pop=1+.1*Math.exp(-k*10)*Math.cos(k*30);
+    pone('p2',lerp(cx,470,ac),{sy:pop,sx:2-pop,rot:-3+2*Math.sin(t*3),dy:lerp(0,240,ac),h:lerp(ALTO,960,ac)});
+  }
+  // sombra en el piso (se achica cuando salta)
+  const sh=1-alto/260;
+  $('sombra').style.transform=`translate(${cx-150}px,${PIES-22}px) scale(${sh},${sh})`;
+  $('sombra').style.opacity=t<5.7?.9*sh:Math.max(0,.9-(t-5.7)*2);
+
+  // nombre "JOEL MARINO"
+  const nk=spring(p(t,2.0,2.5),2.6,6), sale=eIn(p(t,3.05,3.3));
+  $('nombre').setAttribute('transform',`translate(${lerp(1300,1080,nk)+sale*1200} 880) rotate(${lerp(12,-5,nk)}) scale(${nk>0?lerp(1.6,1,clamp(nk)):0})`);
+  // logo que entra de golpe
+  const lk=p(t,3.18,3.32), ls=lk<1?lerp(2.1,.66,eIn(lk)):.66*(1+.06*Math.exp(-(t-3.32)*8)*Math.cos((t-3.32)*26));
+  $('logo').style.opacity=t>3.18?1:0;
+  $('logo').style.transform=`translate(${1290-960}px,${470-560}px) scale(${ls}) rotate(${t>3.32?.6*Math.sin(t*1.6):-8}deg)`;
+  CH.forEach((c,i)=>{const k=p(t,3.32+c.dl,3.62+c.dl),s=eOut(k)*(1-p(t,5.2+c.dl,5.6+c.dl));const e=$('ch'+i);
+    e.setAttribute('transform',`translate(${lerp(1290,c.x,eOut(k))} ${lerp(470,c.y,eOut(k))}) rotate(${t*90}) scale(${s})`)});
+  // etiqueta ARCHIVO 001
+  const ak=p(t,4.8,4.88);
+  $('tag001').setAttribute('transform',`translate(1290 845) rotate(-4) scale(${ak<1?lerp(1.8,1,eIn(ak))*(ak>0?1:0):1})`);
+
+  // cámara, golpes, aberración de color
+  let [wx,wy]=shake(t,3.32,22,.4),[x2,y2]=shake(t,4.88,12,.3),[x3,y3]=shake(t,5.1,8,.25);
+  $('world').style.transform=`translate(${wx+x2+x3}px,${wy+y2+y3}px) scale(${1+.01*t})`;
+  let hk=0;for(const[h,a]of HITS){if(t>=h&&t<h+.4)hk=Math.max(hk,a*Math.pow(1-(t-h)/.4,2))}
+  if(hk>.02){$('caR').setAttribute('dx',(14*hk).toFixed(1));$('caB').setAttribute('dx',(-14*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';
+  $('flash').style.opacity=hk*.35;
+  $('black').style.opacity=Math.max(1-p(t,0,.25),p(t,7.1,7.6));
+  grano(t);
+}
+function grano(t){const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*7919+13);c.clearRect(0,0,1920,1080);
+  for(let i=0;i<5;i++){const x=R()*1920,y=R()*1080,r=R()*1.6+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  const fl=.025*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080)}
+window.render=render;window.DUR=DUR;
+</script></body></html>

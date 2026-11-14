@@ -26,6 +26,14 @@ sencillo, sin jerga técnica y sin palabras en inglés (traducirlas o explicarla
   - Se anima como recorte: entra con rebote, respira, se balancea y cambia de pose en seco con cada frase.
     Clip de presentación: `muestras/muestra-avatar-pato.mp4` ("Soy Joel Marino" = `pose_1`, "y esto es
     Archivos Inexplicables" = `pose_3` señalando el logo, "Archivo cero cero uno" = `pose_2`).
+  - **El dueño quiere que el pato TENGA ANIMACIÓN (2026-11-14).** Muestra: `muestras/pato-animado.mp4`
+    (hecha con `muestras/archivo-001-estilo/pato_anim.html` y `sonido_pato.py`): entra caminando a saltitos
+    (se aplasta al tocar el piso y se estira en el aire, sombra en el piso que cambia con la altura), frena,
+    da la vuelta y saluda, señala el logo que entra de golpe, salta de sorpresa y termina acercándose con la
+    lupa. Sonidos de caricatura de Mixkit: golpecito 2151, desliza 2888, pato_goma 1014, pop_duro 2364,
+    boing 2894, pops 2359, salto 2043, chillido_panico 1010, pop_largo 2358.
+    Para que mueva el pico al hablar y parpadee se le pidieron al dueño imágenes extra (misma pose con pico
+    cerrado / medio abierto / abierto y con ojos cerrados).
   - **No usar Psyduck ni ningún personaje con dueño** (el dueño lo pidió el 2026-11-14; se le explicó el
     riesgo de reclamos y advertencias y eligió un personaje propio).
   - Historial: antes hubo dos avatares humanos dibujados (detective de gabardina en `avatar/original`,
