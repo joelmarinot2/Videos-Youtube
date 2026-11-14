@@ -28,6 +28,13 @@ español sencillo, sin jerga técnica.
   trípode, `v2b_7` con lupa y tela, `v2b_8` entregando una caja de evidencia.
   **DECIDIDO (2026-11-13): es el mismo personaje y se usan las ÚLTIMAS imágenes, las de gafas (v2).** Las de
   gabardina sin gafas (v1) quedan como versión vieja; no usarlas.
+- **CAMBIO DE CONCEPTO (2026-11-14):** el dueño quiso cambiar el avatar a "Detective Psyduck" (Pokémon). Se le
+  advirtió el riesgo (personaje de Nintendo + dibujos con firma de otro artista "WTPD") y **eligió crear un
+  personaje propio** con la misma idea (detective torpe y chistoso, sombrero viejo, gabardina rota, lupa,
+  libreta). Recomendado: búho morado de ojos verdes (alternativas: cuervo, pato morado). Instrucciones para
+  generarlo en `avatar/v3/instrucciones-personaje.md`. PENDIENTE: que el dueño mande las imágenes del nuevo
+  personaje; entonces recortarlas, mejorarlas (hdlib, conservando sus colores) y rehacer el clip de presentación.
+  No usar Psyduck ni ningún personaje con dueño.
 - **Versiones mejoradas (alta calidad, 3x):** `avatar/recortes-hd/` y `avatar/v2/recortes-hd/` (~2000×3000 px).
   USAR ESTAS en los videos. Se hacen con `avatar/hdlib.py`: agranda 3x y retraza las líneas como vectores con
   potrace en 3 tonos (tinta, gris medio, gris claro), así no se ven borrosas ni con cuadros de JPG.
