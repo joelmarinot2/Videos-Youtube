@@ -123,6 +123,20 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
 - Otros mencionados: mromidev/claude-animated-shorts, alchaincyf/huashu-motion,
   Vincentwei1021/video-shotcraft.
 
+- **SenseNova 6.8 Code2Video** (analizado 2026-11-14, por un TikTok de @roconeo que mandó el dueño):
+  huggingface.co/sensenova/SenseNova-6.8-Code2Video y github.com/OpenSenseNova/SenseNova-6.8-Code2Video.
+  Es un modelo de texto de 27.000 millones de parámetros (basado en Qwen) que **escribe código para hacer
+  videos** (gráficos animados, explicativos, letras animadas): lo mismo que Claude hace en este proyecto.
+  Pesos con licencia Apache 2.0 (el repositorio de GitHub con la guía "code-video" no trae archivo de
+  licencia: leerla para aprender, no copiarla al proyecto). Completo pesa 54,9 GB y necesita varias tarjetas
+  de video; versiones comprimidas de 8,6 a ~19 GB (la de 4 bits cabe en una RTX 4090 de 24 GB; las de 2 bits
+  "son más tontas"). Se usa dentro de Claude Code; sus creadores usan Claude Opus para la etapa 1 (mejorar
+  la instrucción). Hace videos cortos 100 % en código; una película puede tardar más de 10 horas.
+  **Conclusión que se le dio al dueño:** no le hace falta; Claude ya hace este mismo trabajo, con mejor
+  calidad, sin computador potente. Solo valdría la pena si algún día quiere hacerlo gratis en su propio PC
+  con una tarjeta de video grande. Su guía de trabajo usa el mismo método que ya usamos (dibujar cada cuadro
+  según el tiempo, capturar con navegador, revisar hojas de capturas, verificar el archivo).
+
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
   reglas de movimiento, gradación de color, grano de película, Ken Burns, subtítulos y sonido.
