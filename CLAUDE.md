@@ -1,8 +1,10 @@
 # Archivos Inexplicables — memoria del proyecto
 
 Este archivo lo lee Claude al empezar cada sesión. Aquí se guarda lo que el dueño del canal ya explicó,
-para no tener que repetirlo. El dueño es electricista, no programa y es de Colombia: hablarle en
-español sencillo, sin jerga técnica.
+para no tener que repetirlo. El dueño es electricista, no programa y es de Colombia.
+
+**REGLA FIJA: hablarle SIEMPRE en español** (el dueño lo pidió expresamente el 2026-11-14), en español
+sencillo, sin jerga técnica y sin palabras en inglés (traducirlas o explicarlas).
 
 ## El canal
 
