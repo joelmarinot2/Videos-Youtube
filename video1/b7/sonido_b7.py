@@ -33,7 +33,7 @@ m.put("golpe_sordo", 706.81, -5); m.put("garabato", 707.28, -5, pan=-.3); m.put(
 m.put("obturador", 709.7, -13); m.tecleo(710.07, 712.9, 28, -17)
 m.tics(710.7, 713.2, 18, -12, pan=0); m.put("golpe_sordo", 710.7, -8)
 m.put("obturador", 713.4, -13); m.put("papel_desliza", 713.62, -10, pan=-.4); m.tecleo(713.77, 714.7, 13, -15); m.tecleo(715.45, 716.6, 16, -16)
-m.put("aire_suave", 718.4, -15); m.tecleo(718.81, 719.9, 14, -16)
+m.put("aire_suave", 718.4, -15); m.tecleo(724.6, 725.4, 12, -16)
 m.put("golpe_hondo", 721.3, -6); m.tecleo(723.4, 724.5, 15, -12); m.put("campana", 724.7, -14)
 m.guardar(os.path.join(B, "sonido_b7.wav"))
 print("sonido del bloque 7 listo")

@@ -217,7 +217,15 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Excel de escenas recibido
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
-- [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **El 2026-11-15 el dueño dijo: «Después de corregir los efectos continúa con todo el
+- [x] **VIDEO 1 ARMADO COMPLETO Y ENVIADO AL DUEÑO EL 2026-11-15** (11 min 56 s, 1920×1080, 24 cuadros/s; el archivo
+      completo pesa 251 MB y no cabe en GitHub: se le envió por el chat). En GitHub quedan los 7 bloques sueltos
+      (`video1/entregas/archivo-001-bloque-N.mp4`) y una copia liviana del video completo
+      (`video1/entregas/archivo-001-completo-liviano-720p.mp4`). Se une con `video1/unir.py`. Los bloques empiezan
+      en 0:00, 1:37,8, 3:10,0, 4:24,0, 6:24,4, 8:50,4 y 10:19,0. **Falta la opinión del dueño sobre el video
+      completo y sobre los efectos nuevos.** Si pide cambios: se corrige el bloque (`bN/armar.py` o `sonido_bN.py`),
+      se regenera con `render.sh` y se vuelve a unir. Para subirlo a YouTube conviene sacar una versión de más
+      calidad (los `mudo_bN.mp4` de trabajo están casi sin compresión; hay que regenerarlos si la sesión se perdió).
+      Historial: Plan y avance: `video1/plan-montaje.md`. **El 2026-11-15 el dueño dijo: «Después de corregir los efectos continúa con todo el
       vídeo»**: ya no hay que esperar su visto bueno bloque por bloque; se arma todo y se le va enviando.
       **Bloque 2 hecho** (`video1/entregas/archivo-001-bloque-2.mp4`, 1 min 32 s, con los dos cortes de frases repetidas).
       **Bloques 3, 4 y 5 hechos y enviados el 2026-11-15** (`video1/entregas/archivo-001-bloque-N.mp4`). Cómo se

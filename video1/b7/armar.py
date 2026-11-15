@@ -101,7 +101,7 @@ const R={
    const k1=eExpo(p(t,720.6,721.3));$('c12w1').textContent='ARCHIVOS';$('c12w1').style.opacity=k1;$('c12w1').style.transform=`translateY(${(1-k1)*26}px)`;$('c12w1').style.filter=`blur(${(1-k1)*10}px)`;
    [...$('c12w2').children].forEach((sp,i)=>{const a=721.3+i*.035,k=eExpo(p(t,a,a+.55));sp.style.transform=`translateY(${(1-k)*50}px)`;sp.style.opacity=k;sp.style.filter=`blur(${(1-k)*14}px)`});
    const l=eInOut(p(t,722.0,722.9));$('c12line').setAttribute('x1',960-l*745);$('c12line').setAttribute('x2',960+l*745);
-   typed($('c12w3'),'FIN DEL ARCHIVO N.º 001',t,723.4,724.5);typed($('c12w4'),'NARRACIÓN · JOEL MARINO',t,718.81,719.9);$('c12w4').style.top='210px';$('c12sim').setAttribute('opacity',1);
+   typed($('c12w3'),'FIN DEL ARCHIVO N.º 001',t,723.4,724.5);typed($('c12w4'),'NARRACIÓN · JOEL MARINO',t,724.6,725.4);$('c12sim').setAttribute('opacity',1);
    $('c12w2').style.textShadow=t>722?`0 0 ${lerp(60,18,p(t,722,723.2))}px rgba(92,242,154,.28)`:'none';G.negro=Math.max(G.negro,eIn(p(t,725.8,726.9)))},
 };
 '''
