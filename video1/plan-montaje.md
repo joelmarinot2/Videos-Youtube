@@ -8,7 +8,7 @@ documento son **segundos del audio original** (`voz archivos inexplicables_001_e
 - Limpia, casi sin ruido de fondo (pausas a -70 dB). No se filtra.
 - Se le sube y empareja el volumen: paso alto 70 Hz, compresor suave, +14,5 dB y limitador → -15,7 LUFS
   (`voz_lista.wav`).
-- **Cortes pendientes (frases repetidas):**
+- **Cortes de frases repetidas** (los dos primeros ya están hechos en el bloque 2; falta el tercero, en el bloque 5):
   1. 127,7 – 130,2: sobra el primer «Un ejército japonés.» (lo repite enseguida).
   2. 182,8 – 186,9: «Con su secreto. Su secreto en el fondo.» → dejar una sola vez.
   3. 490,9 – 494,9: sobra la segunda «cuando le ponen fecha a estos 14 esqueletos».
@@ -53,6 +53,36 @@ contador, mapa, líneas de tiempo, fichas con sello, citas, contadores).
 Sonido del bloque 1 (`b1/sonido_b1.py`, usa `mezcla.py`): viento de montaña, pasos en piedra, agua, burbujas,
 latido antes de la revelación, silencio total y golpe en «Son huesos», sellos, máquina de escribir. Sin música.
 El ambiente baja solo cuando habla la voz.
+
+## Bloque 2 (hecho, en `b2/`)
+
+Va del segundo 100,0 al 196,9 del audio, con **dos cortes de frases repetidas ya hechos**: se quita
+127,60 – 130,35 (el primer «Un ejército japonés.») y 183,85 – 185,80 («Su secreto»; queda «Con su secreto… en
+el fondo.», como en el guion). Dura 92,2 s. En `bloque2.html` los tiempos siguen escritos en segundos del
+audio original; las funciones `aAudio()` y `aVideo()` hacen el paso al tiempo del video (y `T()` en el sonido).
+
+| Tiempo | Voz | Imagen |
+|---|---|---|
+| 100,0 – 105,2 | «El guardabosques baja de la montaña rápido y avisa.» | b2-01 (Higgsfield) un poco acelerado |
+| 105,2 – 115,5 | «La noticia llega a los ingleses… plena Segunda Guerra Mundial.» | b2-02 lento (1,8×): plano abierto con tira «INDIA BRITÁNICA · 1942», luego acercamiento a las caras con línea de tiempo 1939–1945 y punto verde en 1942 |
+| 115,5 – 127,6 | «Y Japón avanza por Asia. Cientos de cuerpos… una cosa.» | Mapa de Asia (Natural Earth, dominio público) en 3D: Japón se ilumina, los países ocupados se rayan uno a uno, flecha hasta la frontera de la India, pin verde «EL LAGO», foto de los huesos, y línea punteada que llega al lago |
+| 130,35 – 137,9 | «Un ejército japonés intentó entrar… murió congelado.» | b2-03 lento (1,4×) con frase en dos letras; en «congelado» la imagen se detiene y se pone fría |
+| 137,9 – 143,6 | «Eso es lo lógico…» | Ficha «PRIMERA RESPUESTA · UN EJÉRCITO JAPONÉS · 1942» con sello RESUELTO |
+| 143,6 – 149,9 | «Así que mandan a revisar los restos. Y ahí aparece el primer problema.» | b2-04 lento (1,2×), acercamiento y frase «El primer problema.» |
+| 149,9 – 155,6 | «Los huesos están demasiado gastados. Demasiado viejos.» | Foto b2-07 con dos anillos verdes y rótulos |
+| 155,6 – 160,7 | «No tienen meses. Tienen siglos.» | Letras grandes: MESES tachado, y «siglos.» en verde con golpe |
+| 160,7 – 166,2 | «No son soldados japoneses. No son de esa guerra.» | La misma ficha: se tacha el sello y la línea |
+| 166,2 – 173,7 | «Entonces, ¿quiénes son? Nadie tiene la respuesta.» | b1-07 (cráneo bajo el agua) con acercamiento lento y la pregunta |
+| 173,7 – 175,8 | «La guerra termina.» | Contador 1942 → 1945 y línea verde |
+| 175,8 – 180,1 | «Los ingleses se van y el lago se queda allá arriba.» | b1-03 al revés (la cámara se aleja) |
+| 180,1 – 182,6 | «Congelado casi todo el año.» | b1-04 al revés (el hielo se forma) |
+| 182,6 – 188,9 | «Con su secreto… en el fondo.» | b1-05 (agua transparente) cerrándose en círculo oscuro |
+| 188,9 – 196,9 | «Pero abajo, en los pueblos de la montaña…» | b2-06 lento (1,5×), funde a negro |
+
+No se usó `b2-05-lago-congelandose` (tiene pinos y bosque, no cuadra con un lago a 5.000 m).
+Sonido (`b2/sonido_b2.py`): proyector de cine en las escenas de oficina, estática de radio lejana, viento, pasos
+en nieve, latido antes de «Un ejército japonés», silencio total antes de los dos golpes. Sonidos nuevos de
+Mixkit: proyector 1443, estática de radio 2548 y 1026, señal de radio 2556.
 
 ## Cómo se arma un bloque
 

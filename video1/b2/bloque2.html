@@ -1,0 +1,468 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bebas;src:url(../b1/fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:Play;src:url(../b1/fonts/PlayfairDisplaywght.ttf)}
+@font-face{font-family:PlayI;src:url(../b1/fonts/PlayfairDisplay-Italicwght.ttf);font-style:italic}
+@font-face{font-family:Typer;src:url(../b1/fonts/CourierPrime-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(../b1/fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c}
+#stage{position:absolute;inset:0;overflow:hidden;background:#07040c}
+.scene{position:absolute;inset:0;display:none;overflow:hidden;background:#07040c}
+.abs{position:absolute;left:0;top:0;transform-origin:center center}
+.full{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:center center}
+.pc{filter:drop-shadow(2px 3px 0 rgba(10,4,18,.55)) drop-shadow(14px 22px 26px rgba(4,0,10,.75))}
+.typer{font-family:Typer;color:#140a20;font-size:40px;letter-spacing:3px;white-space:pre}
+.big{font-family:Bebas;color:#ece5d2;line-height:1}
+.ph{font-family:Play;color:#ece5d2;font-weight:400;text-shadow:0 2px 24px rgba(4,0,10,.9),0 0 60px rgba(4,0,10,.7)}
+.phi{font-family:PlayI;font-style:italic;color:#5cf29a;font-weight:500;text-shadow:0 2px 24px rgba(4,0,10,.9),0 0 26px rgba(92,242,154,.35)}
+.mask{overflow:hidden;display:inline-block;vertical-align:bottom;padding:0 22px 14px 0}
+.mask>span{display:inline-block}
+.col{position:absolute;top:0;width:150px;text-align:center}
+.sombraTxt{position:absolute;pointer-events:none}
+#recre{position:absolute;right:54px;bottom:40px;font-family:Typer;font-size:23px;letter-spacing:6px;color:rgba(236,229,210,.62);text-shadow:0 1px 6px rgba(0,0,0,.9)}
+#leak{position:absolute;inset:-100px;pointer-events:none;mix-blend-mode:screen}
+#tinte{position:absolute;inset:0;pointer-events:none;mix-blend-mode:soft-light;background:linear-gradient(160deg,rgba(112,70,178,.30),rgba(20,60,50,.18))}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 48%,rgba(6,0,14,.45) 80%,rgba(3,0,8,.85) 100%)}
+#flash{position:absolute;inset:0;background:#efe6ff;pointer-events:none;opacity:0;mix-blend-mode:screen}
+#black{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
+#fx{position:absolute;inset:0;pointer-events:none}
+svg{overflow:visible}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <filter id="ca" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+    <feOffset id="caR" in="r" dx="0" result="r2"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb"/>
+    <feOffset id="caB" in="gb" dx="0" result="gb2"/>
+    <feBlend in="r2" in2="gb2" mode="screen"/>
+  </filter>
+  <filter id="gastado" x="-10%" y="-20%" width="120%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.5" result="m"/>
+    <feComposite in="SourceGraphic" in2="m" operator="in"/>
+  </filter>
+</defs></svg>
+
+<div id="stage">
+ <div id="world" class="abs" style="width:1920px;height:1080px">
+
+  <!-- S1 · EL GUARDABOSQUES BAJA Y AVISA -->
+  <div class="scene" id="s1"><img class="full" id="c201"></div>
+
+  <!-- S2 · LA NOTICIA LLEGA A LOS INGLESES · SEGUNDA GUERRA MUNDIAL -->
+  <div class="scene" id="s2">
+    <img class="full" id="c202">
+    <div class="abs" id="s2sombra" style="width:1920px;height:1080px;background:linear-gradient(0deg,rgba(4,0,10,.92) 0,rgba(4,0,10,.6) 34%,transparent 62%)"></div>
+    <div class="abs" id="s2tit" style="left:0;top:596px;width:1920px;text-align:center"><div class="big" style="font-size:150px;letter-spacing:10px"><span class="mask" style="padding:0 0 6px 0"><span id="s2t">SEGUNDA GUERRA MUNDIAL</span></span></div></div>
+    <svg class="abs" width="1920" height="1080">
+      <line id="s2line" x1="360" y1="850" x2="360" y2="850" stroke="#ece5d2" stroke-width="3" opacity=".8"/>
+      <g id="s2tk"></g>
+      <circle id="s2pulse" cx="960" cy="850" r="0" fill="none" stroke="#5cf29a" stroke-width="2"/>
+      <circle id="s2dot" cx="960" cy="850" r="0" fill="#5cf29a" style="filter:drop-shadow(0 0 10px #5cf29a)"/>
+    </svg>
+    <div class="abs typer" id="s2y1" style="left:260px;top:880px;width:200px;text-align:center;color:#ece5d2;font-size:38px;letter-spacing:4px"></div>
+    <div class="abs typer" id="s2y2" style="left:1460px;top:880px;width:200px;text-align:center;color:#ece5d2;font-size:38px;letter-spacing:4px"></div>
+    <div class="abs typer" id="s2y3" style="left:860px;top:880px;width:200px;text-align:center;color:#5cf29a;font-size:46px;letter-spacing:4px;font-family:TyperB"></div>
+    <div class="abs pc" id="s2tag"><img src="../b1/assets/tira.png" style="display:block;width:820px;height:150px"><div class="abs typer" id="s2txt" style="left:58px;top:52px;font-size:38px"></div></div>
+  </div>
+
+  <!-- S3 · JAPÓN AVANZA POR ASIA (mapa) -->
+  <div class="scene" id="s3">
+    <img class="abs" id="s3plate" src="../b1/assets/plate_mapa.jpg" style="left:-140px;top:-80px;width:2200px;opacity:.28">
+    <div class="abs" id="s3mesh" style="width:1920px;height:1080px"></div>
+    <div class="abs" id="s3tilt" style="width:1920px;height:1080px;transform-origin:50% 60%">
+      <div class="abs" id="s3cam" style="width:1704px;height:1360px;transform-origin:0 0">
+        <svg id="s3svg" width="1704" height="1360" viewBox="0 0 1704 1360">
+          <defs>
+            <pattern id="raya" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><rect width="9" height="9" fill="#6a3fb8"/><rect width="3.2" height="9" fill="#b98cff"/></pattern>
+            <filter id="brillo" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g id="s3grid" stroke="rgba(236,229,210,.07)" stroke-width="1"></g>
+          <g id="s3tierra"></g>
+          <g id="s3ocup"></g>
+          <path id="s3india" fill="#4d2f7d" stroke="#ece5d2" stroke-width="2.2" stroke-linejoin="round"/>
+          <path id="s3japon" fill="#d9c4ff" stroke="#fff" stroke-width="1" filter="url(#brillo)"/>
+          <path id="s3flecha" fill="none" stroke="#ece5d2" stroke-width="7" stroke-linecap="round" style="filter:drop-shadow(0 0 6px rgba(185,140,255,.9))"/>
+          <path id="s3raya" fill="none" stroke="#ece5d2" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="3 13"/>
+          <path id="s3punta" d="M0 0 L-26 -12 L-20 0 L-26 12 Z" fill="#ece5d2"/>
+          <text id="s3lj" x="1500" y="548" font-family="Bebas" font-size="54" letter-spacing="10" fill="#ece5d2">JAPÓN</text>
+          <text id="s3li" x="300" y="700" font-family="Bebas" font-size="62" letter-spacing="16" fill="rgba(236,229,210,.85)">INDIA</text>
+          <g id="s3pin">
+            <circle id="s3pp" r="14" fill="none" stroke="#5cf29a" stroke-width="1.4"/>
+            <circle r="13" fill="rgba(92,242,154,.14)" stroke="#5cf29a" stroke-width="2.4" style="filter:drop-shadow(0 0 6px #5cf29a)"/>
+            <circle r="3.6" fill="#5cf29a"/>
+          </g>
+          <text id="s3ll" x="370" y="486" text-anchor="end" font-family="TyperB" font-size="17" letter-spacing="3" fill="#5cf29a"></text>
+        </svg>
+      </div>
+    </div>
+    <div class="abs pc" id="s3foto" style="background:#efe9da;padding:20px 20px 26px 20px;width:640px"><div style="width:640px;height:400px;overflow:hidden"><img id="s3img" src="../b1/frames/b108/0150.jpg" style="display:block;width:640px;height:400px;object-fit:cover"></div></div>
+  </div>
+
+  <!-- S4 · UN EJÉRCITO JAPONÉS -->
+  <div class="scene" id="s4">
+    <img class="full" id="c203">
+    <div class="abs" id="s4frio" style="width:1920px;height:1080px;mix-blend-mode:screen"></div>
+    <div class="abs" id="s4sombra" style="width:1920px;height:1080px;background:linear-gradient(90deg,rgba(4,0,10,.82) 0,rgba(4,0,10,.45) 40%,transparent 66%)"></div>
+    <div class="abs" id="s4a" style="left:130px;top:600px">
+      <div class="ph" style="font-size:104px"><span class="mask"><span id="s4a1">Un ejército</span></span></div>
+      <div class="phi" style="font-size:210px;margin-top:-46px"><span class="mask"><span id="s4a2">japonés.</span></span></div>
+    </div>
+  </div>
+
+  <!-- S5 y S9 · LA FICHA: PRIMERA RESPUESTA -->
+  <div class="scene" id="s5">
+    <img class="full" id="s5img" src="../b1/img/ficha.jpg">
+    <div class="abs" id="s5over" style="width:1920px;height:1080px;transform-origin:center center">
+      <div class="abs" id="s5t1" style="left:720px;top:292px;font-family:TyperB;font-size:40px;letter-spacing:4px;color:#2a1d18;opacity:.86;white-space:pre"></div>
+      <div class="abs" id="s5t2" style="left:720px;top:352px;font-family:Typer;font-size:30px;letter-spacing:3px;color:#3a2a22;opacity:.82;white-space:pre"></div>
+      <svg class="abs" width="1920" height="1080" style="mix-blend-mode:multiply">
+        <g id="s5s1" filter="url(#gastado)"><rect x="-235" y="-62" width="470" height="124" rx="10" fill="none" stroke="#1f7d4c" stroke-width="9"/><rect x="-219" y="-46" width="438" height="92" rx="5" fill="none" stroke="#1f7d4c" stroke-width="3"/>
+          <text y="33" text-anchor="middle" font-family="Bebas" font-size="100" letter-spacing="10" fill="#1f7d4c">RESUELTO</text></g>
+        <path id="s5x1" fill="none" stroke="#4a1f7e" stroke-width="15" stroke-linecap="round" filter="url(#gastado)"/>
+        <path id="s5x2" fill="none" stroke="#4a1f7e" stroke-width="15" stroke-linecap="round" filter="url(#gastado)"/>
+        <path id="s5x3" fill="none" stroke="#4a1f7e" stroke-width="7" stroke-linecap="round" filter="url(#gastado)"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- S6 · REVISAN LOS RESTOS · EL PRIMER PROBLEMA -->
+  <div class="scene" id="s6">
+    <img class="full" id="c204">
+    <div class="abs" id="s6sombra" style="width:1920px;height:1080px;background:linear-gradient(0deg,rgba(4,0,10,.85) 0,rgba(4,0,10,.4) 36%,transparent 60%)"></div>
+    <div class="abs" id="s6a" style="left:130px;top:640px">
+      <div class="ph" style="font-size:100px"><span class="mask"><span id="s6a1">El primer</span></span></div>
+      <div class="phi" style="font-size:200px;margin-top:-44px"><span class="mask"><span id="s6a2">problema.</span></span></div>
+    </div>
+  </div>
+
+  <!-- S7 · DEMASIADO GASTADOS, DEMASIADO VIEJOS -->
+  <div class="scene" id="s7">
+    <div class="abs" id="s7cam" style="width:1920px;height:1080px">
+      <img class="full" src="b2-07-huesos-1942.jpg">
+      <svg class="abs" width="1920" height="1080">
+        <circle id="s7c1" cx="878" cy="662" r="96" fill="none" stroke="#5cf29a" stroke-width="4" pathLength="1000" transform="rotate(-90 878 662)" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.9))"/>
+        <path id="s7l1" fill="none" stroke="#5cf29a" stroke-width="2.5"/>
+        <circle id="s7c2" cx="1382" cy="595" r="88" fill="none" stroke="#5cf29a" stroke-width="4" pathLength="1000" transform="rotate(-90 1382 595)" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.9))"/>
+        <path id="s7l2" fill="none" stroke="#5cf29a" stroke-width="2.5"/>
+      </svg>
+      <div class="abs typer" id="s7t1" style="left:300px;top:330px;width:620px;color:#ece5d2;font-family:TyperB;font-size:44px;letter-spacing:5px;text-shadow:0 2px 10px #000,0 0 30px #000"></div>
+      <div class="abs typer" id="s7t2" style="left:1120px;top:260px;width:620px;color:#ece5d2;font-family:TyperB;font-size:44px;letter-spacing:5px;text-shadow:0 2px 10px #000,0 0 30px #000"></div>
+    </div>
+    <div class="abs" style="width:1920px;height:1080px;background:linear-gradient(180deg,rgba(4,0,10,.55) 0,transparent 45%)"></div>
+  </div>
+
+  <!-- S8 · NO TIENEN MESES. TIENEN SIGLOS -->
+  <div class="scene" id="s8">
+    <img class="full" src="b2-07-huesos-1942.jpg" id="s8bg" style="filter:blur(30px) brightness(.3)">
+    <div class="abs" id="s8mesh" style="width:1920px;height:1080px;mix-blend-mode:screen"></div>
+    <div class="abs" id="s8m" style="left:0;top:0;width:1920px;height:1080px">
+      <div class="abs typer" id="s8n1" style="left:0;top:270px;width:1920px;text-align:center;color:#ece5d2;font-size:40px;letter-spacing:14px"></div>
+      <div class="abs big" id="s8mes" style="left:0;top:340px;width:1920px;text-align:center;font-size:400px;letter-spacing:12px">MESES</div>
+      <svg class="abs" width="1920" height="1080"><path id="s8x" fill="none" stroke="#8f5be0" stroke-width="20" stroke-linecap="round" filter="url(#gastado)"/></svg>
+    </div>
+    <div class="abs" id="s8s" style="left:0;top:0;width:1920px;height:1080px">
+      <div class="abs typer" id="s8n2" style="left:0;top:330px;width:1920px;text-align:center;color:#ece5d2;font-size:40px;letter-spacing:14px"></div>
+      <div class="abs phi" style="left:0;top:350px;width:1920px;text-align:center;font-size:400px"><span class="mask" style="padding:0 30px 60px 30px"><span id="s8sig">siglos.</span></span></div>
+    </div>
+  </div>
+
+  <!-- S10 · ENTONCES, ¿QUIÉNES SON? -->
+  <div class="scene" id="s10">
+    <img class="full" id="c107">
+    <div class="abs" id="s10sombra" style="width:1920px;height:1080px;background:linear-gradient(270deg,rgba(4,0,10,.8) 0,rgba(4,0,10,.4) 38%,transparent 62%)"></div>
+    <div class="abs" id="s10a" style="left:1060px;top:560px;width:760px;text-align:right">
+      <div class="ph" style="font-size:112px"><span class="mask" style="padding:0 0 14px 22px"><span id="s10a1">¿Quiénes</span></span></div>
+      <div class="phi" style="font-size:260px;margin-top:-54px"><span class="mask" style="padding:0 0 30px 22px"><span id="s10a2">son?</span></span></div>
+    </div>
+  </div>
+
+  <!-- S11 · LA GUERRA TERMINA -->
+  <div class="scene" id="s11">
+    <img class="abs" id="s11plate" src="../b1/assets/plate_periodico.jpg" style="left:-140px;top:-80px;width:2200px;opacity:.4">
+    <div class="abs" id="s11mesh" style="width:1920px;height:1080px"></div>
+    <div class="abs" id="s11odo" style="left:660px;top:250px;width:600px;height:300px;overflow:hidden;-webkit-mask-image:linear-gradient(transparent 0,#000 22%,#000 78%,transparent 100%)">
+      <div class="col big" style="left:0;font-size:330px">1</div><div class="col big" style="left:150px;font-size:330px">9</div><div class="col big" style="left:300px;font-size:330px">4</div>
+      <div class="col big" id="s11d" style="left:450px;font-size:330px"></div>
+    </div>
+    <svg class="abs" width="1920" height="1080">
+      <line id="s11line" x1="460" y1="640" x2="460" y2="640" stroke="#5cf29a" stroke-width="4" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.8))"/>
+      <circle cx="460" cy="640" r="8" fill="#5cf29a"/><circle id="s11dot" cx="460" cy="640" r="9" fill="#5cf29a" style="filter:drop-shadow(0 0 10px #5cf29a)"/>
+    </svg>
+    <div class="abs typer" id="s11t" style="left:0;top:690px;width:1920px;text-align:center;color:#5cf29a;font-size:46px;letter-spacing:16px"></div>
+  </div>
+
+  <!-- S12 · EL LAGO SE QUEDA ALLÁ ARRIBA -->
+  <div class="scene" id="s12"><img class="full" id="c103"></div>
+  <!-- S13 · CONGELADO CASI TODO EL AÑO -->
+  <div class="scene" id="s13"><img class="full" id="c205"></div>
+  <!-- S14 · CON SU SECRETO EN EL FONDO -->
+  <div class="scene" id="s14"><img class="full" id="c105"><div class="abs" id="s14cierre" style="width:1920px;height:1080px"></div></div>
+  <!-- S15 · ABAJO, EN LOS PUEBLOS DE LA MONTAÑA -->
+  <div class="scene" id="s15"><img class="full" id="c206"></div>
+ </div>
+
+ <div id="recre">RECREACIÓN</div>
+ <div id="tinte"></div>
+ <div id="leak"></div>
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div id="vig"></div>
+ <div id="flash"></div>
+ <div id="black"></div>
+</div>
+
+<script src="mapa_asia.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lerp=(a,b,t)=>a+(b-a)*t, p=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eExpo=x=>x>=1?1:1-Math.pow(2,-10*x), eIn=x=>x*x*x, eInExpo=x=>x<=0?0:Math.pow(2,10*x-10);
+const eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eBack=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const spring=(x,f=4.5,d=5)=>x<=0?0:1-Math.exp(-d*x)*Math.cos(f*Math.PI*x);
+const twos=t=>Math.floor(t*12)/12;
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function tf(el,x,y,s=1,r=0,o=1,extra=''){el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s}) ${extra}`;el.style.opacity=o}
+function typed(el,text,t,a,b){el.textContent=text.slice(0,Math.floor(clamp((t-a)/(b-a))*text.length))}
+function shake(t,t0,amp,dur){if(t<t0||t>t0+dur)return[0,0,0];const k=Math.pow(1-(t-t0)/dur,2);return[Math.sin((t-t0)*88)*amp*k,Math.cos((t-t0)*67)*amp*.7*k,Math.sin((t-t0)*53)*amp*.04*k]}
+// texto que se destapa desde una máscara; con "sale" se vuelve a tapar
+function reveal(el,t,a,dur=.55,sale=null){let k=eExpo(p(t,a,a+dur));if(sale!==null&&t>sale)k=1-eIn(p(t,sale,sale+.3));
+  el.style.transform=`translateY(${(1-k)*112}%)`;el.style.filter=`blur(${(1-k)*14}px)`}
+function slap(el,t,a,x,y,r,s=1){const tt=twos(t);if(tt<a){el.style.opacity=0;return}
+  const k=tt-a; let sc,yy,rr; if(k<2/12){sc=s*1.22;yy=y-60;rr=r-6}else{const b=spring(p(t,a+2/12,a+.6),3.2,7);sc=lerp(s*1.22,s,b);yy=lerp(y-60,y,b);rr=lerp(r-6,r,b)}
+  tf(el,x,yy,sc,rr,1)}
+
+
+// ---------- TIEMPOS (en segundos del audio original). El bloque 2 lleva dos cortes de frases repetidas ----------
+const INI=100.0, FINA=196.9;
+const CORTES=[[127.60,130.35],[183.85,185.80]];        // lo que se quita del audio original
+const DUR=FINA-INI-CORTES.reduce((s,c)=>s+c[1]-c[0],0);
+const OFF=0;
+function aAudio(tv){let t=tv+INI;for(const[a,b]of CORTES){if(t>=a)t+=b-a}return t}          // tiempo de video -> audio original
+function aVideo(ta){let d=0;for(const[a,b]of CORTES){if(ta>=b)d+=b-a;else if(ta>a)d+=ta-a}return ta-INI-d}
+const ESC={s1:[100.0,105.2],s2:[105.2,115.5],s3:[115.5,130.44],s4:[130.44,137.9],s5:[137.9,143.6],s6:[143.6,149.9],s7:[149.9,155.6],s8:[155.6,160.7],
+  s9:[160.7,166.2],s10:[166.2,173.7],s11:[173.7,175.8],s12:[175.8,180.1],s13:[180.1,182.6],s14:[182.6,188.9],s15:[188.9,197.0]};
+const DIV={s9:'s5'};                                   // la escena 9 usa la misma ficha que la 5
+const HITS=[[114.62,.45],[130.46,1.2],[139.5,.8],[149.04,.55],[158.56,1.1],[162.3,.9],[175.02,.6]];
+const IA=['s1','s2','s4','s6','s7','s10','s12','s13','s14','s15'];
+async function cuadro(img,dir,n,ta,ini,s0=0,vel=1){const i=clamp(Math.floor(((ta-ini)*vel+s0)*24)+1,1,n);const src=`${dir}/${String(i).padStart(4,'0')}.jpg`;
+  if(img.dataset.src!==src){img.dataset.src=src;img.src=src;try{await img.decode()}catch(e){}}return i}
+function strip(el,n,d0=0){let h='';for(let i=0;i<n;i++)h+=`<div style="height:330px">${(i+d0)%10}</div>`;el.innerHTML=h}
+strip($('s11d'),4,2);
+
+// ----- mapa de Asia -----
+const KX=20*Math.cos(25*Math.PI/180), XY=(lon,lat)=>[(lon-58)*KX,(56-lat)*20];
+const OCUP=[[116.35,['Vietnam','Laos','Cambodia']],[116.9,['Thailand']],[117.35,['Philippines']],[117.85,['Malaysia']],[118.3,['Indonesia']],[118.8,['Myanmar']]];
+const IMPERIO=['North Korea','South Korea','Taiwan'];
+(function(){
+  let g='';for(let lon=60;lon<=150;lon+=10){const x=XY(lon,0)[0];g+=`<line x1="${x}" y1="0" x2="${x}" y2="1360"/>`}
+  for(let lat=-10;lat<=50;lat+=10){const y=XY(0,lat)[1];g+=`<line x1="0" y1="${y}" x2="1704" y2="${y}"/>`}$('s3grid').innerHTML=g;
+  const esp=new Set(['Japan','India',...IMPERIO,...OCUP.flatMap(o=>o[1])]);let h='';
+  for(const n in MAPA){if(n==='Japan'||n==='India')continue;h+=`<path d="${MAPA[n]}" fill="#3b2163" stroke="rgba(236,229,210,.34)" stroke-width="1"/>`}
+  $('s3tierra').innerHTML=h;
+  let o='';for(const n of IMPERIO)o+=`<path class="imp" d="${MAPA[n]}" fill="url(#raya)" stroke="#d9c4ff" stroke-width="1.2"/>`;
+  OCUP.forEach(([t,ns],i)=>{for(const n of ns)o+=`<path class="oc" data-t="${t}" d="${MAPA[n]}" fill="url(#raya)" stroke="#d9c4ff" stroke-width="1.2"/>`});
+  $('s3ocup').innerHTML=o;$('s3india').setAttribute('d',MAPA['India']);$('s3japon').setAttribute('d',MAPA['Japan']);
+  const pts=[[131,32.2],[124.5,26.5],[117,19.5],[109.5,14.5],[103,13.2],[98.2,16.5],[96,21],[94.4,24.3]].map(p=>XY(p[0],p[1]));
+  const cr=P=>{let d=`M${P[0][0].toFixed(1)} ${P[0][1].toFixed(1)}`;for(let i=0;i<P.length-1;i++){const p0=P[Math.max(0,i-1)],p1=P[i],p2=P[i+1],p3=P[Math.min(P.length-1,i+2)];
+    d+=`C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)} ${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)} ${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`}return d};
+  $('s3flecha').setAttribute('d',cr(pts));
+  const p2=[[94.4,24.3],[91.5,26.4],[87.5,27.4],[83.5,28.6],[79.73,30.26]].map(p=>XY(p[0],p[1]));$('s3raya').setAttribute('d',cr(p2));
+  const L=XY(79.73,30.26);$('s3pin').dataset.x=L[0];$('s3pin').dataset.y=L[1];
+  let k='';for(let i=0;i<=6;i++){const x=360+i*200;k+=`<line x1="${x}" y1="${i%3?840:832}" x2="${x}" y2="${i%3?860:868}" stroke="#ece5d2" stroke-width="2" class="tk" data-i="${i}" opacity="0"/>`}$('s2tk').innerHTML=k;
+})();
+const FL=$('s3flecha').getTotalLength(), RL=$('s3raya').getTotalLength();
+// claves de cámara del mapa: [tiempo, x, y, zoom] en coordenadas del mapa
+const CAM=[[115.5,1010,560,1.02],[116.2,1010,560,1.05],[119.3,700,640,1.42],[121.0,680,630,1.5],[124.8,430,520,3.0],[130.44,405,516,3.35]];
+function cam(t){let i=0;while(i<CAM.length-2&&t>=CAM[i+1][0])i++;const a=CAM[i],b=CAM[i+1],k=eInOut(p(t,a[0],b[0]));return[lerp(a[1],b[1],k),lerp(a[2],b[2],k),lerp(a[3],b[3],k)]}
+
+async function render(tv){
+  const t=aAudio(tv);
+  let sc=null;for(const k in ESC){if(t>=ESC[k][0]&&t<ESC[k][1])sc=k}
+  const vis=DIV[sc]||sc;for(const k in ESC){if(!DIV[k])$(k).style.display=(k===vis)?'block':'none'}
+  let wx=0,wy=0,wr=0,ws=1,negro=0,ia=IA.includes(sc);
+
+  // ===== S1 · el guardabosques baja =====
+  if(sc==='s1'){
+    await cuadro($('c201'),'frames/b201',240,t,100.0,0.2,1.3);const u=(t-100)/5.2;
+    $('c201').style.transform=`scale(${lerp(1.1,1.02,u)})`;
+    negro=1-eOut(p(t,100.0,101.0));
+  }
+  // ===== S2 · los ingleses · Segunda Guerra Mundial =====
+  else if(sc==='s2'){
+    await cuadro($('c202'),'frames/b202',259,t,105.2,0.1);
+    const B=t>=110.35, u=B?(t-110.35)/5.15:(t-105.2)/5.15;
+    $('c202').style.transformOrigin=B?'52% 30%':'50% 50%';$('c202').style.transform=`scale(${B?lerp(1.42,1.52,u):lerp(1.03,1.09,u)})`;
+    const tg=spring(p(twos(t),107.3,107.9),2.4,6.5), ts=eIn(p(t,109.95,110.3));
+    tf($('s2tag'),lerp(-950,90,tg)-ts*1100,838,1,lerp(-7,-2,tg),(t>=107.3&&t<110.35)?1:0);
+    typed($('s2txt'),'INDIA BRITÁNICA · 1942',t,107.6,109.0);
+    const g=eOut(p(t,112.1,112.9));$('s2sombra').style.opacity=g;
+    const l=eInOut(p(t,112.4,113.7));$('s2line').setAttribute('x2',lerp(360,1560,l));
+    document.querySelectorAll('#s2tk .tk').forEach(e=>e.setAttribute('opacity',l*6>=+e.dataset.i?.8:0));
+    typed($('s2y1'),'1939',t,112.5,112.9);typed($('s2y2'),'1945',t,113.5,113.9);
+    $('s2tit').style.opacity=t>=113.7?1:0;reveal($('s2t'),t,113.78,.6);
+    const dk=eBack(p(t,114.6,114.9));$('s2dot').setAttribute('r',11*dk);typed($('s2y3'),'1942',t,114.6,114.9);
+    const pu=((t-114.6)%1.0);$('s2pulse').setAttribute('r',11+pu*46);$('s2pulse').setAttribute('opacity',t>114.6?(1-pu):0);
+    const en=eExpo(p(t,105.2,105.5));wx=(1-en)*700;
+    const ex=eInExpo(p(t,115.32,115.5));wx-=ex*900;
+  }
+  // ===== S3 · Japón avanza por Asia =====
+  else if(sc==='s3'){
+    const u=(t-115.5)/15;tf($('s3plate'),lerp(0,-80,u),0,lerp(1.05,1.15,u),0,.28);malla($('s3mesh'),t,'#30115a','#0b2f24',.85);
+    const [fx,fy,z]=cam(t);
+    $('s3cam').style.transform=`translate(${960-fx*z}px,${560-fy*z}px) scale(${z})`;
+    $('s3tilt').style.transform=`perspective(1900px) rotateX(${lerp(20,11,p(t,115.5,124.8))}deg) rotateZ(${lerp(-3,1.5,p(t,115.5,124.8))}deg)`;
+    const en=eExpo(p(t,115.5,115.85));wx=(1-en)*900;
+    // Japón y su imperio
+    const jk=p(t,115.75,116.1);$('s3japon').setAttribute('opacity',lerp(.25,1,jk));$('s3lj').setAttribute('opacity',jk);
+    document.querySelectorAll('#s3ocup .imp').forEach(e=>e.setAttribute('opacity',.85*p(t,115.95,116.3)));
+    document.querySelectorAll('#s3ocup .oc').forEach(e=>{const a=+e.dataset.t,k=p(t,a,a+.3);e.setAttribute('opacity',k<=0?0:.85+.15*Math.exp(-(t-a)*6));e.setAttribute('stroke-width',1.2+4*Math.exp(-(t-a)*7)*(k>0))});
+    // la flecha del avance
+    const fk=eInOut(p(t,116.2,119.2)), fl=fk*FL;
+    $('s3flecha').setAttribute('stroke-dasharray',`${fl.toFixed(1)} ${FL+20}`);$('s3flecha').setAttribute('opacity',fk>0?1:0);
+    // la línea punteada hasta el lago: lo que temen los ingleses
+    const rk=eInOut(p(t,124.9,126.6)), rl=rk*RL;
+    $('s3raya').style.strokeDasharray='3 13';$('s3raya').setAttribute('opacity',rk>0?1:0);
+    $('s3raya').style.clipPath='none';
+    // se dibuja de a poco: se recorta con un trazo de máscara simple (longitud visible)
+    $('s3raya').setAttribute('stroke-dasharray',dashes(rl));
+    let tip,ang;
+    if(rk>0){const a=$('s3raya').getPointAtLength(Math.max(0,rl-4)),b=$('s3raya').getPointAtLength(rl);tip=b;ang=Math.atan2(b.y-a.y,b.x-a.x)}
+    else{const a=$('s3flecha').getPointAtLength(Math.max(0,fl-4)),b=$('s3flecha').getPointAtLength(Math.max(.1,fl));tip=b;ang=Math.atan2(b.y-a.y,b.x-a.x)}
+    $('s3punta').setAttribute('transform',`translate(${tip.x} ${tip.y}) rotate(${ang*180/Math.PI}) scale(${rk>0?.62:1})`);$('s3punta').setAttribute('opacity',fk>0?1:0);
+    // India y el lago
+    const ik=Math.exp(-Math.max(0,t-119.3)*3)*(t>=119.3);$('s3india').setAttribute('stroke',ik>.05?'#5cf29a':'#ece5d2');$('s3india').setAttribute('stroke-width',2.2+5*ik);
+    $('s3li').setAttribute('opacity',lerp(.85,.25,p(t,121,123)));
+    const PX=+$('s3pin').dataset.x,PY=+$('s3pin').dataset.y,pk=eBack(p(t,119.85,120.2));
+    const boom=t>=126.6?1+.9*Math.exp(-(t-126.6)*5):1;
+    $('s3pin').setAttribute('transform',`translate(${PX} ${PY}) scale(${pk*lerp(1,.62,p(t,121,124.8))*boom})`);
+    const pu=((t-119.85)%1.1)/1.1;$('s3pp').setAttribute('r',14+pu*30);$('s3pp').setAttribute('opacity',t>119.85?(1-pu):0);
+    typed($('s3ll'),'EL LAGO',t,120.1,120.6);$('s3ll').setAttribute('font-size',lerp(26,15,p(t,121,124.8)));
+    // foto de los huesos
+    const k=spring(p(twos(t),121.25,121.95),2.2,6.2), s=eIn(p(t,124.35,124.75));
+    tf($('s3foto'),lerp(2100,1130,k)+s*1000,lerp(300,330,k),.95,lerp(14,5,k)+.4*Math.sin(t*.9),(t>=121.25&&t<124.75)?1:0);
+    $('s3img').style.transform=`scale(${lerp(1.15,1.3,p(t,121.25,124.75))})`;
+    ia=t>=121.25&&t<124.75;
+    negro=eIn(p(t,127.2,127.6))*.55+(t>=130.35?.55:0);
+  }
+  // ===== S4 · un ejército japonés =====
+  else if(sc==='s4'){
+    const tc=Math.min(t,136.2);                       // en "congelado" la imagen se queda quieta
+    await cuadro($('c203'),'frames/b203',201,tc,130.44,0.1);const u=(t-130.44)/7.46;
+    $('c203').style.transform=`scale(${lerp(1.04,1.12,u)})`;
+    const f=eOut(p(t,135.6,136.9));
+    $('c203').style.filter=`brightness(${1+.12*f}) contrast(${1+.1*f})`;
+    $('s4frio').style.background=`radial-gradient(ellipse at 50% 50%,rgba(60,120,220,${.16*f}) 30%,rgba(190,225,255,${.55*f}) 100%)`;
+    $('s4sombra').style.opacity=1-p(t,132.5,133.0);
+    $('s4a').style.opacity=t<133.0?1:0;reveal($('s4a1'),t,130.46,.4,132.5);reveal($('s4a2'),t,130.72,.5,132.6);
+    const a=shake(t,130.46,26,.5);wx=a[0];wy=a[1];wr=a[2];
+  }
+  // ===== S5 · la ficha: primera respuesta =====  y  ===== S9 · tachada =====
+  else if(sc==='s5'||sc==='s9'){
+    const s=sc==='s5'?lerp(1.04,1.12,(t-137.9)/5.7):lerp(1.14,1.22,(t-160.7)/5.5);
+    $('s5img').style.transform=`scale(${s})`;$('s5over').style.transform=`scale(${s})`;
+    typed($('s5t1'),'PRIMERA RESPUESTA',t,138.1,138.9);typed($('s5t2'),'UN EJÉRCITO JAPONÉS · 1942',t,139.0,139.45);
+    const k=p(t,139.4,139.5);$('s5s1').setAttribute('transform',`translate(960 610) rotate(-8) scale(${k<=0?0:lerp(2.3,1.15,eIn(k))})`);$('s5s1').setAttribute('opacity',k<=0?0:lerp(.2,.92,k));
+    const x=(el,a,x0,y0,x1,y1)=>{const q=eOut(p(t,a,a+.16));el.setAttribute('d',`M${x0} ${y0} L${lerp(x0,x1,q)} ${lerp(y0,y1,q)}`);el.setAttribute('opacity',q>0?.95:0)};
+    x($('s5x1'),162.28,680,700,1240,520);x($('s5x2'),162.62,700,520,1230,700);x($('s5x3'),164.9,716,372,1228,366);
+    let a=shake(t,139.5,14,.3),b=shake(t,162.3,18,.45);wx=a[0]+b[0];wy=a[1]+b[1];
+  }
+  // ===== S6 · revisan los restos =====
+  else if(sc==='s6'){
+    await cuadro($('c204'),'frames/b204',173,t,143.6,0.1);const B=t>=147.5,u=B?(t-147.5)/2.4:(t-143.6)/3.9;
+    $('c204').style.transformOrigin=B?'50% 46%':'50% 50%';$('c204').style.transform=`scale(${B?lerp(1.3,1.4,u):lerp(1.02,1.07,u)})`;
+    $('s6sombra').style.opacity=B?1:0;$('s6a').style.opacity=B?1:0;reveal($('s6a1'),t,147.75,.4);reveal($('s6a2'),t,148.72,.5);
+    const a=shake(t,149.04,10,.3);wx=a[0];wy=a[1];
+  }
+  // ===== S7 · demasiado gastados, demasiado viejos =====
+  else if(sc==='s7'){
+    const u=(t-149.9)/5.7;$('s7cam').style.transformOrigin='58% 60%';$('s7cam').style.transform=`scale(${lerp(1.08,1.2,u)})`;
+    const c=(el,a)=>{const k=eInOut(p(t,a,a+.6));el.setAttribute('stroke-dasharray',`${(k*1000).toFixed(0)} 1000`);el.setAttribute('opacity',k>0?1:0)};
+    c($('s7c1'),151.6);c($('s7c2'),153.5);
+    const ln=(el,a,x0,y0,x1,y1,x2)=>{const k=eExpo(p(t,a,a+.45));const mx=lerp(x0,x1,Math.min(1,k*2)),my=lerp(y0,y1,Math.min(1,k*2));
+      el.setAttribute('d',`M${x0} ${y0} L${mx} ${my}`+(k>.5?` L${lerp(x1,x2,(k-.5)*2)} ${y1}`:''));el.setAttribute('opacity',k>0?1:0)};
+    ln($('s7l1'),152.2,810,594,700,390,300);ln($('s7l2'),153.9,1440,528,1500,320,1740);
+    typed($('s7t1'),'DEMASIADO GASTADOS',t,152.4,153.5);typed($('s7t2'),'DEMASIADO VIEJOS',t,153.9,155.1);
+  }
+  // ===== S8 · no tienen meses, tienen siglos =====
+  else if(sc==='s8'){
+    const u=(t-155.6)/5.1;$('s8bg').style.transform=`scale(${lerp(1.3,1.42,u)})`;malla($('s8mesh'),t,'#2a1052','#0b3024',.6);
+    typed($('s8n1'),'NO TIENEN',t,155.84,156.3);
+    const mk=t>=156.38?1:0, pop=t>=156.38?1+.1*Math.exp(-(t-156.38)*10):1, sale=eInOut(p(t,157.55,158.3));
+    $('s8mes').style.opacity=mk;$('s8mes').style.transform=`scale(${pop})`;
+    const xk=eOut(p(t,156.95,157.13));$('s8x').setAttribute('d',`M470 560 L${lerp(470,1450,xk)} ${lerp(560,520,xk)}`);$('s8x').setAttribute('opacity',xk>0?1:0);
+    $('s8m').style.transformOrigin='50% 20%';$('s8m').style.transform=`translateY(${-sale*210}px) scale(${lerp(1,.36,sale)})`;$('s8m').style.opacity=lerp(1,.45,sale);$('s8m').style.filter=`blur(${sale*3}px)`;
+    typed($('s8n2'),'TIENEN',t,157.64,158.1);
+    reveal($('s8sig'),t,158.54,.5);$('s8s').style.opacity=t>=157.6?1:0;
+    const a=shake(t,158.56,24,.5);wx=a[0];wy=a[1];wr=a[2];
+  }
+  // ===== S10 · ¿quiénes son? =====
+  else if(sc==='s10'){
+    await cuadro($('c107'),'../b1/frames/b107',451,t,166.2,10.8);const u=(t-166.2)/7.5;
+    $('c107').style.transformOrigin='26% 48%';$('c107').style.transform=`scale(${lerp(1.2,1.62,eInOut(u))})`;
+    $('s10sombra').style.opacity=1-p(t,170.7,171.2);
+    $('s10a').style.opacity=(t>=168.3&&t<171.3)?1:0;reveal($('s10a1'),t,168.38,.4,170.7);reveal($('s10a2'),t,168.96,.5,170.8);
+    negro=Math.max(1-eOut(p(t,166.2,166.6)),eIn(p(t,173.1,173.7))*.9);
+  }
+  // ===== S11 · la guerra termina =====
+  else if(sc==='s11'){
+    const u=(t-173.7)/2.1;tf($('s11plate'),lerp(0,-50,u),0,lerp(1.05,1.1,u),0,.4);malla($('s11mesh'),t,'#3c1872','#0e3a2b',.9);
+    const k=1-Math.pow(1-p(t,174.05,175.0),3);$('s11d').style.transform=`translateY(${-lerp(0,3,k)*330}px)`;
+    $('s11odo').style.transform=`scale(${t>175.0?1+.07*Math.exp(-(t-175.0)*10):1})`;
+    $('s11odo').style.filter=t>175.0?`drop-shadow(0 0 ${lerp(40,12,p(t,175.0,175.6))}px rgba(92,242,154,.45))`:'none';
+    const l=eInOut(p(t,173.85,175.0));$('s11line').setAttribute('x2',lerp(460,1460,l));$('s11dot').setAttribute('cx',lerp(460,1460,l));
+    typed($('s11t'),'LA GUERRA TERMINA',t,174.3,175.0);
+    negro=1-eOut(p(t,173.7,173.95));
+  }
+  // ===== S12 · el lago se queda allá arriba (la cámara se aleja) =====
+  else if(sc==='s12'){
+    const i=clamp(180-Math.floor((t-175.8)*24*1.2),1,180);const src=`../b1/frames/b103/${String(i).padStart(4,'0')}.jpg`,im=$('c103');
+    if(im.dataset.src!==src){im.dataset.src=src;im.src=src;try{await im.decode()}catch(e){}}
+    const u=(t-175.8)/4.3;im.style.transform=`scale(${lerp(1.1,1.02,u)})`;
+    const en=eExpo(p(t,175.8,176.1));wx=(1-en)*-700;
+  }
+  // ===== S13 · congelado casi todo el año (el hielo se forma: el clip del deshielo al revés) =====
+  else if(sc==='s13'){
+    const i=clamp(228-Math.floor((t-180.1)*24*1.5),1,230),src=`../b1/frames/b104/${String(i).padStart(4,'0')}.jpg`,im=$('c205');
+    if(im.dataset.src!==src){im.dataset.src=src;im.src=src;try{await im.decode()}catch(e){}}
+    const u=(t-180.1)/2.5;im.style.transform=`scale(${lerp(1.08,1.02,u)})`;
+  }
+  // ===== S14 · con su secreto en el fondo =====
+  else if(sc==='s14'){
+    const tl=aVideo(t)-aVideo(182.6);                  // segundos reales de la escena (lleva un corte adentro)
+    const i=clamp(Math.floor((tl*.9+1.0)*24)+1,1,241),src=`../b1/frames/b105/${String(i).padStart(4,'0')}.jpg`,im=$('c105');
+    if(im.dataset.src!==src){im.dataset.src=src;im.src=src;try{await im.decode()}catch(e){}}
+    const u=tl/4.35, c=eInOut(p(tl,1.2,4.2));
+    im.style.transform=`scale(${lerp(1.06,1.32,u)})`;im.style.filter=`brightness(${lerp(.95,.6,u)})`;
+    $('s14cierre').style.background=`radial-gradient(circle at 50% 50%,transparent ${lerp(70,4,c)}%,rgba(4,0,10,${lerp(.3,1,c)}) ${lerp(115,22,c)}%)`;
+    negro=eIn(p(tl,3.75,4.3));
+  }
+  // ===== S15 · abajo, en los pueblos =====
+  else if(sc==='s15'){
+    await cuadro($('c206'),'frames/b206',216,t,188.9,0.1);const u=(t-188.9)/8.1;
+    $('c206').style.transform=`scale(${lerp(1.02,1.1,u)})`;
+    negro=Math.max(1-eOut(p(t,188.9,189.9)),eIn(p(t,196.0,196.85)));
+  }
+
+  // ----- acabado global -----
+  $('recre').style.opacity=ia?1:0;
+  $('world').style.transform=`translate(${wx}px,${wy}px) rotate(${wr}deg) scale(${ws})`;
+  let hk=0;for(const[h,a]of HITS){if(t>=h&&t<h+.45)hk=Math.max(hk,a*Math.pow(1-(t-h)/.45,2))}
+  if(hk>.02){$('caR').setAttribute('dx',(12*hk).toFixed(1));$('caB').setAttribute('dx',(-12*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';
+  $('flash').style.opacity=hk*.4;$('black').style.opacity=negro;
+  const q=t*.3;$('leak').style.background=`radial-gradient(ellipse 700px 900px at ${-6+10*Math.sin(q)}% ${30+20*Math.cos(q*.8)}%,rgba(92,242,154,${.07+.04*Math.sin(t*.9)+hk*.25}),transparent 65%),radial-gradient(ellipse 800px 700px at ${104-8*Math.cos(q*1.2)}% ${72+14*Math.sin(q)}%,rgba(176,107,255,${.11+.05*Math.cos(t*.7)+hk*.2}),transparent 65%)`;
+  polvo(t);
+}
+// trazo punteado que solo se ve hasta la longitud L
+function dashes(L){let d=[],x=0;while(x+3<=L){d.push(3,13);x+=16}if(!d.length)return'0 99999';d[d.length-1]=99999;return d.join(' ')}
+function malla(el,t,a='#3c1872',b='#0e3a2b',al=1){const q=t*.25;
+  el.style.background=`radial-gradient(circle at ${50+30*Math.sin(q)}% ${40+25*Math.cos(q*1.3)}%,${a} 0,transparent 55%),radial-gradient(circle at ${60+30*Math.cos(q*.8)}% ${70+20*Math.sin(q*1.1)}%,${b} 0,transparent 50%)`;el.style.opacity=al}
+
+function polvo(t){const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*7919+13);c.clearRect(0,0,1920,1080);
+  if(R()<.3){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.04+R()*.08})`;c.lineWidth=R()+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*4-2,1080);c.stroke()}
+  for(let i=0;i<5;i++){const x=R()*1920,y=R()*1080,r=R()*1.7+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  const fl=.025*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080)}
+window.render=render;window.DUR=DUR;window.OFF=OFF;window.aVideo=aVideo;window.LISTO=Promise.resolve();
+</script>
+</body></html>
