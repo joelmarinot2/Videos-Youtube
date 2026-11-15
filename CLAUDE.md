@@ -222,6 +222,14 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
       El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:
       «NARRACIÓN · JOEL MARINO» (opción C, 2026-11-15). Falta que confirme si se escribe Marino o Marini.
+- [ ] Efectos de sonido: al dueño le gustan los AMBIENTES del bloque 1 (viento, pasos, agua, latido), pero
+      «algunos efectos no lo convencen» y quiere **cambiarlos por otros** (no bajarlos ni quitarlos). Se le mandó
+      un muestrario numerado del 1 al 20 (`video1/entregas/muestrario-efectos.mp4`, hecho con
+      `video1/muestrario.py`): 1 golpe grave, 2 tambor seco, 3 golpe oscuro, 4 golpe grande con eco, 5 golpe
+      corto, 6 golpe del sello, 7 barrido de aire, 8 barrido rápido, 9 barrido de viento, 10 barrido largo con
+      eco, 11 barrido corto, 12 barrido oscuro, 13 sonido que sube, 14 cristal o hielo, 15 máquina de escribir,
+      16 tics del contador, 17 papel que se desliza, 18 papel que se mueve, 19 periódico que cae, 20 campanita.
+      Falta que diga los números que no le gustan; entonces buscar reemplazos reales en Mixkit.
 - [x] Clips que faltaban: generados con Higgsfield (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
       Claude los genere **con la API de Higgsfield**: host `api.higgsfield.ai`, cabecera
       `Authorization: Key ID:SECRETO`, la clave se crea en console.higgsfield.ai y se cobra de un saldo en
