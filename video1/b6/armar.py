@@ -48,8 +48,8 @@ function lin(id,k,items){items.forEach(([txt,a],i)=>{typed($(id+'l'+i),txt,k,a,a
 const R={
  h0:async t=>{await cuadro($('h0i'),'frames/b601',NB601,t,541.4,0.1);enc($('h0i'),50,50,lerp(1.02,1.12,(t-541.4)/8.7));frase('h0',t,546.23,546.77);
    G.negro=1-eOut(p(t,541.4,542.2));const a=shake(t,546.8,12,.3);G.wx+=a[0];G.wy+=a[1]},
- fi:async t=>{G.ia=false;const F=FICHAS.find(f=>t>=f[0]&&t<f[1])||FICHAS[0];const [a,b,cab,q,qa,qb,r,ra,rb,ts,des]=F;
-   const s=lerp(1.08,1.16,(t-a)/(b-a));$('fiimg').style.transform=`scale(${s})`;$('fiover').style.transform=`scale(${s})`;
+ fi:async t=>{G.ia=false;const F=FICHAS.find(f=>t>=f[0]&&t<f[1])||[...FICHAS].reverse().find(f=>t>=f[0])||FICHAS[0];const [a,b,cab,q,qa,qb,r,ra,rb,ts,des]=F;
+   const s=lerp(1.08,1.16,clamp((t-a)/(b-a),0,1.15));$('fiimg').style.transform=`scale(${s})`;$('fiover').style.transform=`scale(${s})`;
    $('fit0').textContent=cab;if(qb>0)typed($('fit1'),q,t,qa,qb);else $('fit1').textContent=q;
    const esDato=cab==='ESTO ES DATO';$('fit1').style.fontSize=esDato?'31px':'36px';$('fit2').style.top=(q.includes('\n')?486:420)+'px';
    if(rb>0)typed($('fit2'),r,t,ra,rb);else $('fit2').textContent='';
