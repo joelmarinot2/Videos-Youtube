@@ -1,0 +1,211 @@
+{
+ "b7-04": {
+  "nombre": "b7-04-lago-caminantes",
+  "estado": "completed",
+  "request_id": "01a1e112-d210-730a-ada6-589f973c957b",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e112-d210-730a-ada6-589f973c957b/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:17:49",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-04-lago-caminantes.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e112-d210-730a-ada6-589f973c957b/d8af82bc-5315-4c17-a1ce-43e75507376f.mp4"
+ },
+ "b7-03": {
+  "nombre": "b7-03-silla-vacia",
+  "estado": "completed",
+  "request_id": "01a1e116-6e05-788e-878d-9ec3bf72f4dc",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-6e05-788e-878d-9ec3bf72f4dc/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:46",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-03-silla-vacia.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-6e05-788e-878d-9ec3bf72f4dc/445038b8-3d3c-4777-9be4-b5cdb1f86305.mp4"
+ },
+ "b7-07": {
+  "nombre": "b7-07-avion-1947",
+  "estado": "completed",
+  "request_id": "01a1e116-6f44-7e4f-94c5-34baadb86651",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-6f44-7e4f-94c5-34baadb86651/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:46",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-07-avion-1947.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-6f44-7e4f-94c5-34baadb86651/a90aa984-8fe4-4747-a0d2-29fbae2a9743.mp4"
+ },
+ "b6-03": {
+  "nombre": "b6-03-microscopio",
+  "estado": "completed",
+  "request_id": "01a1e116-70b6-75d0-838a-99919fbf2a83",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-70b6-75d0-838a-99919fbf2a83/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:46",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b6-03-microscopio.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-70b6-75d0-838a-99919fbf2a83/6b149a54-af4b-451e-acab-0dcc190b8f70.mp4"
+ },
+ "b5-02": {
+  "nombre": "b5-02-tubos-pipeta",
+  "estado": "completed",
+  "request_id": "01a1e116-7232-73e7-bf8a-f29a834c3f80",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7232-73e7-bf8a-f29a834c3f80/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:47",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b5-02-tubos-pipeta.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7232-73e7-bf8a-f29a834c3f80/114b818d-6f96-4a86-b522-81a3c1ecb426.mp4"
+ },
+ "b3-02": {
+  "nombre": "b3-02-caravana-rey",
+  "estado": "completed",
+  "request_id": "01a1e116-73b8-7b13-989b-11a5c80e4223",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-73b8-7b13-989b-11a5c80e4223/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:47",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b3-02-caravana-rey.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-73b8-7b13-989b-11a5c80e4223/f1b4d29e-2da0-4a62-bb08-92b2c31c7ee4.mp4"
+ },
+ "b4-02": {
+  "nombre": "b4-02-camarografo",
+  "estado": "completed",
+  "request_id": "01a1e116-753c-7bb4-9263-2fee435fde07",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-753c-7bb4-9263-2fee435fde07/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:47",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b4-02-camarografo.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-753c-7bb4-9263-2fee435fde07/7281aeb4-06c8-419a-a9ec-5fbac9b2f546.mp4"
+ },
+ "b4-05": {
+  "nombre": "b4-05-anillo-lanza",
+  "estado": "completed",
+  "request_id": "01a1e116-768e-7866-9166-fc3d923a63a2",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-768e-7866-9166-fc3d923a63a2/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:48",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b4-05-anillo-lanza.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-768e-7866-9166-fc3d923a63a2/1ed87852-de33-4da5-a5af-ae2731997df3.mp4"
+ },
+ "b4-09": {
+  "nombre": "b4-09-laboratorio-fechado",
+  "estado": "completed",
+  "request_id": "01a1e116-77de-72c4-a7b8-f339d83941f9",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-77de-72c4-a7b8-f339d83941f9/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:48",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b4-09-laboratorio-fechado.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-77de-72c4-a7b8-f339d83941f9/71dc8817-ff2d-4daf-9815-3ff8c9767638.mp4"
+ },
+ "b2-01": {
+  "nombre": "b2-01-guardabosques-bajando",
+  "estado": "completed",
+  "request_id": "01a1e116-7919-7792-aa1a-e2a4f6c86e6d",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7919-7792-aa1a-e2a4f6c86e6d/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:48",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b2-01-guardabosques-bajando.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7919-7792-aa1a-e2a4f6c86e6d/0568a0f1-bc18-4d29-bd3e-bc451e9b6fc8.mp4"
+ },
+ "b2-05": {
+  "nombre": "b2-05-lago-congelandose",
+  "estado": "completed",
+  "request_id": "01a1e116-7a3b-77a3-9e98-819d3651a198",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7a3b-77a3-9e98-819d3651a198/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:49",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b2-05-lago-congelandose.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7a3b-77a3-9e98-819d3651a198/5e2bd56f-ddfc-405c-a367-026557bf4986.mp4"
+ },
+ "b3-03": {
+  "nombre": "b3-03-reina-palanquin",
+  "estado": "completed",
+  "request_id": "01a1e116-7b71-7326-840e-9ec56bf9bdf2",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7b71-7326-840e-9ec56bf9bdf2/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:49",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b3-03-reina-palanquin.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7b71-7326-840e-9ec56bf9bdf2/fe63c382-9469-417d-a598-b3267e1aec24.mp4"
+ },
+ "b1-08": {
+  "nombre": "b1-08-orilla-huesos",
+  "estado": "completed",
+  "request_id": "01a1e116-7cd6-7683-a7c8-a745269a9ff0",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7cd6-7683-a7c8-a745269a9ff0/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:49",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b1-08-orilla-huesos.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7cd6-7683-a7c8-a745269a9ff0/9d40f9d8-5b50-4288-b606-7d78825f3cfe.mp4"
+ },
+ "b1-06": {
+  "nombre": "b1-06-cara-guardabosques",
+  "estado": "completed",
+  "request_id": "01a1e116-7e3f-766a-8f8f-80fdba5c31b9",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7e3f-766a-8f8f-80fdba5c31b9/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:50",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b1-06-cara-guardabosques.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7e3f-766a-8f8f-80fdba5c31b9/3c92afda-eadd-49ec-8923-b8f52532a58e.mp4"
+ },
+ "b1-02": {
+  "nombre": "b1-02-botas-piedra",
+  "estado": "completed",
+  "request_id": "01a1e116-7f7b-7603-b227-a40db128f9fb",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-7f7b-7603-b227-a40db128f9fb/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:50",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b1-02-botas-piedra.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-7f7b-7603-b227-a40db128f9fb/878a42ab-469e-463f-9b27-b71194b11529.mp4"
+ },
+ "b1-05": {
+  "nombre": "b1-05-agua-transparente",
+  "estado": "completed",
+  "request_id": "01a1e116-80de-711b-9789-c8674fe16bcc",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-80de-711b-9789-c8674fe16bcc/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:50",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b1-05-agua-transparente.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-80de-711b-9789-c8674fe16bcc/f0b0d5d0-9d29-4fc4-9122-2fd256f78718.mp4"
+ },
+ "b7-05": {
+  "nombre": "b7-05-mano-recoge-hueso",
+  "estado": "completed",
+  "request_id": "01a1e116-8c47-7450-97dc-39781c2820cb",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-8c47-7450-97dc-39781c2820cb/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:53",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-05-mano-recoge-hueso.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-8c47-7450-97dc-39781c2820cb/c469fcbf-6f00-4a52-98fb-19a7650afd33.mp4"
+ },
+ "b7-06": {
+  "nombre": "b7-06-lago-alejandose",
+  "estado": "completed",
+  "request_id": "01a1e116-9648-7d67-9a19-93c27ce3c7e9",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-9648-7d67-9a19-93c27ce3c7e9/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:56",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-06-lago-alejandose.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-9648-7d67-9a19-93c27ce3c7e9/8d156675-f605-4994-b0df-00c2a12d2786.mp4"
+ },
+ "b7-08": {
+  "nombre": "b7-08-clave-morse",
+  "estado": "completed",
+  "request_id": "01a1e116-a182-7a3d-9ab3-f8c0849a477f",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e116-a182-7a3d-9ab3-f8c0849a477f/status",
+  "intento": 1,
+  "costo_usd": 0.525,
+  "pedido": "2026-11-15 21:21:59",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/higgs/nuevos/b7-08-clave-morse.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e116-a182-7a3d-9ab3-f8c0849a477f/958e2294-bf02-4f9c-a709-829ffc761533.mp4"
+ }
+}

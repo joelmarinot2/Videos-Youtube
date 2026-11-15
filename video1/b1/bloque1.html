@@ -180,10 +180,7 @@ svg{overflow:visible}
       <div class="ph" style="font-size:96px"><span class="mask"><span id="e10a">El lago de los</span></span></div>
       <div class="phi" style="font-size:220px;margin-top:-44px"><span class="mask"><span id="e10b">esqueletos</span></span></div>
     </div>
-    <div class="abs" style="left:130px;top:660px">
-      <div class="ph" style="font-size:80px"><span class="mask"><span id="e10c">Narra</span></span></div>
-      <div class="phi" style="font-size:200px;margin-top:-40px"><span class="mask"><span id="e10d">Joel Marino</span></span></div>
-    </div>
+
   </div>
 
   <!-- E11 · ARCHIVOS INEXPLICABLES · ARCHIVO 001 -->
@@ -202,6 +199,7 @@ svg{overflow:visible}
     <div class="abs" id="e11w1" style="left:0;top:356px;width:1920px;text-align:center;font-family:Play;font-weight:600;font-size:64px;letter-spacing:38px;color:#ece5d2;padding-left:34px;box-sizing:border-box"></div>
     <div class="abs" id="e11w2" style="left:0;top:430px;width:1920px;text-align:center;font-family:Play;font-weight:800;font-size:196px;letter-spacing:8px;color:#ece5d2;white-space:nowrap"></div>
     <div class="abs" id="e11w3" style="left:0;top:736px;width:1920px;text-align:center;font-family:Typer;font-size:50px;letter-spacing:12px;color:#5cf29a;white-space:pre"></div>
+    <div class="abs" id="e11w4" style="left:0;top:850px;width:1920px;text-align:center;font-family:Typer;font-size:30px;letter-spacing:8px;color:rgba(236,229,210,.85);white-space:pre"></div>
   </div>
  </div>
 
@@ -389,7 +387,7 @@ async function render(tv){
   // ===== E10 =====
   else if(sc==='e10'){
     const u=(t-84.9)/6.8;$('e10img').style.transform=`scale(${lerp(1.32,1.12,eOut(u))})`;$('e10img').style.transformOrigin='42% 56%';
-    reveal($('e10a'),t,85.8,.5,88.75);reveal($('e10b'),t,86.5,.7,88.85);reveal($('e10c'),t,89.25,.4,91.3);reveal($('e10d'),t,89.5,.55,91.4);
+    reveal($('e10a'),t,85.8,.5,91.1);reveal($('e10b'),t,86.5,.7,91.2);
     negro=Math.max(1-p(t,84.9,85.3),eIn(p(t,91.45,91.7)));
   }
   // ===== E11 =====
@@ -400,7 +398,7 @@ async function render(tv){
     const k1=eExpo(p(t,92.2,92.9));$('e11w1').textContent='ARCHIVOS';$('e11w1').style.opacity=k1;$('e11w1').style.transform=`translateY(${(1-k1)*26}px)`;$('e11w1').style.filter=`blur(${(1-k1)*10}px)`;
     [...$('e11w2').children].forEach((sp,i)=>{const a=93.1+i*.035,k=eExpo(p(t,a,a+.55));sp.style.transform=`translateY(${(1-k)*50}px)`;sp.style.opacity=k;sp.style.filter=`blur(${(1-k)*14}px)`});
     const l=eInOut(p(t,93.9,94.8));$('e11line').setAttribute('x1',960-l*745);$('e11line').setAttribute('x2',960+l*745);
-    typed($('e11w3'),'ARCHIVO N.º 001',t,95.75,96.9);
+    typed($('e11w3'),'ARCHIVO N.º 001',t,95.75,96.9);typed($('e11w4'),'NARRACIÓN · JOEL MARINO',t,97.1,98.0);
     $('e11w2').style.textShadow=t>93.8?`0 0 ${lerp(60,18,p(t,93.8,95))}px rgba(92,242,154,.28)`:'none';
     negro=Math.max(1-p(t,91.7,92.0),p(t,99.3,99.95));ws=1+.012*u;
   }

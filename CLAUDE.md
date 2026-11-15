@@ -222,7 +222,7 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
       El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:
       «NARRACIÓN · JOEL MARINO» (opción C, 2026-11-15). Falta que confirme si se escribe Marino o Marini.
-- [ ] Clips que faltan (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
+- [x] Clips que faltaban: generados con Higgsfield (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
       Claude los genere **con la API de Higgsfield**: host `api.higgsfield.ai`, cabecera
       `Authorization: Key ID:SECRETO`, la clave se crea en console.higgsfield.ai y se cobra de un saldo en
       dólares aparte de la suscripción de la aplicación (pago por uso). Antes de generar: consultar el costo con
@@ -240,6 +240,13 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       se pidieron con `video1/higgsfield/generar.py` (textos traducidos al inglés, sin sonido, salen en 1920×1080
       a 24 cuadros/s). Ese permiso NO cubre repeticiones ni la imagen b2-07: para cualquier clip extra hay que
       volver a preguntar con el costo.
+      **Resultado (2026-11-15): salieron los 19, sin fallos; gasto real 9,97 USD.** Están en
+      `video1/clips-higgsfield/` (1920×1080, 24 cuadros/s, 10 s, sin sonido; recodificados a crf 18). Estado y
+      direcciones en `video1/higgsfield/estado.json`. Observaciones: `b3-02-caravana-rey` trae letras falsas en
+      la esquina superior izquierda (recortar con el encuadre); en `b2-01` el turbante es blanco y en `b1-06`
+      oscuro; `b2-05` tiene pinos junto al lago (no cuadra con 5.000 m, usar poco o recortar). Los tres que salen
+      de foto (b7-05, b7-06, b7-08) reemplazan a las imágenes fijas. Falta todavía la imagen fija `b2-07`
+      (foto antigua de huesos, 1942): cuesta menos de un centavo, pedir permiso.
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 

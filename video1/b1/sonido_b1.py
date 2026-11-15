@@ -86,13 +86,13 @@ m.put("golpecito", 82.95, -6)
 # ---- E10 · El lago de los esqueletos · Narra Joel Marino ----
 m.put("whoosh_tunel", 84.95, -12)
 m.put("barrido_viento", 86.5, -15, pan=-.4)
-m.put("barrido_viento", 89.5, -15, pan=-.4)
 
 # ---- E11 · Archivos Inexplicables · Archivo 001 ----
 m.put("whoosh_trans", 91.72, -11)
 m.put("golpe_hondo", 93.85, -6)
 m.tecleo(95.75, 96.9, 15, -11)
-m.put("campana", 97.0, -13)
+m.tecleo(97.1, 98.0, 14, -15)
+m.put("campana", 98.1, -14)
 
 m.silencio(47.74, 48.02)                         # silencio total antes de "Son huesos"
 m.guardar(os.path.join(B, "sonido_b1.wav"))
