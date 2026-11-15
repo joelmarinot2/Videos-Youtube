@@ -220,6 +220,8 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **Bloque 1 hecho y enviado al dueño el
       2026-11-15** (`video1/entregas/archivo-001-bloque-1.mp4`, 1 min 38 s); falta su opinión antes de seguir
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
+      El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:
+      «NARRACIÓN · JOEL MARINO» (opción C, 2026-11-15). Falta que confirme si se escribe Marino o Marini.
 - [ ] Clips que faltan (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
       Claude los genere **con la API de Higgsfield**: host `api.higgsfield.ai`, cabecera
       `Authorization: Key ID:SECRETO`, la clave se crea en console.higgsfield.ai y se cobra de un saldo en
