@@ -245,8 +245,9 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       direcciones en `video1/higgsfield/estado.json`. Observaciones: `b3-02-caravana-rey` trae letras falsas en
       la esquina superior izquierda (recortar con el encuadre); en `b2-01` el turbante es blanco y en `b1-06`
       oscuro; `b2-05` tiene pinos junto al lago (no cuadra con 5.000 m, usar poco o recortar). Los tres que salen
-      de foto (b7-05, b7-06, b7-08) reemplazan a las imágenes fijas. Falta todavía la imagen fija `b2-07`
-      (foto antigua de huesos, 1942): cuesta menos de un centavo, pedir permiso.
+      de foto (b7-05, b7-06, b7-08) reemplazan a las imágenes fijas. La imagen fija `b2-07-huesos-1942.jpg` se generó con el modelo de imagen
+      Soul Cinema (`POST /higgsfield-ai/soul/cinema`, 16:9, 1080p, 0,006 USD) y está en la misma carpeta.
+      **Gasto total en Higgsfield hasta el 2026-11-15: 9,98 USD.**
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
