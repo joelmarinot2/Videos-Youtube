@@ -219,7 +219,9 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
 - [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **El 2026-11-15 el dueño dijo: «Después de corregir los efectos continúa con todo el
       vídeo»**: ya no hay que esperar su visto bueno bloque por bloque; se arma todo y se le va enviando.
-      **Bloque 2 hecho** (`video1/entregas/archivo-001-bloque-2.mp4`, 1 min 32 s, con los dos cortes de frases repetidas). **Bloque 1 hecho y enviado al dueño el
+      **Bloque 2 hecho** (`video1/entregas/archivo-001-bloque-2.mp4`, 1 min 32 s, con los dos cortes de frases repetidas).
+      **Bloques 3, 4 y 5 hechos y enviados el 2026-11-15** (`video1/entregas/archivo-001-bloque-N.mp4`). Cómo se
+      resolvió cada bloque y cómo se vuelve a generar: `video1/plan-montaje.md` (sección «Bloques 3 a 7»). **Bloque 1 hecho y enviado al dueño el
       2026-11-15** (`video1/entregas/archivo-001-bloque-1.mp4`, 1 min 38 s); falta su opinión antes de seguir
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
       El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:

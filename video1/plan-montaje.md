@@ -84,6 +84,29 @@ Sonido (`b2/sonido_b2.py`): proyector de cine en las escenas de oficina, estáti
 en nieve, latido antes de «Un ejército japonés», silencio total antes de los dos golpes. Sonidos nuevos de
 Mixkit: proyector 1443, estática de radio 2548 y 1026, señal de radio 2556.
 
+## Bloques 3 a 7 (hechos, en `b3/` … `b7/`)
+
+Desde el bloque 3 cada escena es una función y pueden fundirse una con otra. Desde el bloque 4 la página se
+arma con `python3 bN/armar.py` (usa `partes.py` y `comun.txt`, que traen los estilos y las funciones comunes) y
+el video completo del bloque sale con `./render.sh bN N <duración>`: genera los cuadros en 4 procesos, los une,
+les pone grano y el sonido (`bN/sonido_bN.py`) y saca una hoja de capturas en `bN/revisar/hoja_final.jpg`.
+`bN/ver.sh <nombre> <tiempos del audio>` saca capturas sueltas para revisar antes de generar.
+
+| Bloque | Audio | Dura | Cómo se resolvió |
+|---|---|---|---|
+| 3 · La leyenda | 196,9 – 271,0 | 74,1 s | Tono cálido (fuego y oro). Mujeres junto al fuego, pinturas del rey, la reina, músicos y bailarinas con cortes en cada «Lleva…», la diosa, el granizo. Al final vuelve el escritorio: tres fotos y el sello LEYENDA. Sonido: fogata, campana, truenos, tormenta y piedras |
+| 4 · La segunda respuesta | 271,0 – 391,4 | 120,4 s | Contador «AÑO 2003», expedición, lista de objetos, «30 esqueletos», el cráneo recortado (`b4/craneo.png`) con rótulos tachados y anillo en la fractura, la bola que cae, «AVALANCHA» y «BATALLA» tachadas, «Granizo.», Oxford y «AÑO 850», ficha con RESUELTO y CASO CERRADO, «15 años» |
+| 5 · El giro | 391,4 – 541,4 (corte 491,25 – 495,21) | 146,0 s | «AÑO 2019», la cédula del ADN, **las 38 personas como puntos** (23 crema, 14 verdes, 1 morado), la línea del tiempo, la grieta en la ficha, mapa de Grecia y Creta al lago con «5.000 KM» (`b5/mapa_ea.js`), la cita, «800» tachado y «1800», «3 grupos, 2 épocas, 1 lago» |
+| 6 · Lo que se descartó | 541,4 – 630,0 | 88,6 s | Una ficha por posibilidad con sello morado DESCARTADO (griegos de la India, familia, ejército, epidemia), microscopio, archivo, diario en blanco, cita de Niraj Rai, ficha «ESTO ES DATO» con sello verde y «¿Por qué?» |
+| 7 · El cierre | 630,0 – 727,0 | 97,0 s | Barco, puerto, pueblo, la mujer en la ventana, la silla vacía, de vuelta al lago («5.000 metros», «En el mismo sitio.»), el lago hoy, la mano que recoge el hueso, lista con tres vistos buenos y «¿POR QUÉ?» sin marcar, «¿Tienes una teoría?», anuncio del archivo 002 (clave morse y avión) y logo final |
+
+Notas:
+- La transcripción automática se equivoca en algunos nombres («Hasdabal», «rey investigado»): en pantalla se
+  escribe como en el guion (Jasdhaval). En 226–231 se le escaparon «Lleva músicos. Lleva bailarinas.»; los
+  tiempos se sacaron de las pausas de la voz.
+- La tira de puntos y rayas del bloque 7 es la palabra del video 2 en clave morse (sin letras).
+- `b3-02-caravana-rey` trae letras falsas arriba a la izquierda: siempre va ampliado desde abajo a la derecha.
+
 ## Cómo se arma un bloque
 
 1. `preparar_clip.sh` → cuadros de cada clip en cámara lenta, recortados a 1920×1080.
