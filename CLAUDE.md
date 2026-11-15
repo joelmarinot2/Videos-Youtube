@@ -185,12 +185,32 @@ v2: `muestras/muestra-archivo-001-v2.mp4`, hecha con `hornear2.py`, `muestra2.ht
 **Al dueño le gustó la dirección de la v2** ("así me gusta como va"). **ES LA DIRECCIÓN VIGENTE** (confirmado otra
 vez el 2026-11-14 al descartar el personaje): serio, oscuro, de investigación, morado y verde, collage antiguo.
 
+## Material del video 1 (recibido 2026-11-15)
+
+Carpeta de Google Drive del dueño (se baja con `gdown --folder`):
+https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
+- `audio/voz archivos inexplicables_001_edit.wav`: narración completa, 12 min 05 s (725 s), mono 48 kHz.
+  Volumen bajo (-25 LUFS, hay que subirlo a unos -16). Ya viene editada por el dueño: 95 pausas de más de
+  0,9 s (160 s en total), ninguna de más de 3,6 s.
+- `videos e imagenes/`: **31 clips** de Firefly (1280×720, 24 cuadros/s, 5 a 6 s cada uno, sin sonido) y
+  **6 imágenes** (1376×768). Nombres `bN-NN-descripcion` (bloque y número de escena del Excel). Los 7 `.rar`
+  traen esos mismos archivos repetidos (se abren con `unar`).
+- `archivo-001-firefly.xlsx`: las 54 escenas (nombre, bloque, prioridad, tipo, en qué frase va, texto para
+  Firefly). El dueño generó casi todas las de prioridad 1.
+- `archivo-001-guion-para-grabar.pdf`: el guion que leyó (igual al guion nuevo).
+- Escenas del Excel que NO llegaron (hay que resolverlas con otra imagen, cámara lenta o gráficos):
+  b1-02, b1-05, b1-06, b1-08, b2-01, b2-05, b2-07, b3-02, b3-03, b4-02, b4-05, b4-09, b5-02, b6-03, b7-03,
+  b7-04, b7-07. Y b7-05, b7-06 y b7-08 llegaron como imagen fija, no como clip.
+- Ojo: los clips suman unos 170 s y la narración dura 12 min. Hay que estirar: cámara lenta, cuadros
+  congelados con movimiento, y escenas de gráficos (mapa, fechas, contadores, fichas, citas).
+
 ## Estado
 
-- [ ] Audio del video 1 (pendiente que el dueño lo envíe)
-- [ ] Excel de cortes y escenas (pendiente que el dueño lo vuelva a enviar)
+- [x] Audio del video 1 recibido
+- [x] Excel de escenas recibido
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
-- [ ] Clips e imágenes del video 1 (pendiente)
+- [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
+- [ ] Armar el video 1 (empezando por el bloque 1 para aprobación)
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
