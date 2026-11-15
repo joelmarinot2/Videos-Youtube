@@ -1,0 +1,7283 @@
+[
+ {
+  "ini": 3.72,
+  "fin": 8.58,
+  "texto": "Año 1942. Norte de India. El mundo está en guerra.",
+  "palabras": [
+   {
+    "p": "Año",
+    "ini": 3.72,
+    "fin": 4.36
+   },
+   {
+    "p": "1942.",
+    "ini": 4.36,
+    "fin": 5.0
+   },
+   {
+    "p": "Norte",
+    "ini": 5.92,
+    "fin": 6.12
+   },
+   {
+    "p": "de",
+    "ini": 6.12,
+    "fin": 6.38
+   },
+   {
+    "p": "India.",
+    "ini": 6.38,
+    "fin": 6.68
+   },
+   {
+    "p": "El",
+    "ini": 7.1,
+    "fin": 7.28
+   },
+   {
+    "p": "mundo",
+    "ini": 7.28,
+    "fin": 7.6
+   },
+   {
+    "p": "está",
+    "ini": 7.6,
+    "fin": 7.94
+   },
+   {
+    "p": "en",
+    "ini": 7.94,
+    "fin": 8.06
+   },
+   {
+    "p": "guerra.",
+    "ini": 8.06,
+    "fin": 8.58
+   }
+  ]
+ },
+ {
+  "ini": 10.52,
+  "fin": 15.36,
+  "texto": "A 5,000 metros de altura, en el Himalaya, un guarda-bosques camina solo. Se llaman",
+  "palabras": [
+   {
+    "p": "A",
+    "ini": 10.52,
+    "fin": 10.62
+   },
+   {
+    "p": "5",
+    "ini": 10.62,
+    "fin": 10.92
+   },
+   {
+    "p": ",000",
+    "ini": 10.92,
+    "fin": 11.02
+   },
+   {
+    "p": "metros",
+    "ini": 11.02,
+    "fin": 11.34
+   },
+   {
+    "p": "de",
+    "ini": 11.34,
+    "fin": 11.52
+   },
+   {
+    "p": "altura,",
+    "ini": 11.52,
+    "fin": 11.9
+   },
+   {
+    "p": "en",
+    "ini": 12.08,
+    "fin": 12.14
+   },
+   {
+    "p": "el",
+    "ini": 12.14,
+    "fin": 12.26
+   },
+   {
+    "p": "Himalaya,",
+    "ini": 12.26,
+    "fin": 12.8
+   },
+   {
+    "p": "un",
+    "ini": 12.96,
+    "fin": 13.08
+   },
+   {
+    "p": "guarda",
+    "ini": 13.08,
+    "fin": 13.44
+   },
+   {
+    "p": "-bosques",
+    "ini": 13.44,
+    "fin": 13.7
+   },
+   {
+    "p": "camina",
+    "ini": 13.7,
+    "fin": 14.14
+   },
+   {
+    "p": "solo.",
+    "ini": 14.14,
+    "fin": 14.54
+   },
+   {
+    "p": "Se",
+    "ini": 14.94,
+    "fin": 15.12
+   },
+   {
+    "p": "llaman",
+    "ini": 15.12,
+    "fin": 15.36
+   }
+  ]
+ },
+ {
+  "ini": 15.36,
+  "fin": 23.24,
+  "texto": "Hari Kishan Madhwal. Hace una ronda por una zona donde casi nunca sube nadie. Ese día",
+  "palabras": [
+   {
+    "p": "Hari",
+    "ini": 15.36,
+    "fin": 15.76
+   },
+   {
+    "p": "Kishan",
+    "ini": 15.76,
+    "fin": 16.44
+   },
+   {
+    "p": "Madhwal.",
+    "ini": 16.44,
+    "fin": 17.1
+   },
+   {
+    "p": "Hace",
+    "ini": 18.06,
+    "fin": 18.2
+   },
+   {
+    "p": "una",
+    "ini": 18.2,
+    "fin": 18.46
+   },
+   {
+    "p": "ronda",
+    "ini": 18.46,
+    "fin": 18.74
+   },
+   {
+    "p": "por",
+    "ini": 18.74,
+    "fin": 19.02
+   },
+   {
+    "p": "una",
+    "ini": 19.02,
+    "fin": 19.2
+   },
+   {
+    "p": "zona",
+    "ini": 19.2,
+    "fin": 19.44
+   },
+   {
+    "p": "donde",
+    "ini": 19.44,
+    "fin": 19.76
+   },
+   {
+    "p": "casi",
+    "ini": 19.76,
+    "fin": 20.2
+   },
+   {
+    "p": "nunca",
+    "ini": 20.2,
+    "fin": 20.56
+   },
+   {
+    "p": "sube",
+    "ini": 20.56,
+    "fin": 20.9
+   },
+   {
+    "p": "nadie.",
+    "ini": 20.9,
+    "fin": 21.32
+   },
+   {
+    "p": "Ese",
+    "ini": 22.58,
+    "fin": 22.84
+   },
+   {
+    "p": "día",
+    "ini": 22.84,
+    "fin": 23.24
+   }
+  ]
+ },
+ {
+  "ini": 23.24,
+  "fin": 30.44,
+  "texto": "llega un hoyo de roca y nieve. En el fondo hay un lago. Un lago pequeño. Tan pequeño",
+  "palabras": [
+   {
+    "p": "llega",
+    "ini": 23.24,
+    "fin": 23.56
+   },
+   {
+    "p": "un",
+    "ini": 23.56,
+    "fin": 23.76
+   },
+   {
+    "p": "hoyo",
+    "ini": 23.76,
+    "fin": 24.06
+   },
+   {
+    "p": "de",
+    "ini": 24.06,
+    "fin": 24.28
+   },
+   {
+    "p": "roca",
+    "ini": 24.28,
+    "fin": 24.56
+   },
+   {
+    "p": "y",
+    "ini": 24.56,
+    "fin": 24.7
+   },
+   {
+    "p": "nieve.",
+    "ini": 24.7,
+    "fin": 25.28
+   },
+   {
+    "p": "En",
+    "ini": 25.88,
+    "fin": 26.02
+   },
+   {
+    "p": "el",
+    "ini": 26.02,
+    "fin": 26.24
+   },
+   {
+    "p": "fondo",
+    "ini": 26.24,
+    "fin": 26.56
+   },
+   {
+    "p": "hay",
+    "ini": 26.56,
+    "fin": 27.02
+   },
+   {
+    "p": "un",
+    "ini": 27.02,
+    "fin": 27.24
+   },
+   {
+    "p": "lago.",
+    "ini": 27.24,
+    "fin": 27.84
+   },
+   {
+    "p": "Un",
+    "ini": 28.0,
+    "fin": 28.22
+   },
+   {
+    "p": "lago",
+    "ini": 28.22,
+    "fin": 28.58
+   },
+   {
+    "p": "pequeño.",
+    "ini": 28.58,
+    "fin": 29.12
+   },
+   {
+    "p": "Tan",
+    "ini": 29.72,
+    "fin": 29.94
+   },
+   {
+    "p": "pequeño",
+    "ini": 29.94,
+    "fin": 30.44
+   }
+  ]
+ },
+ {
+  "ini": 30.44,
+  "fin": 39.42,
+  "texto": "que se puede rodear caminando en dos minutos. El hielo se está derritiendo. El agua es",
+  "palabras": [
+   {
+    "p": "que",
+    "ini": 30.44,
+    "fin": 30.68
+   },
+   {
+    "p": "se",
+    "ini": 30.68,
+    "fin": 30.88
+   },
+   {
+    "p": "puede",
+    "ini": 30.88,
+    "fin": 31.08
+   },
+   {
+    "p": "rodear",
+    "ini": 31.08,
+    "fin": 31.56
+   },
+   {
+    "p": "caminando",
+    "ini": 31.56,
+    "fin": 32.16
+   },
+   {
+    "p": "en",
+    "ini": 32.16,
+    "fin": 32.32
+   },
+   {
+    "p": "dos",
+    "ini": 32.32,
+    "fin": 32.56
+   },
+   {
+    "p": "minutos.",
+    "ini": 32.56,
+    "fin": 33.08
+   },
+   {
+    "p": "El",
+    "ini": 36.14,
+    "fin": 36.38
+   },
+   {
+    "p": "hielo",
+    "ini": 36.38,
+    "fin": 36.78
+   },
+   {
+    "p": "se",
+    "ini": 36.78,
+    "fin": 36.98
+   },
+   {
+    "p": "está",
+    "ini": 36.98,
+    "fin": 37.16
+   },
+   {
+    "p": "derritiendo.",
+    "ini": 37.16,
+    "fin": 37.98
+   },
+   {
+    "p": "El",
+    "ini": 38.54,
+    "fin": 38.84
+   },
+   {
+    "p": "agua",
+    "ini": 38.84,
+    "fin": 39.06
+   },
+   {
+    "p": "es",
+    "ini": 39.06,
+    "fin": 39.42
+   }
+  ]
+ },
+ {
+  "ini": 39.42,
+  "fin": 51.28,
+  "texto": "transparente. En el fondo hay algo. Madhwal se acerca. Son huesos. Huesos humanos.",
+  "palabras": [
+   {
+    "p": "transparente.",
+    "ini": 39.42,
+    "fin": 40.34
+   },
+   {
+    "p": "En",
+    "ini": 40.64,
+    "fin": 40.78
+   },
+   {
+    "p": "el",
+    "ini": 40.78,
+    "fin": 41.0
+   },
+   {
+    "p": "fondo",
+    "ini": 41.0,
+    "fin": 41.3
+   },
+   {
+    "p": "hay",
+    "ini": 41.3,
+    "fin": 41.68
+   },
+   {
+    "p": "algo.",
+    "ini": 41.68,
+    "fin": 42.12
+   },
+   {
+    "p": "Madhwal",
+    "ini": 45.5,
+    "fin": 46.1
+   },
+   {
+    "p": "se",
+    "ini": 46.1,
+    "fin": 46.42
+   },
+   {
+    "p": "acerca.",
+    "ini": 46.42,
+    "fin": 46.8
+   },
+   {
+    "p": "Son",
+    "ini": 48.12,
+    "fin": 48.48
+   },
+   {
+    "p": "huesos.",
+    "ini": 48.48,
+    "fin": 49.86
+   },
+   {
+    "p": "Huesos",
+    "ini": 50.12,
+    "fin": 50.76
+   },
+   {
+    "p": "humanos.",
+    "ini": 50.76,
+    "fin": 51.28
+   }
+  ]
+ },
+ {
+  "ini": 52.6,
+  "fin": 65.72,
+  "texto": "No es uno. No diez. Cientos. En el agua. En la orilla. Entre las piedras. Lo que ese",
+  "palabras": [
+   {
+    "p": "No",
+    "ini": 52.6,
+    "fin": 53.3
+   },
+   {
+    "p": "es",
+    "ini": 53.3,
+    "fin": 53.6
+   },
+   {
+    "p": "uno.",
+    "ini": 53.6,
+    "fin": 54.08
+   },
+   {
+    "p": "No",
+    "ini": 54.84,
+    "fin": 55.14
+   },
+   {
+    "p": "diez.",
+    "ini": 55.14,
+    "fin": 55.58
+   },
+   {
+    "p": "Cientos.",
+    "ini": 56.44,
+    "fin": 57.12
+   },
+   {
+    "p": "En",
+    "ini": 58.4,
+    "fin": 58.66
+   },
+   {
+    "p": "el",
+    "ini": 58.66,
+    "fin": 59.0
+   },
+   {
+    "p": "agua.",
+    "ini": 59.0,
+    "fin": 59.34
+   },
+   {
+    "p": "En",
+    "ini": 59.8,
+    "fin": 59.98
+   },
+   {
+    "p": "la",
+    "ini": 59.98,
+    "fin": 60.16
+   },
+   {
+    "p": "orilla.",
+    "ini": 60.16,
+    "fin": 61.0
+   },
+   {
+    "p": "Entre",
+    "ini": 61.6,
+    "fin": 61.78
+   },
+   {
+    "p": "las",
+    "ini": 61.78,
+    "fin": 62.18
+   },
+   {
+    "p": "piedras.",
+    "ini": 62.18,
+    "fin": 62.88
+   },
+   {
+    "p": "Lo",
+    "ini": 64.92,
+    "fin": 65.28
+   },
+   {
+    "p": "que",
+    "ini": 65.28,
+    "fin": 65.48
+   },
+   {
+    "p": "ese",
+    "ini": 65.48,
+    "fin": 65.72
+   }
+  ]
+ },
+ {
+  "ini": 65.72,
+  "fin": 71.68,
+  "texto": "hombre no sabe es que acaba de encontrar un misterio que va a durar más de ochenta",
+  "palabras": [
+   {
+    "p": "hombre",
+    "ini": 65.72,
+    "fin": 66.02
+   },
+   {
+    "p": "no",
+    "ini": 66.02,
+    "fin": 66.3
+   },
+   {
+    "p": "sabe",
+    "ini": 66.3,
+    "fin": 66.58
+   },
+   {
+    "p": "es",
+    "ini": 66.58,
+    "fin": 67.06
+   },
+   {
+    "p": "que",
+    "ini": 67.06,
+    "fin": 67.16
+   },
+   {
+    "p": "acaba",
+    "ini": 67.16,
+    "fin": 67.48
+   },
+   {
+    "p": "de",
+    "ini": 67.48,
+    "fin": 67.78
+   },
+   {
+    "p": "encontrar",
+    "ini": 67.78,
+    "fin": 68.28
+   },
+   {
+    "p": "un",
+    "ini": 68.28,
+    "fin": 69.02
+   },
+   {
+    "p": "misterio",
+    "ini": 69.02,
+    "fin": 69.56
+   },
+   {
+    "p": "que",
+    "ini": 69.56,
+    "fin": 69.7
+   },
+   {
+    "p": "va",
+    "ini": 69.7,
+    "fin": 69.9
+   },
+   {
+    "p": "a",
+    "ini": 69.9,
+    "fin": 70.02
+   },
+   {
+    "p": "durar",
+    "ini": 70.02,
+    "fin": 70.64
+   },
+   {
+    "p": "más",
+    "ini": 70.64,
+    "fin": 71.04
+   },
+   {
+    "p": "de",
+    "ini": 71.04,
+    "fin": 71.22
+   },
+   {
+    "p": "ochenta",
+    "ini": 71.22,
+    "fin": 71.68
+   }
+  ]
+ },
+ {
+  "ini": 71.68,
+  "fin": 77.22,
+  "texto": "años. Un misterio que la ciencia va a dar por resuelto dos veces.",
+  "palabras": [
+   {
+    "p": "años.",
+    "ini": 71.68,
+    "fin": 72.34
+   },
+   {
+    "p": "Un",
+    "ini": 73.0,
+    "fin": 73.28
+   },
+   {
+    "p": "misterio",
+    "ini": 73.28,
+    "fin": 73.72
+   },
+   {
+    "p": "que",
+    "ini": 73.72,
+    "fin": 73.88
+   },
+   {
+    "p": "la",
+    "ini": 73.88,
+    "fin": 74.14
+   },
+   {
+    "p": "ciencia",
+    "ini": 74.14,
+    "fin": 74.48
+   },
+   {
+    "p": "va",
+    "ini": 74.48,
+    "fin": 74.68
+   },
+   {
+    "p": "a",
+    "ini": 74.68,
+    "fin": 74.8
+   },
+   {
+    "p": "dar",
+    "ini": 74.8,
+    "fin": 74.92
+   },
+   {
+    "p": "por",
+    "ini": 74.92,
+    "fin": 75.18
+   },
+   {
+    "p": "resuelto",
+    "ini": 75.18,
+    "fin": 76.26
+   },
+   {
+    "p": "dos",
+    "ini": 76.26,
+    "fin": 76.68
+   },
+   {
+    "p": "veces.",
+    "ini": 76.68,
+    "fin": 77.22
+   }
+  ]
+ },
+ {
+  "ini": 79.74,
+  "fin": 89.0,
+  "texto": "Y las dos veces se va a equivocar. Esta es la historia del Lago de los Esqueletos.",
+  "palabras": [
+   {
+    "p": "Y",
+    "ini": 79.74,
+    "fin": 80.62
+   },
+   {
+    "p": "las",
+    "ini": 80.62,
+    "fin": 81.0
+   },
+   {
+    "p": "dos",
+    "ini": 81.0,
+    "fin": 81.24
+   },
+   {
+    "p": "veces",
+    "ini": 81.24,
+    "fin": 81.74
+   },
+   {
+    "p": "se",
+    "ini": 81.74,
+    "fin": 82.18
+   },
+   {
+    "p": "va",
+    "ini": 82.18,
+    "fin": 82.48
+   },
+   {
+    "p": "a",
+    "ini": 82.48,
+    "fin": 82.54
+   },
+   {
+    "p": "equivocar.",
+    "ini": 82.54,
+    "fin": 84.34
+   },
+   {
+    "p": "Esta",
+    "ini": 85.82,
+    "fin": 85.88
+   },
+   {
+    "p": "es",
+    "ini": 85.88,
+    "fin": 86.04
+   },
+   {
+    "p": "la",
+    "ini": 86.04,
+    "fin": 86.18
+   },
+   {
+    "p": "historia",
+    "ini": 86.18,
+    "fin": 86.64
+   },
+   {
+    "p": "del",
+    "ini": 86.64,
+    "fin": 87.0
+   },
+   {
+    "p": "Lago",
+    "ini": 87.0,
+    "fin": 87.38
+   },
+   {
+    "p": "de",
+    "ini": 87.38,
+    "fin": 87.54
+   },
+   {
+    "p": "los",
+    "ini": 87.54,
+    "fin": 87.76
+   },
+   {
+    "p": "Esqueletos.",
+    "ini": 87.76,
+    "fin": 89.0
+   }
+  ]
+ },
+ {
+  "ini": 89.3,
+  "fin": 98.54,
+  "texto": "Soy Joel Marino y esto es Archivos Inexplicables. Archivo 001.",
+  "palabras": [
+   {
+    "p": "Soy",
+    "ini": 89.3,
+    "fin": 89.52
+   },
+   {
+    "p": "Joel",
+    "ini": 89.52,
+    "fin": 89.84
+   },
+   {
+    "p": "Marino",
+    "ini": 89.84,
+    "fin": 90.48
+   },
+   {
+    "p": "y",
+    "ini": 90.48,
+    "fin": 91.12
+   },
+   {
+    "p": "esto",
+    "ini": 91.12,
+    "fin": 91.46
+   },
+   {
+    "p": "es",
+    "ini": 91.46,
+    "fin": 92.36
+   },
+   {
+    "p": "Archivos",
+    "ini": 92.36,
+    "fin": 93.24
+   },
+   {
+    "p": "Inexplicables.",
+    "ini": 93.24,
+    "fin": 94.64
+   },
+   {
+    "p": "Archivo",
+    "ini": 95.78,
+    "fin": 96.66
+   },
+   {
+    "p": "001.",
+    "ini": 96.66,
+    "fin": 98.54
+   }
+  ]
+ },
+ {
+  "ini": 101.24,
+  "fin": 107.28,
+  "texto": "El guardabosques baja de la montaña rápido y avisa. La noticia llega a los ingleses",
+  "palabras": [
+   {
+    "p": "El",
+    "ini": 101.24,
+    "fin": 101.92
+   },
+   {
+    "p": "guardabosques",
+    "ini": 101.92,
+    "fin": 102.6
+   },
+   {
+    "p": "baja",
+    "ini": 102.6,
+    "fin": 102.94
+   },
+   {
+    "p": "de",
+    "ini": 102.94,
+    "fin": 103.14
+   },
+   {
+    "p": "la",
+    "ini": 103.14,
+    "fin": 103.3
+   },
+   {
+    "p": "montaña",
+    "ini": 103.3,
+    "fin": 103.76
+   },
+   {
+    "p": "rápido",
+    "ini": 103.76,
+    "fin": 104.2
+   },
+   {
+    "p": "y",
+    "ini": 104.2,
+    "fin": 104.46
+   },
+   {
+    "p": "avisa.",
+    "ini": 104.46,
+    "fin": 104.9
+   },
+   {
+    "p": "La",
+    "ini": 105.42,
+    "fin": 105.56
+   },
+   {
+    "p": "noticia",
+    "ini": 105.56,
+    "fin": 106.06
+   },
+   {
+    "p": "llega",
+    "ini": 106.06,
+    "fin": 106.32
+   },
+   {
+    "p": "a",
+    "ini": 106.32,
+    "fin": 106.42
+   },
+   {
+    "p": "los",
+    "ini": 106.42,
+    "fin": 106.62
+   },
+   {
+    "p": "ingleses",
+    "ini": 106.62,
+    "fin": 107.28
+   }
+  ]
+ },
+ {
+  "ini": 107.28,
+  "fin": 113.42,
+  "texto": "que en ese momento gobernaban la India. Los ingleses se asustan porque estaban en",
+  "palabras": [
+   {
+    "p": "que",
+    "ini": 107.28,
+    "fin": 107.52
+   },
+   {
+    "p": "en",
+    "ini": 107.52,
+    "fin": 107.66
+   },
+   {
+    "p": "ese",
+    "ini": 107.66,
+    "fin": 107.82
+   },
+   {
+    "p": "momento",
+    "ini": 107.82,
+    "fin": 108.36
+   },
+   {
+    "p": "gobernaban",
+    "ini": 108.36,
+    "fin": 109.18
+   },
+   {
+    "p": "la",
+    "ini": 109.18,
+    "fin": 109.46
+   },
+   {
+    "p": "India.",
+    "ini": 109.46,
+    "fin": 109.72
+   },
+   {
+    "p": "Los",
+    "ini": 110.44,
+    "fin": 110.7
+   },
+   {
+    "p": "ingleses",
+    "ini": 110.7,
+    "fin": 111.26
+   },
+   {
+    "p": "se",
+    "ini": 111.26,
+    "fin": 111.54
+   },
+   {
+    "p": "asustan",
+    "ini": 111.54,
+    "fin": 112.3
+   },
+   {
+    "p": "porque",
+    "ini": 112.3,
+    "fin": 112.66
+   },
+   {
+    "p": "estaban",
+    "ini": 112.66,
+    "fin": 113.0
+   },
+   {
+    "p": "en",
+    "ini": 113.0,
+    "fin": 113.42
+   }
+  ]
+ },
+ {
+  "ini": 113.42,
+  "fin": 117.74,
+  "texto": "plena Segunda Guerra Mundial. Y Japón avanza por Asia.",
+  "palabras": [
+   {
+    "p": "plena",
+    "ini": 113.42,
+    "fin": 113.78
+   },
+   {
+    "p": "Segunda",
+    "ini": 113.78,
+    "fin": 114.28
+   },
+   {
+    "p": "Guerra",
+    "ini": 114.28,
+    "fin": 114.58
+   },
+   {
+    "p": "Mundial.",
+    "ini": 114.58,
+    "fin": 115.32
+   },
+   {
+    "p": "Y",
+    "ini": 115.58,
+    "fin": 115.8
+   },
+   {
+    "p": "Japón",
+    "ini": 115.8,
+    "fin": 116.32
+   },
+   {
+    "p": "avanza",
+    "ini": 116.32,
+    "fin": 116.88
+   },
+   {
+    "p": "por",
+    "ini": 116.88,
+    "fin": 117.2
+   },
+   {
+    "p": "Asia.",
+    "ini": 117.2,
+    "fin": 117.74
+   }
+  ]
+ },
+ {
+  "ini": 121.14,
+  "fin": 126.4,
+  "texto": "Cientos de cuerpos escondidos en un paso del Himalaya solo pueden significar una",
+  "palabras": [
+   {
+    "p": "Cientos",
+    "ini": 121.14,
+    "fin": 121.5
+   },
+   {
+    "p": "de",
+    "ini": 121.5,
+    "fin": 121.76
+   },
+   {
+    "p": "cuerpos",
+    "ini": 121.76,
+    "fin": 122.1
+   },
+   {
+    "p": "escondidos",
+    "ini": 122.1,
+    "fin": 122.98
+   },
+   {
+    "p": "en",
+    "ini": 122.98,
+    "fin": 123.44
+   },
+   {
+    "p": "un",
+    "ini": 123.44,
+    "fin": 123.68
+   },
+   {
+    "p": "paso",
+    "ini": 123.68,
+    "fin": 123.92
+   },
+   {
+    "p": "del",
+    "ini": 123.92,
+    "fin": 124.1
+   },
+   {
+    "p": "Himalaya",
+    "ini": 124.1,
+    "fin": 124.76
+   },
+   {
+    "p": "solo",
+    "ini": 124.76,
+    "fin": 125.1
+   },
+   {
+    "p": "pueden",
+    "ini": 125.1,
+    "fin": 125.4
+   },
+   {
+    "p": "significar",
+    "ini": 125.4,
+    "fin": 126.1
+   },
+   {
+    "p": "una",
+    "ini": 126.1,
+    "fin": 126.4
+   }
+  ]
+ },
+ {
+  "ini": 126.4,
+  "fin": 134.56,
+  "texto": "cosa. Un ejército japonés. Un ejército japonés intentó entrar a la India por las",
+  "palabras": [
+   {
+    "p": "cosa.",
+    "ini": 126.4,
+    "fin": 126.64
+   },
+   {
+    "p": "Un",
+    "ini": 127.74,
+    "fin": 127.94
+   },
+   {
+    "p": "ejército",
+    "ini": 127.94,
+    "fin": 128.5
+   },
+   {
+    "p": "japonés.",
+    "ini": 128.5,
+    "fin": 130.26
+   },
+   {
+    "p": "Un",
+    "ini": 130.26,
+    "fin": 130.7
+   },
+   {
+    "p": "ejército",
+    "ini": 130.7,
+    "fin": 131.22
+   },
+   {
+    "p": "japonés",
+    "ini": 131.22,
+    "fin": 132.18
+   },
+   {
+    "p": "intentó",
+    "ini": 132.18,
+    "fin": 132.8
+   },
+   {
+    "p": "entrar",
+    "ini": 132.8,
+    "fin": 133.12
+   },
+   {
+    "p": "a",
+    "ini": 133.12,
+    "fin": 133.28
+   },
+   {
+    "p": "la",
+    "ini": 133.28,
+    "fin": 133.5
+   },
+   {
+    "p": "India",
+    "ini": 133.5,
+    "fin": 133.82
+   },
+   {
+    "p": "por",
+    "ini": 133.82,
+    "fin": 134.28
+   },
+   {
+    "p": "las",
+    "ini": 134.28,
+    "fin": 134.56
+   }
+  ]
+ },
+ {
+  "ini": 134.56,
+  "fin": 141.8,
+  "texto": "montañas y murió congelado en el intento. Eso es lo lógico. Es lo que cualquiera",
+  "palabras": [
+   {
+    "p": "montañas",
+    "ini": 134.56,
+    "fin": 135.08
+   },
+   {
+    "p": "y",
+    "ini": 135.08,
+    "fin": 135.28
+   },
+   {
+    "p": "murió",
+    "ini": 135.28,
+    "fin": 135.54
+   },
+   {
+    "p": "congelado",
+    "ini": 135.54,
+    "fin": 136.18
+   },
+   {
+    "p": "en",
+    "ini": 136.18,
+    "fin": 136.38
+   },
+   {
+    "p": "el",
+    "ini": 136.38,
+    "fin": 136.6
+   },
+   {
+    "p": "intento.",
+    "ini": 136.6,
+    "fin": 137.62
+   },
+   {
+    "p": "Eso",
+    "ini": 138.48,
+    "fin": 138.84
+   },
+   {
+    "p": "es",
+    "ini": 138.84,
+    "fin": 139.16
+   },
+   {
+    "p": "lo",
+    "ini": 139.16,
+    "fin": 139.34
+   },
+   {
+    "p": "lógico.",
+    "ini": 139.34,
+    "fin": 140.04
+   },
+   {
+    "p": "Es",
+    "ini": 140.62,
+    "fin": 140.76
+   },
+   {
+    "p": "lo",
+    "ini": 140.76,
+    "fin": 140.98
+   },
+   {
+    "p": "que",
+    "ini": 140.98,
+    "fin": 141.32
+   },
+   {
+    "p": "cualquiera",
+    "ini": 141.32,
+    "fin": 141.8
+   }
+  ]
+ },
+ {
+  "ini": 141.8,
+  "fin": 149.64,
+  "texto": "pensaría. Así que mandan a revisar los restos. Y ahí aparece el primer problema.",
+  "palabras": [
+   {
+    "p": "pensaría.",
+    "ini": 141.8,
+    "fin": 142.78
+   },
+   {
+    "p": "Así",
+    "ini": 144.34,
+    "fin": 144.78
+   },
+   {
+    "p": "que",
+    "ini": 144.78,
+    "fin": 145.22
+   },
+   {
+    "p": "mandan",
+    "ini": 145.22,
+    "fin": 145.58
+   },
+   {
+    "p": "a",
+    "ini": 145.58,
+    "fin": 145.78
+   },
+   {
+    "p": "revisar",
+    "ini": 145.78,
+    "fin": 146.26
+   },
+   {
+    "p": "los",
+    "ini": 146.26,
+    "fin": 146.54
+   },
+   {
+    "p": "restos.",
+    "ini": 146.54,
+    "fin": 147.16
+   },
+   {
+    "p": "Y",
+    "ini": 147.56,
+    "fin": 147.7
+   },
+   {
+    "p": "ahí",
+    "ini": 147.7,
+    "fin": 147.88
+   },
+   {
+    "p": "aparece",
+    "ini": 147.88,
+    "fin": 148.32
+   },
+   {
+    "p": "el",
+    "ini": 148.32,
+    "fin": 148.68
+   },
+   {
+    "p": "primer",
+    "ini": 148.68,
+    "fin": 149.04
+   },
+   {
+    "p": "problema.",
+    "ini": 149.04,
+    "fin": 149.64
+   }
+  ]
+ },
+ {
+  "ini": 150.2,
+  "fin": 157.96,
+  "texto": "Los huesos están demasiado gastados. Demasiado viejos. No tienen meses. Tienen",
+  "palabras": [
+   {
+    "p": "Los",
+    "ini": 150.2,
+    "fin": 150.8
+   },
+   {
+    "p": "huesos",
+    "ini": 150.8,
+    "fin": 151.46
+   },
+   {
+    "p": "están",
+    "ini": 151.46,
+    "fin": 151.76
+   },
+   {
+    "p": "demasiado",
+    "ini": 151.76,
+    "fin": 152.46
+   },
+   {
+    "p": "gastados.",
+    "ini": 152.46,
+    "fin": 153.6
+   },
+   {
+    "p": "Demasiado",
+    "ini": 153.78,
+    "fin": 154.58
+   },
+   {
+    "p": "viejos.",
+    "ini": 154.58,
+    "fin": 155.34
+   },
+   {
+    "p": "No",
+    "ini": 155.84,
+    "fin": 156.02
+   },
+   {
+    "p": "tienen",
+    "ini": 156.02,
+    "fin": 156.38
+   },
+   {
+    "p": "meses.",
+    "ini": 156.38,
+    "fin": 156.88
+   },
+   {
+    "p": "Tienen",
+    "ini": 157.64,
+    "fin": 158.14
+   }
+  ]
+ },
+ {
+  "ini": 158.54,
+  "fin": 169.28,
+  "texto": "siglos. No son soldados japoneses. No son de esa guerra. Entonces, ¿quiénes son?",
+  "palabras": [
+   {
+    "p": "siglos.",
+    "ini": 158.54,
+    "fin": 159.54
+   },
+   {
+    "p": "No",
+    "ini": 161.28,
+    "fin": 161.46
+   },
+   {
+    "p": "son",
+    "ini": 161.46,
+    "fin": 161.78
+   },
+   {
+    "p": "soldados",
+    "ini": 161.78,
+    "fin": 162.26
+   },
+   {
+    "p": "japoneses.",
+    "ini": 162.26,
+    "fin": 163.4
+   },
+   {
+    "p": "No",
+    "ini": 163.96,
+    "fin": 164.2
+   },
+   {
+    "p": "son",
+    "ini": 164.2,
+    "fin": 164.44
+   },
+   {
+    "p": "de",
+    "ini": 164.44,
+    "fin": 164.76
+   },
+   {
+    "p": "esa",
+    "ini": 164.76,
+    "fin": 164.98
+   },
+   {
+    "p": "guerra.",
+    "ini": 164.98,
+    "fin": 165.34
+   },
+   {
+    "p": "Entonces,",
+    "ini": 167.04,
+    "fin": 167.7
+   },
+   {
+    "p": "¿quiénes",
+    "ini": 168.38,
+    "fin": 168.98
+   },
+   {
+    "p": "son?",
+    "ini": 168.98,
+    "fin": 169.28
+   }
+  ]
+ },
+ {
+  "ini": 171.42,
+  "fin": 179.14,
+  "texto": "Nadie tiene la respuesta. La guerra termina. Los ingleses se van y el lago se queda allá",
+  "palabras": [
+   {
+    "p": "Nadie",
+    "ini": 171.42,
+    "fin": 172.22
+   },
+   {
+    "p": "tiene",
+    "ini": 172.22,
+    "fin": 172.54
+   },
+   {
+    "p": "la",
+    "ini": 172.54,
+    "fin": 172.8
+   },
+   {
+    "p": "respuesta.",
+    "ini": 172.8,
+    "fin": 173.3
+   },
+   {
+    "p": "La",
+    "ini": 174.08,
+    "fin": 174.28
+   },
+   {
+    "p": "guerra",
+    "ini": 174.28,
+    "fin": 174.58
+   },
+   {
+    "p": "termina.",
+    "ini": 174.58,
+    "fin": 175.26
+   },
+   {
+    "p": "Los",
+    "ini": 175.84,
+    "fin": 176.14
+   },
+   {
+    "p": "ingleses",
+    "ini": 176.14,
+    "fin": 176.64
+   },
+   {
+    "p": "se",
+    "ini": 176.64,
+    "fin": 176.86
+   },
+   {
+    "p": "van",
+    "ini": 176.86,
+    "fin": 177.1
+   },
+   {
+    "p": "y",
+    "ini": 177.1,
+    "fin": 177.68
+   },
+   {
+    "p": "el",
+    "ini": 177.68,
+    "fin": 177.88
+   },
+   {
+    "p": "lago",
+    "ini": 177.88,
+    "fin": 178.24
+   },
+   {
+    "p": "se",
+    "ini": 178.24,
+    "fin": 178.58
+   },
+   {
+    "p": "queda",
+    "ini": 178.58,
+    "fin": 178.82
+   },
+   {
+    "p": "allá",
+    "ini": 178.82,
+    "fin": 179.14
+   }
+  ]
+ },
+ {
+  "ini": 179.14,
+  "fin": 186.96,
+  "texto": "arriba. Congelado casi todo el año. Con su secreto. Su secreto en el fondo.",
+  "palabras": [
+   {
+    "p": "arriba.",
+    "ini": 179.14,
+    "fin": 179.38
+   },
+   {
+    "p": "Congelado",
+    "ini": 180.26,
+    "fin": 180.9
+   },
+   {
+    "p": "casi",
+    "ini": 180.9,
+    "fin": 181.38
+   },
+   {
+    "p": "todo",
+    "ini": 181.38,
+    "fin": 181.7
+   },
+   {
+    "p": "el",
+    "ini": 181.7,
+    "fin": 181.88
+   },
+   {
+    "p": "año.",
+    "ini": 181.88,
+    "fin": 182.14
+   },
+   {
+    "p": "Con",
+    "ini": 182.78,
+    "fin": 182.92
+   },
+   {
+    "p": "su",
+    "ini": 182.92,
+    "fin": 183.16
+   },
+   {
+    "p": "secreto.",
+    "ini": 183.16,
+    "fin": 184.4
+   },
+   {
+    "p": "Su",
+    "ini": 184.6,
+    "fin": 184.86
+   },
+   {
+    "p": "secreto",
+    "ini": 184.86,
+    "fin": 185.94
+   },
+   {
+    "p": "en",
+    "ini": 185.94,
+    "fin": 186.4
+   },
+   {
+    "p": "el",
+    "ini": 186.4,
+    "fin": 186.64
+   },
+   {
+    "p": "fondo.",
+    "ini": 186.64,
+    "fin": 186.96
+   }
+  ]
+ },
+ {
+  "ini": 189.3,
+  "fin": 195.02,
+  "texto": "Pero abajo en los pueblos de la montaña hay gente que dice que siempre ha sabido lo que pasó.",
+  "palabras": [
+   {
+    "p": "Pero",
+    "ini": 189.3,
+    "fin": 189.56
+   },
+   {
+    "p": "abajo",
+    "ini": 189.56,
+    "fin": 189.86
+   },
+   {
+    "p": "en",
+    "ini": 189.86,
+    "fin": 190.04
+   },
+   {
+    "p": "los",
+    "ini": 190.04,
+    "fin": 190.28
+   },
+   {
+    "p": "pueblos",
+    "ini": 190.28,
+    "fin": 190.6
+   },
+   {
+    "p": "de",
+    "ini": 190.6,
+    "fin": 190.76
+   },
+   {
+    "p": "la",
+    "ini": 190.76,
+    "fin": 190.94
+   },
+   {
+    "p": "montaña",
+    "ini": 190.94,
+    "fin": 191.86
+   },
+   {
+    "p": "hay",
+    "ini": 191.86,
+    "fin": 192.2
+   },
+   {
+    "p": "gente",
+    "ini": 192.2,
+    "fin": 192.54
+   },
+   {
+    "p": "que",
+    "ini": 192.54,
+    "fin": 192.86
+   },
+   {
+    "p": "dice",
+    "ini": 192.86,
+    "fin": 193.04
+   },
+   {
+    "p": "que",
+    "ini": 193.04,
+    "fin": 193.38
+   },
+   {
+    "p": "siempre",
+    "ini": 193.38,
+    "fin": 193.68
+   },
+   {
+    "p": "ha",
+    "ini": 193.68,
+    "fin": 193.86
+   },
+   {
+    "p": "sabido",
+    "ini": 193.86,
+    "fin": 194.24
+   },
+   {
+    "p": "lo",
+    "ini": 194.24,
+    "fin": 194.46
+   },
+   {
+    "p": "que",
+    "ini": 194.46,
+    "fin": 194.66
+   },
+   {
+    "p": "pasó.",
+    "ini": 194.66,
+    "fin": 195.02
+   }
+  ]
+ },
+ {
+  "ini": 197.36,
+  "fin": 201.62,
+  "texto": "Las mujeres de esos pueblos cantan una canción muy antigua.",
+  "palabras": [
+   {
+    "p": "Las",
+    "ini": 197.36,
+    "fin": 197.56
+   },
+   {
+    "p": "mujeres",
+    "ini": 197.56,
+    "fin": 197.92
+   },
+   {
+    "p": "de",
+    "ini": 197.92,
+    "fin": 198.18
+   },
+   {
+    "p": "esos",
+    "ini": 198.18,
+    "fin": 198.42
+   },
+   {
+    "p": "pueblos",
+    "ini": 198.42,
+    "fin": 199.0
+   },
+   {
+    "p": "cantan",
+    "ini": 199.0,
+    "fin": 199.44
+   },
+   {
+    "p": "una",
+    "ini": 199.44,
+    "fin": 199.68
+   },
+   {
+    "p": "canción",
+    "ini": 199.68,
+    "fin": 200.18
+   },
+   {
+    "p": "muy",
+    "ini": 200.18,
+    "fin": 200.82
+   },
+   {
+    "p": "antigua.",
+    "ini": 200.82,
+    "fin": 201.62
+   }
+  ]
+ },
+ {
+  "ini": 203.3,
+  "fin": 211.02,
+  "texto": "La canción cuenta que hace muchísimo tiempo un rey llamado Hasdabal decide subir a la montaña",
+  "palabras": [
+   {
+    "p": "La",
+    "ini": 203.3,
+    "fin": 204.06
+   },
+   {
+    "p": "canción",
+    "ini": 204.06,
+    "fin": 204.46
+   },
+   {
+    "p": "cuenta",
+    "ini": 204.46,
+    "fin": 204.8
+   },
+   {
+    "p": "que",
+    "ini": 204.8,
+    "fin": 205.32
+   },
+   {
+    "p": "hace",
+    "ini": 205.32,
+    "fin": 205.64
+   },
+   {
+    "p": "muchísimo",
+    "ini": 205.64,
+    "fin": 206.2
+   },
+   {
+    "p": "tiempo",
+    "ini": 206.2,
+    "fin": 206.78
+   },
+   {
+    "p": "un",
+    "ini": 206.78,
+    "fin": 207.22
+   },
+   {
+    "p": "rey",
+    "ini": 207.22,
+    "fin": 207.44
+   },
+   {
+    "p": "llamado",
+    "ini": 207.44,
+    "fin": 208.06
+   },
+   {
+    "p": "Hasdabal",
+    "ini": 208.06,
+    "fin": 209.36
+   },
+   {
+    "p": "decide",
+    "ini": 209.36,
+    "fin": 209.84
+   },
+   {
+    "p": "subir",
+    "ini": 209.84,
+    "fin": 210.2
+   },
+   {
+    "p": "a",
+    "ini": 210.2,
+    "fin": 210.42
+   },
+   {
+    "p": "la",
+    "ini": 210.42,
+    "fin": 210.54
+   },
+   {
+    "p": "montaña",
+    "ini": 210.54,
+    "fin": 211.02
+   }
+  ]
+ },
+ {
+  "ini": 211.02,
+  "fin": 220.34,
+  "texto": "para honrar a la diosa Nanda Devi. La diosa de esas cumbres. Pero el rey no sube como un",
+  "palabras": [
+   {
+    "p": "para",
+    "ini": 211.02,
+    "fin": 211.66
+   },
+   {
+    "p": "honrar",
+    "ini": 211.66,
+    "fin": 212.3
+   },
+   {
+    "p": "a",
+    "ini": 212.3,
+    "fin": 212.52
+   },
+   {
+    "p": "la",
+    "ini": 212.52,
+    "fin": 212.62
+   },
+   {
+    "p": "diosa",
+    "ini": 212.62,
+    "fin": 213.24
+   },
+   {
+    "p": "Nanda",
+    "ini": 213.24,
+    "fin": 213.96
+   },
+   {
+    "p": "Devi.",
+    "ini": 213.96,
+    "fin": 214.24
+   },
+   {
+    "p": "La",
+    "ini": 214.8,
+    "fin": 214.92
+   },
+   {
+    "p": "diosa",
+    "ini": 214.92,
+    "fin": 215.4
+   },
+   {
+    "p": "de",
+    "ini": 215.4,
+    "fin": 215.88
+   },
+   {
+    "p": "esas",
+    "ini": 215.88,
+    "fin": 216.14
+   },
+   {
+    "p": "cumbres.",
+    "ini": 216.14,
+    "fin": 217.62
+   },
+   {
+    "p": "Pero",
+    "ini": 218.24,
+    "fin": 218.5
+   },
+   {
+    "p": "el",
+    "ini": 218.5,
+    "fin": 218.7
+   },
+   {
+    "p": "rey",
+    "ini": 218.7,
+    "fin": 219.18
+   },
+   {
+    "p": "no",
+    "ini": 219.18,
+    "fin": 219.48
+   },
+   {
+    "p": "sube",
+    "ini": 219.48,
+    "fin": 219.74
+   },
+   {
+    "p": "como",
+    "ini": 219.74,
+    "fin": 220.06
+   },
+   {
+    "p": "un",
+    "ini": 220.06,
+    "fin": 220.34
+   }
+  ]
+ },
+ {
+  "ini": 220.34,
+  "fin": 231.6,
+  "texto": "peregrino. Sube como un rey. Lleva a su esposa embarazada. Lleva a sirvientes. Lleva a",
+  "palabras": [
+   {
+    "p": "peregrino.",
+    "ini": 220.34,
+    "fin": 221.08
+   },
+   {
+    "p": "Sube",
+    "ini": 221.36,
+    "fin": 221.7
+   },
+   {
+    "p": "como",
+    "ini": 221.7,
+    "fin": 222.16
+   },
+   {
+    "p": "un",
+    "ini": 222.16,
+    "fin": 222.52
+   },
+   {
+    "p": "rey.",
+    "ini": 222.52,
+    "fin": 223.64
+   },
+   {
+    "p": "Lleva",
+    "ini": 223.82,
+    "fin": 224.08
+   },
+   {
+    "p": "a",
+    "ini": 224.08,
+    "fin": 224.2
+   },
+   {
+    "p": "su",
+    "ini": 224.2,
+    "fin": 224.3
+   },
+   {
+    "p": "esposa",
+    "ini": 224.3,
+    "fin": 224.68
+   },
+   {
+    "p": "embarazada.",
+    "ini": 224.68,
+    "fin": 225.48
+   },
+   {
+    "p": "Lleva",
+    "ini": 225.72,
+    "fin": 226.0
+   },
+   {
+    "p": "a",
+    "ini": 226.0,
+    "fin": 226.04
+   },
+   {
+    "p": "sirvientes.",
+    "ini": 226.04,
+    "fin": 226.84
+   },
+   {
+    "p": "Lleva",
+    "ini": 230.84,
+    "fin": 231.6
+   },
+   {
+    "p": "a",
+    "ini": 231.6,
+    "fin": 231.6
+   }
+  ]
+ },
+ {
+  "ini": 231.6,
+  "fin": 239.04,
+  "texto": "eso no le gusta. Ese es un lugar sagrado. Y ellos lo están convirtiendo en una fiesta.",
+  "palabras": [
+   {
+    "p": "eso",
+    "ini": 231.6,
+    "fin": 232.0
+   },
+   {
+    "p": "no",
+    "ini": 232.0,
+    "fin": 232.36
+   },
+   {
+    "p": "le",
+    "ini": 232.36,
+    "fin": 232.66
+   },
+   {
+    "p": "gusta.",
+    "ini": 232.66,
+    "fin": 233.06
+   },
+   {
+    "p": "Ese",
+    "ini": 233.88,
+    "fin": 234.32
+   },
+   {
+    "p": "es",
+    "ini": 234.32,
+    "fin": 234.72
+   },
+   {
+    "p": "un",
+    "ini": 234.72,
+    "fin": 234.88
+   },
+   {
+    "p": "lugar",
+    "ini": 234.88,
+    "fin": 235.18
+   },
+   {
+    "p": "sagrado.",
+    "ini": 235.18,
+    "fin": 235.92
+   },
+   {
+    "p": "Y",
+    "ini": 236.32,
+    "fin": 236.46
+   },
+   {
+    "p": "ellos",
+    "ini": 236.46,
+    "fin": 236.74
+   },
+   {
+    "p": "lo",
+    "ini": 236.74,
+    "fin": 237.06
+   },
+   {
+    "p": "están",
+    "ini": 237.06,
+    "fin": 237.3
+   },
+   {
+    "p": "convirtiendo",
+    "ini": 237.3,
+    "fin": 238.12
+   },
+   {
+    "p": "en",
+    "ini": 238.12,
+    "fin": 238.36
+   },
+   {
+    "p": "una",
+    "ini": 238.36,
+    "fin": 238.64
+   },
+   {
+    "p": "fiesta.",
+    "ini": 238.64,
+    "fin": 239.04
+   }
+  ]
+ },
+ {
+  "ini": 240.08,
+  "fin": 249.8,
+  "texto": "Entonces, el cielo se cierra. La diosa les lanza desde arriba. Piedras de hierro, duras como",
+  "palabras": [
+   {
+    "p": "Entonces,",
+    "ini": 240.08,
+    "fin": 240.5
+   },
+   {
+    "p": "el",
+    "ini": 241.52,
+    "fin": 241.64
+   },
+   {
+    "p": "cielo",
+    "ini": 241.64,
+    "fin": 241.98
+   },
+   {
+    "p": "se",
+    "ini": 241.98,
+    "fin": 242.38
+   },
+   {
+    "p": "cierra.",
+    "ini": 242.38,
+    "fin": 242.74
+   },
+   {
+    "p": "La",
+    "ini": 244.82,
+    "fin": 244.96
+   },
+   {
+    "p": "diosa",
+    "ini": 244.96,
+    "fin": 245.34
+   },
+   {
+    "p": "les",
+    "ini": 245.34,
+    "fin": 245.72
+   },
+   {
+    "p": "lanza",
+    "ini": 245.72,
+    "fin": 246.08
+   },
+   {
+    "p": "desde",
+    "ini": 246.08,
+    "fin": 246.4
+   },
+   {
+    "p": "arriba.",
+    "ini": 246.4,
+    "fin": 246.9
+   },
+   {
+    "p": "Piedras",
+    "ini": 247.34,
+    "fin": 247.86
+   },
+   {
+    "p": "de",
+    "ini": 247.86,
+    "fin": 248.1
+   },
+   {
+    "p": "hierro,",
+    "ini": 248.1,
+    "fin": 248.84
+   },
+   {
+    "p": "duras",
+    "ini": 249.12,
+    "fin": 249.58
+   },
+   {
+    "p": "como",
+    "ini": 249.58,
+    "fin": 249.8
+   }
+  ]
+ },
+ {
+  "ini": 249.8,
+  "fin": 259.26,
+  "texto": "el hierro. Dice la canción. No se salva nadie. Bonita historia. Una diosa furiosa. Un rey",
+  "palabras": [
+   {
+    "p": "el",
+    "ini": 249.8,
+    "fin": 250.04
+   },
+   {
+    "p": "hierro.",
+    "ini": 250.04,
+    "fin": 250.82
+   },
+   {
+    "p": "Dice",
+    "ini": 250.96,
+    "fin": 251.34
+   },
+   {
+    "p": "la",
+    "ini": 251.34,
+    "fin": 251.56
+   },
+   {
+    "p": "canción.",
+    "ini": 251.56,
+    "fin": 251.98
+   },
+   {
+    "p": "No",
+    "ini": 252.88,
+    "fin": 253.08
+   },
+   {
+    "p": "se",
+    "ini": 253.08,
+    "fin": 253.38
+   },
+   {
+    "p": "salva",
+    "ini": 253.38,
+    "fin": 253.68
+   },
+   {
+    "p": "nadie.",
+    "ini": 253.68,
+    "fin": 254.16
+   },
+   {
+    "p": "Bonita",
+    "ini": 256.12,
+    "fin": 256.52
+   },
+   {
+    "p": "historia.",
+    "ini": 256.52,
+    "fin": 256.94
+   },
+   {
+    "p": "Una",
+    "ini": 257.4,
+    "fin": 257.64
+   },
+   {
+    "p": "diosa",
+    "ini": 257.64,
+    "fin": 257.98
+   },
+   {
+    "p": "furiosa.",
+    "ini": 257.98,
+    "fin": 258.5
+   },
+   {
+    "p": "Un",
+    "ini": 258.8,
+    "fin": 258.94
+   },
+   {
+    "p": "rey",
+    "ini": 258.94,
+    "fin": 259.26
+   }
+  ]
+ },
+ {
+  "ini": 259.26,
+  "fin": 266.04,
+  "texto": "investigado. Un cuento para asustar niños. Durante décadas, eso fue lo que pensaron los",
+  "palabras": [
+   {
+    "p": "investigado.",
+    "ini": 259.26,
+    "fin": 259.94
+   },
+   {
+    "p": "Un",
+    "ini": 260.36,
+    "fin": 260.4
+   },
+   {
+    "p": "cuento",
+    "ini": 260.4,
+    "fin": 260.86
+   },
+   {
+    "p": "para",
+    "ini": 260.86,
+    "fin": 261.22
+   },
+   {
+    "p": "asustar",
+    "ini": 261.22,
+    "fin": 261.9
+   },
+   {
+    "p": "niños.",
+    "ini": 261.9,
+    "fin": 262.36
+   },
+   {
+    "p": "Durante",
+    "ini": 263.6,
+    "fin": 263.88
+   },
+   {
+    "p": "décadas,",
+    "ini": 263.88,
+    "fin": 264.46
+   },
+   {
+    "p": "eso",
+    "ini": 264.58,
+    "fin": 264.82
+   },
+   {
+    "p": "fue",
+    "ini": 264.82,
+    "fin": 265.0
+   },
+   {
+    "p": "lo",
+    "ini": 265.0,
+    "fin": 265.18
+   },
+   {
+    "p": "que",
+    "ini": 265.18,
+    "fin": 265.4
+   },
+   {
+    "p": "pensaron",
+    "ini": 265.4,
+    "fin": 265.78
+   },
+   {
+    "p": "los",
+    "ini": 265.78,
+    "fin": 266.04
+   }
+  ]
+ },
+ {
+  "ini": 266.04,
+  "fin": 274.72,
+  "texto": "científicos. Hasta que subieron a mirar los cráneos. Año 2003, un equipo de científicos",
+  "palabras": [
+   {
+    "p": "científicos.",
+    "ini": 266.04,
+    "fin": 266.94
+   },
+   {
+    "p": "Hasta",
+    "ini": 267.32,
+    "fin": 267.56
+   },
+   {
+    "p": "que",
+    "ini": 267.56,
+    "fin": 267.8
+   },
+   {
+    "p": "subieron",
+    "ini": 267.8,
+    "fin": 268.36
+   },
+   {
+    "p": "a",
+    "ini": 268.36,
+    "fin": 268.76
+   },
+   {
+    "p": "mirar",
+    "ini": 268.76,
+    "fin": 269.22
+   },
+   {
+    "p": "los",
+    "ini": 269.22,
+    "fin": 269.54
+   },
+   {
+    "p": "cráneos.",
+    "ini": 269.54,
+    "fin": 271.08
+   },
+   {
+    "p": "Año",
+    "ini": 271.52,
+    "fin": 271.9
+   },
+   {
+    "p": "2003,",
+    "ini": 271.9,
+    "fin": 272.62
+   },
+   {
+    "p": "un",
+    "ini": 273.22,
+    "fin": 273.32
+   },
+   {
+    "p": "equipo",
+    "ini": 273.32,
+    "fin": 273.62
+   },
+   {
+    "p": "de",
+    "ini": 273.62,
+    "fin": 273.98
+   },
+   {
+    "p": "científicos",
+    "ini": 273.98,
+    "fin": 274.72
+   }
+  ]
+ },
+ {
+  "ini": 274.72,
+  "fin": 280.96,
+  "texto": "acompañados por las cámaras de National Geographic sube hasta el lago. Lo que encuentra",
+  "palabras": [
+   {
+    "p": "acompañados",
+    "ini": 274.72,
+    "fin": 275.42
+   },
+   {
+    "p": "por",
+    "ini": 275.42,
+    "fin": 275.66
+   },
+   {
+    "p": "las",
+    "ini": 275.66,
+    "fin": 275.92
+   },
+   {
+    "p": "cámaras",
+    "ini": 275.92,
+    "fin": 276.26
+   },
+   {
+    "p": "de",
+    "ini": 276.26,
+    "fin": 276.76
+   },
+   {
+    "p": "National",
+    "ini": 276.76,
+    "fin": 277.26
+   },
+   {
+    "p": "Geographic",
+    "ini": 277.26,
+    "fin": 278.06
+   },
+   {
+    "p": "sube",
+    "ini": 278.06,
+    "fin": 278.6
+   },
+   {
+    "p": "hasta",
+    "ini": 278.6,
+    "fin": 278.9
+   },
+   {
+    "p": "el",
+    "ini": 278.9,
+    "fin": 279.04
+   },
+   {
+    "p": "lago.",
+    "ini": 279.04,
+    "fin": 279.7
+   },
+   {
+    "p": "Lo",
+    "ini": 280.2,
+    "fin": 280.38
+   },
+   {
+    "p": "que",
+    "ini": 280.38,
+    "fin": 280.58
+   },
+   {
+    "p": "encuentra",
+    "ini": 280.58,
+    "fin": 280.96
+   }
+  ]
+ },
+ {
+  "ini": 280.96,
+  "fin": 289.04,
+  "texto": "los deja en silencio. El frío lo ha conservado todo. Hay huesos que todavía tienen carne",
+  "palabras": [
+   {
+    "p": "los",
+    "ini": 280.96,
+    "fin": 281.66
+   },
+   {
+    "p": "deja",
+    "ini": 281.66,
+    "fin": 281.96
+   },
+   {
+    "p": "en",
+    "ini": 281.96,
+    "fin": 282.26
+   },
+   {
+    "p": "silencio.",
+    "ini": 282.26,
+    "fin": 283.7
+   },
+   {
+    "p": "El",
+    "ini": 284.88,
+    "fin": 285.14
+   },
+   {
+    "p": "frío",
+    "ini": 285.14,
+    "fin": 285.44
+   },
+   {
+    "p": "lo",
+    "ini": 285.44,
+    "fin": 285.58
+   },
+   {
+    "p": "ha",
+    "ini": 285.58,
+    "fin": 285.8
+   },
+   {
+    "p": "conservado",
+    "ini": 285.8,
+    "fin": 286.38
+   },
+   {
+    "p": "todo.",
+    "ini": 286.38,
+    "fin": 286.7
+   },
+   {
+    "p": "Hay",
+    "ini": 287.02,
+    "fin": 287.2
+   },
+   {
+    "p": "huesos",
+    "ini": 287.2,
+    "fin": 287.62
+   },
+   {
+    "p": "que",
+    "ini": 287.62,
+    "fin": 287.8
+   },
+   {
+    "p": "todavía",
+    "ini": 287.8,
+    "fin": 288.26
+   },
+   {
+    "p": "tienen",
+    "ini": 288.26,
+    "fin": 288.66
+   },
+   {
+    "p": "carne",
+    "ini": 288.66,
+    "fin": 289.04
+   }
+  ]
+ },
+ {
+  "ini": 289.04,
+  "fin": 297.24,
+  "texto": "pegada. Hay sandalias de cuero, anillos, objetos de madera, puntas de lanza de hierro.",
+  "palabras": [
+   {
+    "p": "pegada.",
+    "ini": 289.04,
+    "fin": 289.64
+   },
+   {
+    "p": "Hay",
+    "ini": 290.02,
+    "fin": 290.52
+   },
+   {
+    "p": "sandalias",
+    "ini": 290.52,
+    "fin": 291.14
+   },
+   {
+    "p": "de",
+    "ini": 291.14,
+    "fin": 291.38
+   },
+   {
+    "p": "cuero,",
+    "ini": 291.38,
+    "fin": 291.88
+   },
+   {
+    "p": "anillos,",
+    "ini": 292.3,
+    "fin": 293.14
+   },
+   {
+    "p": "objetos",
+    "ini": 293.58,
+    "fin": 293.98
+   },
+   {
+    "p": "de",
+    "ini": 293.98,
+    "fin": 294.3
+   },
+   {
+    "p": "madera,",
+    "ini": 294.3,
+    "fin": 295.04
+   },
+   {
+    "p": "puntas",
+    "ini": 295.24,
+    "fin": 295.84
+   },
+   {
+    "p": "de",
+    "ini": 295.84,
+    "fin": 296.04
+   },
+   {
+    "p": "lanza",
+    "ini": 296.04,
+    "fin": 296.4
+   },
+   {
+    "p": "de",
+    "ini": 296.4,
+    "fin": 296.64
+   },
+   {
+    "p": "hierro.",
+    "ini": 296.64,
+    "fin": 297.24
+   }
+  ]
+ },
+ {
+  "ini": 298.46,
+  "fin": 304.44,
+  "texto": "Se llevan unos 30 esqueletos y al revisar cráneos uno por uno, notan algo extraño.",
+  "palabras": [
+   {
+    "p": "Se",
+    "ini": 298.46,
+    "fin": 298.82
+   },
+   {
+    "p": "llevan",
+    "ini": 298.82,
+    "fin": 299.14
+   },
+   {
+    "p": "unos",
+    "ini": 299.14,
+    "fin": 299.42
+   },
+   {
+    "p": "30",
+    "ini": 299.42,
+    "fin": 299.7
+   },
+   {
+    "p": "esqueletos",
+    "ini": 299.7,
+    "fin": 300.5
+   },
+   {
+    "p": "y",
+    "ini": 300.5,
+    "fin": 300.84
+   },
+   {
+    "p": "al",
+    "ini": 300.84,
+    "fin": 301.08
+   },
+   {
+    "p": "revisar",
+    "ini": 301.08,
+    "fin": 301.6
+   },
+   {
+    "p": "cráneos",
+    "ini": 301.6,
+    "fin": 302.08
+   },
+   {
+    "p": "uno",
+    "ini": 302.08,
+    "fin": 302.32
+   },
+   {
+    "p": "por",
+    "ini": 302.32,
+    "fin": 302.56
+   },
+   {
+    "p": "uno,",
+    "ini": 302.56,
+    "fin": 303.08
+   },
+   {
+    "p": "notan",
+    "ini": 303.3,
+    "fin": 303.66
+   },
+   {
+    "p": "algo",
+    "ini": 303.66,
+    "fin": 303.96
+   },
+   {
+    "p": "extraño.",
+    "ini": 303.96,
+    "fin": 304.44
+   }
+  ]
+ },
+ {
+  "ini": 306.66,
+  "fin": 313.38,
+  "texto": "Algunos tienen fracturas, pero no en la cara, no en los brazos, como alguien que se defendía.",
+  "palabras": [
+   {
+    "p": "Algunos",
+    "ini": 306.66,
+    "fin": 307.22
+   },
+   {
+    "p": "tienen",
+    "ini": 307.22,
+    "fin": 307.56
+   },
+   {
+    "p": "fracturas,",
+    "ini": 307.56,
+    "fin": 308.34
+   },
+   {
+    "p": "pero",
+    "ini": 308.64,
+    "fin": 308.86
+   },
+   {
+    "p": "no",
+    "ini": 308.86,
+    "fin": 309.06
+   },
+   {
+    "p": "en",
+    "ini": 309.06,
+    "fin": 309.22
+   },
+   {
+    "p": "la",
+    "ini": 309.22,
+    "fin": 309.4
+   },
+   {
+    "p": "cara,",
+    "ini": 309.4,
+    "fin": 309.64
+   },
+   {
+    "p": "no",
+    "ini": 310.04,
+    "fin": 310.2
+   },
+   {
+    "p": "en",
+    "ini": 310.2,
+    "fin": 310.4
+   },
+   {
+    "p": "los",
+    "ini": 310.4,
+    "fin": 310.66
+   },
+   {
+    "p": "brazos,",
+    "ini": 310.66,
+    "fin": 311.18
+   },
+   {
+    "p": "como",
+    "ini": 311.56,
+    "fin": 311.8
+   },
+   {
+    "p": "alguien",
+    "ini": 311.8,
+    "fin": 312.2
+   },
+   {
+    "p": "que",
+    "ini": 312.2,
+    "fin": 312.42
+   },
+   {
+    "p": "se",
+    "ini": 312.42,
+    "fin": 312.62
+   },
+   {
+    "p": "defendía.",
+    "ini": 312.62,
+    "fin": 313.38
+   }
+  ]
+ },
+ {
+  "ini": 315.12,
+  "fin": 322.08,
+  "texto": "Las fracturas están arriba, en la parte más alta de la cabeza. Son golpes cortos,",
+  "palabras": [
+   {
+    "p": "Las",
+    "ini": 315.12,
+    "fin": 315.76
+   },
+   {
+    "p": "fracturas",
+    "ini": 315.76,
+    "fin": 316.4
+   },
+   {
+    "p": "están",
+    "ini": 316.4,
+    "fin": 316.76
+   },
+   {
+    "p": "arriba,",
+    "ini": 316.76,
+    "fin": 317.4
+   },
+   {
+    "p": "en",
+    "ini": 318.0,
+    "fin": 318.14
+   },
+   {
+    "p": "la",
+    "ini": 318.14,
+    "fin": 318.3
+   },
+   {
+    "p": "parte",
+    "ini": 318.3,
+    "fin": 318.54
+   },
+   {
+    "p": "más",
+    "ini": 318.54,
+    "fin": 318.86
+   },
+   {
+    "p": "alta",
+    "ini": 318.86,
+    "fin": 319.08
+   },
+   {
+    "p": "de",
+    "ini": 319.08,
+    "fin": 319.26
+   },
+   {
+    "p": "la",
+    "ini": 319.26,
+    "fin": 319.46
+   },
+   {
+    "p": "cabeza.",
+    "ini": 319.46,
+    "fin": 319.98
+   },
+   {
+    "p": "Son",
+    "ini": 320.74,
+    "fin": 320.9
+   },
+   {
+    "p": "golpes",
+    "ini": 320.9,
+    "fin": 321.42
+   },
+   {
+    "p": "cortos,",
+    "ini": 321.42,
+    "fin": 322.08
+   }
+  ]
+ },
+ {
+  "ini": 322.26,
+  "fin": 329.36,
+  "texto": "profundos, redondos. Como si algo duro, más o menos del tamaño de una pelota de",
+  "palabras": [
+   {
+    "p": "profundos,",
+    "ini": 322.26,
+    "fin": 322.9
+   },
+   {
+    "p": "redondos.",
+    "ini": 323.34,
+    "fin": 324.34
+   },
+   {
+    "p": "Como",
+    "ini": 324.84,
+    "fin": 325.06
+   },
+   {
+    "p": "si",
+    "ini": 325.06,
+    "fin": 325.68
+   },
+   {
+    "p": "algo",
+    "ini": 325.68,
+    "fin": 326.14
+   },
+   {
+    "p": "duro,",
+    "ini": 326.14,
+    "fin": 326.96
+   },
+   {
+    "p": "más",
+    "ini": 327.16,
+    "fin": 327.3
+   },
+   {
+    "p": "o",
+    "ini": 327.3,
+    "fin": 327.48
+   },
+   {
+    "p": "menos",
+    "ini": 327.48,
+    "fin": 327.68
+   },
+   {
+    "p": "del",
+    "ini": 327.68,
+    "fin": 327.92
+   },
+   {
+    "p": "tamaño",
+    "ini": 327.92,
+    "fin": 328.44
+   },
+   {
+    "p": "de",
+    "ini": 328.44,
+    "fin": 328.6
+   },
+   {
+    "p": "una",
+    "ini": 328.6,
+    "fin": 328.8
+   },
+   {
+    "p": "pelota",
+    "ini": 328.8,
+    "fin": 329.16
+   },
+   {
+    "p": "de",
+    "ini": 329.16,
+    "fin": 329.36
+   }
+  ]
+ },
+ {
+  "ini": 329.36,
+  "fin": 336.5,
+  "texto": "béisbol, les hubiera caído desde el cielo. No es una avalancha. No es una batalla.",
+  "palabras": [
+   {
+    "p": "béisbol,",
+    "ini": 329.36,
+    "fin": 330.08
+   },
+   {
+    "p": "les",
+    "ini": 330.32,
+    "fin": 330.48
+   },
+   {
+    "p": "hubiera",
+    "ini": 330.48,
+    "fin": 330.84
+   },
+   {
+    "p": "caído",
+    "ini": 330.84,
+    "fin": 331.2
+   },
+   {
+    "p": "desde",
+    "ini": 331.2,
+    "fin": 331.52
+   },
+   {
+    "p": "el",
+    "ini": 331.52,
+    "fin": 331.74
+   },
+   {
+    "p": "cielo.",
+    "ini": 331.74,
+    "fin": 332.02
+   },
+   {
+    "p": "No",
+    "ini": 333.26,
+    "fin": 333.44
+   },
+   {
+    "p": "es",
+    "ini": 333.44,
+    "fin": 333.66
+   },
+   {
+    "p": "una",
+    "ini": 333.66,
+    "fin": 333.88
+   },
+   {
+    "p": "avalancha.",
+    "ini": 333.88,
+    "fin": 334.66
+   },
+   {
+    "p": "No",
+    "ini": 335.24,
+    "fin": 335.5
+   },
+   {
+    "p": "es",
+    "ini": 335.5,
+    "fin": 335.74
+   },
+   {
+    "p": "una",
+    "ini": 335.74,
+    "fin": 335.96
+   },
+   {
+    "p": "batalla.",
+    "ini": 335.96,
+    "fin": 336.5
+   }
+  ]
+ },
+ {
+  "ini": 338.2,
+  "fin": 346.16,
+  "texto": "Algo redondo, algo duro, que cae del cielo a 5,000 metros de altura sin un solo lugar donde",
+  "palabras": [
+   {
+    "p": "Algo",
+    "ini": 338.2,
+    "fin": 338.88
+   },
+   {
+    "p": "redondo,",
+    "ini": 338.88,
+    "fin": 339.54
+   },
+   {
+    "p": "algo",
+    "ini": 339.72,
+    "fin": 340.06
+   },
+   {
+    "p": "duro,",
+    "ini": 340.06,
+    "fin": 340.82
+   },
+   {
+    "p": "que",
+    "ini": 341.08,
+    "fin": 341.18
+   },
+   {
+    "p": "cae",
+    "ini": 341.18,
+    "fin": 341.38
+   },
+   {
+    "p": "del",
+    "ini": 341.38,
+    "fin": 341.6
+   },
+   {
+    "p": "cielo",
+    "ini": 341.6,
+    "fin": 342.02
+   },
+   {
+    "p": "a",
+    "ini": 342.02,
+    "fin": 342.74
+   },
+   {
+    "p": "5",
+    "ini": 342.74,
+    "fin": 343.1
+   },
+   {
+    "p": ",000",
+    "ini": 343.1,
+    "fin": 343.26
+   },
+   {
+    "p": "metros",
+    "ini": 343.26,
+    "fin": 343.62
+   },
+   {
+    "p": "de",
+    "ini": 343.62,
+    "fin": 343.8
+   },
+   {
+    "p": "altura",
+    "ini": 343.8,
+    "fin": 344.44
+   },
+   {
+    "p": "sin",
+    "ini": 344.44,
+    "fin": 344.98
+   },
+   {
+    "p": "un",
+    "ini": 344.98,
+    "fin": 345.22
+   },
+   {
+    "p": "solo",
+    "ini": 345.22,
+    "fin": 345.48
+   },
+   {
+    "p": "lugar",
+    "ini": 345.48,
+    "fin": 345.9
+   },
+   {
+    "p": "donde",
+    "ini": 345.9,
+    "fin": 346.16
+   }
+  ]
+ },
+ {
+  "ini": 346.16,
+  "fin": 355.48,
+  "texto": "esconderse. Granizo. Y cuando le ponen fecha a los huesos en la Universidad de Oxford,",
+  "palabras": [
+   {
+    "p": "esconderse.",
+    "ini": 346.16,
+    "fin": 347.46
+   },
+   {
+    "p": "Granizo.",
+    "ini": 348.78,
+    "fin": 349.46
+   },
+   {
+    "p": "Y",
+    "ini": 351.94,
+    "fin": 352.08
+   },
+   {
+    "p": "cuando",
+    "ini": 352.08,
+    "fin": 352.32
+   },
+   {
+    "p": "le",
+    "ini": 352.32,
+    "fin": 352.54
+   },
+   {
+    "p": "ponen",
+    "ini": 352.54,
+    "fin": 352.82
+   },
+   {
+    "p": "fecha",
+    "ini": 352.82,
+    "fin": 353.12
+   },
+   {
+    "p": "a",
+    "ini": 353.12,
+    "fin": 353.24
+   },
+   {
+    "p": "los",
+    "ini": 353.24,
+    "fin": 353.4
+   },
+   {
+    "p": "huesos",
+    "ini": 353.4,
+    "fin": 353.92
+   },
+   {
+    "p": "en",
+    "ini": 353.92,
+    "fin": 354.12
+   },
+   {
+    "p": "la",
+    "ini": 354.12,
+    "fin": 354.18
+   },
+   {
+    "p": "Universidad",
+    "ini": 354.18,
+    "fin": 354.86
+   },
+   {
+    "p": "de",
+    "ini": 354.86,
+    "fin": 355.04
+   },
+   {
+    "p": "Oxford,",
+    "ini": 355.04,
+    "fin": 355.48
+   }
+  ]
+ },
+ {
+  "ini": 355.82,
+  "fin": 365.04,
+  "texto": "el resultado es el año 850, hace más de mil años. La canción tenía razón. Durante",
+  "palabras": [
+   {
+    "p": "el",
+    "ini": 355.82,
+    "fin": 355.96
+   },
+   {
+    "p": "resultado",
+    "ini": 355.96,
+    "fin": 356.3
+   },
+   {
+    "p": "es",
+    "ini": 356.3,
+    "fin": 356.66
+   },
+   {
+    "p": "el",
+    "ini": 356.66,
+    "fin": 356.82
+   },
+   {
+    "p": "año",
+    "ini": 356.82,
+    "fin": 357.08
+   },
+   {
+    "p": "850,",
+    "ini": 357.08,
+    "fin": 358.46
+   },
+   {
+    "p": "hace",
+    "ini": 359.04,
+    "fin": 359.3
+   },
+   {
+    "p": "más",
+    "ini": 359.3,
+    "fin": 359.58
+   },
+   {
+    "p": "de",
+    "ini": 359.58,
+    "fin": 359.76
+   },
+   {
+    "p": "mil",
+    "ini": 359.76,
+    "fin": 359.88
+   },
+   {
+    "p": "años.",
+    "ini": 359.88,
+    "fin": 360.36
+   },
+   {
+    "p": "La",
+    "ini": 361.4,
+    "fin": 361.62
+   },
+   {
+    "p": "canción",
+    "ini": 361.62,
+    "fin": 362.24
+   },
+   {
+    "p": "tenía",
+    "ini": 362.24,
+    "fin": 363.0
+   },
+   {
+    "p": "razón.",
+    "ini": 363.0,
+    "fin": 363.54
+   },
+   {
+    "p": "Durante",
+    "ini": 364.48,
+    "fin": 365.04
+   }
+  ]
+ },
+ {
+  "ini": 365.04,
+  "fin": 371.32,
+  "texto": "mil años, de generación en generación, esos pueblos habían guardado el recuerdo de una",
+  "palabras": [
+   {
+    "p": "mil",
+    "ini": 365.04,
+    "fin": 365.22
+   },
+   {
+    "p": "años,",
+    "ini": 365.22,
+    "fin": 365.86
+   },
+   {
+    "p": "de",
+    "ini": 366.22,
+    "fin": 366.4
+   },
+   {
+    "p": "generación",
+    "ini": 366.4,
+    "fin": 367.04
+   },
+   {
+    "p": "en",
+    "ini": 367.04,
+    "fin": 367.26
+   },
+   {
+    "p": "generación,",
+    "ini": 367.26,
+    "fin": 368.06
+   },
+   {
+    "p": "esos",
+    "ini": 368.38,
+    "fin": 368.62
+   },
+   {
+    "p": "pueblos",
+    "ini": 368.62,
+    "fin": 369.04
+   },
+   {
+    "p": "habían",
+    "ini": 369.04,
+    "fin": 369.34
+   },
+   {
+    "p": "guardado",
+    "ini": 369.34,
+    "fin": 369.88
+   },
+   {
+    "p": "el",
+    "ini": 369.88,
+    "fin": 370.1
+   },
+   {
+    "p": "recuerdo",
+    "ini": 370.1,
+    "fin": 370.52
+   },
+   {
+    "p": "de",
+    "ini": 370.52,
+    "fin": 371.1
+   },
+   {
+    "p": "una",
+    "ini": 371.1,
+    "fin": 371.32
+   }
+  ]
+ },
+ {
+  "ini": 371.32,
+  "fin": 379.1,
+  "texto": "tormenta real. El documental sale al aire, los periódicos lo publican y misterio resuelto.",
+  "palabras": [
+   {
+    "p": "tormenta",
+    "ini": 371.32,
+    "fin": 371.92
+   },
+   {
+    "p": "real.",
+    "ini": 371.92,
+    "fin": 372.24
+   },
+   {
+    "p": "El",
+    "ini": 373.12,
+    "fin": 373.36
+   },
+   {
+    "p": "documental",
+    "ini": 373.36,
+    "fin": 374.28
+   },
+   {
+    "p": "sale",
+    "ini": 374.28,
+    "fin": 374.58
+   },
+   {
+    "p": "al",
+    "ini": 374.58,
+    "fin": 374.8
+   },
+   {
+    "p": "aire,",
+    "ini": 374.8,
+    "fin": 375.06
+   },
+   {
+    "p": "los",
+    "ini": 375.54,
+    "fin": 375.8
+   },
+   {
+    "p": "periódicos",
+    "ini": 375.8,
+    "fin": 376.28
+   },
+   {
+    "p": "lo",
+    "ini": 376.28,
+    "fin": 376.52
+   },
+   {
+    "p": "publican",
+    "ini": 376.52,
+    "fin": 377.16
+   },
+   {
+    "p": "y",
+    "ini": 377.16,
+    "fin": 377.42
+   },
+   {
+    "p": "misterio",
+    "ini": 377.42,
+    "fin": 378.28
+   },
+   {
+    "p": "resuelto.",
+    "ini": 378.28,
+    "fin": 379.1
+   }
+  ]
+ },
+ {
+  "ini": 379.54,
+  "fin": 389.68,
+  "texto": "Caso cerrado. Y así se quedó 15 años, hasta que alguien decidió hacer unas pruebas más.",
+  "palabras": [
+   {
+    "p": "Caso",
+    "ini": 379.54,
+    "fin": 380.02
+   },
+   {
+    "p": "cerrado.",
+    "ini": 380.02,
+    "fin": 380.64
+   },
+   {
+    "p": "Y",
+    "ini": 383.06,
+    "fin": 383.36
+   },
+   {
+    "p": "así",
+    "ini": 383.36,
+    "fin": 383.78
+   },
+   {
+    "p": "se",
+    "ini": 383.78,
+    "fin": 384.26
+   },
+   {
+    "p": "quedó",
+    "ini": 384.26,
+    "fin": 384.8
+   },
+   {
+    "p": "15",
+    "ini": 384.8,
+    "fin": 385.28
+   },
+   {
+    "p": "años,",
+    "ini": 385.28,
+    "fin": 386.0
+   },
+   {
+    "p": "hasta",
+    "ini": 386.6,
+    "fin": 386.8
+   },
+   {
+    "p": "que",
+    "ini": 386.8,
+    "fin": 387.0
+   },
+   {
+    "p": "alguien",
+    "ini": 387.0,
+    "fin": 387.54
+   },
+   {
+    "p": "decidió",
+    "ini": 387.54,
+    "fin": 388.18
+   },
+   {
+    "p": "hacer",
+    "ini": 388.18,
+    "fin": 388.5
+   },
+   {
+    "p": "unas",
+    "ini": 388.5,
+    "fin": 388.76
+   },
+   {
+    "p": "pruebas",
+    "ini": 388.76,
+    "fin": 389.18
+   },
+   {
+    "p": "más.",
+    "ini": 389.18,
+    "fin": 389.68
+   }
+  ]
+ },
+ {
+  "ini": 392.04,
+  "fin": 397.84,
+  "texto": "Año 2019, un equipo de científicos de la India, de Estados Unidos y de Alemania toma",
+  "palabras": [
+   {
+    "p": "Año",
+    "ini": 392.04,
+    "fin": 392.66
+   },
+   {
+    "p": "2019,",
+    "ini": 392.66,
+    "fin": 393.28
+   },
+   {
+    "p": "un",
+    "ini": 393.74,
+    "fin": 393.82
+   },
+   {
+    "p": "equipo",
+    "ini": 393.82,
+    "fin": 394.08
+   },
+   {
+    "p": "de",
+    "ini": 394.08,
+    "fin": 394.3
+   },
+   {
+    "p": "científicos",
+    "ini": 394.3,
+    "fin": 394.82
+   },
+   {
+    "p": "de",
+    "ini": 394.82,
+    "fin": 395.02
+   },
+   {
+    "p": "la",
+    "ini": 395.02,
+    "fin": 395.2
+   },
+   {
+    "p": "India,",
+    "ini": 395.2,
+    "fin": 395.46
+   },
+   {
+    "p": "de",
+    "ini": 395.7,
+    "fin": 395.88
+   },
+   {
+    "p": "Estados",
+    "ini": 395.88,
+    "fin": 396.14
+   },
+   {
+    "p": "Unidos",
+    "ini": 396.14,
+    "fin": 396.48
+   },
+   {
+    "p": "y",
+    "ini": 396.48,
+    "fin": 396.68
+   },
+   {
+    "p": "de",
+    "ini": 396.68,
+    "fin": 396.86
+   },
+   {
+    "p": "Alemania",
+    "ini": 396.86,
+    "fin": 397.32
+   },
+   {
+    "p": "toma",
+    "ini": 397.32,
+    "fin": 397.84
+   }
+  ]
+ },
+ {
+  "ini": 397.84,
+  "fin": 406.26,
+  "texto": "muestras de 38 esqueletos del lago y hacen algo nuevo. Leer su ADN. Si no sabías,",
+  "palabras": [
+   {
+    "p": "muestras",
+    "ini": 397.84,
+    "fin": 398.36
+   },
+   {
+    "p": "de",
+    "ini": 398.36,
+    "fin": 398.64
+   },
+   {
+    "p": "38",
+    "ini": 398.64,
+    "fin": 399.22
+   },
+   {
+    "p": "esqueletos",
+    "ini": 399.22,
+    "fin": 399.78
+   },
+   {
+    "p": "del",
+    "ini": 399.78,
+    "fin": 399.98
+   },
+   {
+    "p": "lago",
+    "ini": 399.98,
+    "fin": 400.48
+   },
+   {
+    "p": "y",
+    "ini": 400.48,
+    "fin": 400.82
+   },
+   {
+    "p": "hacen",
+    "ini": 400.82,
+    "fin": 401.18
+   },
+   {
+    "p": "algo",
+    "ini": 401.18,
+    "fin": 401.64
+   },
+   {
+    "p": "nuevo.",
+    "ini": 401.64,
+    "fin": 402.12
+   },
+   {
+    "p": "Leer",
+    "ini": 402.68,
+    "fin": 403.1
+   },
+   {
+    "p": "su",
+    "ini": 403.1,
+    "fin": 403.3
+   },
+   {
+    "p": "ADN.",
+    "ini": 403.3,
+    "fin": 403.88
+   },
+   {
+    "p": "Si",
+    "ini": 405.36,
+    "fin": 405.52
+   },
+   {
+    "p": "no",
+    "ini": 405.52,
+    "fin": 405.74
+   },
+   {
+    "p": "sabías,",
+    "ini": 405.74,
+    "fin": 406.26
+   }
+  ]
+ },
+ {
+  "ini": 406.36,
+  "fin": 412.04,
+  "texto": "el ADN es como una cédula que llevas por dentro. Dice, ¿de dónde venían tus antepasados?",
+  "palabras": [
+   {
+    "p": "el",
+    "ini": 406.36,
+    "fin": 406.58
+   },
+   {
+    "p": "ADN",
+    "ini": 406.58,
+    "fin": 406.94
+   },
+   {
+    "p": "es",
+    "ini": 406.94,
+    "fin": 407.16
+   },
+   {
+    "p": "como",
+    "ini": 407.16,
+    "fin": 407.32
+   },
+   {
+    "p": "una",
+    "ini": 407.32,
+    "fin": 407.54
+   },
+   {
+    "p": "cédula",
+    "ini": 407.54,
+    "fin": 407.94
+   },
+   {
+    "p": "que",
+    "ini": 407.94,
+    "fin": 408.16
+   },
+   {
+    "p": "llevas",
+    "ini": 408.16,
+    "fin": 408.46
+   },
+   {
+    "p": "por",
+    "ini": 408.46,
+    "fin": 408.74
+   },
+   {
+    "p": "dentro.",
+    "ini": 408.74,
+    "fin": 409.06
+   },
+   {
+    "p": "Dice,",
+    "ini": 409.68,
+    "fin": 410.0
+   },
+   {
+    "p": "¿de",
+    "ini": 410.1,
+    "fin": 410.34
+   },
+   {
+    "p": "dónde",
+    "ini": 410.34,
+    "fin": 410.6
+   },
+   {
+    "p": "venían",
+    "ini": 410.6,
+    "fin": 411.02
+   },
+   {
+    "p": "tus",
+    "ini": 411.02,
+    "fin": 411.28
+   },
+   {
+    "p": "antepasados?",
+    "ini": 411.28,
+    "fin": 412.04
+   }
+  ]
+ },
+ {
+  "ini": 413.3,
+  "fin": 420.62,
+  "texto": "La idea era sencilla, confirmar lo que ya se sabía. Un solo grupo de gente de la India,",
+  "palabras": [
+   {
+    "p": "La",
+    "ini": 413.3,
+    "fin": 413.9
+   },
+   {
+    "p": "idea",
+    "ini": 413.9,
+    "fin": 414.28
+   },
+   {
+    "p": "era",
+    "ini": 414.28,
+    "fin": 414.6
+   },
+   {
+    "p": "sencilla,",
+    "ini": 414.6,
+    "fin": 415.28
+   },
+   {
+    "p": "confirmar",
+    "ini": 415.52,
+    "fin": 416.02
+   },
+   {
+    "p": "lo",
+    "ini": 416.02,
+    "fin": 416.24
+   },
+   {
+    "p": "que",
+    "ini": 416.24,
+    "fin": 416.4
+   },
+   {
+    "p": "ya",
+    "ini": 416.4,
+    "fin": 416.56
+   },
+   {
+    "p": "se",
+    "ini": 416.56,
+    "fin": 416.76
+   },
+   {
+    "p": "sabía.",
+    "ini": 416.76,
+    "fin": 418.14
+   },
+   {
+    "p": "Un",
+    "ini": 418.62,
+    "fin": 418.78
+   },
+   {
+    "p": "solo",
+    "ini": 418.78,
+    "fin": 419.02
+   },
+   {
+    "p": "grupo",
+    "ini": 419.02,
+    "fin": 419.3
+   },
+   {
+    "p": "de",
+    "ini": 419.3,
+    "fin": 419.6
+   },
+   {
+    "p": "gente",
+    "ini": 419.6,
+    "fin": 419.9
+   },
+   {
+    "p": "de",
+    "ini": 419.9,
+    "fin": 420.1
+   },
+   {
+    "p": "la",
+    "ini": 420.1,
+    "fin": 420.3
+   },
+   {
+    "p": "India,",
+    "ini": 420.3,
+    "fin": 420.62
+   }
+  ]
+ },
+ {
+  "ini": 420.86,
+  "fin": 426.12,
+  "texto": "muerta en una sola tormenta. Llegan los resultados.",
+  "palabras": [
+   {
+    "p": "muerta",
+    "ini": 420.86,
+    "fin": 421.3
+   },
+   {
+    "p": "en",
+    "ini": 421.3,
+    "fin": 421.5
+   },
+   {
+    "p": "una",
+    "ini": 421.5,
+    "fin": 421.8
+   },
+   {
+    "p": "sola",
+    "ini": 421.8,
+    "fin": 422.04
+   },
+   {
+    "p": "tormenta.",
+    "ini": 422.04,
+    "fin": 423.96
+   },
+   {
+    "p": "Llegan",
+    "ini": 424.56,
+    "fin": 425.06
+   },
+   {
+    "p": "los",
+    "ini": 425.06,
+    "fin": 425.44
+   },
+   {
+    "p": "resultados.",
+    "ini": 425.44,
+    "fin": 426.12
+   }
+  ]
+ },
+ {
+  "ini": 428.24,
+  "fin": 434.6,
+  "texto": "Veintitrés personas con antepasados del sur de Asia, gente de la región, hasta ahí todo normal.",
+  "palabras": [
+   {
+    "p": "Veintitrés",
+    "ini": 428.24,
+    "fin": 428.82
+   },
+   {
+    "p": "personas",
+    "ini": 428.82,
+    "fin": 429.34
+   },
+   {
+    "p": "con",
+    "ini": 429.34,
+    "fin": 429.64
+   },
+   {
+    "p": "antepasados",
+    "ini": 429.64,
+    "fin": 430.36
+   },
+   {
+    "p": "del",
+    "ini": 430.36,
+    "fin": 430.62
+   },
+   {
+    "p": "sur",
+    "ini": 430.62,
+    "fin": 430.84
+   },
+   {
+    "p": "de",
+    "ini": 430.84,
+    "fin": 431.14
+   },
+   {
+    "p": "Asia,",
+    "ini": 431.14,
+    "fin": 431.34
+   },
+   {
+    "p": "gente",
+    "ini": 431.88,
+    "fin": 432.2
+   },
+   {
+    "p": "de",
+    "ini": 432.2,
+    "fin": 432.46
+   },
+   {
+    "p": "la",
+    "ini": 432.46,
+    "fin": 432.64
+   },
+   {
+    "p": "región,",
+    "ini": 432.64,
+    "fin": 432.94
+   },
+   {
+    "p": "hasta",
+    "ini": 433.34,
+    "fin": 433.52
+   },
+   {
+    "p": "ahí",
+    "ini": 433.52,
+    "fin": 433.84
+   },
+   {
+    "p": "todo",
+    "ini": 433.84,
+    "fin": 434.14
+   },
+   {
+    "p": "normal.",
+    "ini": 434.14,
+    "fin": 434.6
+   }
+  ]
+ },
+ {
+  "ini": 434.6,
+  "fin": 443.26,
+  "texto": "Pero hay un detalle. Cuando miran las fechas con cuidado, esas 23 personas no murieron todas al",
+  "palabras": [
+   {
+    "p": "Pero",
+    "ini": 434.6,
+    "fin": 435.66
+   },
+   {
+    "p": "hay",
+    "ini": 435.66,
+    "fin": 435.92
+   },
+   {
+    "p": "un",
+    "ini": 435.92,
+    "fin": 436.12
+   },
+   {
+    "p": "detalle.",
+    "ini": 436.12,
+    "fin": 436.86
+   },
+   {
+    "p": "Cuando",
+    "ini": 437.08,
+    "fin": 437.32
+   },
+   {
+    "p": "miran",
+    "ini": 437.32,
+    "fin": 437.68
+   },
+   {
+    "p": "las",
+    "ini": 437.68,
+    "fin": 437.92
+   },
+   {
+    "p": "fechas",
+    "ini": 437.92,
+    "fin": 438.2
+   },
+   {
+    "p": "con",
+    "ini": 438.2,
+    "fin": 438.5
+   },
+   {
+    "p": "cuidado,",
+    "ini": 438.5,
+    "fin": 439.02
+   },
+   {
+    "p": "esas",
+    "ini": 439.74,
+    "fin": 439.94
+   },
+   {
+    "p": "23",
+    "ini": 439.94,
+    "fin": 440.6
+   },
+   {
+    "p": "personas",
+    "ini": 440.6,
+    "fin": 441.3
+   },
+   {
+    "p": "no",
+    "ini": 441.3,
+    "fin": 442.08
+   },
+   {
+    "p": "murieron",
+    "ini": 442.08,
+    "fin": 442.54
+   },
+   {
+    "p": "todas",
+    "ini": 442.54,
+    "fin": 443.02
+   },
+   {
+    "p": "al",
+    "ini": 443.02,
+    "fin": 443.26
+   }
+  ]
+ },
+ {
+  "ini": 443.26,
+  "fin": 451.64,
+  "texto": "mismo tiempo. Murieron en momentos distintos. Primera grieta. Una tormenta no mata de a",
+  "palabras": [
+   {
+    "p": "mismo",
+    "ini": 443.26,
+    "fin": 443.58
+   },
+   {
+    "p": "tiempo.",
+    "ini": 443.58,
+    "fin": 444.18
+   },
+   {
+    "p": "Murieron",
+    "ini": 445.06,
+    "fin": 445.58
+   },
+   {
+    "p": "en",
+    "ini": 445.58,
+    "fin": 445.96
+   },
+   {
+    "p": "momentos",
+    "ini": 445.96,
+    "fin": 446.54
+   },
+   {
+    "p": "distintos.",
+    "ini": 446.54,
+    "fin": 447.26
+   },
+   {
+    "p": "Primera",
+    "ini": 448.3,
+    "fin": 448.84
+   },
+   {
+    "p": "grieta.",
+    "ini": 448.84,
+    "fin": 449.44
+   },
+   {
+    "p": "Una",
+    "ini": 450.0,
+    "fin": 450.24
+   },
+   {
+    "p": "tormenta",
+    "ini": 450.24,
+    "fin": 450.74
+   },
+   {
+    "p": "no",
+    "ini": 450.74,
+    "fin": 451.02
+   },
+   {
+    "p": "mata",
+    "ini": 451.02,
+    "fin": 451.3
+   },
+   {
+    "p": "de",
+    "ini": 451.3,
+    "fin": 451.52
+   },
+   {
+    "p": "a",
+    "ini": 451.52,
+    "fin": 451.64
+   }
+  ]
+ },
+ {
+  "ini": 451.64,
+  "fin": 460.06,
+  "texto": "poquitos. Y entonces allí aparece el segundo grupo, 14 personas. Su ADN no es de India,",
+  "palabras": [
+   {
+    "p": "poquitos.",
+    "ini": 451.64,
+    "fin": 452.6
+   },
+   {
+    "p": "Y",
+    "ini": 452.78,
+    "fin": 453.04
+   },
+   {
+    "p": "entonces",
+    "ini": 453.04,
+    "fin": 453.56
+   },
+   {
+    "p": "allí",
+    "ini": 453.56,
+    "fin": 454.16
+   },
+   {
+    "p": "aparece",
+    "ini": 454.16,
+    "fin": 454.6
+   },
+   {
+    "p": "el",
+    "ini": 454.6,
+    "fin": 454.84
+   },
+   {
+    "p": "segundo",
+    "ini": 454.84,
+    "fin": 455.18
+   },
+   {
+    "p": "grupo,",
+    "ini": 455.18,
+    "fin": 455.56
+   },
+   {
+    "p": "14",
+    "ini": 456.42,
+    "fin": 456.88
+   },
+   {
+    "p": "personas.",
+    "ini": 456.88,
+    "fin": 457.46
+   },
+   {
+    "p": "Su",
+    "ini": 458.38,
+    "fin": 458.64
+   },
+   {
+    "p": "ADN",
+    "ini": 458.64,
+    "fin": 459.14
+   },
+   {
+    "p": "no",
+    "ini": 459.14,
+    "fin": 459.34
+   },
+   {
+    "p": "es",
+    "ini": 459.34,
+    "fin": 459.52
+   },
+   {
+    "p": "de",
+    "ini": 459.52,
+    "fin": 459.76
+   },
+   {
+    "p": "India,",
+    "ini": 459.76,
+    "fin": 460.06
+   }
+  ]
+ },
+ {
+  "ini": 460.06,
+  "fin": 470.38,
+  "texto": "no es de Asia. Es del Mediterráneo, gente cuyos parientes más cercanos hoy viven en",
+  "palabras": [
+   {
+    "p": "no",
+    "ini": 460.06,
+    "fin": 461.12
+   },
+   {
+    "p": "es",
+    "ini": 461.12,
+    "fin": 461.36
+   },
+   {
+    "p": "de",
+    "ini": 461.36,
+    "fin": 461.48
+   },
+   {
+    "p": "Asia.",
+    "ini": 461.48,
+    "fin": 462.0
+   },
+   {
+    "p": "Es",
+    "ini": 464.46,
+    "fin": 464.92
+   },
+   {
+    "p": "del",
+    "ini": 464.92,
+    "fin": 465.32
+   },
+   {
+    "p": "Mediterráneo,",
+    "ini": 465.32,
+    "fin": 466.44
+   },
+   {
+    "p": "gente",
+    "ini": 466.94,
+    "fin": 467.12
+   },
+   {
+    "p": "cuyos",
+    "ini": 467.12,
+    "fin": 467.7
+   },
+   {
+    "p": "parientes",
+    "ini": 467.7,
+    "fin": 468.28
+   },
+   {
+    "p": "más",
+    "ini": 468.28,
+    "fin": 468.6
+   },
+   {
+    "p": "cercanos",
+    "ini": 468.6,
+    "fin": 469.36
+   },
+   {
+    "p": "hoy",
+    "ini": 469.36,
+    "fin": 469.74
+   },
+   {
+    "p": "viven",
+    "ini": 469.74,
+    "fin": 470.08
+   },
+   {
+    "p": "en",
+    "ini": 470.08,
+    "fin": 470.38
+   }
+  ]
+ },
+ {
+  "ini": 470.38,
+  "fin": 478.22,
+  "texto": "Grecia o en la isla de Creta, a unos 5,000 kilómetros de ese lago. La autora principal",
+  "palabras": [
+   {
+    "p": "Grecia",
+    "ini": 470.38,
+    "fin": 470.8
+   },
+   {
+    "p": "o",
+    "ini": 470.8,
+    "fin": 471.08
+   },
+   {
+    "p": "en",
+    "ini": 471.08,
+    "fin": 471.22
+   },
+   {
+    "p": "la",
+    "ini": 471.22,
+    "fin": 471.3
+   },
+   {
+    "p": "isla",
+    "ini": 471.3,
+    "fin": 471.62
+   },
+   {
+    "p": "de",
+    "ini": 471.62,
+    "fin": 471.86
+   },
+   {
+    "p": "Creta,",
+    "ini": 471.86,
+    "fin": 472.42
+   },
+   {
+    "p": "a",
+    "ini": 472.92,
+    "fin": 473.08
+   },
+   {
+    "p": "unos",
+    "ini": 473.08,
+    "fin": 473.52
+   },
+   {
+    "p": "5",
+    "ini": 473.52,
+    "fin": 474.1
+   },
+   {
+    "p": ",000",
+    "ini": 474.1,
+    "fin": 474.38
+   },
+   {
+    "p": "kilómetros",
+    "ini": 474.38,
+    "fin": 475.1
+   },
+   {
+    "p": "de",
+    "ini": 475.1,
+    "fin": 475.58
+   },
+   {
+    "p": "ese",
+    "ini": 475.58,
+    "fin": 475.8
+   },
+   {
+    "p": "lago.",
+    "ini": 475.8,
+    "fin": 476.2
+   },
+   {
+    "p": "La",
+    "ini": 477.2,
+    "fin": 477.42
+   },
+   {
+    "p": "autora",
+    "ini": 477.42,
+    "fin": 477.74
+   },
+   {
+    "p": "principal",
+    "ini": 477.74,
+    "fin": 478.22
+   }
+  ]
+ },
+ {
+  "ini": 478.22,
+  "fin": 485.78,
+  "texto": "del estudio lo dijo así. Quedaron extremadamente sorprendidos. Y falta lo peor.",
+  "palabras": [
+   {
+    "p": "del",
+    "ini": 478.22,
+    "fin": 478.52
+   },
+   {
+    "p": "estudio",
+    "ini": 478.52,
+    "fin": 478.94
+   },
+   {
+    "p": "lo",
+    "ini": 478.94,
+    "fin": 479.22
+   },
+   {
+    "p": "dijo",
+    "ini": 479.22,
+    "fin": 479.42
+   },
+   {
+    "p": "así.",
+    "ini": 479.42,
+    "fin": 479.92
+   },
+   {
+    "p": "Quedaron",
+    "ini": 480.24,
+    "fin": 480.98
+   },
+   {
+    "p": "extremadamente",
+    "ini": 480.98,
+    "fin": 482.12
+   },
+   {
+    "p": "sorprendidos.",
+    "ini": 482.12,
+    "fin": 483.24
+   },
+   {
+    "p": "Y",
+    "ini": 484.14,
+    "fin": 484.48
+   },
+   {
+    "p": "falta",
+    "ini": 484.48,
+    "fin": 485.12
+   },
+   {
+    "p": "lo",
+    "ini": 485.12,
+    "fin": 485.64
+   },
+   {
+    "p": "peor.",
+    "ini": 485.64,
+    "fin": 486.07
+   }
+  ]
+ },
+ {
+  "ini": 487.73,
+  "fin": 494.55,
+  "texto": "Cuando le ponen fecha a estos 14 esqueletos, cuando le ponen fecha a estos 14 esqueletos,",
+  "palabras": [
+   {
+    "p": "Cuando",
+    "ini": 487.73,
+    "fin": 488.45
+   },
+   {
+    "p": "le",
+    "ini": 488.45,
+    "fin": 488.71
+   },
+   {
+    "p": "ponen",
+    "ini": 488.71,
+    "fin": 488.99
+   },
+   {
+    "p": "fecha",
+    "ini": 488.99,
+    "fin": 489.39
+   },
+   {
+    "p": "a",
+    "ini": 489.39,
+    "fin": 489.61
+   },
+   {
+    "p": "estos",
+    "ini": 489.61,
+    "fin": 489.79
+   },
+   {
+    "p": "14",
+    "ini": 489.79,
+    "fin": 490.39
+   },
+   {
+    "p": "esqueletos,",
+    "ini": 490.39,
+    "fin": 491.93
+   },
+   {
+    "p": "cuando",
+    "ini": 492.29,
+    "fin": 492.37
+   },
+   {
+    "p": "le",
+    "ini": 492.37,
+    "fin": 492.63
+   },
+   {
+    "p": "ponen",
+    "ini": 492.63,
+    "fin": 492.91
+   },
+   {
+    "p": "fecha",
+    "ini": 492.91,
+    "fin": 493.31
+   },
+   {
+    "p": "a",
+    "ini": 493.31,
+    "fin": 493.55
+   },
+   {
+    "p": "estos",
+    "ini": 493.55,
+    "fin": 493.79
+   },
+   {
+    "p": "14",
+    "ini": 493.79,
+    "fin": 494.37
+   },
+   {
+    "p": "esqueletos,",
+    "ini": 494.37,
+    "fin": 494.73
+   }
+  ]
+ },
+ {
+  "ini": 495.53,
+  "fin": 504.95,
+  "texto": "no da el año 800, da el año 1800, mil años después. Ahora piénsalo.",
+  "palabras": [
+   {
+    "p": "no",
+    "ini": 495.53,
+    "fin": 495.75
+   },
+   {
+    "p": "da",
+    "ini": 495.75,
+    "fin": 495.97
+   },
+   {
+    "p": "el",
+    "ini": 495.97,
+    "fin": 496.17
+   },
+   {
+    "p": "año",
+    "ini": 496.17,
+    "fin": 496.33
+   },
+   {
+    "p": "800,",
+    "ini": 496.33,
+    "fin": 496.97
+   },
+   {
+    "p": "da",
+    "ini": 497.65,
+    "fin": 497.93
+   },
+   {
+    "p": "el",
+    "ini": 497.93,
+    "fin": 498.15
+   },
+   {
+    "p": "año",
+    "ini": 498.15,
+    "fin": 498.85
+   },
+   {
+    "p": "1800,",
+    "ini": 498.85,
+    "fin": 500.01
+   },
+   {
+    "p": "mil",
+    "ini": 501.03,
+    "fin": 501.39
+   },
+   {
+    "p": "años",
+    "ini": 501.39,
+    "fin": 501.75
+   },
+   {
+    "p": "después.",
+    "ini": 501.75,
+    "fin": 502.35
+   },
+   {
+    "p": "Ahora",
+    "ini": 503.47,
+    "fin": 504.15
+   },
+   {
+    "p": "piénsalo.",
+    "ini": 504.15,
+    "fin": 504.95
+   }
+  ]
+ },
+ {
+  "ini": 506.73,
+  "fin": 512.23,
+  "texto": "En el mismo lago perdido donde mil años antes había muerto gente de la India,",
+  "palabras": [
+   {
+    "p": "En",
+    "ini": 506.73,
+    "fin": 507.05
+   },
+   {
+    "p": "el",
+    "ini": 507.05,
+    "fin": 507.23
+   },
+   {
+    "p": "mismo",
+    "ini": 507.23,
+    "fin": 507.53
+   },
+   {
+    "p": "lago",
+    "ini": 507.53,
+    "fin": 507.83
+   },
+   {
+    "p": "perdido",
+    "ini": 507.83,
+    "fin": 508.37
+   },
+   {
+    "p": "donde",
+    "ini": 508.37,
+    "fin": 508.75
+   },
+   {
+    "p": "mil",
+    "ini": 508.75,
+    "fin": 509.19
+   },
+   {
+    "p": "años",
+    "ini": 509.19,
+    "fin": 509.55
+   },
+   {
+    "p": "antes",
+    "ini": 509.55,
+    "fin": 509.97
+   },
+   {
+    "p": "había",
+    "ini": 509.97,
+    "fin": 510.31
+   },
+   {
+    "p": "muerto",
+    "ini": 510.31,
+    "fin": 510.83
+   },
+   {
+    "p": "gente",
+    "ini": 510.83,
+    "fin": 511.27
+   },
+   {
+    "p": "de",
+    "ini": 511.27,
+    "fin": 511.51
+   },
+   {
+    "p": "la",
+    "ini": 511.51,
+    "fin": 511.73
+   },
+   {
+    "p": "India,",
+    "ini": 511.73,
+    "fin": 512.23
+   }
+  ]
+ },
+ {
+  "ini": 512.23,
+  "fin": 520.61,
+  "texto": "muere de un solo golpe un grupo de personas del Mediterráneo. Y junto a ellos una persona",
+  "palabras": [
+   {
+    "p": "muere",
+    "ini": 512.23,
+    "fin": 512.95
+   },
+   {
+    "p": "de",
+    "ini": 512.95,
+    "fin": 513.19
+   },
+   {
+    "p": "un",
+    "ini": 513.19,
+    "fin": 513.43
+   },
+   {
+    "p": "solo",
+    "ini": 513.43,
+    "fin": 513.71
+   },
+   {
+    "p": "golpe",
+    "ini": 513.71,
+    "fin": 514.11
+   },
+   {
+    "p": "un",
+    "ini": 514.11,
+    "fin": 514.83
+   },
+   {
+    "p": "grupo",
+    "ini": 514.83,
+    "fin": 515.15
+   },
+   {
+    "p": "de",
+    "ini": 515.15,
+    "fin": 515.59
+   },
+   {
+    "p": "personas",
+    "ini": 515.59,
+    "fin": 515.91
+   },
+   {
+    "p": "del",
+    "ini": 515.91,
+    "fin": 516.25
+   },
+   {
+    "p": "Mediterráneo.",
+    "ini": 516.25,
+    "fin": 517.87
+   },
+   {
+    "p": "Y",
+    "ini": 518.23,
+    "fin": 518.49
+   },
+   {
+    "p": "junto",
+    "ini": 518.49,
+    "fin": 518.81
+   },
+   {
+    "p": "a",
+    "ini": 518.81,
+    "fin": 519.05
+   },
+   {
+    "p": "ellos",
+    "ini": 519.05,
+    "fin": 519.53
+   },
+   {
+    "p": "una",
+    "ini": 519.53,
+    "fin": 520.13
+   },
+   {
+    "p": "persona",
+    "ini": 520.13,
+    "fin": 520.61
+   }
+  ]
+ },
+ {
+  "ini": 520.61,
+  "fin": 530.75,
+  "texto": "más, una sola, con antepasados del sudeste de Asia. Tres grupos, dos épocas, un lago",
+  "palabras": [
+   {
+    "p": "más,",
+    "ini": 520.61,
+    "fin": 521.11
+   },
+   {
+    "p": "una",
+    "ini": 521.63,
+    "fin": 521.97
+   },
+   {
+    "p": "sola,",
+    "ini": 521.97,
+    "fin": 522.33
+   },
+   {
+    "p": "con",
+    "ini": 522.99,
+    "fin": 523.27
+   },
+   {
+    "p": "antepasados",
+    "ini": 523.27,
+    "fin": 524.19
+   },
+   {
+    "p": "del",
+    "ini": 524.19,
+    "fin": 524.51
+   },
+   {
+    "p": "sudeste",
+    "ini": 524.51,
+    "fin": 524.99
+   },
+   {
+    "p": "de",
+    "ini": 524.99,
+    "fin": 525.33
+   },
+   {
+    "p": "Asia.",
+    "ini": 525.33,
+    "fin": 525.85
+   },
+   {
+    "p": "Tres",
+    "ini": 527.31,
+    "fin": 527.71
+   },
+   {
+    "p": "grupos,",
+    "ini": 527.71,
+    "fin": 528.15
+   },
+   {
+    "p": "dos",
+    "ini": 528.73,
+    "fin": 529.07
+   },
+   {
+    "p": "épocas,",
+    "ini": 529.07,
+    "fin": 529.91
+   },
+   {
+    "p": "un",
+    "ini": 530.23,
+    "fin": 530.49
+   },
+   {
+    "p": "lago",
+    "ini": 530.49,
+    "fin": 530.75
+   }
+  ]
+ },
+ {
+  "ini": 530.75,
+  "fin": 540.51,
+  "texto": "de 40 metros. El granizo puede explicar algunos de los primeros. Pero no explica esto.",
+  "palabras": [
+   {
+    "p": "de",
+    "ini": 530.75,
+    "fin": 531.17
+   },
+   {
+    "p": "40",
+    "ini": 531.17,
+    "fin": 531.77
+   },
+   {
+    "p": "metros.",
+    "ini": 531.77,
+    "fin": 532.29
+   },
+   {
+    "p": "El",
+    "ini": 533.27,
+    "fin": 533.55
+   },
+   {
+    "p": "granizo",
+    "ini": 533.55,
+    "fin": 534.15
+   },
+   {
+    "p": "puede",
+    "ini": 534.15,
+    "fin": 534.57
+   },
+   {
+    "p": "explicar",
+    "ini": 534.57,
+    "fin": 535.13
+   },
+   {
+    "p": "algunos",
+    "ini": 535.13,
+    "fin": 535.69
+   },
+   {
+    "p": "de",
+    "ini": 535.69,
+    "fin": 535.89
+   },
+   {
+    "p": "los",
+    "ini": 535.89,
+    "fin": 536.15
+   },
+   {
+    "p": "primeros.",
+    "ini": 536.15,
+    "fin": 537.25
+   },
+   {
+    "p": "Pero",
+    "ini": 538.19,
+    "fin": 538.61
+   },
+   {
+    "p": "no",
+    "ini": 538.61,
+    "fin": 539.31
+   },
+   {
+    "p": "explica",
+    "ini": 539.31,
+    "fin": 540.11
+   },
+   {
+    "p": "esto.",
+    "ini": 540.11,
+    "fin": 540.51
+   }
+  ]
+ },
+ {
+  "ini": 542.23,
+  "fin": 547.45,
+  "texto": "Así que los científicos hacen lo que haría cualquier detective, empezar a descartar.",
+  "palabras": [
+   {
+    "p": "Así",
+    "ini": 542.23,
+    "fin": 542.57
+   },
+   {
+    "p": "que",
+    "ini": 542.57,
+    "fin": 542.77
+   },
+   {
+    "p": "los",
+    "ini": 542.77,
+    "fin": 542.97
+   },
+   {
+    "p": "científicos",
+    "ini": 542.97,
+    "fin": 543.61
+   },
+   {
+    "p": "hacen",
+    "ini": 543.61,
+    "fin": 543.89
+   },
+   {
+    "p": "lo",
+    "ini": 543.89,
+    "fin": 544.09
+   },
+   {
+    "p": "que",
+    "ini": 544.09,
+    "fin": 544.27
+   },
+   {
+    "p": "haría",
+    "ini": 544.27,
+    "fin": 544.57
+   },
+   {
+    "p": "cualquier",
+    "ini": 544.57,
+    "fin": 545.03
+   },
+   {
+    "p": "detective,",
+    "ini": 545.03,
+    "fin": 545.61
+   },
+   {
+    "p": "empezar",
+    "ini": 546.23,
+    "fin": 546.49
+   },
+   {
+    "p": "a",
+    "ini": 546.49,
+    "fin": 546.77
+   },
+   {
+    "p": "descartar.",
+    "ini": 546.77,
+    "fin": 547.45
+   }
+  ]
+ },
+ {
+  "ini": 550.15,
+  "fin": 555.95,
+  "texto": "¿Ese grupo de personas eran descendientes de los griegos que llevaban siglos viviendo en la",
+  "palabras": [
+   {
+    "p": "¿Ese",
+    "ini": 550.15,
+    "fin": 550.49
+   },
+   {
+    "p": "grupo",
+    "ini": 550.49,
+    "fin": 550.87
+   },
+   {
+    "p": "de",
+    "ini": 550.87,
+    "fin": 551.25
+   },
+   {
+    "p": "personas",
+    "ini": 551.25,
+    "fin": 551.75
+   },
+   {
+    "p": "eran",
+    "ini": 551.75,
+    "fin": 552.41
+   },
+   {
+    "p": "descendientes",
+    "ini": 552.41,
+    "fin": 553.05
+   },
+   {
+    "p": "de",
+    "ini": 553.05,
+    "fin": 553.23
+   },
+   {
+    "p": "los",
+    "ini": 553.23,
+    "fin": 553.47
+   },
+   {
+    "p": "griegos",
+    "ini": 553.47,
+    "fin": 553.85
+   },
+   {
+    "p": "que",
+    "ini": 553.85,
+    "fin": 554.09
+   },
+   {
+    "p": "llevaban",
+    "ini": 554.09,
+    "fin": 554.57
+   },
+   {
+    "p": "siglos",
+    "ini": 554.57,
+    "fin": 555.03
+   },
+   {
+    "p": "viviendo",
+    "ini": 555.03,
+    "fin": 555.55
+   },
+   {
+    "p": "en",
+    "ini": 555.55,
+    "fin": 555.77
+   },
+   {
+    "p": "la",
+    "ini": 555.77,
+    "fin": 555.95
+   }
+  ]
+ },
+ {
+  "ini": 555.95,
+  "fin": 562.99,
+  "texto": "India? No. Su ADN no tiene mezcla con la gente de la región. Y sus huesos dicen que",
+  "palabras": [
+   {
+    "p": "India?",
+    "ini": 555.95,
+    "fin": 556.15
+   },
+   {
+    "p": "No.",
+    "ini": 556.87,
+    "fin": 557.33
+   },
+   {
+    "p": "Su",
+    "ini": 557.93,
+    "fin": 558.11
+   },
+   {
+    "p": "ADN",
+    "ini": 558.11,
+    "fin": 558.73
+   },
+   {
+    "p": "no",
+    "ini": 558.73,
+    "fin": 559.05
+   },
+   {
+    "p": "tiene",
+    "ini": 559.05,
+    "fin": 559.29
+   },
+   {
+    "p": "mezcla",
+    "ini": 559.29,
+    "fin": 559.71
+   },
+   {
+    "p": "con",
+    "ini": 559.71,
+    "fin": 559.97
+   },
+   {
+    "p": "la",
+    "ini": 559.97,
+    "fin": 560.23
+   },
+   {
+    "p": "gente",
+    "ini": 560.23,
+    "fin": 560.49
+   },
+   {
+    "p": "de",
+    "ini": 560.49,
+    "fin": 560.71
+   },
+   {
+    "p": "la",
+    "ini": 560.71,
+    "fin": 560.89
+   },
+   {
+    "p": "región.",
+    "ini": 560.89,
+    "fin": 561.23
+   },
+   {
+    "p": "Y",
+    "ini": 561.53,
+    "fin": 561.73
+   },
+   {
+    "p": "sus",
+    "ini": 561.73,
+    "fin": 561.89
+   },
+   {
+    "p": "huesos",
+    "ini": 561.89,
+    "fin": 562.47
+   },
+   {
+    "p": "dicen",
+    "ini": 562.47,
+    "fin": 562.77
+   },
+   {
+    "p": "que",
+    "ini": 562.77,
+    "fin": 562.99
+   }
+  ]
+ },
+ {
+  "ini": 562.99,
+  "fin": 569.47,
+  "texto": "casi no comían mijo. Mijo es el cereal de esas montañas. Ellos eran forasteros.",
+  "palabras": [
+   {
+    "p": "casi",
+    "ini": 562.99,
+    "fin": 563.23
+   },
+   {
+    "p": "no",
+    "ini": 563.23,
+    "fin": 563.55
+   },
+   {
+    "p": "comían",
+    "ini": 563.55,
+    "fin": 563.85
+   },
+   {
+    "p": "mijo.",
+    "ini": 563.85,
+    "fin": 564.29
+   },
+   {
+    "p": "Mijo",
+    "ini": 564.61,
+    "fin": 565.05
+   },
+   {
+    "p": "es",
+    "ini": 565.05,
+    "fin": 565.51
+   },
+   {
+    "p": "el",
+    "ini": 565.51,
+    "fin": 565.71
+   },
+   {
+    "p": "cereal",
+    "ini": 565.71,
+    "fin": 566.01
+   },
+   {
+    "p": "de",
+    "ini": 566.01,
+    "fin": 566.29
+   },
+   {
+    "p": "esas",
+    "ini": 566.29,
+    "fin": 566.49
+   },
+   {
+    "p": "montañas.",
+    "ini": 566.49,
+    "fin": 567.37
+   },
+   {
+    "p": "Ellos",
+    "ini": 567.65,
+    "fin": 568.21
+   },
+   {
+    "p": "eran",
+    "ini": 568.21,
+    "fin": 568.51
+   },
+   {
+    "p": "forasteros.",
+    "ini": 568.51,
+    "fin": 569.47
+   }
+  ]
+ },
+ {
+  "ini": 570.93,
+  "fin": 579.15,
+  "texto": "¿Eran una familia? No. No eran parientes entre sí. ¿Eran un ejército? Entre los muertos",
+  "palabras": [
+   {
+    "p": "¿Eran",
+    "ini": 570.93,
+    "fin": 571.69
+   },
+   {
+    "p": "una",
+    "ini": 571.69,
+    "fin": 572.03
+   },
+   {
+    "p": "familia?",
+    "ini": 572.03,
+    "fin": 572.47
+   },
+   {
+    "p": "No.",
+    "ini": 572.97,
+    "fin": 573.67
+   },
+   {
+    "p": "No",
+    "ini": 573.95,
+    "fin": 574.11
+   },
+   {
+    "p": "eran",
+    "ini": 574.11,
+    "fin": 574.35
+   },
+   {
+    "p": "parientes",
+    "ini": 574.35,
+    "fin": 574.81
+   },
+   {
+    "p": "entre",
+    "ini": 574.81,
+    "fin": 575.17
+   },
+   {
+    "p": "sí.",
+    "ini": 575.17,
+    "fin": 575.43
+   },
+   {
+    "p": "¿Eran",
+    "ini": 576.51,
+    "fin": 577.05
+   },
+   {
+    "p": "un",
+    "ini": 577.05,
+    "fin": 577.35
+   },
+   {
+    "p": "ejército?",
+    "ini": 577.35,
+    "fin": 577.89
+   },
+   {
+    "p": "Entre",
+    "ini": 578.25,
+    "fin": 578.51
+   },
+   {
+    "p": "los",
+    "ini": 578.51,
+    "fin": 578.77
+   },
+   {
+    "p": "muertos",
+    "ini": 578.77,
+    "fin": 579.15
+   }
+  ]
+ },
+ {
+  "ini": 579.15,
+  "fin": 586.29,
+  "texto": "habían hombres y mujeres. ¿Los mató una epidemia? Buscaron en los huesos el rastro",
+  "palabras": [
+   {
+    "p": "habían",
+    "ini": 579.15,
+    "fin": 579.61
+   },
+   {
+    "p": "hombres",
+    "ini": 579.61,
+    "fin": 580.17
+   },
+   {
+    "p": "y",
+    "ini": 580.17,
+    "fin": 580.39
+   },
+   {
+    "p": "mujeres.",
+    "ini": 580.39,
+    "fin": 580.83
+   },
+   {
+    "p": "¿Los",
+    "ini": 582.29,
+    "fin": 582.65
+   },
+   {
+    "p": "mató",
+    "ini": 582.65,
+    "fin": 583.03
+   },
+   {
+    "p": "una",
+    "ini": 583.03,
+    "fin": 583.27
+   },
+   {
+    "p": "epidemia?",
+    "ini": 583.27,
+    "fin": 583.79
+   },
+   {
+    "p": "Buscaron",
+    "ini": 584.17,
+    "fin": 584.69
+   },
+   {
+    "p": "en",
+    "ini": 584.69,
+    "fin": 584.81
+   },
+   {
+    "p": "los",
+    "ini": 584.81,
+    "fin": 585.05
+   },
+   {
+    "p": "huesos",
+    "ini": 585.05,
+    "fin": 585.55
+   },
+   {
+    "p": "el",
+    "ini": 585.55,
+    "fin": 585.87
+   },
+   {
+    "p": "rastro",
+    "ini": 585.87,
+    "fin": 586.29
+   }
+  ]
+ },
+ {
+  "ini": 586.29,
+  "fin": 593.17,
+  "texto": "de las bacterias. No encontraron nada. ¿Y los archivos? Un grupo de extranjeros",
+  "palabras": [
+   {
+    "p": "de",
+    "ini": 586.29,
+    "fin": 586.43
+   },
+   {
+    "p": "las",
+    "ini": 586.43,
+    "fin": 586.63
+   },
+   {
+    "p": "bacterias.",
+    "ini": 586.63,
+    "fin": 587.25
+   },
+   {
+    "p": "No",
+    "ini": 587.67,
+    "fin": 587.89
+   },
+   {
+    "p": "encontraron",
+    "ini": 587.89,
+    "fin": 588.41
+   },
+   {
+    "p": "nada.",
+    "ini": 588.41,
+    "fin": 588.81
+   },
+   {
+    "p": "¿Y",
+    "ini": 590.15,
+    "fin": 590.47
+   },
+   {
+    "p": "los",
+    "ini": 590.47,
+    "fin": 590.73
+   },
+   {
+    "p": "archivos?",
+    "ini": 590.73,
+    "fin": 591.23
+   },
+   {
+    "p": "Un",
+    "ini": 591.69,
+    "fin": 591.97
+   },
+   {
+    "p": "grupo",
+    "ini": 591.97,
+    "fin": 592.25
+   },
+   {
+    "p": "de",
+    "ini": 592.25,
+    "fin": 592.57
+   },
+   {
+    "p": "extranjeros",
+    "ini": 592.57,
+    "fin": 593.17
+   }
+  ]
+ },
+ {
+  "ini": 593.17,
+  "fin": 598.81,
+  "texto": "que cruza medio mundo hacia la Himalaya debería aparecer en alguna parte. Una carta,",
+  "palabras": [
+   {
+    "p": "que",
+    "ini": 593.17,
+    "fin": 593.43
+   },
+   {
+    "p": "cruza",
+    "ini": 593.43,
+    "fin": 593.73
+   },
+   {
+    "p": "medio",
+    "ini": 593.73,
+    "fin": 594.13
+   },
+   {
+    "p": "mundo",
+    "ini": 594.13,
+    "fin": 594.59
+   },
+   {
+    "p": "hacia",
+    "ini": 594.59,
+    "fin": 594.91
+   },
+   {
+    "p": "la",
+    "ini": 594.91,
+    "fin": 595.05
+   },
+   {
+    "p": "Himalaya",
+    "ini": 595.05,
+    "fin": 595.65
+   },
+   {
+    "p": "debería",
+    "ini": 595.65,
+    "fin": 596.11
+   },
+   {
+    "p": "aparecer",
+    "ini": 596.11,
+    "fin": 596.53
+   },
+   {
+    "p": "en",
+    "ini": 596.53,
+    "fin": 596.85
+   },
+   {
+    "p": "alguna",
+    "ini": 596.85,
+    "fin": 597.19
+   },
+   {
+    "p": "parte.",
+    "ini": 597.19,
+    "fin": 597.55
+   },
+   {
+    "p": "Una",
+    "ini": 598.03,
+    "fin": 598.39
+   },
+   {
+    "p": "carta,",
+    "ini": 598.39,
+    "fin": 598.81
+   }
+  ]
+ },
+ {
+  "ini": 598.81,
+  "fin": 608.83,
+  "texto": "un permiso, un diario. Hasta hoy no aparece ninguna. Uno de los autores del estudio,",
+  "palabras": [
+   {
+    "p": "un",
+    "ini": 598.81,
+    "fin": 599.31
+   },
+   {
+    "p": "permiso,",
+    "ini": 599.31,
+    "fin": 600.03
+   },
+   {
+    "p": "un",
+    "ini": 600.45,
+    "fin": 600.59
+   },
+   {
+    "p": "diario.",
+    "ini": 600.59,
+    "fin": 601.09
+   },
+   {
+    "p": "Hasta",
+    "ini": 602.67,
+    "fin": 602.95
+   },
+   {
+    "p": "hoy",
+    "ini": 602.95,
+    "fin": 603.33
+   },
+   {
+    "p": "no",
+    "ini": 603.33,
+    "fin": 604.03
+   },
+   {
+    "p": "aparece",
+    "ini": 604.03,
+    "fin": 604.57
+   },
+   {
+    "p": "ninguna.",
+    "ini": 604.57,
+    "fin": 605.33
+   },
+   {
+    "p": "Uno",
+    "ini": 607.19,
+    "fin": 607.47
+   },
+   {
+    "p": "de",
+    "ini": 607.47,
+    "fin": 607.65
+   },
+   {
+    "p": "los",
+    "ini": 607.65,
+    "fin": 607.83
+   },
+   {
+    "p": "autores",
+    "ini": 607.83,
+    "fin": 608.17
+   },
+   {
+    "p": "del",
+    "ini": 608.17,
+    "fin": 608.39
+   },
+   {
+    "p": "estudio,",
+    "ini": 608.39,
+    "fin": 608.83
+   }
+  ]
+ },
+ {
+  "ini": 609.09,
+  "fin": 615.39,
+  "texto": "el genetista Niraj Rai, lo reconoció sin rodeos. Todavía no está claro que llevó a esas personas",
+  "palabras": [
+   {
+    "p": "el",
+    "ini": 609.09,
+    "fin": 609.19
+   },
+   {
+    "p": "genetista",
+    "ini": 609.19,
+    "fin": 609.75
+   },
+   {
+    "p": "Niraj",
+    "ini": 609.75,
+    "fin": 610.39
+   },
+   {
+    "p": "Rai,",
+    "ini": 610.39,
+    "fin": 610.73
+   },
+   {
+    "p": "lo",
+    "ini": 610.91,
+    "fin": 611.13
+   },
+   {
+    "p": "reconoció",
+    "ini": 611.13,
+    "fin": 611.59
+   },
+   {
+    "p": "sin",
+    "ini": 611.59,
+    "fin": 611.89
+   },
+   {
+    "p": "rodeos.",
+    "ini": 611.89,
+    "fin": 612.63
+   },
+   {
+    "p": "Todavía",
+    "ini": 612.83,
+    "fin": 613.33
+   },
+   {
+    "p": "no",
+    "ini": 613.33,
+    "fin": 613.55
+   },
+   {
+    "p": "está",
+    "ini": 613.55,
+    "fin": 613.67
+   },
+   {
+    "p": "claro",
+    "ini": 613.67,
+    "fin": 614.01
+   },
+   {
+    "p": "que",
+    "ini": 614.01,
+    "fin": 614.19
+   },
+   {
+    "p": "llevó",
+    "ini": 614.19,
+    "fin": 614.53
+   },
+   {
+    "p": "a",
+    "ini": 614.53,
+    "fin": 614.67
+   },
+   {
+    "p": "esas",
+    "ini": 614.67,
+    "fin": 614.83
+   },
+   {
+    "p": "personas",
+    "ini": 614.83,
+    "fin": 615.39
+   }
+  ]
+ },
+ {
+  "ini": 615.39,
+  "fin": 622.13,
+  "texto": "hasta el lago ni cómo murieron. Esto es dato. 14 personas del Mediterráneo murieron en ese lago",
+  "palabras": [
+   {
+    "p": "hasta",
+    "ini": 615.39,
+    "fin": 615.69
+   },
+   {
+    "p": "el",
+    "ini": 615.69,
+    "fin": 615.87
+   },
+   {
+    "p": "lago",
+    "ini": 615.87,
+    "fin": 616.07
+   },
+   {
+    "p": "ni",
+    "ini": 616.07,
+    "fin": 616.39
+   },
+   {
+    "p": "cómo",
+    "ini": 616.39,
+    "fin": 616.77
+   },
+   {
+    "p": "murieron.",
+    "ini": 616.77,
+    "fin": 617.27
+   },
+   {
+    "p": "Esto",
+    "ini": 617.73,
+    "fin": 618.11
+   },
+   {
+    "p": "es",
+    "ini": 618.11,
+    "fin": 618.43
+   },
+   {
+    "p": "dato.",
+    "ini": 618.43,
+    "fin": 618.69
+   },
+   {
+    "p": "14",
+    "ini": 619.01,
+    "fin": 619.35
+   },
+   {
+    "p": "personas",
+    "ini": 619.35,
+    "fin": 619.79
+   },
+   {
+    "p": "del",
+    "ini": 619.79,
+    "fin": 620.05
+   },
+   {
+    "p": "Mediterráneo",
+    "ini": 620.05,
+    "fin": 620.95
+   },
+   {
+    "p": "murieron",
+    "ini": 620.95,
+    "fin": 621.45
+   },
+   {
+    "p": "en",
+    "ini": 621.45,
+    "fin": 621.71
+   },
+   {
+    "p": "ese",
+    "ini": 621.71,
+    "fin": 621.93
+   },
+   {
+    "p": "lago",
+    "ini": 621.93,
+    "fin": 622.27
+   }
+  ]
+ },
+ {
+  "ini": 622.27,
+  "fin": 628.51,
+  "texto": "hace unos 200 años. Y esto es lo que nadie puede contestar. ¿Por qué?",
+  "palabras": [
+   {
+    "p": "hace",
+    "ini": 622.27,
+    "fin": 622.41
+   },
+   {
+    "p": "unos",
+    "ini": 622.41,
+    "fin": 622.81
+   },
+   {
+    "p": "200",
+    "ini": 622.81,
+    "fin": 623.31
+   },
+   {
+    "p": "años.",
+    "ini": 623.31,
+    "fin": 623.87
+   },
+   {
+    "p": "Y",
+    "ini": 624.13,
+    "fin": 624.41
+   },
+   {
+    "p": "esto",
+    "ini": 624.41,
+    "fin": 624.67
+   },
+   {
+    "p": "es",
+    "ini": 624.67,
+    "fin": 625.01
+   },
+   {
+    "p": "lo",
+    "ini": 625.01,
+    "fin": 625.17
+   },
+   {
+    "p": "que",
+    "ini": 625.17,
+    "fin": 625.37
+   },
+   {
+    "p": "nadie",
+    "ini": 625.37,
+    "fin": 625.75
+   },
+   {
+    "p": "puede",
+    "ini": 625.75,
+    "fin": 626.15
+   },
+   {
+    "p": "contestar.",
+    "ini": 626.15,
+    "fin": 627.63
+   },
+   {
+    "p": "¿Por",
+    "ini": 627.85,
+    "fin": 628.19
+   },
+   {
+    "p": "qué?",
+    "ini": 628.19,
+    "fin": 628.51
+   }
+  ]
+ },
+ {
+  "ini": 630.83,
+  "fin": 637.41,
+  "texto": "Yo me quedo pensando en ellos. En algún puerto del Mediterráneo, alguien los vio salir.",
+  "palabras": [
+   {
+    "p": "Yo",
+    "ini": 630.83,
+    "fin": 631.23
+   },
+   {
+    "p": "me",
+    "ini": 631.23,
+    "fin": 631.49
+   },
+   {
+    "p": "quedo",
+    "ini": 631.49,
+    "fin": 631.73
+   },
+   {
+    "p": "pensando",
+    "ini": 631.73,
+    "fin": 632.13
+   },
+   {
+    "p": "en",
+    "ini": 632.13,
+    "fin": 632.45
+   },
+   {
+    "p": "ellos.",
+    "ini": 632.45,
+    "fin": 632.75
+   },
+   {
+    "p": "En",
+    "ini": 633.61,
+    "fin": 634.01
+   },
+   {
+    "p": "algún",
+    "ini": 634.01,
+    "fin": 634.31
+   },
+   {
+    "p": "puerto",
+    "ini": 634.31,
+    "fin": 634.67
+   },
+   {
+    "p": "del",
+    "ini": 634.67,
+    "fin": 634.95
+   },
+   {
+    "p": "Mediterráneo,",
+    "ini": 634.95,
+    "fin": 635.91
+   },
+   {
+    "p": "alguien",
+    "ini": 636.27,
+    "fin": 636.45
+   },
+   {
+    "p": "los",
+    "ini": 636.45,
+    "fin": 636.75
+   },
+   {
+    "p": "vio",
+    "ini": 636.75,
+    "fin": 636.95
+   },
+   {
+    "p": "salir.",
+    "ini": 636.95,
+    "fin": 637.41
+   }
+  ]
+ },
+ {
+  "ini": 637.93,
+  "fin": 644.75,
+  "texto": "Alguien esperó una carta que nunca llegó. Y un día, sin saber nada, dejó de esperar.",
+  "palabras": [
+   {
+    "p": "Alguien",
+    "ini": 637.93,
+    "fin": 638.57
+   },
+   {
+    "p": "esperó",
+    "ini": 638.57,
+    "fin": 638.97
+   },
+   {
+    "p": "una",
+    "ini": 638.97,
+    "fin": 639.21
+   },
+   {
+    "p": "carta",
+    "ini": 639.21,
+    "fin": 639.55
+   },
+   {
+    "p": "que",
+    "ini": 639.55,
+    "fin": 639.81
+   },
+   {
+    "p": "nunca",
+    "ini": 639.81,
+    "fin": 640.19
+   },
+   {
+    "p": "llegó.",
+    "ini": 640.19,
+    "fin": 640.53
+   },
+   {
+    "p": "Y",
+    "ini": 640.97,
+    "fin": 641.09
+   },
+   {
+    "p": "un",
+    "ini": 641.09,
+    "fin": 641.33
+   },
+   {
+    "p": "día,",
+    "ini": 641.33,
+    "fin": 641.73
+   },
+   {
+    "p": "sin",
+    "ini": 641.99,
+    "fin": 642.23
+   },
+   {
+    "p": "saber",
+    "ini": 642.23,
+    "fin": 642.61
+   },
+   {
+    "p": "nada,",
+    "ini": 642.61,
+    "fin": 643.07
+   },
+   {
+    "p": "dejó",
+    "ini": 643.85,
+    "fin": 644.11
+   },
+   {
+    "p": "de",
+    "ini": 644.11,
+    "fin": 644.43
+   },
+   {
+    "p": "esperar.",
+    "ini": 644.43,
+    "fin": 644.75
+   }
+  ]
+ },
+ {
+  "ini": 646.57,
+  "fin": 651.99,
+  "texto": "Nunca supieron que estaban allá arriba, a 5,000 metros, al lado de los huesos de otros",
+  "palabras": [
+   {
+    "p": "Nunca",
+    "ini": 646.57,
+    "fin": 646.95
+   },
+   {
+    "p": "supieron",
+    "ini": 646.95,
+    "fin": 647.37
+   },
+   {
+    "p": "que",
+    "ini": 647.37,
+    "fin": 647.61
+   },
+   {
+    "p": "estaban",
+    "ini": 647.61,
+    "fin": 647.85
+   },
+   {
+    "p": "allá",
+    "ini": 647.85,
+    "fin": 648.19
+   },
+   {
+    "p": "arriba,",
+    "ini": 648.19,
+    "fin": 648.49
+   },
+   {
+    "p": "a",
+    "ini": 648.71,
+    "fin": 649.11
+   },
+   {
+    "p": "5",
+    "ini": 649.11,
+    "fin": 649.33
+   },
+   {
+    "p": ",000",
+    "ini": 649.33,
+    "fin": 649.47
+   },
+   {
+    "p": "metros,",
+    "ini": 649.47,
+    "fin": 649.95
+   },
+   {
+    "p": "al",
+    "ini": 650.33,
+    "fin": 650.47
+   },
+   {
+    "p": "lado",
+    "ini": 650.47,
+    "fin": 650.67
+   },
+   {
+    "p": "de",
+    "ini": 650.67,
+    "fin": 650.89
+   },
+   {
+    "p": "los",
+    "ini": 650.89,
+    "fin": 651.07
+   },
+   {
+    "p": "huesos",
+    "ini": 651.07,
+    "fin": 651.43
+   },
+   {
+    "p": "de",
+    "ini": 651.43,
+    "fin": 651.73
+   },
+   {
+    "p": "otros",
+    "ini": 651.73,
+    "fin": 651.99
+   }
+  ]
+ },
+ {
+  "ini": 651.99,
+  "fin": 662.39,
+  "texto": "viajeros que habían muerto mil años antes. En el mismo sitio. Hoy, el lago sigue ahí. Cada año",
+  "palabras": [
+   {
+    "p": "viajeros",
+    "ini": 651.99,
+    "fin": 653.03
+   },
+   {
+    "p": "que",
+    "ini": 653.03,
+    "fin": 653.29
+   },
+   {
+    "p": "habían",
+    "ini": 653.29,
+    "fin": 653.61
+   },
+   {
+    "p": "muerto",
+    "ini": 653.61,
+    "fin": 654.27
+   },
+   {
+    "p": "mil",
+    "ini": 654.27,
+    "fin": 654.63
+   },
+   {
+    "p": "años",
+    "ini": 654.63,
+    "fin": 655.03
+   },
+   {
+    "p": "antes.",
+    "ini": 655.03,
+    "fin": 655.61
+   },
+   {
+    "p": "En",
+    "ini": 656.37,
+    "fin": 656.61
+   },
+   {
+    "p": "el",
+    "ini": 656.61,
+    "fin": 657.19
+   },
+   {
+    "p": "mismo",
+    "ini": 657.19,
+    "fin": 657.81
+   },
+   {
+    "p": "sitio.",
+    "ini": 657.81,
+    "fin": 658.33
+   },
+   {
+    "p": "Hoy,",
+    "ini": 659.35,
+    "fin": 659.65
+   },
+   {
+    "p": "el",
+    "ini": 660.31,
+    "fin": 660.45
+   },
+   {
+    "p": "lago",
+    "ini": 660.45,
+    "fin": 660.73
+   },
+   {
+    "p": "sigue",
+    "ini": 660.73,
+    "fin": 661.01
+   },
+   {
+    "p": "ahí.",
+    "ini": 661.01,
+    "fin": 661.53
+   },
+   {
+    "p": "Cada",
+    "ini": 661.73,
+    "fin": 662.07
+   },
+   {
+    "p": "año",
+    "ini": 662.07,
+    "fin": 662.39
+   }
+  ]
+ },
+ {
+  "ini": 662.39,
+  "fin": 669.95,
+  "texto": "el hielo se derrite y durante unas pocas semanas los huesos vuelven a aparecer. Cada año queda",
+  "palabras": [
+   {
+    "p": "el",
+    "ini": 662.39,
+    "fin": 662.65
+   },
+   {
+    "p": "hielo",
+    "ini": 662.65,
+    "fin": 662.87
+   },
+   {
+    "p": "se",
+    "ini": 662.87,
+    "fin": 663.11
+   },
+   {
+    "p": "derrite",
+    "ini": 663.11,
+    "fin": 663.47
+   },
+   {
+    "p": "y",
+    "ini": 663.47,
+    "fin": 663.79
+   },
+   {
+    "p": "durante",
+    "ini": 663.79,
+    "fin": 664.35
+   },
+   {
+    "p": "unas",
+    "ini": 664.35,
+    "fin": 664.85
+   },
+   {
+    "p": "pocas",
+    "ini": 664.85,
+    "fin": 665.19
+   },
+   {
+    "p": "semanas",
+    "ini": 665.19,
+    "fin": 665.69
+   },
+   {
+    "p": "los",
+    "ini": 665.69,
+    "fin": 666.27
+   },
+   {
+    "p": "huesos",
+    "ini": 666.27,
+    "fin": 666.87
+   },
+   {
+    "p": "vuelven",
+    "ini": 666.87,
+    "fin": 667.45
+   },
+   {
+    "p": "a",
+    "ini": 667.45,
+    "fin": 667.55
+   },
+   {
+    "p": "aparecer.",
+    "ini": 667.55,
+    "fin": 668.03
+   },
+   {
+    "p": "Cada",
+    "ini": 668.91,
+    "fin": 669.27
+   },
+   {
+    "p": "año",
+    "ini": 669.27,
+    "fin": 669.67
+   },
+   {
+    "p": "queda",
+    "ini": 669.67,
+    "fin": 669.95
+   }
+  ]
+ },
+ {
+  "ini": 669.95,
+  "fin": 678.19,
+  "texto": "menos. Los turistas se lo han ido llevando de uno en uno, como recuerdo. La ciencia logró",
+  "palabras": [
+   {
+    "p": "menos.",
+    "ini": 669.95,
+    "fin": 670.41
+   },
+   {
+    "p": "Los",
+    "ini": 670.73,
+    "fin": 671.03
+   },
+   {
+    "p": "turistas",
+    "ini": 671.03,
+    "fin": 671.59
+   },
+   {
+    "p": "se",
+    "ini": 671.59,
+    "fin": 671.85
+   },
+   {
+    "p": "lo",
+    "ini": 671.85,
+    "fin": 671.99
+   },
+   {
+    "p": "han",
+    "ini": 671.99,
+    "fin": 672.21
+   },
+   {
+    "p": "ido",
+    "ini": 672.21,
+    "fin": 672.47
+   },
+   {
+    "p": "llevando",
+    "ini": 672.47,
+    "fin": 673.17
+   },
+   {
+    "p": "de",
+    "ini": 673.17,
+    "fin": 673.73
+   },
+   {
+    "p": "uno",
+    "ini": 673.73,
+    "fin": 674.03
+   },
+   {
+    "p": "en",
+    "ini": 674.03,
+    "fin": 674.29
+   },
+   {
+    "p": "uno,",
+    "ini": 674.29,
+    "fin": 674.69
+   },
+   {
+    "p": "como",
+    "ini": 675.05,
+    "fin": 675.23
+   },
+   {
+    "p": "recuerdo.",
+    "ini": 675.23,
+    "fin": 675.81
+   },
+   {
+    "p": "La",
+    "ini": 677.27,
+    "fin": 677.51
+   },
+   {
+    "p": "ciencia",
+    "ini": 677.51,
+    "fin": 677.89
+   },
+   {
+    "p": "logró",
+    "ini": 677.89,
+    "fin": 678.25
+   }
+  ]
+ },
+ {
+  "ini": 678.25,
+  "fin": 686.39,
+  "texto": "decirnos quién era, de dónde venían, hasta qué comían. Lo único que no ha podido decirnos es lo",
+  "palabras": [
+   {
+    "p": "decirnos",
+    "ini": 678.25,
+    "fin": 678.87
+   },
+   {
+    "p": "quién",
+    "ini": 678.87,
+    "fin": 679.13
+   },
+   {
+    "p": "era,",
+    "ini": 679.13,
+    "fin": 679.59
+   },
+   {
+    "p": "de",
+    "ini": 679.83,
+    "fin": 680.07
+   },
+   {
+    "p": "dónde",
+    "ini": 680.07,
+    "fin": 680.29
+   },
+   {
+    "p": "venían,",
+    "ini": 680.29,
+    "fin": 681.13
+   },
+   {
+    "p": "hasta",
+    "ini": 681.61,
+    "fin": 681.93
+   },
+   {
+    "p": "qué",
+    "ini": 681.93,
+    "fin": 682.19
+   },
+   {
+    "p": "comían.",
+    "ini": 682.19,
+    "fin": 682.81
+   },
+   {
+    "p": "Lo",
+    "ini": 683.37,
+    "fin": 683.67
+   },
+   {
+    "p": "único",
+    "ini": 683.67,
+    "fin": 683.93
+   },
+   {
+    "p": "que",
+    "ini": 683.93,
+    "fin": 684.13
+   },
+   {
+    "p": "no",
+    "ini": 684.13,
+    "fin": 684.31
+   },
+   {
+    "p": "ha",
+    "ini": 684.31,
+    "fin": 684.49
+   },
+   {
+    "p": "podido",
+    "ini": 684.49,
+    "fin": 684.91
+   },
+   {
+    "p": "decirnos",
+    "ini": 684.91,
+    "fin": 685.71
+   },
+   {
+    "p": "es",
+    "ini": 685.71,
+    "fin": 686.13
+   },
+   {
+    "p": "lo",
+    "ini": 686.13,
+    "fin": 686.39
+   }
+  ]
+ },
+ {
+  "ini": 686.39,
+  "fin": 694.51,
+  "texto": "que de verdad queremos saber. ¿Qué puede ser tan importante como para cruzar medio mundo y subir",
+  "palabras": [
+   {
+    "p": "que",
+    "ini": 686.39,
+    "fin": 686.55
+   },
+   {
+    "p": "de",
+    "ini": 686.55,
+    "fin": 686.85
+   },
+   {
+    "p": "verdad",
+    "ini": 686.85,
+    "fin": 687.19
+   },
+   {
+    "p": "queremos",
+    "ini": 687.19,
+    "fin": 687.71
+   },
+   {
+    "p": "saber.",
+    "ini": 687.71,
+    "fin": 688.21
+   },
+   {
+    "p": "¿Qué",
+    "ini": 688.77,
+    "fin": 688.93
+   },
+   {
+    "p": "puede",
+    "ini": 688.93,
+    "fin": 689.33
+   },
+   {
+    "p": "ser",
+    "ini": 689.33,
+    "fin": 689.59
+   },
+   {
+    "p": "tan",
+    "ini": 689.59,
+    "fin": 689.91
+   },
+   {
+    "p": "importante",
+    "ini": 689.91,
+    "fin": 690.71
+   },
+   {
+    "p": "como",
+    "ini": 690.71,
+    "fin": 691.27
+   },
+   {
+    "p": "para",
+    "ini": 691.27,
+    "fin": 691.63
+   },
+   {
+    "p": "cruzar",
+    "ini": 691.63,
+    "fin": 692.31
+   },
+   {
+    "p": "medio",
+    "ini": 692.31,
+    "fin": 692.79
+   },
+   {
+    "p": "mundo",
+    "ini": 692.79,
+    "fin": 693.25
+   },
+   {
+    "p": "y",
+    "ini": 693.25,
+    "fin": 694.11
+   },
+   {
+    "p": "subir",
+    "ini": 694.11,
+    "fin": 694.51
+   }
+  ]
+ },
+ {
+  "ini": 694.51,
+  "fin": 701.15,
+  "texto": "a morir a un lago perdido en el Himalaya? Si tienes una teoría, déjamela en los comentarios.",
+  "palabras": [
+   {
+    "p": "a",
+    "ini": 694.51,
+    "fin": 694.65
+   },
+   {
+    "p": "morir",
+    "ini": 694.65,
+    "fin": 694.99
+   },
+   {
+    "p": "a",
+    "ini": 694.99,
+    "fin": 695.11
+   },
+   {
+    "p": "un",
+    "ini": 695.11,
+    "fin": 695.29
+   },
+   {
+    "p": "lago",
+    "ini": 695.29,
+    "fin": 695.53
+   },
+   {
+    "p": "perdido",
+    "ini": 695.53,
+    "fin": 696.05
+   },
+   {
+    "p": "en",
+    "ini": 696.05,
+    "fin": 696.25
+   },
+   {
+    "p": "el",
+    "ini": 696.25,
+    "fin": 696.39
+   },
+   {
+    "p": "Himalaya?",
+    "ini": 696.39,
+    "fin": 696.93
+   },
+   {
+    "p": "Si",
+    "ini": 697.71,
+    "fin": 698.01
+   },
+   {
+    "p": "tienes",
+    "ini": 698.01,
+    "fin": 698.31
+   },
+   {
+    "p": "una",
+    "ini": 698.31,
+    "fin": 698.61
+   },
+   {
+    "p": "teoría,",
+    "ini": 698.61,
+    "fin": 699.55
+   },
+   {
+    "p": "déjamela",
+    "ini": 699.85,
+    "fin": 700.21
+   },
+   {
+    "p": "en",
+    "ini": 700.21,
+    "fin": 700.33
+   },
+   {
+    "p": "los",
+    "ini": 700.33,
+    "fin": 700.61
+   },
+   {
+    "p": "comentarios.",
+    "ini": 700.61,
+    "fin": 701.15
+   }
+  ]
+ },
+ {
+  "ini": 701.15,
+  "fin": 709.29,
+  "texto": "Las leo todas. Porque en el próximo archivo, la pista no es un lago ni son unos huesos.",
+  "palabras": [
+   {
+    "p": "Las",
+    "ini": 701.15,
+    "fin": 701.91
+   },
+   {
+    "p": "leo",
+    "ini": 701.91,
+    "fin": 702.43
+   },
+   {
+    "p": "todas.",
+    "ini": 702.43,
+    "fin": 703.07
+   },
+   {
+    "p": "Porque",
+    "ini": 703.93,
+    "fin": 704.11
+   },
+   {
+    "p": "en",
+    "ini": 704.11,
+    "fin": 704.37
+   },
+   {
+    "p": "el",
+    "ini": 704.37,
+    "fin": 704.53
+   },
+   {
+    "p": "próximo",
+    "ini": 704.53,
+    "fin": 704.91
+   },
+   {
+    "p": "archivo,",
+    "ini": 704.91,
+    "fin": 705.59
+   },
+   {
+    "p": "la",
+    "ini": 705.87,
+    "fin": 706.03
+   },
+   {
+    "p": "pista",
+    "ini": 706.03,
+    "fin": 706.35
+   },
+   {
+    "p": "no",
+    "ini": 706.35,
+    "fin": 706.61
+   },
+   {
+    "p": "es",
+    "ini": 706.61,
+    "fin": 706.81
+   },
+   {
+    "p": "un",
+    "ini": 706.81,
+    "fin": 707.01
+   },
+   {
+    "p": "lago",
+    "ini": 707.01,
+    "fin": 707.51
+   },
+   {
+    "p": "ni",
+    "ini": 707.51,
+    "fin": 708.03
+   },
+   {
+    "p": "son",
+    "ini": 708.03,
+    "fin": 708.37
+   },
+   {
+    "p": "unos",
+    "ini": 708.37,
+    "fin": 708.71
+   },
+   {
+    "p": "huesos.",
+    "ini": 708.71,
+    "fin": 709.29
+   }
+  ]
+ },
+ {
+  "ini": 709.83,
+  "fin": 716.05,
+  "texto": "Es una sola palabra, enviada en clave morse desde un avión, minutos antes de desaparecer",
+  "palabras": [
+   {
+    "p": "Es",
+    "ini": 709.83,
+    "fin": 710.07
+   },
+   {
+    "p": "una",
+    "ini": 710.07,
+    "fin": 710.37
+   },
+   {
+    "p": "sola",
+    "ini": 710.37,
+    "fin": 710.65
+   },
+   {
+    "p": "palabra,",
+    "ini": 710.65,
+    "fin": 711.27
+   },
+   {
+    "p": "enviada",
+    "ini": 711.93,
+    "fin": 712.19
+   },
+   {
+    "p": "en",
+    "ini": 712.19,
+    "fin": 712.49
+   },
+   {
+    "p": "clave",
+    "ini": 712.49,
+    "fin": 712.77
+   },
+   {
+    "p": "morse",
+    "ini": 712.77,
+    "fin": 713.17
+   },
+   {
+    "p": "desde",
+    "ini": 713.17,
+    "fin": 713.45
+   },
+   {
+    "p": "un",
+    "ini": 713.45,
+    "fin": 713.77
+   },
+   {
+    "p": "avión,",
+    "ini": 713.77,
+    "fin": 714.17
+   },
+   {
+    "p": "minutos",
+    "ini": 714.29,
+    "fin": 714.67
+   },
+   {
+    "p": "antes",
+    "ini": 714.67,
+    "fin": 715.11
+   },
+   {
+    "p": "de",
+    "ini": 715.11,
+    "fin": 715.45
+   },
+   {
+    "p": "desaparecer",
+    "ini": 715.45,
+    "fin": 716.05
+   }
+  ]
+ },
+ {
+  "ini": 716.05,
+  "fin": 724.63,
+  "texto": "en los Andes. Soy Joel Marino y esto fue Archivos Inexplicables.",
+  "palabras": [
+   {
+    "p": "en",
+    "ini": 716.05,
+    "fin": 716.25
+   },
+   {
+    "p": "los",
+    "ini": 716.25,
+    "fin": 716.43
+   },
+   {
+    "p": "Andes.",
+    "ini": 716.43,
+    "fin": 717.73
+   },
+   {
+    "p": "Soy",
+    "ini": 718.51,
+    "fin": 718.81
+   },
+   {
+    "p": "Joel",
+    "ini": 718.81,
+    "fin": 719.15
+   },
+   {
+    "p": "Marino",
+    "ini": 719.15,
+    "fin": 719.67
+   },
+   {
+    "p": "y",
+    "ini": 719.67,
+    "fin": 720.43
+   },
+   {
+    "p": "esto",
+    "ini": 720.43,
+    "fin": 720.73
+   },
+   {
+    "p": "fue",
+    "ini": 720.73,
+    "fin": 721.29
+   },
+   {
+    "p": "Archivos",
+    "ini": 721.29,
+    "fin": 723.45
+   },
+   {
+    "p": "Inexplicables.",
+    "ini": 723.45,
+    "fin": 724.63
+   }
+  ]
+ }
+]
