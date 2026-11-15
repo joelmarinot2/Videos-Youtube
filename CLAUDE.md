@@ -210,7 +210,9 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Excel de escenas recibido
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
-- [ ] Armar el video 1 (empezando por el bloque 1 para aprobación)
+- [ ] Armar el video 1 (empezando por el bloque 1 para aprobación). Plan y avance: `video1/plan-montaje.md`
+- [ ] Clips que faltan: el dueño los va a generar con **Higgsfield** (lista y textos en
+      `video1/clips-por-generar.md`; se le dieron por número de fila del Excel, en grupos A, B y C)
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
