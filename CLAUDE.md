@@ -8,6 +8,13 @@ veces), en español sencillo, sin jerga técnica y sin palabras en inglés (trad
 **Esto incluye TODO lo que el dueño ve**: la respuesta final Y los mensajes cortos que se escriben mientras se
 trabaja (antes de cada paso, "ahora reviso...", "ya descargué..."). Ninguna frase en inglés, nunca.
 
+**REGLA FIJA SOBRE GASTOS (el dueño la pidió el 2026-11-15): nunca generar nada que cueste dinero sin
+permiso.** Antes de generar clips, imágenes, voces o cualquier cosa de pago (Higgsfield u otro servicio):
+1. consultar el costo real (en Higgsfield, con `POST /estimate/<modelo>`, que no cobra);
+2. decirle al dueño el costo de cada cosa y el total, en dólares;
+3. **preguntarle y esperar a que diga que sí**. Sin su "sí" no se genera nada, ni siquiera una prueba.
+Esto vale cada vez: un permiso anterior no sirve para la siguiente tanda.
+
 ## El canal
 
 - Nombre: **Archivos Inexplicables** (confirmado por el dueño el 2026-11-13; el guion viejo dice
