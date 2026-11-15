@@ -8,11 +8,12 @@ m = Mezcla(2.2, 100.0, os.path.join(B, "..", "voz_lista.wav"))
 # ---- Ambientes continuos ----
 m.bed("zumbido_viento", 2.2, 100.0, -25, fade=1.0, start=2.0)
 m.bed("viento_montana", 9.6, 35.6, -15, fade=1.0, start=4.0)         # guardabosques, hoyo, lago
-m.bed("pasos_piedra2", 10.0, 21.6, -17, fade=0.8, start=1.0)         # camina solo
+m.bed("pasos_piedra2", 10.0, 17.9, -17, fade=0.8, start=1.0)         # camina solo
+m.bed("pasos_piedra2", 17.9, 22.2, -11, fade=0.3, start=9.0)         # primer plano de las botas
 m.bed("viento_invierno", 22.0, 35.4, -17, fade=0.8, start=1.0)
 m.bed("agua_fluye", 35.2, 44.9, -22, fade=1.2, start=3.0)            # el hielo se derrite
 m.bed("viento_montana", 35.2, 44.6, -21, fade=1.0, start=14.0)
-m.bed("latido_misterio", 44.9, 47.7, -11, fade=0.3, start=1.0)       # se acerca
+m.bed("latido_misterio", 42.1, 47.7, -12, fade=0.5, start=1.0)       # la lupa y la cara
 m.bed("burbujas_hondas", 48.2, 63.6, -19, fade=0.8)                  # bajo el agua
 m.bed("viento_montana", 84.7, 91.9, -17, fade=0.8, start=8.0)        # el lago de los esqueletos
 
@@ -46,10 +47,11 @@ m.tecleo(32.7, 33.5, 10, -15)
 # ---- E5 · El hielo se derrite. En el fondo hay algo ----
 m.put("cristal_suspenso", 35.45, -12)
 m.put("cristal_suspenso", 38.7, -15, pan=.3)
-m.put("barrido_oscuro", 43.3, -10)
+m.put("barrido_oscuro", 41.2, -11)
 
 # ---- E6 · Se acerca (lupa) ----
-m.put("burbujas_hondas", 44.95, -11)
+m.put("burbujas_hondas", 42.05, -11)
+m.put("golpe_zoom", 44.9, -12)
 m.put("subida_trailer", 47.04, -5)
 
 # ---- E7 · Son huesos ----

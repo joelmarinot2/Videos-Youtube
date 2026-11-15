@@ -222,6 +222,9 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
       El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:
       «NARRACIÓN · JOEL MARINO» (opción C, 2026-11-15). Falta que confirme si se escribe Marino o Marini.
+      **Segunda versión del bloque 1 (2026-11-15):** ya lleva los 4 clips nuevos de Higgsfield (botas, agua
+      transparente con lupa, cara del guardabosques, orilla con huesos). El dueño dijo del bloque 1: «Me gustó como
+      va todo, sigue de esa manera». El montaje vigente está en `video1/b1/bloque1.html` y `sonido_b1.py`.
 - [ ] Efectos de sonido: al dueño le gustan los AMBIENTES del bloque 1 (viento, pasos, agua, latido), pero
       «algunos efectos no lo convencen» y quiere **cambiarlos por otros** (no bajarlos ni quitarlos). Se le mandó
       un muestrario numerado del 1 al 20 (`video1/entregas/muestrario-efectos.mp4`, hecho con

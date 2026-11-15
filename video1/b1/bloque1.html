@@ -89,10 +89,10 @@ svg{overflow:visible}
     </svg>
     <div class="abs big" id="e2num" style="left:1000px;top:250px;width:690px;text-align:right;font-size:210px;text-shadow:0 0 30px rgba(10,4,20,.7)"></div>
     <div class="abs typer" id="e2m" style="left:1000px;top:462px;width:690px;text-align:right;color:#5cf29a;font-size:32px;letter-spacing:12px;text-shadow:0 1px 8px rgba(0,0,0,.9)"></div>
-    <div class="abs pc" id="e2tag"><img src="assets/tira.png" style="display:block;width:860px;height:170px">
-      <div class="abs typer" id="e2n1" style="left:60px;top:48px;font-family:TyperB;font-size:42px"></div>
-      <div class="abs typer" id="e2n2" style="left:60px;top:100px;font-size:26px;color:#3b2a52"></div></div>
   </div>
+
+  <!-- E2b · LAS BOTAS (hace su ronda) -->
+  <div class="scene" id="e2b"><img class="full" id="c102"></div>
 
   <!-- E3 · EL HOYO Y EL LAGO -->
   <div class="scene" id="e3"><img class="full" id="c103"></div>
@@ -114,18 +114,28 @@ svg{overflow:visible}
     <div class="abs" id="e5cierre" style="width:1920px;height:1080px"></div>
   </div>
 
-  <!-- E6 · SE ACERCA (lupa) -->
+  <!-- E5b · EL AGUA ES TRANSPARENTE -->
+  <div class="scene" id="e5b">
+    <img class="full" id="c105">
+    <div class="abs" id="e5bcierre" style="width:1920px;height:1080px"></div>
+  </div>
+
+  <!-- E6 · EN EL FONDO HAY ALGO (lupa sobre el agua) -->
   <div class="scene" id="e6">
-    <img class="full" id="c107b" style="filter:blur(40px) brightness(.35)">
-    <div class="abs" id="e6iris" style="width:1920px;height:1080px"><img class="full" id="c107i"></div>
+    <img class="full" id="c105b" style="filter:blur(40px) brightness(.35)">
+    <div class="abs" id="e6iris" style="width:1920px;height:1080px"><img class="full" id="c105i"></div>
     <svg class="abs" width="1920" height="1080">
       <g id="e6ring"><circle id="e6c" r="0" fill="none" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 10px #5cf29a)"/><g id="e6tk" style="filter:drop-shadow(0 0 4px #5cf29a)"></g></g>
     </svg>
   </div>
 
+  <!-- E6b · SE ACERCA (la cara del guardabosques) -->
+  <div class="scene" id="e6b"><img class="full" id="c106"></div>
+
   <!-- E7 · SON HUESOS -->
   <div class="scene" id="e7">
     <img class="full" id="c107">
+    <img class="full" id="c108">
     <div class="abs" style="left:0;top:0;width:1920px;height:1080px;background:linear-gradient(90deg,rgba(4,0,10,.72) 0,rgba(4,0,10,.35) 38%,transparent 62%)" id="e7sombra"></div>
     <div class="abs" id="e7a" style="left:130px;top:610px">
       <div class="ph" style="font-size:104px"><span class="mask"><span id="e7a1">Son</span></span></div>
@@ -203,6 +213,9 @@ svg{overflow:visible}
   </div>
  </div>
 
+  <div class="abs pc" id="e2tag" style="opacity:0"><img src="assets/tira.png" style="display:block;width:860px;height:170px">
+      <div class="abs typer" id="e2n1" style="left:60px;top:48px;font-family:TyperB;font-size:42px"></div>
+      <div class="abs typer" id="e2n2" style="left:60px;top:100px;font-size:26px;color:#3b2a52"></div></div>
  <div id="recre">RECREACIÓN</div>
  <div id="tinte"></div>
  <div id="leak"></div>
@@ -235,11 +248,14 @@ function slap(el,t,a,x,y,r,s=1){const tt=twos(t);if(tt<a){el.style.opacity=0;ret
 // ---------- TIEMPOS (en segundos del audio original) ----------
 const OFF=2.2;                       // el video empieza en el segundo 2.2 del audio
 const FIN=100.0, DUR=FIN-OFF;
-const ESC={e1:[2.2,9.9],e2:[9.9,22.2],e3:[22.2,29.6],e4:[29.6,35.3],e5:[35.3,44.8],e6:[44.8,47.9],e7:[47.9,63.6],e8:[63.6,72.7],e9:[72.7,84.9],e10:[84.9,91.7],e11:[91.7,100.1]};
+const ESC={e1:[2.2,9.9],e2:[9.9,17.95],e2b:[17.95,22.2],e3:[22.2,29.6],e4:[29.6,35.3],e5:[35.3,38.4],e5b:[38.4,42.0],e6:[42.0,44.9],e6b:[44.9,47.9],e7:[47.9,63.6],e8:[63.6,72.7],e9:[72.7,84.9],e10:[84.9,91.7],e11:[91.7,100.1]};
 const CLIPS={c101:['b101',9.9,295],c103:['b103',22.2,180],c509:['b509',29.6,139],c104:['b104',35.3,230],c107:['b107',44.8,451]};
 const HITS=[[4.80,.8],[48.12,1.3],[56.44,.9],[75.18,.9],[76.55,.9],[82.6,1.0],[95.78,.7]];
-const IA=['e2','e3','e4','e5','e6','e7','e10'];   // escenas con imagen hecha con IA (llevan "RECREACIÓN")
+const IA=['e2','e2b','e3','e4','e5','e5b','e6','e6b','e7','e10'];   // escenas con imagen hecha con IA (llevan "RECREACIÓN")
 let LAGO=null;
+// carga el cuadro de un clip: dir = carpeta, ini = segundo del audio en que empieza, s0 = desde qué segundo del clip, n = cuadros
+async function cuadro(img,dir,n,ta,ini,s0=0){const i=clamp(Math.floor((ta-ini+s0)*24)+1,1,n);const src=`frames/${dir}/${String(i).padStart(4,'0')}.jpg`;
+  if(img.dataset.src!==src){img.dataset.src=src;img.src=src;try{await img.decode()}catch(e){}}return i}
 async function carga(img,clip,ta){const [dir,ini,n]=CLIPS[clip];const i=clamp(Math.floor((ta-ini)*24)+1,1,n);
   const src=`frames/${dir}/${String(i).padStart(4,'0')}.jpg`;
   if(img.dataset.src!==src){img.dataset.src=src;img.src=src;try{await img.decode()}catch(e){}}
@@ -290,7 +306,7 @@ async function render(tv){
   }
   // ===== E2 =====
   else if(sc==='e2'){
-    await carga($('c101'),'c101',t);const u=(t-9.9)/12.3;
+    await carga($('c101'),'c101',t);const u=(t-9.9)/8.05;
     $('c101').style.transform=`scale(${lerp(1.02,1.09,u)}) translate(${lerp(10,-14,u)}px,${lerp(0,-6,u)}px)`;
     const en=eExpo(p(t,9.9,10.2));wx=(1-en)*700;
     const a=1-Math.pow(1-p(t,10.55,11.85),3), sale=p(t,13.6,14.2);
@@ -299,10 +315,9 @@ async function render(tv){
     $('e2num').textContent=t>10.5?Math.round(a*5000).toLocaleString('es-CO'):'';$('e2num').style.opacity=1-sale;
     $('e2num').style.transform=`scale(${t>11.85?1+.05*Math.exp(-(t-11.85)*9):1})`;
     typed($('e2m'),'METROS',t,11.85,12.2);$('e2m').style.opacity=1-sale;
-    const tg=spring(p(twos(t),15.0,15.5),2.4,6.5), ts=eIn(p(t,21.2,21.6));
-    tf($('e2tag'),lerp(-950,90,tg)-ts*1100,812,1,lerp(-7,-2,tg),tg>0?1:0);
-    typed($('e2n1'),'HARI KISHAN MADHWAL',t,15.36,16.9);typed($('e2n2'),'GUARDABOSQUES · HIMALAYA, 1942',t,17.0,17.9);
   }
+  // ===== E2b · las botas =====
+  else if(sc==='e2b'){await cuadro($('c102'),'b102',241,t,17.95,0.2);const u=(t-17.95)/4.25;$('c102').style.transform=`scale(${lerp(1.06,1.0,u)})`}
   // ===== E3 =====
   else if(sc==='e3'){await carga($('c103'),'c103',t);const u=(t-22.2)/7.4;$('c103').style.transform=`scale(${lerp(1.07,1.02,u)})`}
   // ===== E4 =====
@@ -323,34 +338,51 @@ async function render(tv){
   }
   // ===== E5 =====
   else if(sc==='e5'){
-    await carga($('c104'),'c104',t);const u=(t-35.3)/9.5, c=eInOut(p(t,41.2,44.7));
-    $('c104').style.transform=`scale(${lerp(1.02,1.07,u)+c*.12})`;
-    $('e5cierre').style.background=`radial-gradient(circle at 50% 56%,transparent ${lerp(75,10,c)}%,rgba(4,0,10,${lerp(0,.97,c)}) ${lerp(110,34,c)}%)`;
-    negro=eIn(p(t,44.45,44.8));
+    await cuadro($('c104'),'b104',230,t,35.3,5.6);const u=(t-35.3)/3.1;
+    $('c104').style.transform=`scale(${lerp(1.02,1.06,u)})`;
   }
-  // ===== E6 =====
+  // ===== E5b · el agua es transparente =====
+  else if(sc==='e5b'){
+    await cuadro($('c105'),'b105',241,t,38.4,0.2);const u=(t-38.4)/3.6, c=eInOut(p(t,41.0,42.0));
+    $('c105').style.transform=`scale(${lerp(1.02,1.1,u)})`;
+    $('e5bcierre').style.background=`radial-gradient(circle at 50% 50%,transparent ${lerp(80,16,c)}%,rgba(4,0,10,${lerp(0,.96,c)}) ${lerp(115,30,c)}%)`;
+  }
+  // ===== E6 · lupa sobre el agua =====
   else if(sc==='e6'){
-    await carga($('c107b'),'c107',t);await carga($('c107i'),'c107',t);
-    const u=p(t,44.8,47.75), r=lerp(36,310,eInOut(u)), CX=560,CY=415, DX=960-CX, DY=540-CY;
+    await cuadro($('c105b'),'b105',241,t,42.0,4.0);await cuadro($('c105i'),'b105',241,t,42.0,4.0);
+    const u=p(t,42.0,44.85), r=lerp(250,320,eOut(u)), CX=960,CY=540;
     $('e6iris').style.clipPath=`circle(${r}px at ${CX}px ${CY}px)`;
-    $('e6iris').style.transform=`translate(${DX}px,${DY}px)`;$('c107i').style.transformOrigin=`${CX}px ${CY}px`;$('c107i').style.transform=`scale(${lerp(1.5,1.85,u)})`;
-    $('c107i').style.filter=`blur(${lerp(14,0,eOut(u))}px) brightness(${lerp(1.0,1.25,u)}) contrast(1.1)`;
-    $('c107b').style.transform='scale(1.2)';
-    $('e6c').setAttribute('r',r+6);$('e6ring').setAttribute('transform',`translate(960 540) rotate(${(t-44.8)*14}) scale(${(r+6)/286})`);
-    negro=Math.max(1-p(t,44.8,45.2),t>47.72?1:0);
+    $('c105i').style.transformOrigin=`${CX}px ${CY}px`;$('c105i').style.transform=`scale(${lerp(1.35,1.75,u)})`;
+    $('c105i').style.filter=`blur(${lerp(9,1.5,eOut(u))}px) brightness(${lerp(.95,1.2,u)}) contrast(1.1)`;
+    $('c105b').style.transform='scale(1.25)';
+    const ak=eBack(p(t,42.0,42.45));
+    $('e6c').setAttribute('r',r+6);$('e6ring').setAttribute('transform',`translate(${CX} ${CY}) rotate(${(t-42)*14}) scale(${ak*(r+6)/286})`);
+  }
+  // ===== E6b · la cara del guardabosques =====
+  else if(sc==='e6b'){
+    await cuadro($('c106'),'b106',241,t,44.9,4.6);const u=(t-44.9)/2.85;
+    $('c106').style.transform=`scale(${lerp(1.0,1.07,u)})`;
+    negro=t>47.72?1:0;
   }
   // ===== E7 =====
   else if(sc==='e7'){
-    await carga($('c107'),'c107',t);
-    // encuadres: [escala, origenX%, origenY%]
-    let enc=[1.04,50,50];
-    if(t>=54.84&&t<56.44)enc=[1.5,26,48];           // "No diez": se acerca al cráneo
-    else if(t>=56.44&&t<58.3)enc=[1.0,50,50];       // "Cientos"
-    else if(t>=58.3&&t<59.7)enc=[1.3,55,22];        // "En el agua"
-    else if(t>=59.7&&t<61.5)enc=[1.4,90,74];        // "En la orilla"
-    else if(t>=61.5)enc=[1.65,44,90];               // "Entre las piedras"
-    const deriva=1+.02*((t-47.9)%4)/4;
-    $('c107').style.transformOrigin=`${enc[1]}% ${enc[2]}%`;$('c107').style.transform=`scale(${enc[0]*deriva})`;
+    // planos: bajo el agua (c107) y la orilla llena de huesos (c108)
+    const orilla=(t>=56.44&&t<58.3)||t>=59.7;
+    $('c107').style.display=orilla?'none':'block';$('c108').style.display=orilla?'block':'none';
+    let enc=[1.04,50,50];                            // [escala, origenX%, origenY%]
+    if(!orilla){
+      await carga($('c107'),'c107',t);
+      if(t>=54.84&&t<56.44)enc=[1.5,26,48];         // "No diez": se acerca al cráneo
+      else if(t>=58.3)enc=[1.3,55,22];              // "En el agua"
+      const deriva=1+.02*((t-47.9)%4)/4;
+      $('c107').style.transformOrigin=`${enc[1]}% ${enc[2]}%`;$('c107').style.transform=`scale(${enc[0]*deriva})`;
+    }else{
+      let ini=56.44,s0=3.0,z0=1.0,z1=1.05;          // "Cientos"
+      if(t>=59.7&&t<61.5){ini=59.7;s0=0.3;z0=1.04;z1=1.0}      // "En la orilla"
+      else if(t>=61.5){ini=61.5;s0=6.2;z0=1.0;z1=1.08}         // "Entre las piedras"
+      await cuadro($('c108'),'b108',241,t,ini,s0);
+      $('c108').style.transformOrigin='40% 70%';$('c108').style.transform=`scale(${lerp(z0,z1,clamp((t-ini)/2.2))})`;
+    }
     $('e7sombra').style.opacity=(t<52.2||(t>=56.3&&t<58.3))?1:0;
     $('e7a').style.opacity=t<50.05?1:0;reveal($('e7a1'),t,48.05,.4);reveal($('e7a2'),t,48.3,.5);
     $('e7b').style.opacity=(t>=50.05&&t<52.25)?1:0;reveal($('e7b1'),t,50.05,.4,51.8);reveal($('e7b2'),t,50.5,.5,51.9);
@@ -403,6 +435,10 @@ async function render(tv){
     negro=Math.max(1-p(t,91.7,92.0),p(t,99.3,99.95));ws=1+.012*u;
   }
 
+  // ----- rótulo del guardabosques (sigue visible sobre el plano de las botas) -----
+  {const tg=spring(p(twos(t),15.0,15.5),2.4,6.5), ts=eIn(p(t,21.0,21.4));
+   tf($('e2tag'),lerp(-950,90,tg)-ts*1100,812,1,lerp(-7,-2,tg),(t>=15.0&&t<21.4)?1:0);
+   typed($('e2n1'),'HARI KISHAN MADHWAL',t,15.36,16.9);typed($('e2n2'),'GUARDABOSQUES · HIMALAYA, 1942',t,17.0,17.9);}
   // ----- acabado global -----
   $('recre').style.opacity=IA.includes(sc)?1:0;
   $('world').style.transform=`translate(${wx}px,${wy}px) rotate(${wr}deg) scale(${ws})`;
