@@ -234,7 +234,10 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       Petición: `POST https://api.higgsfield.ai/<modelo>` con JSON (`prompt`, `duration`, `aspect_ratio`,
       `image_url` en imagen a video, `sound:"off"` en Kling 3); devuelve `request_id` y `status_url`; se consulta
       hasta `completed` y se descarga `video.url` (los archivos duran 7 días). El sistema pone la cabecera de la
-      clave solo: no enviarla a mano. **Todavía no se ha generado nada: falta el "sí" del dueño.**
+      clave solo: no enviarla a mano. **El 2026-11-15 el dueño aprobó generar los 19 clips de 10 s con Kling 2.5 Turbo Pro (unos 10 USD en total)**;
+      se pidieron con `video1/higgsfield/generar.py` (textos traducidos al inglés, sin sonido, salen en 1920×1080
+      a 24 cuadros/s). Ese permiso NO cubre repeticiones ni la imagen b2-07: para cualquier clip extra hay que
+      volver a preguntar con el costo.
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
