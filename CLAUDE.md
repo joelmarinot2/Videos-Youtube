@@ -226,6 +226,15 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       dólares aparte de la suscripción de la aplicación (pago por uso). Antes de generar: consultar el costo con
       `POST /estimate/<modelo>` y pedirle al dueño que apruebe el total. La clave se pide con el formulario
       seguro (nunca por el chat).
+      **La clave ya está guardada y funciona (2026-11-15).** Precios consultados ese día (dólares por segundo
+      de video; texto a video e imagen a video cuestan igual): Kling 2.5 Turbo Pro 1080p 0,0525 (solo 5 o 10 s);
+      Kling 2.5 Turbo Estándar 720p 0,0315 (solo imagen a video); Kling 3.0 Estándar 720p 0,0714; Kling 3.0 Pro
+      1080p 0,0962 (3 a 15 s); Kling 3.0 Turbo 720p 0,0839 / 1080p 0,1049; Wan 3.0 720p 0,075 / 1080p 0,15;
+      Seedance 2.5 720p 0,2647 / 1080p 0,6518; Hailuo 2.3 de 6 s = 0,28; LTX 2.5 de 6 s = 0,54 a 0,72.
+      Petición: `POST https://api.higgsfield.ai/<modelo>` con JSON (`prompt`, `duration`, `aspect_ratio`,
+      `image_url` en imagen a video, `sound:"off"` en Kling 3); devuelve `request_id` y `status_url`; se consulta
+      hasta `completed` y se descarga `video.url` (los archivos duran 7 días). El sistema pone la cabecera de la
+      clave solo: no enviarla a mano. **Todavía no se ha generado nada: falta el "sí" del dueño.**
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
