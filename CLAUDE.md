@@ -210,9 +210,15 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Excel de escenas recibido
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
-- [ ] Armar el video 1 (empezando por el bloque 1 para aprobación). Plan y avance: `video1/plan-montaje.md`
-- [ ] Clips que faltan: el dueño los va a generar con **Higgsfield** (lista y textos en
-      `video1/clips-por-generar.md`; se le dieron por número de fila del Excel, en grupos A, B y C)
+- [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **Bloque 1 hecho y enviado al dueño el
+      2026-11-15** (`video1/entregas/archivo-001-bloque-1.mp4`, 1 min 38 s); falta su opinión antes de seguir
+      con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
+- [ ] Clips que faltan (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
+      Claude los genere **con la API de Higgsfield**: host `api.higgsfield.ai`, cabecera
+      `Authorization: Key ID:SECRETO`, la clave se crea en console.higgsfield.ai y se cobra de un saldo en
+      dólares aparte de la suscripción de la aplicación (pago por uso). Antes de generar: consultar el costo con
+      `POST /estimate/<modelo>` y pedirle al dueño que apruebe el total. La clave se pide con el formulario
+      seguro (nunca por el chat).
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [ ] Logo serio nuevo (pendiente)
 
