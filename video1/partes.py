@@ -69,8 +69,10 @@ let G;
 // ESC = [[escena, empieza, fundido de entrada], ...]; R = {escena: función que la dibuja}
 async function render(tv){
   const t=aAudio(tv);G={wx:0,wy:0,wr:0,negro:0,ia:true,calido:false,ray:0};let cur=null;
-  for(let i=0;i<ESC.length;i++){const [id,a,f]=ESC[i],nx=ESC[i+1],fin=nx?nx[1]+nx[2]:1e9,on=t>=a&&t<fin,el=$(id);
-    el.style.display=on?'block':'none';if(on){el.style.opacity=f>0?eInOut(p(t,a,a+f)):1;await R[id](t);cur=id}}
+  const vis={};                                      // una misma escena puede salir varias veces en la lista
+  for(let i=0;i<ESC.length;i++){const [id,a,f]=ESC[i],nx=ESC[i+1],fin=nx?nx[1]+nx[2]:1e9,on=t>=a&&t<fin;
+    if(!(id in vis))vis[id]=null;if(on){vis[id]=f>0?eInOut(p(t,a,a+f)):1;cur=id}}
+  for(const id in vis){const el=$(id);el.style.display=vis[id]===null?'none':'block';if(vis[id]!==null){el.style.opacity=vis[id];await R[id](t)}}
   if(typeof EXTRA==='function')EXTRA(t,cur);
   $('recre').style.opacity=G.ia?1:0;
   $('tinte').style.background=G.calido?'linear-gradient(160deg,rgba(214,138,52,.30),rgba(120,36,20,.22))':'linear-gradient(160deg,rgba(112,70,178,.30),rgba(20,60,50,.18))';
