@@ -217,7 +217,9 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Excel de escenas recibido
 - [x] Canales de referencia analizados (Detrás del Enigma y LEMMiNO)
 - [x] Clips e imágenes del video 1 recibidos (31 clips y 6 imágenes)
-- [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **Bloque 1 hecho y enviado al dueño el
+- [ ] Armar el video 1. Plan y avance: `video1/plan-montaje.md`. **El 2026-11-15 el dueño dijo: «Después de corregir los efectos continúa con todo el
+      vídeo»**: ya no hay que esperar su visto bueno bloque por bloque; se arma todo y se le va enviando.
+      **Bloque 2 hecho** (`video1/entregas/archivo-001-bloque-2.mp4`, 1 min 32 s, con los dos cortes de frases repetidas). **Bloque 1 hecho y enviado al dueño el
       2026-11-15** (`video1/entregas/archivo-001-bloque-1.mp4`, 1 min 38 s); falta su opinión antes de seguir
       con los bloques 2 a 7. Logo serio nuevo incluido al final del bloque 1 (símbolo de mira, serif, línea verde).
       El dueño eligió que su nombre NO salga sobre el lago sino pequeño dentro del logo, bajo «ARCHIVO N.º 001»:
@@ -225,14 +227,13 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       **Segunda versión del bloque 1 (2026-11-15):** ya lleva los 4 clips nuevos de Higgsfield (botas, agua
       transparente con lupa, cara del guardabosques, orilla con huesos). El dueño dijo del bloque 1: «Me gustó como
       va todo, sigue de esa manera». El montaje vigente está en `video1/b1/bloque1.html` y `sonido_b1.py`.
-- [ ] Efectos de sonido: al dueño le gustan los AMBIENTES del bloque 1 (viento, pasos, agua, latido), pero
-      «algunos efectos no lo convencen» y quiere **cambiarlos por otros** (no bajarlos ni quitarlos). Se le mandó
-      un muestrario numerado del 1 al 20 (`video1/entregas/muestrario-efectos.mp4`, hecho con
-      `video1/muestrario.py`): 1 golpe grave, 2 tambor seco, 3 golpe oscuro, 4 golpe grande con eco, 5 golpe
-      corto, 6 golpe del sello, 7 barrido de aire, 8 barrido rápido, 9 barrido de viento, 10 barrido largo con
-      eco, 11 barrido corto, 12 barrido oscuro, 13 sonido que sube, 14 cristal o hielo, 15 máquina de escribir,
-      16 tics del contador, 17 papel que se desliza, 18 papel que se mueve, 19 periódico que cae, 20 campanita.
-      Falta que diga los números que no le gustan; entonces buscar reemplazos reales en Mixkit.
+- [x] Efectos de sonido (2026-11-15): al dueño le gustan los AMBIENTES (viento, pasos, agua, latido). Del muestrario
+      numerado dijo que **no le gustan el 5 (golpe corto), el 6 (golpe del sello), el 7 (barrido de aire) y el 11
+      (barrido corto)** y pidió cambiarlos por otros. Ya se cambiaron en los bloques 1 y 2 por sonidos reales de
+      Mixkit: golpe sordo y grave + obturador de cámara antigua (por el 5), golpe seco de madera (por el 6), soplo de
+      aire suave (por el 7), papel que se desliza + raya de lápiz en los tachones (por el 11). **No volver a usar
+      los cuatro descartados.** Lista completa de sonidos con sus números: `video1/sonidos-mixkit.md`. Falta que
+      el dueño diga si los reemplazos le gustan.
 - [x] Clips que faltaban: generados con Higgsfield (lista y textos en `video1/clips-por-generar.md`, grupos A, B y C). El dueño pidió que
       Claude los genere **con la API de Higgsfield**: host `api.higgsfield.ai`, cabecera
       `Authorization: Key ID:SECRETO`, la clave se crea en console.higgsfield.ai y se cobra de un saldo en
