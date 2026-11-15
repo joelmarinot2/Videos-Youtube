@@ -1,0 +1,190 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Bebas;src:url(../b1/fonts/BebasNeue-Regular.ttf)}
+@font-face{font-family:Play;src:url(../b1/fonts/PlayfairDisplaywght.ttf)}
+@font-face{font-family:PlayI;src:url(../b1/fonts/PlayfairDisplay-Italicwght.ttf);font-style:italic}
+@font-face{font-family:Typer;src:url(../b1/fonts/CourierPrime-Regular.ttf)}
+@font-face{font-family:TyperB;src:url(../b1/fonts/CourierPrime-Bold.ttf)}
+html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c}
+#stage{position:absolute;inset:0;overflow:hidden;background:#07040c}
+.scene{position:absolute;inset:0;display:none;overflow:hidden;background:#07040c}
+.abs{position:absolute;left:0;top:0;transform-origin:center center}
+.full{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:center center}
+.pc{filter:drop-shadow(2px 3px 0 rgba(10,4,18,.55)) drop-shadow(14px 22px 26px rgba(4,0,10,.75))}
+.typer{font-family:Typer;color:#140a20;font-size:40px;letter-spacing:3px;white-space:pre}
+.big{font-family:Bebas;color:#ece5d2;line-height:1}
+.ph{font-family:Play;color:#ece5d2;font-weight:400;text-shadow:0 2px 24px rgba(4,0,10,.9),0 0 60px rgba(4,0,10,.7)}
+.phi{font-family:PlayI;font-style:italic;color:#5cf29a;font-weight:500;text-shadow:0 2px 24px rgba(4,0,10,.9),0 0 26px rgba(92,242,154,.35)}
+.mask{overflow:hidden;display:inline-block;vertical-align:bottom;padding:0 22px 14px 0}
+.mask>span{display:inline-block}
+.col{position:absolute;top:0;width:150px;text-align:center}
+.sombraTxt{position:absolute;pointer-events:none}
+#recre{position:absolute;right:54px;bottom:40px;font-family:Typer;font-size:23px;letter-spacing:6px;color:rgba(236,229,210,.62);text-shadow:0 1px 6px rgba(0,0,0,.9)}
+#leak{position:absolute;inset:-100px;pointer-events:none;mix-blend-mode:screen}
+#tinte{position:absolute;inset:0;pointer-events:none;mix-blend-mode:soft-light;background:linear-gradient(160deg,rgba(112,70,178,.30),rgba(20,60,50,.18))}
+#vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 48%,rgba(6,0,14,.45) 80%,rgba(3,0,8,.85) 100%)}
+#flash{position:absolute;inset:0;background:#efe6ff;pointer-events:none;opacity:0;mix-blend-mode:screen}
+#black{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
+#fx{position:absolute;inset:0;pointer-events:none}
+svg{overflow:visible}
+</style></head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <filter id="ca" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="r"/>
+    <feOffset id="caR" in="r" dx="0" result="r2"/>
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" result="gb"/>
+    <feOffset id="caB" in="gb" dx="0" result="gb2"/>
+    <feBlend in="r2" in2="gb2" mode="screen"/>
+  </filter>
+  <filter id="gastado" x="-10%" y="-20%" width="120%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.5" result="m"/>
+    <feComposite in="SourceGraphic" in2="m" operator="in"/>
+  </filter>
+</defs></svg>
+
+<div id="stage">
+ <div id="world" class="abs" style="width:1920px;height:1080px">
+<div class="scene" id="l1"><img class="full" id="l1i"></div>
+<div class="scene" id="l2"><img class="full" id="l2i"><div class="abs pc" id="l2tag" style="opacity:0"><img src="../b1/assets/tira.png" style="display:block;width:860px;height:170px">
+      <div class="abs typer" id="l2n1" style="left:60px;top:48px;font-family:TyperB;font-size:42px"></div><div class="abs typer" id="l2n2" style="left:60px;top:100px;font-size:26px;color:#3b2a52"></div></div></div>
+<div class="scene" id="l3"><img class="full" id="l3i"><div class="abs pc" id="l3tag" style="opacity:0"><img src="../b1/assets/tira.png" style="display:block;width:860px;height:170px">
+      <div class="abs typer" id="l3n1" style="left:60px;top:48px;font-family:TyperB;font-size:42px"></div><div class="abs typer" id="l3n2" style="left:60px;top:100px;font-size:26px;color:#3b2a52"></div></div></div>
+<div class="scene" id="l4"><img class="full" id="l4i"><div class="abs" style="width:1920px;height:1080px;background:linear-gradient(270deg,rgba(4,0,10,.85) 0,rgba(4,0,10,.45) 40%,transparent 66%)" id="l4s"></div>
+    <div class="abs" id="l4f" style="left:1000px;top:600px;width:800px;text-align:right"><div class="ph" style="font-size:104px"><span class="mask" style="padding:0 0 14px 22px"><span id="l4f1">Sube como</span></span></div>
+      <div class="phi" style="font-size:210px;margin-top:-46px"><span class="mask" style="padding:0 0 30px 22px"><span id="l4f2">un rey.</span></span></div></div></div>
+<div class="scene" id="l5"><img class="full" id="l5i"></div>
+<div class="scene" id="l6"><img class="full" id="l6i"></div>
+<div class="scene" id="l7"><img class="full" id="l7i"></div>
+<div class="scene" id="l8"><img class="full" id="l8i"></div>
+<div class="scene" id="l9"><img class="full" id="l9i"></div>
+<div class="scene" id="l9b"><img class="full" id="l9bi"></div>
+<div class="scene" id="l10"><img class="full" id="l10i"></div>
+<div class="scene" id="l11"><img class="full" id="l11i"></div>
+<div class="scene" id="l12"><img class="full" id="l12i"></div>
+<div class="scene" id="l13"><img class="full" id="l13i"></div>
+<div class="scene" id="l14"><img class="full" id="l14i"><div class="abs" style="width:1920px;height:1080px;background:linear-gradient(270deg,rgba(4,0,10,.85) 0,rgba(4,0,10,.45) 40%,transparent 66%)" id="l14s"></div>
+    <div class="abs" id="l14f" style="left:1000px;top:560px;width:800px;text-align:right"><div class="ph" style="font-size:104px"><span class="mask" style="padding:0 0 14px 22px"><span id="l14f1">No se salva</span></span></div>
+      <div class="phi" style="font-size:210px;margin-top:-46px"><span class="mask" style="padding:0 0 30px 22px"><span id="l14f2">nadie.</span></span></div></div></div>
+<div class="scene" id="l15">
+    <img class="abs" id="l15plate" src="../b1/assets/plate_periodico.jpg" style="left:-140px;top:-80px;width:2200px;opacity:.4">
+    <div class="abs" id="l15mesh" style="width:1920px;height:1080px"></div>
+    <div class="abs" id="l15cam" style="width:1920px;height:1080px"><div class="abs pc" id="l15a" style="background:#efe9da;padding:20px 20px 26px 20px;width:600px;opacity:0"><div style="width:600px;height:380px;overflow:hidden"><img id="l15ai" src="frames/b305/0120.jpg" style="display:block;width:600px;height:380px;object-fit:cover"></div></div><div class="abs pc" id="l15b" style="background:#efe9da;padding:20px 20px 26px 20px;width:600px;opacity:0"><div style="width:600px;height:380px;overflow:hidden"><img id="l15bi" src="frames/b302/0200.jpg" style="display:block;width:600px;height:380px;object-fit:cover"></div></div><div class="abs pc" id="l15c" style="background:#efe9da;padding:20px 20px 26px 20px;width:600px;opacity:0"><div style="width:600px;height:380px;overflow:hidden"><img id="l15ci" src="frames/b306/0150.jpg" style="display:block;width:600px;height:380px;object-fit:cover"></div></div>
+      <svg class="abs" width="1920" height="1080"><g id="l15st" filter="url(#gastado)"><rect x="-255" y="-66" width="510" height="132" rx="10" fill="rgba(7,4,12,.55)" stroke="#5cf29a" stroke-width="9"/><rect x="-238" y="-49" width="476" height="98" rx="5" fill="none" stroke="#5cf29a" stroke-width="3"/>
+        <text y="36" text-anchor="middle" font-family="Bebas" font-size="108" letter-spacing="14" fill="#5cf29a">LEYENDA</text></g></svg>
+    </div>
+    <div class="abs pc" id="l15tag" style="opacity:0"><img src="../b1/assets/tira.png" style="display:block;width:700px;height:140px"><div class="abs typer" id="l15t" style="left:56px;top:48px;font-size:38px"></div></div>
+  </div>
+<div class="scene" id="l16"><img class="full" id="l16i"></div>
+ </div>
+ <div id="recre">RECREACIÓN</div>
+ <div id="tinte"></div>
+ <div id="leak"></div>
+ <canvas id="fx" width="1920" height="1080"></canvas>
+ <div id="vig"></div>
+ <div id="flash"></div>
+ <div id="black"></div>
+</div>
+<script src="../b1/lago_b509.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), lerp=(a,b,t)=>a+(b-a)*t, p=(t,a,b)=>clamp((t-a)/(b-a));
+const eOut=x=>1-Math.pow(1-x,3), eExpo=x=>x>=1?1:1-Math.pow(2,-10*x), eIn=x=>x*x*x, eInExpo=x=>x<=0?0:Math.pow(2,10*x-10);
+const eInOut=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eBack=x=>{const c1=1.9,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const spring=(x,f=4.5,d=5)=>x<=0?0:1-Math.exp(-d*x)*Math.cos(f*Math.PI*x);
+const twos=t=>Math.floor(t*12)/12;
+function rnd(seed){let s=seed%2147483647;if(s<=0)s+=2147483646;return()=>(s=s*16807%2147483647)/2147483647}
+function tf(el,x,y,s=1,r=0,o=1,extra=''){el.style.transform=`translate(${x}px,${y}px) rotate(${r}deg) scale(${s}) ${extra}`;el.style.opacity=o}
+function typed(el,text,t,a,b){el.textContent=text.slice(0,Math.floor(clamp((t-a)/(b-a))*text.length))}
+function shake(t,t0,amp,dur){if(t<t0||t>t0+dur)return[0,0,0];const k=Math.pow(1-(t-t0)/dur,2);return[Math.sin((t-t0)*88)*amp*k,Math.cos((t-t0)*67)*amp*.7*k,Math.sin((t-t0)*53)*amp*.04*k]}
+// texto que se destapa desde una máscara; con "sale" se vuelve a tapar
+function reveal(el,t,a,dur=.55,sale=null){let k=eExpo(p(t,a,a+dur));if(sale!==null&&t>sale)k=1-eIn(p(t,sale,sale+.3));
+  el.style.transform=`translateY(${(1-k)*112}%)`;el.style.filter=`blur(${(1-k)*14}px)`}
+function slap(el,t,a,x,y,r,s=1){const tt=twos(t);if(tt<a){el.style.opacity=0;return}
+  const k=tt-a; let sc,yy,rr; if(k<2/12){sc=s*1.22;yy=y-60;rr=r-6}else{const b=spring(p(t,a+2/12,a+.6),3.2,7);sc=lerp(s*1.22,s,b);yy=lerp(y-60,y,b);rr=lerp(r-6,r,b)}
+  tf(el,x,yy,sc,rr,1)}
+
+
+// ---------- TIEMPOS (segundos del audio original). Bloque 3: la leyenda ----------
+const INI=196.9, FINA=271.0, DUR=FINA-INI, OFF=0;
+const aAudio=tv=>tv+INI, aVideo=ta=>ta-INI;
+// [escena, empieza, fundido de entrada (0 = corte seco)]
+const ESC=[['l1',196.9,0],['l2',203.6,.9],['l3',211.0,.9],['l4',218.0,.8],['l5',223.6,0],['l6',225.6,0],['l7',227.2,0],['l8',228.8,0],['l9',230.6,.5],['l9b',233.5,.7],
+  ['l10',236.0,.7],['l11',239.6,.8],['l12',244.3,0],['l13',247.2,0],['l14',252.6,0],['l15',255.8,0],['l16',267.0,0]];
+const HITS=[[244.96,1.1],[249.2,.5],[261.92,.7],[269.54,.9]];
+const FRIAS=['l15','l16'];                               // escenas que no son de la leyenda (vuelven al tono de investigación)
+async function pon(img,src){if(img.dataset.src!==src){img.dataset.src=src;img.src=src;try{await img.decode()}catch(e){}}}
+async function cuadro(img,dir,n,ta,ini,s0=0,vel=1){const i=clamp(Math.floor(((ta-ini)*vel+s0)*24)+1,1,n);await pon(img,`${dir}/${String(i).padStart(4,'0')}.jpg`);return i}
+function enc(img,ox,oy,s){img.style.transformOrigin=`${ox}% ${oy}%`;img.style.transform=`scale(${s})`}
+function etiqueta(id,t,a,b,x,y,t1,t2,a1,b1,a2,b2){const tg=spring(p(twos(t),a,a+.5),2.4,6.5), ts=eIn(p(t,b-.4,b));
+  tf($(id+'tag'),lerp(-950,x,tg)-ts*1100,y,1,lerp(-7,-2,tg),(t>=a&&t<b)?1:0);typed($(id+'n1'),t1,t,a1,b1);typed($(id+'n2'),t2,t,a2,b2)}
+let G;
+const R={
+ l1:async t=>{await cuadro($('l1i'),'frames/b301',187,t,196.9,0.1);enc($('l1i'),50,45,lerp(1.03,1.1,(t-196.9)/7.6))},
+ l2:async t=>{await cuadro($('l2i'),'frames/b302',241,t,203.6,0);enc($('l2i'),75,80,lerp(1.3,1.38,(t-203.6)/8.3));
+   etiqueta('l2',t,207.2,210.7,90,820,'REY JASDHAVAL','SEGÚN LA CANCIÓN',207.5,208.9,209.2,210.0)},
+ l3:async t=>{await pon($('l3i'),'frames/b305/0012.jpg');const u=eInOut(p(t,211.0,218.8));enc($('l3i'),46,42,lerp(1.0,1.5,u));
+   $('l3i').style.filter=`brightness(${1+.03*Math.sin(t*9)+.02*Math.sin(t*23)})`;
+   etiqueta('l3',t,213.0,217.7,90,820,'NANDA DEVI','LA DIOSA DE ESAS CUMBRES',213.2,214.1,214.8,216.4)},
+ l4:async t=>{await cuadro($('l4i'),'frames/b302',241,t,218.0,4.4);const k=eInOut(p(t,218.0,223.6));enc($('l4i'),lerp(52,40,k),66,lerp(1.6,1.72,k));
+   const on=t>=221.2;$('l4s').style.opacity=eOut(p(t,221.0,221.6));$('l4f').style.opacity=on?1:0;reveal($('l4f1'),t,221.36,.4);reveal($('l4f2'),t,222.16,.5)},
+ l5:async t=>{await cuadro($('l5i'),'frames/b303',241,t,223.6,0.2);enc($('l5i'),47,36,lerp(1.5,1.58,(t-223.6)/2))},
+ l6:async t=>{await cuadro($('l6i'),'frames/b303',241,t,225.6,4.0);enc($('l6i'),35,84,lerp(1.8,1.88,(t-225.6)/1.6))},
+ l7:async t=>{await cuadro($('l7i'),'frames/b304',230,t,227.2,1.0);enc($('l7i'),68,68,lerp(1.9,1.98,(t-227.2)/1.6))},
+ l8:async t=>{await cuadro($('l8i'),'frames/b304',230,t,228.8,3.0);enc($('l8i'),22,75,lerp(1.7,1.78,(t-228.8)/1.8))},
+ l9:async t=>{await cuadro($('l9i'),'frames/b305',187,t,230.6,1.0,.5);enc($('l9i'),46,40,lerp(2.1,2.6,eInOut(p(t,230.6,234.2))));
+   $('l9i').style.filter=`brightness(${lerp(1,.8,p(t,230.6,233.5))}) contrast(1.1)`},
+ l9b:async t=>{const i=clamp(Math.floor((t-233.5)*24)+1,1,139);await pon($('l9bi'),`../b1/frames/b509/${String(i).padStart(4,'0')}.jpg`);
+   enc($('l9bi'),50,50,lerp(1.2,1.08,eOut(p(t,233.5,236.7))));$('l9bi').style.filter='sepia(.55) saturate(1.2) brightness(.95)'},
+ l10:async t=>{await cuadro($('l10i'),'frames/b304',230,t,236.0,4.6);enc($('l10i'),50,60,lerp(1.02,1.12,(t-236.0)/4.4))},
+ l11:async t=>{await cuadro($('l11i'),'frames/b305',187,t,239.6,0.3,.7);const u=p(t,239.6,244.3);enc($('l11i'),14,34,lerp(2.3,2.0,eInOut(u)));
+   $('l11i').style.filter=`brightness(${lerp(1.05,.6,u)}) saturate(${lerp(1,.6,u)})`;G.negro=Math.max(G.negro,eIn(p(t,243.2,244.2))*.9)},
+ l12:async t=>{await cuadro($('l12i'),'frames/b305',187,t,244.3,3.6);enc($('l12i'),47,45,lerp(1.14,1.26,(t-244.3)/2.9));
+   G.negro=t<244.74?1:G.negro;const a=shake(t,244.96,22,.5);G.wx+=a[0];G.wy+=a[1];G.wr+=a[2]},
+ l13:async t=>{await cuadro($('l13i'),'frames/b306',230,t,247.2,0.4);enc($('l13i'),42,58,lerp(1.16,1.3,(t-247.2)/5.4));
+   G.wx+=Math.sin(t*61)*3.2;G.wy+=Math.cos(t*47)*2.6;const a=shake(t,249.2,12,.35);G.wx+=a[0];G.wy+=a[1]},
+ l14:async t=>{await pon($('l14i'),'frames/b306/0222.jpg');const u=p(t,252.6,255.6);enc($('l14i'),42,58,lerp(1.3,1.36,u));
+   $('l14i').style.filter=`saturate(${lerp(.9,.1,u)}) brightness(${lerp(.9,.45,u)})`;
+   $('l14s').style.opacity=eOut(p(t,252.6,253.0));reveal($('l14f1'),t,252.84,.4);reveal($('l14f2'),t,253.66,.5);G.negro=Math.max(G.negro,eIn(p(t,254.3,255.6)))},
+ l15:async t=>{const u=(t-255.8)/11.2;tf($('l15plate'),lerp(0,-70,u),0,lerp(1.05,1.14,u),0,.4);malla($('l15mesh'),t,'#30115a','#0e3a2b',.9);
+   const ft=(id,a,x,y,r,s)=>{const k=spring(p(twos(t),a,a+.6),2.2,6.2);tf($(id),lerp(x+(r<0?-1400:1400),x,k),lerp(y+120,y,k),s,lerp(r*3,r,k)+.35*Math.sin(t*.8+x),k>0?1:0);
+     $(id+'i').style.transformOrigin=id==='l15b'?'75% 85%':'50% 50%';$(id+'i').style.transform=`scale(${(id==='l15b'?1.28:1)*lerp(1.12,1.22,u)})`};
+   ft('l15a',257.3,150,300,-6,1);ft('l15b',258.7,660,390,4,1);ft('l15c',260.3,1150,280,-3,1);
+   const k=p(t,261.82,261.92);$('l15st').setAttribute('transform',`translate(960 640) rotate(-7) scale(${k<=0?0:lerp(2.6,1.35,eIn(k))})`);$('l15st').setAttribute('opacity',k<=0?0:lerp(.2,.96,k));
+   const tg=spring(p(twos(t),255.9,256.4),2.4,6.5);tf($('l15tag'),lerp(-900,80,tg),70,1,lerp(-6,-2,tg),tg>0?1:0);typed($('l15t'),'«BONITA HISTORIA»',t,256.03,256.9);
+   const z=eInOut(p(t,263.2,267.0));$('l15cam').style.transformOrigin='50% 55%';$('l15cam').style.transform=`scale(${lerp(1,.86,z)}) rotate(${lerp(0,-1.5,z)}deg)`;$('l15cam').style.filter=`brightness(${lerp(1,.6,z)})`;
+   G.negro=Math.max(G.negro,1-eOut(p(t,255.8,256.3)));const a=shake(t,261.92,14,.3);G.wx+=a[0];G.wy+=a[1]},
+ l16:async t=>{await cuadro($('l16i'),'../b1/frames/b108',241,t,267.0,5.2);enc($('l16i'),38,72,lerp(1.05,1.5,eInOut(p(t,267.0,270.6))));
+   const a=shake(t,269.54,16,.4);G.wx+=a[0];G.wy+=a[1];G.negro=Math.max(G.negro,eIn(p(t,270.2,270.9)))},
+};
+async function render(tv){
+  const t=aAudio(tv);G={wx:0,wy:0,wr:0,negro:0};let cur=null;
+  for(let i=0;i<ESC.length;i++){const [id,a,f]=ESC[i],nx=ESC[i+1],fin=nx?nx[1]+nx[2]:1e9,on=t>=a&&t<fin,el=$(id);
+    el.style.display=on?'block':'none';if(on){el.style.opacity=f>0?eInOut(p(t,a,a+f)):1;await R[id](t);cur=id}}
+  if(t<197.9)G.negro=Math.max(G.negro,1-eOut(p(t,196.9,197.9)));
+  const fria=FRIAS.includes(cur);
+  $('recre').style.opacity=1;
+  $('tinte').style.background=fria?'linear-gradient(160deg,rgba(112,70,178,.30),rgba(20,60,50,.18))':'linear-gradient(160deg,rgba(214,138,52,.30),rgba(120,36,20,.22))';
+  $('world').style.transform=`translate(${G.wx}px,${G.wy}px) rotate(${G.wr}deg)`;
+  let hk=0;for(const[h,a]of HITS){if(t>=h&&t<h+.45)hk=Math.max(hk,a*Math.pow(1-(t-h)/.45,2))}
+  if(hk>.02){$('caR').setAttribute('dx',(12*hk).toFixed(1));$('caB').setAttribute('dx',(-12*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';
+  // relámpagos de la diosa: destellos blancos cortos
+  let ray=0;for(const r of [244.96,245.6,246.5,247.9,249.2,250.6,251.7]){if(t>=r&&t<r+.22)ray=Math.max(ray,(1-(t-r)/.22)*(Math.floor((t-r)*24)%2?.35:.8))}
+  $('flash').style.opacity=Math.max(hk*.4,ray*.5);$('black').style.opacity=G.negro;
+  const q=t*.3,c1=fria?'92,242,154':'255,176,70',c2=fria?'176,107,255':'214,70,30';
+  $('leak').style.background=`radial-gradient(ellipse 700px 900px at ${-6+10*Math.sin(q)}% ${30+20*Math.cos(q*.8)}%,rgba(${c1},${.07+.04*Math.sin(t*.9)+hk*.25}),transparent 65%),radial-gradient(ellipse 800px 700px at ${104-8*Math.cos(q*1.2)}% ${72+14*Math.sin(q)}%,rgba(${c2},${.11+.05*Math.cos(t*.7)+hk*.2}),transparent 65%)`;
+  polvo(t);
+}
+function malla(el,t,a='#3c1872',b='#0e3a2b',al=1){const q=t*.25;
+  el.style.background=`radial-gradient(circle at ${50+30*Math.sin(q)}% ${40+25*Math.cos(q*1.3)}%,${a} 0,transparent 55%),radial-gradient(circle at ${60+30*Math.cos(q*.8)}% ${70+20*Math.sin(q*1.1)}%,${b} 0,transparent 50%)`;el.style.opacity=al}
+
+function polvo(t){const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*7919+13);c.clearRect(0,0,1920,1080);
+  if(R()<.3){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.04+R()*.08})`;c.lineWidth=R()+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*4-2,1080);c.stroke()}
+  for(let i=0;i<5;i++){const x=R()*1920,y=R()*1080,r=R()*1.7+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
+  const fl=.025*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080)}
+window.render=render;window.DUR=DUR;window.OFF=OFF;window.aVideo=aVideo;window.LISTO=Promise.resolve();
+</script>
+</body></html>
