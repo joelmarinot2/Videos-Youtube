@@ -220,8 +220,14 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] **VIDEO 1 ARMADO COMPLETO Y ENVIADO AL DUEÑO EL 2026-11-15** (11 min 56 s, 1920×1080, 24 cuadros/s; el archivo
       completo pesa 251 MB y no cabe en GitHub: se le envió por el chat). En GitHub quedan los 7 bloques sueltos
       (`video1/entregas/archivo-001-bloque-N.mp4`) y una copia liviana del video completo
-      (`video1/entregas/archivo-001-completo-liviano-720p.mp4`). Se une con `video1/unir.py`. Los bloques empiezan
-      en 0:00, 1:37,8, 3:10,0, 4:24,0, 6:24,4, 8:50,4 y 10:19,0. **Falta la opinión del dueño sobre el video
+      (`video1/entregas/archivo-001-completo-liviano-720p.mp4`). Se une con `video1/unir.py`. **2026-11-16:** se acortó la pausa
+      entre «…resuelto dos veces.» y «Y las dos veces se va a equivocar» (corte 77,70–80,25 del audio en el bloque 1;
+      ahora dura 11 min 53 s). Los bloques empiezan en 0:00, 1:35,3, 3:07,4, 4:21,5, 6:21,9, 8:47,9 y 10:16,5.
+      El dueño confirmó que el nombre se queda «Joel Marino». Pidió cambiar el clip del esqueleto bajo el agua
+      (b1-07): lo genera él en Google Flow con el texto de `video1/prompt-flow-esqueleto.md`; cuando llegue, cambiar
+      `b1/frames/b107` (se usa en los bloques 1, 2 y 7). También mandó la portada del canal
+      (`portada/portada-archivos-inexplicables.jpg`) para animarla en Flow (texto en `portada/prompt-portada-animada.md`);
+      falta que diga dónde va (al principio, en vez del logo del minuto 1:30, o en los dos). **Falta la opinión del dueño sobre el video
       completo y sobre los efectos nuevos.** Si pide cambios: se corrige el bloque (`bN/armar.py` o `sonido_bN.py`),
       se regenera con `render.sh` y se vuelve a unir. Para subirlo a YouTube conviene sacar una versión de más
       calidad (los `mudo_bN.mp4` de trabajo están casi sin compresión; hay que regenerarlos si la sesión se perdió).
@@ -271,7 +277,7 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       Soul Cinema (`POST /higgsfield-ai/soul/cinema`, 16:9, 1080p, 0,006 USD) y está en la misma carpeta.
       **Gasto total en Higgsfield hasta el 2026-11-15: 9,98 USD.**
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
-- [ ] Logo serio nuevo (pendiente)
+- [x] Logo / portada: el dueño mandó su portada el 2026-11-16 (`portada/`). Falta animarla y decidir dónde va.
 
 ## Herramientas en el entorno
 

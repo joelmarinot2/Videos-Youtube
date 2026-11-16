@@ -247,7 +247,11 @@ function slap(el,t,a,x,y,r,s=1){const tt=twos(t);if(tt<a){el.style.opacity=0;ret
 
 // ---------- TIEMPOS (en segundos del audio original) ----------
 const OFF=2.2;                       // el video empieza en el segundo 2.2 del audio
-const FIN=100.0, DUR=FIN-OFF;
+const FIN=100.0;
+const CORTES=[[77.70,80.25]];                // pausa larga entre "dos veces." y "Y las dos veces" (pedido del dueño, 2026-11-16)
+const DUR=FIN-OFF-CORTES.reduce((s,c)=>s+c[1]-c[0],0);
+function aAudio(tv){let t=tv+OFF;for(const[a,b]of CORTES){if(t>=a)t+=b-a}return t}
+function aVideo(ta){let d=0;for(const[a,b]of CORTES){if(ta>=b)d+=b-a;else if(ta>a)d+=ta-a}return ta-OFF-d}
 const ESC={e1:[2.2,9.9],e2:[9.9,17.95],e2b:[17.95,22.2],e3:[22.2,29.6],e4:[29.6,35.3],e5:[35.3,38.4],e5b:[38.4,42.0],e6:[42.0,44.9],e6b:[44.9,47.9],e7:[47.9,63.6],e8:[63.6,72.7],e9:[72.7,84.9],e10:[84.9,91.7],e11:[91.7,100.1]};
 const CLIPS={c101:['b101',9.9,295],c103:['b103',22.2,180],c509:['b509',29.6,139],c104:['b104',35.3,230],c107:['b107',44.8,451]};
 const HITS=[[4.80,.8],[48.12,1.3],[56.44,.9],[75.18,.9],[76.55,.9],[82.6,1.0],[95.78,.7]];
@@ -271,7 +275,7 @@ function malla(el,t,a='#3c1872',b='#0e3a2b',al=1){const q=t*.25;
   el.style.background=`radial-gradient(circle at ${50+30*Math.sin(q)}% ${40+25*Math.cos(q*1.3)}%,${a} 0,transparent 55%),radial-gradient(circle at ${60+30*Math.cos(q*.8)}% ${70+20*Math.sin(q*1.1)}%,${b} 0,transparent 50%)`;el.style.opacity=al}
 
 async function render(tv){
-  const t=tv+OFF;                    // tiempo del audio
+  const t=aAudio(tv);                // tiempo del audio (salta los cortes)
   let sc=null;for(const k in ESC){const on=t>=ESC[k][0]&&t<ESC[k][1];$(k).style.display=on?'block':'none';if(on)sc=k}
   let wx=0,wy=0,wr=0,ws=1,negro=0,fl=0;
 
@@ -407,7 +411,7 @@ async function render(tv){
   }
   // ===== E9 =====
   else if(sc==='e9'){
-    const u=(t-72.7)/12.2, s=lerp(1.04,1.12,u);
+    const u=(aVideo(t)-aVideo(72.7))/(aVideo(84.9)-aVideo(72.7)), s=lerp(1.04,1.12,u);
     $('e9img').style.transform=`scale(${s})`;$('e9over').style.transform=`scale(${s})`;
     typed($('e9t1'),'EXPEDIENTE N.º 001',t,72.95,73.75);typed($('e9t2'),'LAGO DE LOS ESQUELETOS · HIMALAYA',t,73.8,74.9);
     const st=(el,a,x,y,r)=>{const k=p(t,a-.1,a);el.setAttribute('transform',`translate(${x} ${y}) rotate(${r}) scale(${k<=0?0:lerp(2.3,1,eIn(k))})`);el.setAttribute('opacity',k<=0?0:lerp(.2,.92,k))};
@@ -452,7 +456,7 @@ function polvo(t){const c=$('fx').getContext('2d'),f=Math.floor(t*24),R=rnd(f*79
   if(R()<.3){const x=R()*1920;c.strokeStyle=`rgba(233,225,204,${.04+R()*.08})`;c.lineWidth=R()+.5;c.beginPath();c.moveTo(x,0);c.lineTo(x+R()*4-2,1080);c.stroke()}
   for(let i=0;i<5;i++){const x=R()*1920,y=R()*1080,r=R()*1.7+.4;c.fillStyle=`rgba(0,0,0,${.3+R()*.3})`;c.beginPath();c.ellipse(x,y,r*(1+R()*2),r,R()*3,0,7);c.fill()}
   const fl=.025*(R()-.5);c.fillStyle=fl>0?`rgba(255,240,255,${fl})`:`rgba(0,0,0,${-fl*1.4})`;c.fillRect(0,0,1920,1080)}
-window.render=render;window.DUR=DUR;window.OFF=OFF;
+window.render=render;window.DUR=DUR;window.OFF=OFF;window.aVideo=aVideo;
 LAGO=window.LAGO_DATA;window.LISTO=Promise.resolve();
 </script>
 </body></html>
