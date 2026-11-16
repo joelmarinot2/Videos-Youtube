@@ -158,6 +158,10 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
   1080p, mucho montaje, y con Higgsfield un clip de 10 s cuesta ~0,53 USD; todo el video 1 costó 10,58 USD).
   Solo valdría la pena si algún día tiene un PC con tarjeta de 24 GB. Alternativa barata que ya tiene: sus
   créditos de Google Flow (ahí hizo el esqueleto bajo el agua).
+  **El dueño dijo (2026-11-16) que su PC tiene una RTX 5060.** La RTX 5060 normal trae 8 GB de memoria de video:
+  no alcanza ni para el nivel mínimo del paquete (16 GB). Solo la «RTX 5060 Ti» viene en versión de 16 GB, y aun
+  así daría videos de 1024×576. Se le pidió confirmar cuánta memoria tiene (Administrador de tareas → Rendimiento →
+  GPU → «Memoria de GPU dedicada»). Conclusión: seguir con Higgsfield y Google Flow.
 
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
