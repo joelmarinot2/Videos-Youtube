@@ -180,6 +180,12 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
     (1.000 créditos + 50 diarios ≈ 2.500 al mes ≈ 250 clips Lite de 8 s; usar los 50 diarios), más Higgsfield solo
     para clips puntuales con su permiso (~10–20 USD) → ~30–40 USD al mes. Probar un mes antes de pagar el año.
     Si no alcanza o la calidad de Veo 3.1 Lite no convence: Firefly Pro Plus (49,99, Kling 2.5 Turbo ilimitado).
+  - **Precios oficiales en Colombia (página gemini.google/co, revisada 2026-11-16):** Google AI Plus COP 19.900/mes
+    (200 créditos de Flow, 400 GB); **Google AI Pro COP 79.000/mes** (1.000 créditos de Flow, 5 TB en Drive/Gmail/Fotos
+    e **incluye YouTube Premium Lite**: la mayoría de videos sin anuncios, sin conexión y en segundo plano; no es el
+    Premium completo); Google AI Ultra desde COP 449.000 (ese sí trae YouTube Premium individual). El dueño paga
+    COP 23.000/mes de YouTube Premium: si toma AI Pro y cancela Premium, la diferencia real es ~COP 56.000/mes, pero
+    pierde YouTube Music Premium y algunos videos tendrían anuncios.
 
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
