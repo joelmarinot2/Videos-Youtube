@@ -146,6 +146,19 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
   con una tarjeta de video grande. Su guía de trabajo usa el mismo método que ya usamos (dibujar cada cuadro
   según el tiempo, capturar con navegador, revisar hojas de capturas, verificar el archivo).
 
+- **«Open Higgsfield» / open-higgsfield-skills** (analizado 2026-11-16, por un TikTok de @joneivy18 que mandó el
+  dueño: «ya puedes usar Higgsfield gratis desde Claude»). Es github.com/mojomast/open-higgsfield-skills (MIT,
+  11 estrellas, nuevo): 37 instrucciones para Claude que generan imágenes (FLUX Klein) y video (LTX-2.5, Wan) con
+  modelos abiertos en un servidor ComfyUI. **No es Higgsfield** (es una imitación hecha en un concurso de ComfyUI).
+  Necesita tarjeta de video: 16 GB → sale a 1024×576; 24 GB → 1280×704; 40 GB → 1536×896. Se puede usar Google
+  Colab en vez de un PC, pero hay que instalar todo y bajar decenas de GB de modelos en cada sesión. El mismo
+  autor advierte que la mayoría de los procesos **no se han probado de principio a fin**. Los pesos de LTX-2.5
+  tienen licencia propia (no libre del todo): revisar antes de monetizar. Este equipo de trabajo no tiene tarjeta
+  de video. **Conclusión que se le dio al dueño: no reemplaza a Higgsfield por ahora** (menos calidad que Kling
+  1080p, mucho montaje, y con Higgsfield un clip de 10 s cuesta ~0,53 USD; todo el video 1 costó 10,58 USD).
+  Solo valdría la pena si algún día tiene un PC con tarjeta de 24 GB. Alternativa barata que ya tiene: sus
+  créditos de Google Flow (ahí hizo el esqueleto bajo el agua).
+
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
   reglas de movimiento, gradación de color, grano de película, Ken Burns, subtítulos y sonido.
