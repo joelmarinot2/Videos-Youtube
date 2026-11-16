@@ -1,0 +1,20 @@
+{
+ "limpia": {
+  "estado": "completed",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e581-bdb0-71ce-a96d-6414193b6180/status",
+  "request_id": "01a1e581-bdb0-71ce-a96d-6414193b6180",
+  "costo_usd": 0.075,
+  "pedido": "2026-11-16 17:57:27",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/portada/limpia.png",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e581-bdb0-71ce-a96d-6414193b6180/f717df07-8a2c-495c-8368-afa50236b927.png"
+ },
+ "animada": {
+  "estado": "completed",
+  "status_url": "https://api.higgsfield.ai/requests/01a1e582-b589-778b-a233-5cea4b93e881/status",
+  "request_id": "01a1e582-b589-778b-a233-5cea4b93e881",
+  "costo_usd": 0.525,
+  "pedido": "2026-11-16 17:58:31",
+  "archivo": "/tmp/claude-0/-home-user-Videos-Youtube/d0439da4-483c-5507-a0b0-74fc8beb0f19/scratchpad/portada/animada.mp4",
+  "url": "https://d3u0tzju9qaucj.cloudfront.net/695a5b6a-4695-4d96-bec2-a4dbe42a712d/01a1e582-b589-778b-a233-5cea4b93e881/999bcd2b-d30f-47b0-a8ce-7b5f57906f13.mp4"
+ }
+}

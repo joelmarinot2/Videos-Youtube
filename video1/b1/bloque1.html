@@ -27,6 +27,7 @@ html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07040c
 #flash{position:absolute;inset:0;background:#efe6ff;pointer-events:none;opacity:0;mix-blend-mode:screen}
 #black{position:absolute;inset:0;background:#000;pointer-events:none;opacity:0}
 #fx{position:absolute;inset:0;pointer-events:none}
+.oro{display:inline-block;font-family:Bebas;font-size:78px;letter-spacing:10px;line-height:1;background:linear-gradient(180deg,#fff4cf 0,#f8cf78 38%,#e2922f 62%,#8d4a14 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 0 #3b1d08) drop-shadow(0 0 16px rgba(255,150,40,.45))}
 svg{overflow:visible}
 </style></head>
 <body>
@@ -193,24 +194,21 @@ svg{overflow:visible}
 
   </div>
 
-  <!-- E11 · ARCHIVOS INEXPLICABLES · ARCHIVO 001 -->
+  <!-- E11 · PORTADA DEL CANAL (la del dueño, animada con Higgsfield) · ARCHIVO 001 · NARRACIÓN JOEL MARINO -->
   <div class="scene" id="e11">
-    <img class="full" id="e11img" src="img/lago_lejos.jpg" style="filter:blur(26px) brightness(.34) saturate(.8)">
-    <div class="abs" id="e11mesh" style="width:1920px;height:1080px;mix-blend-mode:screen"></div>
-    <svg class="abs" width="1920" height="1080">
-      <g id="e11sim" transform="translate(960 300)">
-        <circle id="e11c" r="34" fill="none" stroke="#5cf29a" stroke-width="3" stroke-dasharray="214" stroke-dashoffset="214" transform="rotate(-90)" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.8))"/>
-        <circle id="e11p" r="0" fill="#5cf29a"/>
-        <g id="e11cruz" stroke="#5cf29a" stroke-width="2"><line x1="-56" y1="0" x2="-42" y2="0"/><line x1="42" y1="0" x2="56" y2="0"/><line x1="0" y1="-56" x2="0" y2="-42"/><line x1="0" y1="42" x2="0" y2="56"/></g>
-      </g>
-      <line id="e11line" x1="960" y1="690" x2="960" y2="690" stroke="#5cf29a" stroke-width="3" style="filter:drop-shadow(0 0 8px rgba(92,242,154,.8))"/>
-    </svg>
-    <div class="abs" id="e11narra" style="left:0;top:232px;width:1920px;text-align:center;font-family:Typer;font-size:26px;letter-spacing:9px;color:rgba(236,229,210,.8);white-space:pre"></div>
-    <div class="abs" id="e11w1" style="left:0;top:356px;width:1920px;text-align:center;font-family:Play;font-weight:600;font-size:64px;letter-spacing:38px;color:#ece5d2;padding-left:34px;box-sizing:border-box"></div>
-    <div class="abs" id="e11w2" style="left:0;top:430px;width:1920px;text-align:center;font-family:Play;font-weight:800;font-size:196px;letter-spacing:8px;color:#ece5d2;white-space:nowrap"></div>
-    <div class="abs" id="e11w3" style="left:0;top:736px;width:1920px;text-align:center;font-family:Typer;font-size:50px;letter-spacing:12px;color:#5cf29a;white-space:pre"></div>
-    <div class="abs" id="e11w4" style="left:0;top:850px;width:1920px;text-align:center;font-family:Typer;font-size:30px;letter-spacing:8px;color:rgba(236,229,210,.85);white-space:pre"></div>
+    <div class="abs" id="e11zoom" style="width:1920px;height:1080px;transform-origin:50% 52%">
+      <img class="abs" id="e11bg" style="width:1920px;height:1080px;transform-origin:0 0;transform:matrix(0.997196,0.000007,0.000172,0.984147,2.235,4.516)">
+      <div class="abs" id="e11glow" style="left:360px;top:300px;width:1200px;height:520px;background:radial-gradient(ellipse at 50% 55%,rgba(255,170,60,.55) 0,rgba(255,120,30,.18) 40%,transparent 70%);mix-blend-mode:screen;opacity:0"></div>
+      <div class="abs" id="e11sombra" style="width:1920px;height:1080px"></div>
+      <img class="abs pl" data-w="A" data-i="0" src="portada/a00.png" style="left:715px;top:418px;width:62px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="1" src="portada/a01.png" style="left:786px;top:418px;width:56px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="2" src="portada/a02.png" style="left:852px;top:418px;width:53px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="3" src="portada/a03.png" style="left:917px;top:418px;width:56px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="4" src="portada/a04.png" style="left:985px;top:414px;width:27px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="5" src="portada/a05.png" style="left:1022px;top:416px;width:60px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="6" src="portada/a06.png" style="left:1089px;top:414px;width:54px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="A" data-i="7" src="portada/a07.png" style="left:1152px;top:416px;width:55px;height:98px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="0" src="portada/i00.png" style="left:484px;top:520px;width:39px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="1" src="portada/i01.png" style="left:524px;top:520px;width:87px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="2" src="portada/i02.png" style="left:614px;top:520px;width:78px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="3" src="portada/i03.png" style="left:683px;top:520px;width:99px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="4" src="portada/i04.png" style="left:778px;top:522px;width:83px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="5" src="portada/i05.png" style="left:857px;top:520px;width:76px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="6" src="portada/i06.png" style="left:928px;top:520px;width:39px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="7" src="portada/i07.png" style="left:966px;top:520px;width:84px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="8" src="portada/i08.png" style="left:1042px;top:520px;width:97px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="9" src="portada/i09.png" style="left:1134px;top:520px;width:86px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="10" src="portada/i10.png" style="left:1218px;top:520px;width:76px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="11" src="portada/i11.png" style="left:1290px;top:522px;width:78px;height:154px;transform-origin:50% 60%;opacity:0"><img class="abs pl" data-w="I" data-i="12" src="portada/i12.png" style="left:1361px;top:520px;width:85px;height:154px;transform-origin:50% 60%;opacity:0">
+    </div>
+    <div class="abs" style="left:0;top:780px;width:1920px;height:300px;background:linear-gradient(0deg,rgba(4,2,8,.85) 0,rgba(4,2,8,.55) 45%,transparent 100%)" id="e11base"></div>
+    <svg class="abs" width="1920" height="1080"><line id="e11l1" x1="760" y1="918" x2="760" y2="918" stroke="#f0b552" stroke-width="2" opacity=".85"/><line id="e11l2" x1="1160" y1="918" x2="1160" y2="918" stroke="#f0b552" stroke-width="2" opacity=".85"/></svg>
+    <div class="abs" id="e11num" style="left:0;top:868px;width:1920px;text-align:center;white-space:nowrap">
+      <span class="mask" style="padding:0 6px 8px 6px"><span id="e11n1" class="oro">ARCHIVO</span></span><span class="mask" style="padding:0 6px 8px 14px"><span id="e11n2" class="oro">N.º 001</span></span></div>
+    <div class="abs" id="e11narra" style="left:0;top:962px;width:1920px;text-align:center;font-family:Typer;font-size:27px;letter-spacing:9px;color:rgba(240,226,200,.9);text-shadow:0 2px 8px #000;white-space:pre"></div>
   </div>
+ </div>
  </div>
 
   <div class="abs pc" id="e2tag" style="opacity:0"><img src="assets/tira.png" style="display:block;width:860px;height:170px">
@@ -253,8 +251,8 @@ const DUR=FIN-OFF-CORTES.reduce((s,c)=>s+c[1]-c[0],0);
 function aAudio(tv){let t=tv+OFF;for(const[a,b]of CORTES){if(t>=a)t+=b-a}return t}
 function aVideo(ta){let d=0;for(const[a,b]of CORTES){if(ta>=b)d+=b-a;else if(ta>a)d+=ta-a}return ta-OFF-d}
 const ESC={e1:[2.2,9.9],e2:[9.9,17.95],e2b:[17.95,22.2],e3:[22.2,29.6],e4:[29.6,35.3],e5:[35.3,38.4],e5b:[38.4,42.0],e6:[42.0,44.9],e6b:[44.9,47.9],e7:[47.9,63.6],e8:[63.6,72.7],e9:[72.7,84.9],e10:[84.9,91.7],e11:[91.7,100.1]};
-const CLIPS={c101:['b101',9.9,295],c103:['b103',22.2,180],c509:['b509',29.6,139],c104:['b104',35.3,230],c107:['b107',44.8,451]};
-const HITS=[[4.80,.8],[48.12,1.3],[56.44,.9],[75.18,.9],[76.55,.9],[82.6,1.0],[95.78,.7]];
+const CLIPS={c101:['b101',9.9,295],c103:['b103',22.2,180],c509:['b509',29.6,139],c104:['b104',35.3,230],c107:['b107',44.8,456]};
+const HITS=[[4.80,.8],[48.12,1.3],[56.44,.9],[75.18,.9],[76.55,.9],[82.6,1.0],[94.18,.8],[96.66,.4]];
 const IA=['e2','e2b','e3','e4','e5','e5b','e6','e6b','e7','e10'];   // escenas con imagen hecha con IA (llevan "RECREACIÓN")
 let LAGO=null;
 // carga el cuadro de un clip: dir = carpeta, ini = segundo del audio en que empieza, s0 = desde qué segundo del clip, n = cuadros
@@ -376,8 +374,8 @@ async function render(tv){
     let enc=[1.04,50,50];                            // [escala, origenX%, origenY%]
     if(!orilla){
       await carga($('c107'),'c107',t);
-      if(t>=54.84&&t<56.44)enc=[1.5,26,48];         // "No diez": se acerca al cráneo
-      else if(t>=58.3)enc=[1.3,55,22];              // "En el agua"
+      if(t>=54.84&&t<56.44)enc=[1.4,58,46];         // "No diez": se acerca al cráneo
+      else if(t>=58.3)enc=[1.25,48,14];             // "En el agua"
       const deriva=1+.02*((t-47.9)%4)/4;
       $('c107').style.transformOrigin=`${enc[1]}% ${enc[2]}%`;$('c107').style.transform=`scale(${enc[0]*deriva})`;
     }else{
@@ -426,25 +424,37 @@ async function render(tv){
     reveal($('e10a'),t,85.8,.5,91.1);reveal($('e10b'),t,86.5,.7,91.2);
     negro=Math.max(1-p(t,84.9,85.3),eIn(p(t,91.45,91.7)));
   }
-  // ===== E11 =====
+  // ===== E11 · portada animada =====
   else if(sc==='e11'){
-    const u=(t-91.7)/8.4;$('e11img').style.transform=`scale(${lerp(1.3,1.42,u)})`;malla($('e11mesh'),t,'#2a1052','#0b3024',.55);
-    $('e11c').setAttribute('stroke-dashoffset',214*(1-eInOut(p(t,91.8,92.5))));$('e11p').setAttribute('r',6*eBack(p(t,92.4,92.75)));
-    $('e11cruz').setAttribute('opacity',p(t,92.3,92.8));$('e11sim').setAttribute('transform',`translate(960 262) rotate(${(t-91.7)*6}) scale(1.15)`);
-    const k1=eExpo(p(t,92.2,92.9));$('e11w1').textContent='ARCHIVOS';$('e11w1').style.opacity=k1;$('e11w1').style.transform=`translateY(${(1-k1)*26}px)`;$('e11w1').style.filter=`blur(${(1-k1)*10}px)`;
-    [...$('e11w2').children].forEach((sp,i)=>{const a=93.1+i*.035,k=eExpo(p(t,a,a+.55));sp.style.transform=`translateY(${(1-k)*50}px)`;sp.style.opacity=k;sp.style.filter=`blur(${(1-k)*14}px)`});
-    const l=eInOut(p(t,93.9,94.8));$('e11line').setAttribute('x1',960-l*745);$('e11line').setAttribute('x2',960+l*745);
-    typed($('e11w3'),'ARCHIVO N.º 001',t,95.75,96.9);typed($('e11w4'),'NARRACIÓN · JOEL MARINO',t,97.1,98.0);
-    $('e11w2').style.textShadow=t>93.8?`0 0 ${lerp(60,18,p(t,93.8,95))}px rgba(92,242,154,.28)`:'none';
-    negro=Math.max(1-p(t,91.7,92.0),p(t,99.3,99.95));ws=1+.012*u;
+    const i=clamp(Math.floor((t-91.7)*24)+1,1,207);const src=`frames/portada/${String(i).padStart(4,'0')}.jpg`,bg=$('e11bg');
+    if(bg.dataset.src!==src){bg.dataset.src=src;bg.src=src;try{await bg.decode()}catch(e){}}
+    $('e11zoom').style.transform=`scale(${lerp(1.0,1.07,eInOut(p(t,91.7,100)))})`;
+    // ARCHIVOS: cada letra cae desde arriba
+    // INEXPLICABLES: cada letra llega desde el frente con golpe
+    let fin=0;
+    document.querySelectorAll('#e11 .pl').forEach(el=>{const k=+el.dataset.i;
+      if(el.dataset.w==='A'){const a=92.36+k*.07,q=p(t,a,a+.42),e=eBack(q);
+        el.style.opacity=clamp(q*3);el.style.transform=`translateY(${(1-e)*-70}px) scale(${lerp(1.35,1,e)})`;el.style.filter=`blur(${(1-eOut(q))*8}px)`}
+      else{const a=93.26+k*.055,q=p(t,a,a+.26),e=eOut(q);
+        el.style.opacity=clamp(q*2.5);el.style.transform=`scale(${lerp(2.6,1,e)})`;el.style.filter=`blur(${(1-e)*14}px) brightness(${1+.9*Math.exp(-Math.max(0,t-a-.26)*7)*(q>=1)})`;fin=Math.max(fin,a+.26)}});
+    const g=t>=94.18?(.55+.45*Math.exp(-(t-94.18)*2.5))*(1+.06*Math.sin(t*5)):p(t,93.3,94.18)*.4;$('e11glow').style.opacity=g;
+    $('e11sombra').style.background=`radial-gradient(ellipse 760px 260px at 960px 560px,rgba(0,0,0,${.35*p(t,92.3,93.0)}) 0,transparent 70%)`;
+    // ARCHIVO N.º 001 y el nombre
+    const l=eInOut(p(t,95.6,96.4));$('e11l1').setAttribute('x2',760-l*200);$('e11l2').setAttribute('x2',1160+l*200);
+    $('e11l1').setAttribute('x1',760);$('e11l2').setAttribute('x1',1160);
+    reveal($('e11n1'),t,95.78,.45);reveal($('e11n2'),t,96.66,.45);
+    typed($('e11narra'),'NARRACIÓN · JOEL MARINO',t,97.1,98.1);
+    const s=shake(t,94.18,22,.5);wx=s[0];wy=s[1];wr=s[2];
+    negro=Math.max(1-p(t,91.7,92.25),p(t,99.3,99.95));
   }
+
 
   // ----- rótulo del guardabosques (sigue visible sobre el plano de las botas) -----
   {const tg=spring(p(twos(t),15.0,15.5),2.4,6.5), ts=eIn(p(t,21.0,21.4));
    tf($('e2tag'),lerp(-950,90,tg)-ts*1100,812,1,lerp(-7,-2,tg),(t>=15.0&&t<21.4)?1:0);
    typed($('e2n1'),'HARI KISHAN MADHWAL',t,15.36,16.9);typed($('e2n2'),'GUARDABOSQUES · HIMALAYA, 1942',t,17.0,17.9);}
   // ----- acabado global -----
-  $('recre').style.opacity=IA.includes(sc)?1:0;
+  $('recre').style.opacity=IA.includes(sc)?1:0;$('tinte').style.opacity=sc==='e11'?.25:1;$('leak').style.opacity=sc==='e11'?.4:1;
   $('world').style.transform=`translate(${wx}px,${wy}px) rotate(${wr}deg) scale(${ws})`;
   let hk=0;for(const[h,a]of HITS){if(t>=h&&t<h+.45)hk=Math.max(hk,a*Math.pow(1-(t-h)/.45,2))}
   if(hk>.02){$('caR').setAttribute('dx',(12*hk).toFixed(1));$('caB').setAttribute('dx',(-12*hk).toFixed(1));$('world').style.filter='url(#ca)'}else $('world').style.filter='none';

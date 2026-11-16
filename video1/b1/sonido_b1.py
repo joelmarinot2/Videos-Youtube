@@ -111,12 +111,16 @@ put("garabato", 82.86, -5, pan=.3)
 put("whoosh_tunel", 84.95, -12)
 put("papel_rollo", 86.5, -10, pan=-.4)
 
-# ---- E11 · Archivos Inexplicables · Archivo 001 ----
+# ---- E11 · Portada del canal: ARCHIVOS cae letra por letra, INEXPLICABLES llega con golpe ----
 put("aire_suave", 91.72, -15)
-put("golpe_hondo", 93.85, -6)
-tec(95.75, 96.9, 15, -11)
-tec(97.1, 98.0, 14, -15)
-put("campana", 98.1, -14)
+put("barrido_oscuro", 92.2, -15)
+for k in range(8): put("tecla3", 92.36 + k * .07 + .2, -19, pan=(k - 3.5) * .08)      # cada letra de ARCHIVOS
+put("whoosh_rapido", 93.3, -13)
+put("golpe_hondo", 94.18, -3); put("golpe_grande", 94.18, -10); put("tambor_terror", 94.18, -9)
+put("golpe_sordo", 95.80, -9)                                                       # "Archivo"
+put("golpe_sordo", 96.68, -6)                                                       # "N.º 001"
+tec(97.1, 98.1, 16, -16)                                                            # "Narración · Joel Marino"
+put("campana", 98.6, -15)
 
 m.silencio(T(47.74), T(48.02))                         # silencio total antes de "Son huesos"
 m.guardar(os.path.join(B, "sonido_b1.wav"))

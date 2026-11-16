@@ -1,0 +1,212 @@
+[
+ {
+  "palabra": "ARCHIVOS",
+  "i": 0,
+  "letra": "A",
+  "src": "sprites/a00.png",
+  "x": 715,
+  "y": 418,
+  "w": 62,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 1,
+  "letra": "R",
+  "src": "sprites/a01.png",
+  "x": 786,
+  "y": 418,
+  "w": 56,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 2,
+  "letra": "C",
+  "src": "sprites/a02.png",
+  "x": 852,
+  "y": 418,
+  "w": 53,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 3,
+  "letra": "H",
+  "src": "sprites/a03.png",
+  "x": 917,
+  "y": 418,
+  "w": 56,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 4,
+  "letra": "I",
+  "src": "sprites/a04.png",
+  "x": 985,
+  "y": 414,
+  "w": 27,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 5,
+  "letra": "V",
+  "src": "sprites/a05.png",
+  "x": 1022,
+  "y": 416,
+  "w": 60,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 6,
+  "letra": "O",
+  "src": "sprites/a06.png",
+  "x": 1089,
+  "y": 414,
+  "w": 54,
+  "h": 98
+ },
+ {
+  "palabra": "ARCHIVOS",
+  "i": 7,
+  "letra": "S",
+  "src": "sprites/a07.png",
+  "x": 1152,
+  "y": 416,
+  "w": 55,
+  "h": 98
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 0,
+  "letra": "I",
+  "src": "sprites/i00.png",
+  "x": 484,
+  "y": 520,
+  "w": 39,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 1,
+  "letra": "N",
+  "src": "sprites/i01.png",
+  "x": 524,
+  "y": 520,
+  "w": 87,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 2,
+  "letra": "E",
+  "src": "sprites/i02.png",
+  "x": 614,
+  "y": 520,
+  "w": 78,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 3,
+  "letra": "X",
+  "src": "sprites/i03.png",
+  "x": 683,
+  "y": 520,
+  "w": 99,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 4,
+  "letra": "P",
+  "src": "sprites/i04.png",
+  "x": 778,
+  "y": 522,
+  "w": 83,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 5,
+  "letra": "L",
+  "src": "sprites/i05.png",
+  "x": 857,
+  "y": 520,
+  "w": 76,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 6,
+  "letra": "I",
+  "src": "sprites/i06.png",
+  "x": 928,
+  "y": 520,
+  "w": 39,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 7,
+  "letra": "C",
+  "src": "sprites/i07.png",
+  "x": 966,
+  "y": 520,
+  "w": 84,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 8,
+  "letra": "A",
+  "src": "sprites/i08.png",
+  "x": 1042,
+  "y": 520,
+  "w": 97,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 9,
+  "letra": "B",
+  "src": "sprites/i09.png",
+  "x": 1134,
+  "y": 520,
+  "w": 86,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 10,
+  "letra": "L",
+  "src": "sprites/i10.png",
+  "x": 1218,
+  "y": 520,
+  "w": 76,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 11,
+  "letra": "E",
+  "src": "sprites/i11.png",
+  "x": 1290,
+  "y": 522,
+  "w": 78,
+  "h": 154
+ },
+ {
+  "palabra": "INEXPLICABLES",
+  "i": 12,
+  "letra": "S",
+  "src": "sprites/i12.png",
+  "x": 1361,
+  "y": 520,
+  "w": 85,
+  "h": 154
+ }
+]

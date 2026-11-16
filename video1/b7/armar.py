@@ -74,7 +74,7 @@ const R={
  c5:async t=>{await cuadro($('c5i'),'frames/b704',241,t,659.3,0.3);enc($('c5i'),50,55,lerp(1.02,1.08,(t-659.3)/3.3));
    etiqueta('c5',t,659.3,662.4,90,840,'HOY','',659.35,659.7,999,999)},
  c5b:async t=>{await cuadro($('c5bi'),'../b1/frames/b104',230,t,661.7,4.6);enc($('c5bi'),50,50,lerp(1.02,1.08,(t-661.7)/4.8))},
- c5c:async t=>{await cuadro($('c5ci'),'../b1/frames/b107',451,t,665.6,3.0);enc($('c5ci'),30,50,lerp(1.1,1.3,eInOut(p(t,665.6,669.8))))},
+ c5c:async t=>{await cuadro($('c5ci'),'../b1/frames/b107',456,t,665.6,3.0);enc($('c5ci'),57,48,lerp(1.1,1.3,eInOut(p(t,665.6,669.8))))},
  c6:async t=>{await cuadro($('c6i'),'frames/b705',241,t,668.9,0.6);enc($('c6i'),55,55,lerp(1.02,1.12,(t-668.9)/9.2))},
  c7:async t=>{G.ia=false;malla($('c7mesh'),t,'#2a1052','#0b3024',.6);$('c7bg').style.transform=`scale(${lerp(1.3,1.42,(t-677.2)/11.5)})`;typed($('c7h'),'LO QUE LA CIENCIA LOGRÓ DECIRNOS',t,677.27,678.8);
    [['QUIÉNES ERAN',678.87],['DE DÓNDE VENÍAN',679.83],['QUÉ COMÍAN',681.93]].forEach(([tx,a],k)=>{$('c7r'+k).style.opacity=p(t,a-.1,a+.1);typed($('c7t'+k),tx,t,a,a+.5);

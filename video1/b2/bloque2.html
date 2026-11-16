@@ -172,10 +172,10 @@ svg{overflow:visible}
   <!-- S10 · ENTONCES, ¿QUIÉNES SON? -->
   <div class="scene" id="s10">
     <img class="full" id="c107">
-    <div class="abs" id="s10sombra" style="width:1920px;height:1080px;background:linear-gradient(270deg,rgba(4,0,10,.8) 0,rgba(4,0,10,.4) 38%,transparent 62%)"></div>
-    <div class="abs" id="s10a" style="left:1060px;top:560px;width:760px;text-align:right">
-      <div class="ph" style="font-size:112px"><span class="mask" style="padding:0 0 14px 22px"><span id="s10a1">¿Quiénes</span></span></div>
-      <div class="phi" style="font-size:260px;margin-top:-54px"><span class="mask" style="padding:0 0 30px 22px"><span id="s10a2">son?</span></span></div>
+    <div class="abs" id="s10sombra" style="width:1920px;height:1080px;background:linear-gradient(90deg,rgba(4,0,10,.8) 0,rgba(4,0,10,.4) 38%,transparent 62%)"></div>
+    <div class="abs" id="s10a" style="left:110px;top:560px;width:760px;text-align:left">
+      <div class="ph" style="font-size:112px"><span class="mask" style="padding:0 22px 14px 0"><span id="s10a1">¿Quiénes</span></span></div>
+      <div class="phi" style="font-size:260px;margin-top:-54px"><span class="mask" style="padding:0 22px 30px 0"><span id="s10a2">son?</span></span></div>
     </div>
   </div>
 
@@ -399,8 +399,8 @@ async function render(tv){
   }
   // ===== S10 · ¿quiénes son? =====
   else if(sc==='s10'){
-    await cuadro($('c107'),'../b1/frames/b107',451,t,166.2,10.8);const u=(t-166.2)/7.5;
-    $('c107').style.transformOrigin='26% 48%';$('c107').style.transform=`scale(${lerp(1.2,1.62,eInOut(u))})`;
+    await cuadro($('c107'),'../b1/frames/b107',456,t,166.2,6.0);const u=(t-166.2)/7.5;
+    $('c107').style.transformOrigin='58% 45%';$('c107').style.transform=`scale(${lerp(1.05,1.3,eInOut(u))})`;
     $('s10sombra').style.opacity=1-p(t,170.7,171.2);
     $('s10a').style.opacity=(t>=168.3&&t<171.3)?1:0;reveal($('s10a1'),t,168.38,.4,170.7);reveal($('s10a2'),t,168.96,.5,170.8);
     negro=Math.max(1-eOut(p(t,166.2,166.6)),eIn(p(t,173.1,173.7))*.9);

@@ -227,7 +227,17 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       (b1-07): lo genera él en Google Flow con el texto de `video1/prompt-flow-esqueleto.md`; cuando llegue, cambiar
       `b1/frames/b107` (se usa en los bloques 1, 2 y 7). También mandó la portada del canal
       (`portada/portada-archivos-inexplicables.jpg`) para animarla en Flow (texto en `portada/prompt-portada-animada.md`);
-      falta que diga dónde va (al principio, en vez del logo del minuto 1:30, o en los dos). **Falta la opinión del dueño sobre el video
+      eligió la opción B: **la portada va en vez del logo
+      del minuto 1:30** (escena e11 del bloque 1), con «ARCHIVO N.º 001» y «NARRACIÓN · JOEL MARINO». Pidió que las
+      letras entren animadas. Cómo se hizo: Higgsfield borró las letras y animó la imagen limpia (solo se usan los
+      primeros 3,8 s, en cámara lenta ×2,25 → `b1/frames/portada/`; después unas barras tapan todo y los sellos se
+      deforman). Las letras se recortaron de la portada original ajustando un molde de Bebas Neue a la cara dorada de
+      cada letra y agregando su relieve (`portada/letras/`, una imagen por letra con su posición). En el video:
+      «ARCHIVOS» cae letra por letra al decir «Archivos», «INEXPLICABLES» llega de frente con golpe al decir
+      «Inexplicables», y debajo «ARCHIVO N.º 001» y «NARRACIÓN · JOEL MARINO».
+      **Clip nuevo del esqueleto bajo el agua (2026-11-16):** lo generó el dueño en Google Flow
+      (`video1/clips-flow-esqueleto.mp4`, 8 s). Reemplazó a b1-07 en los bloques 1, 2 y 7 (cámara lenta ×2,4,
+      oscurecido para que combine). Para cambiar un tramo sin regenerar todo el bloque: `video1/remendar.sh`. **Falta la opinión del dueño sobre el video
       completo y sobre los efectos nuevos.** Si pide cambios: se corrige el bloque (`bN/armar.py` o `sonido_bN.py`),
       se regenera con `render.sh` y se vuelve a unir. Para subirlo a YouTube conviene sacar una versión de más
       calidad (los `mudo_bN.mp4` de trabajo están casi sin compresión; hay que regenerarlos si la sesión se perdió).
@@ -276,6 +286,10 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       de foto (b7-05, b7-06, b7-08) reemplazan a las imágenes fijas. La imagen fija `b2-07-huesos-1942.jpg` se generó con el modelo de imagen
       Soul Cinema (`POST /higgsfield-ai/soul/cinema`, 16:9, 1080p, 0,006 USD) y está en la misma carpeta.
       **Gasto total en Higgsfield hasta el 2026-11-15: 9,98 USD.**
+      **2026-11-16: el dueño aprobó 0,60 USD para la portada animada** (Qwen Image 3 edit 2k, 0,075 USD: borrar las
+      letras de su portada → `portada/portada-sin-letras.png`; Kling 2.5 Turbo Pro imagen a video 10 s, 0,525 USD →
+      `portada/portada-animada-higgsfield.mp4`). Se gastó exactamente eso. Script y estado en `portada/higgsfield/`.
+      **GASTO TOTAL EN HIGGSFIELD HASTA EL 2026-11-16: 10,58 USD.**
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [x] Logo / portada: el dueño mandó su portada el 2026-11-16 (`portada/`). Falta animarla y decidir dónde va.
 

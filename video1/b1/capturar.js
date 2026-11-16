@@ -11,7 +11,7 @@ const FPS = 24, PAG = process.env.PAG || 'bloque1.html';
   const off = await pg.evaluate(() => OFF);
   if (process.argv[2] === 'ver') {
     for (const ta of process.argv[3].split(',').map(Number)) {
-      await pg.evaluate(async t => { await render(t); }, ta - off);
+      await pg.evaluate(async t => { await render(window.aVideo ? aVideo(t) : t - OFF); }, ta);
       await pg.screenshot({ path: path.join(__dirname, 'revisar', `a${ta.toFixed(2).padStart(6, '0')}.jpg`), type: 'jpeg', quality: 82 });
     }
     await b.close(); return;
