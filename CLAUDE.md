@@ -186,6 +186,11 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
     Premium completo); Google AI Ultra desde COP 449.000 (ese sí trae YouTube Premium individual). El dueño paga
     COP 23.000/mes de YouTube Premium: si toma AI Pro y cancela Premium, la diferencia real es ~COP 56.000/mes, pero
     pierde YouTube Music Premium y algunos videos tendrían anuncios.
+  - **EL DUEÑO COMPRÓ GOOGLE AI PRO EL 2026-11-16** (1.000 créditos de Flow al mes + 50 diarios). Desde ahora los
+    clips de cada video los genera él en Flow con el texto que le prepara Claude (Excel por video), y Higgsfield
+    queda solo para clips puntuales con su permiso. Rinde: Veo 3.1 Lite 8 s = 10 créditos (100 clips con los
+    1.000); Veo 3.1 Fast = 20 (50 clips; se retira el 5-dic-2026); Quality = 100 (10 clips); Omni Flash 1.2 = 12 a
+    24 según la fuente. Con los 50 diarios, ~5 clips Lite más por día.
 
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
