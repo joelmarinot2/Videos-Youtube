@@ -174,6 +174,12 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
     API de Gemini (cerró el 22 de octubre de 2026), así que Claude no puede generar en Flow: lo hace el dueño.
     Conclusión que se le dio: le sirve y rinde más que Firefly Pro para video (~100 clips de 8 s al mes); conviene
     si hace 2 o más videos al mes; con 1 video al mes, Higgsfield sale parecido o más barato.
+  - **El dueño quiere sacar 4 videos al mes (2026-11-16).** Cálculo: el video 1 usó ~50 clips (31 de Firefly, 19 de
+    Higgsfield, 1 de Flow); con repeticiones son ~40 clips por video → ~160 al mes. Solo con Higgsfield serían
+    ~20–26 USD por video (~80–100 USD al mes). Recomendación dada: **Google AI Pro mensual (19,99) como base**
+    (1.000 créditos + 50 diarios ≈ 2.500 al mes ≈ 250 clips Lite de 8 s; usar los 50 diarios), más Higgsfield solo
+    para clips puntuales con su permiso (~10–20 USD) → ~30–40 USD al mes. Probar un mes antes de pagar el año.
+    Si no alcanza o la calidad de Veo 3.1 Lite no convence: Firefly Pro Plus (49,99, Kling 2.5 Turbo ilimitado).
 
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
