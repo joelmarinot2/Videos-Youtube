@@ -336,6 +336,18 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
       letras de su portada → `portada/portada-sin-letras.png`; Kling 2.5 Turbo Pro imagen a video 10 s, 0,525 USD →
       `portada/portada-animada-higgsfield.mp4`). Se gastó exactamente eso. Script y estado en `portada/higgsfield/`.
       **GASTO TOTAL EN HIGGSFIELD HASTA EL 2026-11-16: 10,58 USD.**
+- [ ] **Cierre del video 1 y formato vertical (plan acordado el 2026-11-16):**
+      1. El dueño manda la frase corregida («Piedras de hielo, duras como el hierro», hoy dice «hierro» en el
+         audio 247,3 = ~3:58 del video) y **la música, que la hace él**. Se le pidió la música en un archivo aparte,
+         hecha encima del video final de 11:53 (exportando solo la música), y no mezclada con la voz: el video
+         tiene cortes y la voz va sincronizada con la imagen. Claude la mezcla por debajo de la voz y los efectos.
+      2. Se le propuso grabar además: un gancho de apertura para YouTube (antes de «Año 1942»), una invitación a
+         suscribirse para el archivo 002 al final, 6 ganchos de 2–3 s para los cortos verticales y 1–2 cierres
+         («La historia completa está en YouTube…»). Textos en `video1/grabar-ganchos.md`.
+      3. Exportar el video final en alta calidad y título, descripción, capítulos y texto de miniatura.
+      4. Formato vertical: **partirlo en 6 cortos de 45–90 s** (hallazgo, ejército japonés, leyenda, fracturas,
+         ADN, pregunta final), rearmados en 1080×1920 con subtítulos grandes palabra por palabra y cierre con la
+         portada. Empezar por el corto 1 y mandarlo para aprobación.
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [x] Logo / portada: el dueño mandó su portada el 2026-11-16 (`portada/`). Falta animarla y decidir dónde va.
 
