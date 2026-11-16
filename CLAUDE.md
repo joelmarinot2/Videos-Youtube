@@ -163,6 +163,18 @@ Video que pidió analizar: "Probé 100+ repos de Github para editar videos. Este
   así daría videos de 1024×576. Se le pidió confirmar cuánta memoria tiene (Administrador de tareas → Rendimiento →
   GPU → «Memoria de GPU dedicada»). Conclusión: seguir con Higgsfield y Google Flow.
 
+- **Planes consultados por el dueño (2026-11-16, precios de EE. UU. sacados de guías; en Colombia pueden cambiar):**
+  - Adobe Firefly: créditos mensuales en los planes de pago (no se acumulan) y pocas generaciones diarias en el gratis.
+    Standard 9,99 USD (2.000 créditos), Pro 19,99 (4.000; ~80 clips de 5 s, NO ilimitado), Pro Plus 49,99 (10.000;
+    Kling 2.5 Turbo ilimitado), Premium 199,99 (50.000; Veo 3.1 Fast y Kling 3.0 720p ilimitados).
+  - Google AI Pro (Gemini, trae Google Flow): 19,99 USD/mes o 199,99/año. 1.000 créditos de Flow al mes (no se
+    acumulan) + 50 créditos diarios que tiene todo el mundo. Clip de 8 s: Veo 3.1 Lite (720p) 10 créditos; Veo 3.1
+    Fast 20 y Quality 100 (estos dos y Omni Flash 1.1 se retiran el 5 de diciembre de 2026); Omni Flash 1.2. Pro
+    permite subir a 1080p. Una petición puede sacar 2 videos y cobrar los 2. No es ilimitado. Veo ya no está en la
+    API de Gemini (cerró el 22 de octubre de 2026), así que Claude no puede generar en Flow: lo hace el dueño.
+    Conclusión que se le dio: le sirve y rinde más que Firefly Pro para video (~100 clips de 8 s al mes); conviene
+    si hace 2 o más videos al mes; con 1 video al mes, Higgsfield sale parecido o más barato.
+
 Repositorios para hacer el video con código:
 - github.com/haidrrrry/claude-remotion-skill: skill de Claude para Remotion. Gratis (MIT). Trae
   reglas de movimiento, gradación de color, grano de película, Ken Burns, subtítulos y sonido.
