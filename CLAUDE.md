@@ -353,7 +353,8 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 
 ## Orden del proyecto (2026-11-17, idea tomada de un TikTok sobre los «mods» de Claude Code)
 
-- **Tablero del canal:** pestaña «Tablero» de la página https://stylehub-khaki.vercel.app/#tablero (repositorio
+- **Tablero del canal:** https://stylehub-khaki.vercel.app (desde el 2026-11-17 la página es SOLO el tablero: el dueño pidió
+  quitar el editor de video y la galería de animaciones, que siguen en el historial de GitHub; repositorio
   `joelmarinot2/stylehub`, rama master, se publica sola en Vercel). Los datos están en
   `web/src/tablero/datos.json`: **actualizarlos en cada sesión** (etapas del video en curso, pendientes de cada uno,
   gastos, la serie). Es una página pública: no poner correos, claves ni datos personales.
