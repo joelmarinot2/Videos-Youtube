@@ -351,6 +351,18 @@ https://drive.google.com/drive/folders/1N28MHvVIh3rq164D1uPECo80LtpVPEpP
 - [x] Video del modelo SenseNova analizado (ver "Repositorios útiles"): no hace falta usarlo
 - [x] Logo / portada: el dueño mandó su portada el 2026-11-16 (`portada/`). Falta animarla y decidir dónde va.
 
+## Orden del proyecto (2026-11-17, idea tomada de un TikTok sobre los «mods» de Claude Code)
+
+- **Tablero del canal:** pestaña «Tablero» de la página https://stylehub-khaki.vercel.app/#tablero (repositorio
+  `joelmarinot2/stylehub`, rama master, se publica sola en Vercel). Los datos están en
+  `web/src/tablero/datos.json`: **actualizarlos en cada sesión** (etapas del video en curso, pendientes de cada uno,
+  gastos, la serie). Es una página pública: no poner correos, claves ni datos personales.
+- **Candado de gastos:** `.claude/settings.json` + `.claude/candado_gastos.py`. Antes de cualquier orden que pueda
+  generar algo de pago en Higgsfield (llamadas a api.higgsfield.ai que no sean /estimate/, `generar.py enviar`,
+  `portada_hf.py borrar|animar`), el sistema le pregunta al dueño en la aplicación. Si se crea un programa nuevo
+  que genere en Higgsfield, agregar su patrón al candado.
+- Pendiente de lo propuesto: atajos «nuevo video» y «estado», y guardar el estilo del canal como una guía fija.
+
 ## Herramientas en el entorno
 
 - `ffmpeg` está instalado: sirve para cortar el audio y armar el video.
